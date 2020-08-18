@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="mobil-button">меню</div>
+                <ul>
+                    <li><a href="index.html">меню</a></li>
+                    <li><a href="index.html">доставка</a></li>
+                    <li><a href="index.html">акции</a></li>
+                    <li><a href="index.html">о компании</a></li>
+                </ul>
+                <div class="entry">
+                    <a href="#">
+                        <img src="images/icons/user.png" alt="">
+                        <span>Войти</span>
+                    </a>
+                </div>
+                <div class="phone">
+                    <img src="images/icons/phone.png" alt="">
+                    <span>+7 (495) 543 50 50</span>
+                </div>
+                <div class="cart">
+                    <a href="cart.html">
+                         <span>3</span>
+                    </a>
+                    <a href="cart.html">
+                        Корзина: 1 850 р.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Главная</a>
+            <a href="#">Каталог продукции</a>
+            <a href="#">Корзина</a>
+        </div>
+        <h3>Моя корзина</h3>
+        <table class="table-of-cart">
+            <tr>
+                <th>Состав заказа</th>
+                <th>Количество</th>
+                <th>Цена / шт.</th>
+                <th>Оплата баллами</th>
+                <th>Итого</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="delete"></a>
+                    <a href="#">Пицца "Вегетто-грибная" 30 см</a>
+                </td>
+                <td>
+                    <input class="spinner" name="value" value="1">
+                </td>
+                <td>445 р.</td>
+                <td>Авторизуйтесь</td>
+                <td>990 р.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="delete"></a>
+                    <a href="#">Кесадилья с овощами 245 гр</a>
+                </td>
+                <td>
+                    <input class="spinner" name="value" value="1">
+                </td>
+                <td>445 р.</td>
+                <td>Авторизуйтесь</td>
+                <td>230 р.</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" class="delete"></a>
+                    <a href="#">Велкопоповицкий Козел 0,5 л</a>
+                </td>
+                <td>
+                    <input class="spinner" name="value" value="1">
+                </td>
+                <td>150 р.</td>
+                <td>Авторизуйтесь</td>
+                <td>150 р.</td>
+            </tr>
+        </table>
+        <div class="total-sum">
+            <div>
+                <div>Доставка:</div>
+                <div>300 р.</div>
+            </div>
+            <div>
+                <div>Итоговая сумма заказа:</div>
+                <div>
+                    <span>3 254 р.</span>
+                </div>
+            </div>
+        </div>
+        <h3>Оформление заказа</h3>
+        <div class="input-blocks">
+            <div class="left">
+                <div>
+                    <div>Ваш телефон <span>*</span></div>
+                    <input type="text" placeholder="+7 (___) ___ __ __" class="phoneJs">
+                </div>
+                <div>
+                    <div>Адрес доставки <span>*</span></div>
+                    <input type="text" placeholder="Укажите ваш адрес">
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <div>Ваши пожелания</div>
+                    <textarea placeholder="Напишите ваши пожелания"></textarea>
+                </div>
+            </div>
+        </div>
+        <h3>Выберите способ оплаты</h3>
+        <div class="payment-method">
+            <div>
+                <label for="radio-1">Наличный расчет</label>
+                <input type="radio" name="radio" id="radio-1" class="checkbox" checked>
+                <p>Вы сможете оплатить стоимость заказа наличными при получении заказа от курьера.</p>
+            </div>
+            <div>
+                <label for="radio-2">Банковской картой курьеру</label>
+                <input type="radio" name="radio" id="radio-2" class="checkbox">
+            </div>
+        </div>
+        <div class="bottom-sum">
+            <button>Отправить заказ</button>
+            <p><span>3 254 р.</span> — общая сумма заказа, включая скидку и доставку</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container clearfix">
+            <div class="copyright">© Вкусно House. <br>Все права защищены.</div>
+            <div>
+                <a href="#">Наш адрес</a>
+            </div>
+            <div class="f-phone">+7 (495) 543 50 50</div>
+            <div>
+                <a href="#">Бонусные программы</a>
+            </div>
+            <div class="socila">
+                <a href="#" target="_blank">
+                    <img src="images/icons/vk.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/icons/fb.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/icons/in.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/icons/ok.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

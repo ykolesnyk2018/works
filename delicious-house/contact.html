@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="mobil-button">меню</div>
+                <ul>
+                    <li><a href="index.html">меню</a></li>
+                    <li><a href="index.html">доставка</a></li>
+                    <li><a href="index.html">акции</a></li>
+                    <li><a href="index.html">о компании</a></li>
+                </ul>
+                <div class="entry">
+                    <a href="#">
+                        <img src="images/icons/user.png" alt="">
+                        <span>Войти</span>
+                    </a>
+                </div>
+                <div class="phone">
+                    <img src="images/icons/phone.png" alt="">
+                    <span>+7 (495) 543 50 50</span>
+                </div>
+                <div class="cart">
+                    <a href="cart.html">
+                         <span>3</span>
+                    </a>
+                    <a href="cart.html">
+                        Корзина: 1 850 р.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="cart-content">
+        <div class="container">
+            <div class="cart-form">
+                <div class="cart-form-title">Напишите нам</div>
+                <div class="input-blocks">
+                    <div>
+                        <div>Ваше имя <span>*</span></div>
+                        <input type="text" placeholder="Представьтесь">
+                    </div>
+                    <div>
+                        <div>Ваш телефон <span>*</span></div>
+                        <input type="text" placeholder="+7 (___) ___ __ __" class="phoneJs">
+                    </div>
+                    <div>
+                        <div>Ваше e-mail <span>*</span></div>
+                        <input type="text" placeholder="Укажите почту">
+                    </div>
+                    <div>
+                        <div>Ваше имя <span>*</span></div>
+                        <input type="text" placeholder="Представьтесь">
+                    </div>
+                    <div>
+                        <div>Сообщение <span>*</span></div>
+                        <textarea placeholder="Напишите ваше сообщение"></textarea>
+                    </div>
+                    <button>Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contact-information">
+        <h3>Контактная информация</h3>
+        <p>С вопросами о доставке Вашего заказа, качестве продукции, культуре обслуживания Вы можете:</p>
+        <ol>
+            <li>Обратиться в Службу клиентской поддержки компании, позвонив по телефону: +7 (495) 543 50 50, либо отправив письмо<br> на почту info@vkusnohouse.ru.</li>
+            <li>Прислать нам свое сообщение, указав в нем дату, время оформления Вашего заказа (возможно приблизительное), район доставки, номер Вашего телефона, суть проблемы, заполнив ниже приведенную форму.</li>
+        </ol>
+        <p>Нам очень важно знать ваше мнение. Спасибо.</p>
+    </div>
+    <footer>
+        <div class="container clearfix">
+            <div class="copyright">© Вкусно House. <br>Все права защищены.</div>
+            <div>
+                <a href="#">Наш адрес</a>
+            </div>
+            <div class="f-phone">+7 (495) 543 50 50</div>
+            <div>
+                <a href="#">Бонусные программы</a>
+            </div>
+            <div class="socila">
+                <a href="#" target="_blank">
+                    <img src="images/icons/vk.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/icons/fb.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/icons/in.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="images/icons/ok.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script>
+        $(function(){
+            $.mask.definitions['~'] = "[+-]";
+            $("#date").mask("99/99/9999",{completed:function(){alert("completed!");}});
+            $(".phoneJs").mask("+7 (999) 999 99 99");
+            $("#phoneExt").mask("(999) 999-9999? x99999");
+            $("#iphone").mask("+33 999 999 999");
+            $("#tin").mask("99-9999999");
+            $("#ssn").mask("999-99-9999");
+            $("#product").mask("a*-999-a999", { placeholder: " " });
+            $("#eyescript").mask("~9.99 ~9.99 999");
+            $("#po").mask("PO: aaa-999-***");
+            $("#pct").mask("99%");
+
+            $("input").blur(function() {
+                $("#info").html("Unmasked value: " + $(this).mask());
+            }).dblclick(function() {
+                $(this).unmask();
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

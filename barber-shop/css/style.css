@@ -1,0 +1,436 @@
+/* Код для подключения шрифта в /css/stylename.css */
+	@font-face {
+			font-family: "MyriadProRegular";
+			src: url("fonts/MyriadProRegular/MyriadProRegular.eot");
+			src: url("fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+			url("fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+			url("fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+body{
+    margin: 0;
+    font-family: "MyriadProRegular";
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+.banner{
+    width: 100%;
+    height: 630px;
+    background: url(../images/banner.png) top center no-repeat;
+    background-size: cover;
+    padding: 25px 0 0 0;
+    box-sizing: border-box;
+}
+.logo{
+    float: left;
+}
+header nav{
+    float: right;
+    padding: 10px 0 0 0;
+}
+header nav ul li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 28px;
+}
+header nav ul li:first-child{
+    margin: 0;
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.large-logo{
+    text-align: center;
+    padding: 80px 0 0 0;
+}
+.contacts{
+    width: 695px;
+    border-bottom: 1px solid #795548;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+}
+.contacts div{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.contacts div span{
+    color: #795548;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+}
+.contacts div a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 0 65px 0;
+}
+.advantages div{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.advantages div img{
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.text{
+    overflow: hidden;
+}
+.text img{
+    display: block;
+    float: left;
+}
+.text p{
+    width: 320px;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    float: right;
+    margin: 100px 70px 0 0;
+}
+.title{
+    text-align: center;
+    font-size: 43px;
+    margin: 70px 0;
+}
+.unsere{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 65px 0;
+}
+.unsere div{
+    text-align: center;
+    font-size: 22px;
+    color: #000;
+    font-weight: 600;
+}
+.unsere div img{
+    display: block;
+    margin: 0 auto 25px auto;
+}
+.photos{
+    overflow: hidden;
+}
+.photos img{
+    float: left;
+    display: block;
+    width: 50%;
+}
+.photos img:nth-child(3){
+    width: 100%;
+}
+.title img{
+    display: block;
+    margin: 10px auto -20px auto;
+}
+.table{
+    width: 760px;
+    margin: 0 auto 45px auto;
+}
+.table .tr{
+    overflow: hidden;
+    border-bottom: 1px solid #795548;
+    padding: 14px 0;
+}
+.table .tr .td{
+    float: left;
+    font-size: 18px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.table .tr .td:nth-child(1){
+}
+.table .tr .td:nth-child(2){
+    float: right;
+}
+.table .tr p{
+    display: block;
+    clear: both;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding: 12px 0 0 0;
+}
+footer{
+    background: #000;
+    margin: -4px 0 0 0;
+    padding: 22px 0 18px 0;
+}
+footer .logo img{
+    display: block;
+}
+.contact-infomation{
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    margin: 8px 0 0 65px;
+}
+.contact-infomation a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-right{
+    float: right;
+    text-align: right;
+}
+.footer-right a{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 20px;
+}
+.copyright{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px 0 0 0;
+}
+@media screen and (max-width: 1169px){
+    .container{
+        width: 940px;
+        margin: 0 auto;
+    }
+    .text img{
+        width: 60%;
+    }
+    .text p{
+        width: 40%;
+        padding: 0 3%;
+        box-sizing: border-box;
+        margin: 70px 0 0 0;
+    }
+}
+@media screen and (max-width: 979px){
+    .container{
+        width: 730px;
+        margin: 0 auto;
+    }
+    .table{
+        width: 100%;
+    }
+    .text p{
+        margin: 0;
+        line-height: 26px;
+    }
+    .title{
+        margin: 50px 0;
+    }
+    .unsere div{
+        font-size: 18px;
+    }
+    .unsere{
+        margin: 0 0 40px 0;
+    }
+}
+@media screen and (max-width: 767px){
+    .container{
+        width: 440px;
+        margin: 0 auto;
+    }
+    header .logo{
+        display: none;
+    }
+    .mobil-menu-button{
+        width: 45px;
+        height: 36px;
+        position: relative;
+        margin: 0 10px 0 auto;
+        cursor: pointer;
+    }
+    .mobil-menu-button span{
+        display: block;
+        position: relative;
+        padding: 0 0 0 0;
+        height: 8px;
+        background: #fff;
+    }
+    .mobil-menu-button span:after,
+    .mobil-menu-button span:before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        transition: 0.6s;
+    }
+    .mobil-menu-button span:after{
+        bottom: -14px;
+    }
+    .mobil-menu-button span:before{
+        top: -14px;
+    }
+    .mobil-menu-button.active span{
+        background: transparent;
+    }
+    .mobil-menu-button.active span:after{
+        transform: rotate(135deg);
+        top: 50%;
+        margin: -1px 0 0 0;
+    }
+    .mobil-menu-button.active span:before{
+        transform: rotate(-135deg);
+        top: 50%;
+        margin: -1px 0 0 0;
+    }
+    header nav ul{
+        display: block;
+        position: absolute;
+        z-index: 5;
+        background: #fff;
+        right: 0;
+        padding: 10px 0;
+        top: 75px;
+    }
+    header nav ul li{
+        display: block;
+        margin: 0;
+    }
+    header nav ul li a{
+        display: block;
+        color: #000;
+        font-size: 16px;
+        line-height: 25px;
+        text-decoration: none;
+        padding: 0 14px;
+        text-transform: uppercase;
+    }
+    .contacts{
+        width: 100%;
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+    .contacts div{
+        display: block;
+        text-align: center;
+        margin: 0 0 15px 0;
+    }
+    .advantages{
+        display: block;
+        overflow: hidden;
+        margin: 0;
+    }
+    .advantages>div{
+        display: inline-block;
+        width: 49%;
+        vertical-align: top;
+        margin: 20px 0;
+    }
+    .container.text{
+        width: 100%;
+    }
+    .container.text img{
+        width: 100%;
+    }
+    .container.text img,
+    .container.text p{
+        float: none;
+    }
+    .container.text p{
+        width: 440px;
+        margin: 20px auto 0 auto;
+        padding: 0;
+    }
+    .title{
+        margin: 40px 0;
+    }
+    .unsere{
+        display: block;
+        margin: -30px 0 0 0;
+    }
+    .unsere>div{
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+        margin: 30px 0;
+    }
+    .photos img{
+        float: none;
+        width: 100%;
+    }
+    .table .tr .td{
+        font-size: 16px;
+        font-weight: 100;
+    }
+    .table .tr .td:nth-child(2){
+        font-weight: 600;
+    }
+    .table .tr p{
+        font-weight: 100;
+    }
+    footer .logo{
+        display: block;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    footer .logo img{
+        display: block;
+        margin: 0 auto;
+    }
+    footer .contact-infomation{
+        float: none;
+        margin: 16px auto 40px auto;
+        text-align: center;
+    }
+    .footer-right{
+        float: none;
+        text-align: center;
+    }
+    .copyright{
+        padding: 15px 0 0 0;
+    }
+    .large-logo{
+        padding: 125px 0 0 0;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav ul.active{
+        display: block;
+    }
+}
+@media screen and (max-width: 479px){
+    .large-logo img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .container,
+    .container.text p{
+        width: 300px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .table .tr p br{
+        display: none;
+    }
+}

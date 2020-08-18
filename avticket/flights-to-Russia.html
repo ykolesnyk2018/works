@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Название страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-block">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu-mobil-button"></div>
+            <nav class="main-menu">
+                <a href="#">Авиабилеты</a>
+                <a href="#">Отели</a>
+                <a href="#">Спецпредложения</a>
+                <a href="#">Полезная информация</a>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div class="form">
+            <div class="form-block">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Авиабилеты</a></li>
+                        <li><a href="#tabs-2">Отели</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="form-content">
+                            <div class="form-input-block city-of-departure">
+                                <span>Город вылета:</span>
+                                <input type="text" placeholder="Тбилиси, Грузия">
+                            </div>
+                            <div class="form-input-block arrival-city">
+                                <span>Город прибытия:</span>
+                                <input type="text" placeholder="Название города">
+                            </div>
+                            <div class="form-input-block there">
+                                <span>Туда:</span>
+                                <input type="text" placeholder="19 фев, пт.">
+                            </div>
+                            <div class="form-input-block back">
+                                <span>Обратно:</span>
+                                <input type="text" placeholder="26 фев, пт.">
+                            </div>
+                            <div class="form-input-block passenger">
+                                <span>Пассажиры/Класс</span>
+                                <input type="text" placeholder="1 пассажир эконом">
+                            </div>
+                            <div class="form-input-button">
+                                <button>Найти</button>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form-block-checkbox">
+                            <input type="checkbox" id="check"><label for="check">Показать все отели</label>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        2
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="direction">
+            <div class="direction-block">
+                На это направление есть специальное предложение <span>от <strong>1 172 Р</strong></span> 
+                <a href="#">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumbs">
+            <a href="#">Поиск дешевых авиабилетов</a>   
+            <a href="#">Страна</a>              
+            <a href="# ">Россия</a>
+        </div>
+        <div class="specials">
+            <img src="images/specials-img2.jpg" alt="">
+            <div class="specials-description">
+                <br>
+                <div class="specials-title">Авиабилеты в Россию дешево</div>
+                <br>
+                <a href="#">Спецпредложения на авиабилеты в Россию</a>
+            </div>
+        </div>
+        <p>Вы можете купить билеты в Москву на прямой рейс и обратно у нас по лучшим ценам. Мы проверим все предложения и найдем самые дешевые авибилеты в Москву туда и обратно, будьте уверены стоимость билетов вас обрадует!</p>
+            <div class="gallery">
+                <a href="#"><img src="images/gallery1.jpg" alt=""></a>
+                <a href="#"><img src="images/gallery2.jpg" alt=""></a>
+                <a href="#"><img src="images/gallery3.jpg" alt=""></a>
+                <a href="#"><img src="images/gallery4.jpg" alt=""></a>
+                <a href="#"><img src="images/gallery5.jpg" alt=""></a>
+                <a href="#"><img src="images/gallery6.jpg" alt=""></a>
+            </div>
+        <p>Avticket поможет вам найти самую низкую цену на авиабилеты в Россию среди всех предложений. Приобритая билеты на самолёт через нас, вы гарантируете себе лучшую стоимость перелёта в Россию и обратно все не зависимости прямой это рейс или с пересадкой.</p>
+            <div class="cheap-tickets">
+                <div class="title">Цены на билеты в Россию из разных городов</div>
+                <p>Ниже представлены лучшие цены на авиабилеты в Россию которые были найдены за 24* часа. Стоимость перелёта может менять ежеминутно в зависимости от спроса на конкретное направление, выбора прямого рейса или с пересадкой, от количества пересадок, дня недели и времени вылета:</p>
+                <div class="cheap-tickets-content">
+                    <div class="cheap-ticket">
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Псков</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Астрахань — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Белгород — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Чебоксары</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Самара</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Псков</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Астрахань — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Белгород — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Чебоксары</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Самара</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                    </div>
+                    <div class="cheap-ticket orange">
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Псков</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Астрахань — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Белгород — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Чебоксары</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Самара</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Псков</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Астрахань — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Белгород — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Чебоксары</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Самара</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                    </div>
+                    <div class="cheap-ticket green">
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Псков</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Астрахань — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Белгород — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Чебоксары</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Самара</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Псков</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Астрахань — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Санкт-Петербург — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Белгород — Москва</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Чебоксары</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                        <div class="cheap-ticket-line">
+                            <div class="cheap-ticket-line-left">Москва — Самара</div>
+                            <div class="cheap-ticket-line-right">от 7 950 Р.</div>
+                        </div>
+                    </div>
+                </div>
+                <p>* Цены на авиабилеты могут меняться ежеминутно и зависят от количества оставшихся мест по конкретному тарифу</p>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="footer-block">
+            <div class="footer-block-left">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="all-resirve">Все права защищены. 2016г.</div>
+                <a href="" class="button">Написать нам</a>
+            </div>
+            <div class="footer-block-right">
+                <div class="footer-title">Популярные направления авиаперелётов</div>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Страны</a>
+                    <div>
+                        <li><a href="">Россия</a></li>
+                        <li><a href="">Турция</a></li>
+                        <li><a href="">Израиль</a></li>
+                        <li><a href="">Черногория</a></li>
+                        <li><a href="">Великобритания</a></li>
+                        <li><a href="">Италия</a></li>
+                        <li><a href="">Австрия</a></li>
+                        <li><a href="">Испания</a></li>
+                        <li><a href="">США</a></li>
+                        <li><a href="">Франция</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Города</a>
+                    <div>
+                        <li><a href="">Москва</a></li>
+                        <li><a href="">Стамбул</a></li>
+                        <li><a href="">Тель-Авив</a></li>
+                        <li><a href="">Тиват</a></li>
+                        <li><a href="">Милан</a></li>
+                        <li><a href="">Анталья</a></li>
+                        <li><a href="">Лондон</a></li>
+                        <li><a href="">Рим</a></li>
+                        <li><a href="">Сочи</a></li>
+                        <li><a href="">Czech</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Авиакомпании</a>
+                    <div>
+                        <li><a href="">Air Berlin</a></li>
+                        <li><a href="">Air France</a></li>
+                        <li><a href="">Alitalia</a></li>
+                        <li><a href="">Air Baltic</a></li>
+                        <li><a href="">Emirates</a></li>
+                        <li><a href="">ГТК Россия </a></li>
+                        <li><a href="">KLM Lufthansa</a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Аэропорты</a>
+                    <div>
+                        <li><a href="">Шереметьево</a></li>
+                        <li><a href="">Курумоч</a></li>
+                        <li><a href="">Домодедово</a></li>
+                        <li><a href="">Толмачево</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Гамбург</a></li>
+                        <li><a href="">Кольцово</a></li>
+                        <li><a href="">Внуково</a></li>
+                        <li><a href="">Казань</a></li>
+                        <li><a href="">Czech </a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

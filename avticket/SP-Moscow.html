@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Название страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-block">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu-mobil-button"></div>
+            <nav class="main-menu">
+                <a href="#">Авиабилеты</a>
+                <a href="#">Отели</a>
+                <a href="#">Спецпредложения</a>
+                <a href="#">Полезная информация</a>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div class="form">
+            <div class="form-block">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Авиабилеты</a></li>
+                        <li><a href="#tabs-2">Отели</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="form-content">
+                            <div class="form-input-block city-of-departure">
+                                <span>Город вылета:</span>
+                                <input type="text" placeholder="Тбилиси, Грузия">
+                            </div>
+                            <div class="form-input-block arrival-city">
+                                <span>Город прибытия:</span>
+                                <input type="text" placeholder="Название города">
+                            </div>
+                            <div class="form-input-block there">
+                                <span>Туда:</span>
+                                <input type="text" placeholder="19 фев, пт.">
+                            </div>
+                            <div class="form-input-block back">
+                                <span>Обратно:</span>
+                                <input type="text" placeholder="26 фев, пт.">
+                            </div>
+                            <div class="form-input-block passenger">
+                                <span>Пассажиры/Класс</span>
+                                <input type="text" placeholder="1 пассажир эконом">
+                            </div>
+                            <div class="form-input-button">
+                                <button>Найти</button>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form-block-checkbox">
+                            <input type="checkbox" id="check"><label for="check">Показать все отели</label>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumbs">
+            <a href="#">Поиск дешевых авиабилетов</a>
+            <a href="#">Страна</a>
+            <a href="#">Россия</a>
+        </div>
+        <h1>Дешевые авиабилеты Санкт-Петербург-Москва,<br> Россия (LED-MOW)</h1>
+        <div class="photos">
+            <div class="photo-left">  
+                <a href="#" class="button1">Спецпредложения на авиабилеты в Москву</a>
+                <p>Получи преимущество благодаря Avticket. С появлением нашего сайта исчезла необходимость тратить часы драгоценного времени на поиски недорогих авиаперелетов по всему интернету. У нас представлена информация, уже отобранная в 7 системах заказов электронных билетов, в 53 агентствах и в 750 авиакомпаниях. Вы найдете сравнительные цены на прямые рейсы из Санкт-Петербурга в Москву и обратно. Авиабилеты с различных ресурсов ведущих мировых авиалиний, лоукостеров, туристических компаний собраны в одном месте.</p>
+                <p>Купить билет на самолет в онлайн режиме также можно с учетом периодически проводящихся рекламных акций и специальных предложений. Стоимость направлений будет значительно ниже, если сразу бронировать места туда и обратно. Довольно выгодные билеты продаются в межсезонье. Это прекрасное время, когда можно дешево посетить Москву прилетев в аэропорт Шереметьево, Внуково, Домодедово. Отличным способом сэкономить может стать пересадочный рейс из Санкт-Петербурга. Такой полет может оказаться гораздо менее затратным прямого направления выбрав аэропорт Пулково. 
+                Самыми экономными всегда оказываются авиабилеты, которые приобретены заблаговременно. Причем, чем дальше дата вылета, тем меньше стоимость перелета. Лучше выкупать их заранее за два или три месяца. Но это подходит только для тех пассажиров, кто твердо уверен в том, что поездка состоится.</p>
+                <div class="look-too">
+                    <div class="look-too-title">Смотрите также:</div>
+                    <a href="#">Дешевые авиабилеты Москва-Санкт-Петербург</a>
+                </div>
+            </div>
+            <div class="photo-right">  
+                <nav>
+                    <span>Для тех, кто хочет<br> посетить Москву:</span>
+                    <a href="#" class="active">Нужна ли виза?</a>
+                    <a href="#">Когда отдыхать в России?</a>
+                    <a href="#">Достопримечательности Москвы</a>
+                    <a href="#">Когда отдыхать в России?</a>
+                    <a href="#">Достопримечательности Москвы</a>
+                    <a href="#">Столица России</a>
+                </nav>
+            </div>
+            <div class="clear"></div>
+            <div class="infomation">
+                <div class="infomation-title">Полезная информация о рейсе Санкт-Петербург – Москва</div>
+                <ul class="ul-yellow-point">
+                    <li>Расстояние между Санкт-Петербургом и Москвой : 599 километров</li>
+                    <li>Расчетное время в полёте из Санкт-Петербурга в Москву: 1 ч 15 мин</li>
+                </ul>
+            </div>
+            <div class="price-change">
+                <div class="price-change-title">Изменение цен на авиабилеты Санкт-Петербург – Москва по месяцам</div>
+                <div class="price-change-block">
+                    <div class="price-change-block-mobil-button">
+                        <span>Москва - Банкок</span>
+                        Туда и обратно, 7-14 дней
+                    </div>
+                    <div class="price-change-block-left">
+                        <div class="price-change-input-block">
+                            <span>Город вылета:</span>
+                            <input type="text" placeholder="Тбилиси, Грузия">
+                        </div>
+                        <div class="price-change-input-block">
+                            <span>Город вылета:</span>
+                            <input type="text" placeholder="Тбилиси, Грузия">
+                        </div>
+                        <div id="radio" class="radio">
+                            <input type="radio" id="radio1" name="radio"><label for="radio1">Туда и обратно</label>
+                            <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">В одну сторону</label>
+                        </div>
+                        <div class="price-change-block-slide">
+                            <div class="price-change-block-slide-title">Период пребывания</div>
+                            <div id="slider-range6"></div>
+                            <p>
+                              <label for="amount6"></label>
+                              <input type="text" id="amount6" readonly>
+                            </p>
+                        </div>
+                        <div class="price-change-block-checkbox">
+                            <input type="checkbox" id="check10"><label for="check10">Только прямы рейсы</label>
+                        </div>
+                        <div class="select-menu-block">
+                            Валюта:
+                            <select name="select-menu" id="select-menu">
+                              <option>RUB</option>
+                              <option>RUB 1</option>
+                              <option>RUB 2</option>
+                              <option>RUB 3</option>
+                              <option>RUB 4</option>
+                              <option>RUB 5</option>
+                              <option>RUB 6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="price-change-block-right">
+                        <div class="year year-active">
+                            <div class="year-block">
+                                Март
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Апрель
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Май
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Июнь
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Июль
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Август
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Сентябрь
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Октябрь
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Ноябрь
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Декабрь
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Январь                                
+                                <div>10 047 <span>Р</span></div>
+                            </div>
+                        </div>
+                        <div class="year">
+                            <div class="year-block">
+                                Февраль
+                                <a href="#" class="year-block-search"></a>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                        <div class="year-right-block">
+                            <div class="year-right-block-block">
+                                <span>2016</span>
+                            </div>
+                            <div class="year-right-block-block">
+                                <span>2017</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="weather">
+                <div class="title">Погода в , 26 февраля:</div>
+                <div class="weather-blocks">
+                    <div class="weather-block weather-first">
+                        <div class="day-and-date">
+                            <div class="day">Суббота</div>               
+                            <div class="date">26 февраля</div>
+                        </div>
+                        <div class="weather-city">Москва</div>
+                        <div class="weather-degrees sun-outline">
+                            26
+                            <span>о</span>
+                        </div>
+                        <div class="wind">
+                            <p>Ветер 4 м/c</p>
+                            <p>Влажность 82%</p>
+                        </div>
+                    </div>
+                    <div class="weather-block weather-second">
+                        <div class="day-and-date">            
+                            <div class="date">27 февраля</div>
+                        </div>
+                        <div class="weather-degrees sun-and-cloud">
+                            26
+                            <span>о</span>
+                            с
+                        </div>
+                    </div>
+                    <div class="weather-block weather-second weather-third">
+                        <div class="day-and-date">            
+                            <div class="date">28 февраля</div>
+                        </div>
+                        <div class="weather-degrees snow-cloud">
+                            -1
+                            <span>о</span>
+                            с
+                        </div>
+                    </div>
+                    <div class="weather-block weather-second weather-fourth">
+                        <div class="day-and-date">            
+                            <div class="date">29 февраля</div>
+                        </div>
+                        <div class="weather-degrees rain-cloud">
+                            4
+                            <span>о</span>
+                            с
+                        </div>
+                    </div>
+                    <div class="weather-block weather-second weather-fiveth">
+                        <div class="day-and-date">            
+                            <div class="date">1 марта</div>
+                        </div>
+                        <div class="weather-degrees sun-and-rain">
+                            20
+                            <span>о</span>
+                            с
+                        </div>
+                    </div>
+                    <div class="weather-block weather-second weather-sixth">
+                        <div class="day-and-date">            
+                            <div class="date">2 марта</div>
+                        </div>
+                        <div class="weather-degrees clouds">
+                            15
+                            <span>о</span>
+                            с
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-tickets">
+                <div class="price-tickets-title">Цены на авиабилеты Санкт-Петербург – Москва и обратно*</div>
+                <div class="price-tickets-table">
+                    <div class="price-tickets-th">
+                        <div class="price-tickets-th1">Месяц</div>
+                        <div class="price-tickets-th2">В одну сторону</div>
+                        <div class="price-tickets-th3">Туда и обратно</div>
+                    </div>
+                    <div class="price-tickets-tr">
+                        <div class="price-tickets-td">Февраль 2016</div>
+                        <div class="price-tickets-td2">
+                            
+                        </div>
+                        <div class="price-tickets-td3">
+                            <span class="dsdsd">29.02 - 07.03.2016 </span>
+                            <span class="from-price">от</span> 
+                            <span class="from-price-middle">10 047</span>
+                            <span class="from-price-right">Р</span>
+                        </div>
+                    </div>
+                    <div class="price-tickets-tr price-tickets-tr-red">
+                        <div class="price-tickets-td">Март 2016</div>
+                        <div class="price-tickets-td2">
+                            
+                        </div>
+                        <div class="price-tickets-td3">
+                            <span class="dsdsd">29.02 - 07.03.2016</span> 
+                            <span class="from-price">от</span> 
+                            <span class="from-price-middle">10 047</span>
+                            <span class="from-price-right">Р</span>
+                        </div>
+                    </div>
+                    <div class="price-tickets-tr">
+                        <div class="price-tickets-td">Апрель 2016</div>
+                        <div class="price-tickets-td2">
+                            
+                        </div>
+                        <div class="price-tickets-td3">
+                            <span class="dsdsd">29.02 - 07.03.2016 </span>
+                            <span class="from-price">от</span> 
+                            <span class="from-price-middle">10 047</span>
+                            <span class="from-price-right">Р</span>
+                        </div>
+                    </div>
+                    <div class="price-tickets-tr price-tickets-tr-gray">
+                        <div class="price-tickets-td">Май 2016</div>
+                        <div class="price-tickets-td2">
+                            
+                        </div>
+                        <div class="price-tickets-td3">
+                            <span class="dsdsd">29.02 - 07.03.2016</span> 
+                            <span class="from-price">от</span> 
+                            <span class="from-price-middle">10 047</span>
+                            <span class="from-price-right">Р</span>
+                        </div>
+                    </div>
+                    <div class="price-tickets-tr">
+                        <div class="price-tickets-td">Июнь 2016</div>
+                        <div class="price-tickets-td2">
+                            
+                        </div>
+                        <div class="price-tickets-td3">
+                            <span class="dsdsd">29.02 - 07.03.2016</span> 
+                            <span class="from-price">от</span> 
+                            <span class="from-price-middle">10 047</span>
+                            <span class="from-price-right">Р</span>
+                        </div>
+                    </div>
+                </div>
+                <p>*стоимость авиабилетов найденых на сайте не являются публичной офертой</p>
+            </div>
+            <div class="the-cheapest-ticket">
+                <span>Самый дешевый билет из Санкт-Петербурга в Москву и обратно:</span> представлен авиакомпанией Уральские авиалинии с датой вылета <span>16.03.2016</span> и стоимостью <span>2105 рублей.</span> <a href="">Найти для вас этот билет?</a>
+            </div>
+            <div class="airports">
+                <div class="title">Аэропорты Москвы</div>
+                <div class="airports-content">
+                    <div class="airport">
+                         <a href="#">S7</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">Уральские авиалинии</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">Аэрофлот</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">S7</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">Уральские авиалинии</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">Аэрофлот</a>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule">
+                <div class="schedule-title">Расписание рейсов из Санкт-Петербурга в Москву:</div>
+                <div class="schedule-table">
+                    <div class="schedule-th">
+                        <div class="schedule-th-td schedule-th-td1">Рейс</div>
+                        <div class="schedule-th-td schedule-th-td2">Вылет</div>
+                        <div class="schedule-th-td schedule-th-td3">В пути</div>
+                        <div class="schedule-th-td schedule-th-td4">прибытие</div>
+                        <div class="schedule-th-td schedule-th-td5">Дни вылета</div>
+                    </div>
+                    <div class="schedule-tr">
+                        <div class="schedule-td schedule-td1">Аэрофлот<br> (SU 37)</div>
+                        <div class="schedule-td schedule-td2">
+                            <strong>0:30</strong>
+                        </div>
+                        <div class="schedule-td schedule-td3">1ч15м</div>
+                        <div class="schedule-td schedule-td4">
+                            <strong>05:45</strong>
+                        </div>
+                        <div class="schedule-td schedule-td5">
+                            <span>ежедневно с 28.03 по 25.08</span>
+                            <a href="#" class="search-left-button">Найти</a>
+                        </div>
+                    </div>
+                    <div class="schedule-tr schedule-tr-red">
+                        <div class="schedule-td schedule-td1">Аэрофлот<br> (SU 37)</div>
+                        <div class="schedule-td schedule-td2">
+                            <strong>0:30</strong>
+                        </div>
+                        <div class="schedule-td schedule-td3">1ч15м</div>
+                        <div class="schedule-td schedule-td4">
+                            <strong>05:45</strong>
+                        </div>
+                        <div class="schedule-td schedule-td5">
+                            <span>ежедневно с 28.03 по 25.08</span>
+                            <a href="#" class="search-left-button">Найти</a>
+                        </div>
+                    </div>
+                    <div class="schedule-tr">
+                        <div class="schedule-td schedule-td1">Аэрофлот<br> (SU 37)</div>
+                        <div class="schedule-td schedule-td2">
+                            <strong>0:30</strong>
+                        </div>
+                        <div class="schedule-td schedule-td3">1ч15м</div>
+                        <div class="schedule-td schedule-td4">
+                            <strong>05:45</strong>
+                        </div>
+                        <div class="schedule-td schedule-td5">
+                            <span>ежедневно с 28.03 по 25.08</span>
+                            <a href="#" class="search-left-button">Найти</a>
+                        </div>
+                    </div>
+                    <div class="schedule-tr schedule-tr-gray">
+                        <div class="schedule-td schedule-td1">Аэрофлот<br> (SU 37)</div>
+                        <div class="schedule-td schedule-td2">
+                            <strong>0:30</strong>
+                        </div>
+                        <div class="schedule-td schedule-td3">1ч15м</div>
+                        <div class="schedule-td schedule-td4">
+                            <strong>05:45</strong>
+                        </div>
+                        <div class="schedule-td schedule-td5">
+                            <span>ежедневно с 28.03 по 25.08</span>
+                            <a href="#" class="search-left-button">Найти</a>
+                        </div>
+                    </div>
+                </div>
+                <p>Данные предоставлены сервисом Яндекс.Расписания <a href="#">rasp.yandex</a></p>
+            </div>
+            <div class="airports">
+                <div class="title">Авиакомпании, выполняющие прямые рейсы Санкт-Петербург – Москва</div>
+                <p>Аэропорты Санкт-Петербурга, из которых вылетают самолёты в Москву:</p>
+                <div class="airports-content">
+                    <div class="airport">
+                         <a href="#">Пулково</a>
+                    </div>
+                </div>
+                <p>Аэропорты Санкт-Петербурга, из которых вылетают самолёты в Москву:</p>
+                <div class="airports-content">
+                    <div class="airport">
+                         <a href="#">Шереметьево</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">Внуково</a>
+                    </div>
+                    <div class="airport">
+                         <a href="#">Домодедово</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-block">
+            <div class="footer-block-left">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="all-resirve">Все права защищены. 2016г.</div>
+                <a href="" class="button">Написать нам</a>
+            </div>
+            <div class="footer-block-right">
+                <div class="footer-title">Популярные направления авиаперелётов</div>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Страны</a>
+                    <div>
+                        <li><a href="">Россия</a></li>
+                        <li><a href="">Турция</a></li>
+                        <li><a href="">Израиль</a></li>
+                        <li><a href="">Черногория</a></li>
+                        <li><a href="">Великобритания</a></li>
+                        <li><a href="">Италия</a></li>
+                        <li><a href="">Австрия</a></li>
+                        <li><a href="">Испания</a></li>
+                        <li><a href="">США</a></li>
+                        <li><a href="">Франция</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Города</a>
+                    <div>
+                        <li><a href="">Москва</a></li>
+                        <li><a href="">Стамбул</a></li>
+                        <li><a href="">Тель-Авив</a></li>
+                        <li><a href="">Тиват</a></li>
+                        <li><a href="">Милан</a></li>
+                        <li><a href="">Анталья</a></li>
+                        <li><a href="">Лондон</a></li>
+                        <li><a href="">Рим</a></li>
+                        <li><a href="">Сочи</a></li>
+                        <li><a href="">Czech</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Авиакомпании</a>
+                    <div>
+                        <li><a href="">Air Berlin</a></li>
+                        <li><a href="">Air France</a></li>
+                        <li><a href="">Alitalia</a></li>
+                        <li><a href="">Air Baltic</a></li>
+                        <li><a href="">Emirates</a></li>
+                        <li><a href="">ГТК Россия </a></li>
+                        <li><a href="">KLM Lufthansa</a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Аэропорты</a>
+                    <div>
+                        <li><a href="">Шереметьево</a></li>
+                        <li><a href="">Курумоч</a></li>
+                        <li><a href="">Домодедово</a></li>
+                        <li><a href="">Толмачево</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Гамбург</a></li>
+                        <li><a href="">Кольцово</a></li>
+                        <li><a href="">Внуково</a></li>
+                        <li><a href="">Казань</a></li>
+                        <li><a href="">Czech </a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

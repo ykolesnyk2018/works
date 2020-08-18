@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Название страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-block">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu-mobil-button"></div>
+            <nav class="main-menu">
+                <a href="#">Авиабилеты</a>
+                <a href="#">Отели</a>
+                <a href="#">Спецпредложения</a>
+                <a href="#">Полезная информация</a>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div class="form">
+            <div class="form-block">
+                        <div class="form-content">
+                            <div class="form-input-block city-of-departure">
+                                <span>Город вылета:</span>
+                                <input type="text" placeholder="Тбилиси, Грузия">
+                            </div>
+                            <div class="form-input-block arrival-city">
+                                <span>Город прибытия:</span>
+                                <input type="text" placeholder="Название города">
+                            </div>
+                            <div class="form-input-block there">
+                                <span>Туда:</span>
+                                <input type="text" placeholder="19 фев, пт.">
+                            </div>
+                            <div class="form-input-block back">
+                                <span>Обратно:</span>
+                                <input type="text" placeholder="26 фев, пт.">
+                            </div>
+                            <div class="form-input-block passenger">
+                                <span>Пассажиры/Класс</span>
+                                <input type="text" placeholder="1 пассажир эконом">
+                            </div>
+                            <div class="form-input-button">
+                                <button>Найти</button>
+                            </div>
+                            <div class="form-bottom">
+                                <a href="#" class="flight">Перелет: Туда обратно</a>
+                                <a href="#" class="flight kind-ticket">Вид билета: Эконом</a>
+                                <input type="checkbox" id="check"><label for="check">Только прямы рейсы</label>
+                                <input type="checkbox" id="check1"><label for="check1">Не более одной пересадки</label>
+                                <input type="checkbox" id="check2"><label for="check2">Аэропорты рядом</label>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <div class="search-block">
+            <div class="search-block-left">
+                <div class="search-fineshed">
+                    Поиск завершен:
+                    <a href="#">Результатов 2 687</a>
+                </div>
+                <div class="price-at-this-tickets">
+                    <span>Цена на эти билеты может понизиться!</span>
+                    <a href="#" class="search-left-button">Получить уведомление на почту</a>
+                </div>
+                <div class="filter-mobil-button">Расширенный поиск</div>
+                <div class="filter">
+                    <div class="filter-block">
+                        <div class="filter-block-title">Пересадки</div>
+                        <input type="checkbox" id="check3"><label for="check3">Все</label>
+                        <input type="checkbox" id="check4"><label for="check4">Без пересадок</label>
+                        <input type="checkbox" id="check5"><label for="check5">1 пересадка          20 526 Р</label>
+                        <input type="checkbox" id="check6"><label for="check6">2 пересадки          20 526 Р</label>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block-title">Цены на авиабилеты</div>
+                        <div id="slider-range"></div>
+                        <p>
+                          <label for="amount"></label>
+                          <input type="text" id="amount" readonly>
+                        </p>
+                    </div>
+                    <div class="filter-block">
+                        <div class="voyage">
+                            <div class="voyage-title plant-right">
+                                Тбилиси - Москва
+                            </div>
+                            <div class="voyage-title-bottom">Прямой</div>
+                            <div class="voyage-date-left">
+                                Время вылета /
+                                <a href="#">Дата прибытия</a>
+                            </div>
+                            <div id="slider-range2"></div>
+                            <p>
+                              <label for="amount2"></label>
+                              <input type="text" id="amount2" readonly>
+                            </p>
+                        </div>
+                        <div class="voyage">
+                            <div class="voyage-title plant-left">
+                                Тбилиси - Москва
+                            </div>
+                            <div class="voyage-title-bottom">Прямой</div>
+                            <div class="voyage-date-left">
+                                Время вылета /
+                                <a href="#">Дата прибытия</a>
+                            </div>
+                            <div id="slider-range3"></div>
+                            <p>
+                              <label for="amount3"></label>
+                              <input type="text" id="amount3" readonly>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block-title">Длительность перелета</div>
+                        <div id="slider-range4"></div>
+                        <p>
+                          <label for="amount4"></label>
+                          <input type="text" id="amount4" readonly>
+                        </p>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block-title">Время в пути</div>
+                        <div id="slider-range5"></div>
+                        <p>
+                          <label for="amount5"></label>
+                          <input type="text" id="amount5" readonly>
+                        </p>
+                    </div>
+                    <div class="filter-block">
+                        <div class="filter-block-title">Время пересадки</div>
+                        <div id="slider-range6"></div>
+                        <p>
+                          <label for="amount6"></label>
+                          <input type="text" id="amount6" readonly>
+                        </p>
+                    </div>
+                    <nav class="filter-menu">
+                        <a href="#">Альянсы</a>
+                        <a href="#">Авиакомпании</a>
+                        <a href="#">Аэропорты</a>
+                        <a href="#">Способы оплаты</a>
+                        <a href="#">Агентства</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="search-block-right">
+                <div class="search-block-right-top">
+                    На соседние даты есть билеты <span class="display-block">дешевле на <span class="bold">894</span> руб. </span>
+                    <a href="#">Посмотреть</a>
+                </div>
+                <div class="rates">
+                    <div class="rate">
+                        <div class="rate-title">
+                            Дешевый
+                            <span>2ч30м (В среднем)</span>
+                        </div>
+                        <div class="rate-price">
+                            10 047
+                            <span>Р</span>
+                        </div>
+                        <img src="images/icons/rate-price1.png" alt="">
+                    </div>
+                    <div class="rate rate2">
+                        <div class="rate-title">
+                            Быстрый
+                            <span>2ч30м (В среднем)</span>
+                        </div>
+                        <div class="rate-price">
+                            10 047
+                            <span>Р</span>
+                        </div>
+                        <img src="images/icons/rate-price2.png" alt="">
+                    </div>
+                    <div class="rate rate3">
+                        <div class="rate-title">
+                            Оптимальный
+                            <span>2ч30м (В среднем)</span>
+                        </div>
+                        <div class="rate-price">
+                            10 047
+                            <span>Р</span>
+                        </div>
+                        <img src="images/icons/rate-price3.png" alt="">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="search-product">
+                    <div class="search-left-product">
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">туда</div>
+                                <div class="search-left-product-date">
+                                    19 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                TBS 09:15
+                                <span>Тбилиси</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>10:45 VKO</span>
+                                Москва
+                            </div>
+                        </div>
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">Обратно</div>
+                                <div class="search-left-product-date">
+                                    26 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                VKO 21:00
+                                <span>Москва</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>00:30 TBS</span>
+                                Тбилиси
+                            </div>
+                        </div>
+                        <div class="search-product-menu">
+                            <a href="#" class="active">
+                                <span>СityTravel<br> 10 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Georgian Airways<br> 17 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Еще 10 вариантов</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search-right-product">
+                        <div class="search-right-product-text">
+                            <a href="#" class="search-right-product-bottom">СityTravel</a>
+                            <div class="search-right-product-price">10 047 <span>Р</span></div>
+                            <div class="kind-block">
+                                <div class="kind">
+                                    <span>Эконом</span>
+                                </div>
+                                <a href="#">Способ оплаты</a>
+                            </div>
+                        </div>
+                            <a href="" class="button">купить</a>
+                    </div>
+                </div>
+                <div class="search-product">
+                    <div class="search-left-product">
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">туда</div>
+                                <div class="search-left-product-date">
+                                    19 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                TBS 09:15
+                                <span>Тбилиси</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>10:45 VKO</span>
+                                Москва
+                            </div>
+                        </div>
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">Обратно</div>
+                                <div class="search-left-product-date">
+                                    26 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                VKO 21:00
+                                <span>Москва</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>00:30 TBS</span>
+                                Тбилиси
+                            </div>
+                        </div>
+                        <div class="search-product-menu">
+                            <a href="#" class="active">
+                                <span>СityTravel<br> 10 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Georgian Airways<br> 17 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Еще 10 вариантов</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search-right-product">
+                        <div class="search-right-product-text">
+                            <a href="#" class="search-right-product-bottom">СityTravel</a>
+                            <div class="search-right-product-price">10 047 <span>Р</span></div>
+                            <div class="kind-block">
+                                <div class="kind">
+                                    <span>Эконом</span>
+                                </div>
+                                <a href="#">Способ оплаты</a>
+                            </div>
+                        </div>
+                            <a href="" class="button">купить</a>
+                    </div>
+                </div><div class="search-product">
+                    <div class="search-left-product">
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">туда</div>
+                                <div class="search-left-product-date">
+                                    19 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                TBS 09:15
+                                <span>Тбилиси</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>10:45 VKO</span>
+                                Москва
+                            </div>
+                        </div>
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">Обратно</div>
+                                <div class="search-left-product-date">
+                                    26 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                VKO 21:00
+                                <span>Москва</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>00:30 TBS</span>
+                                Тбилиси
+                            </div>
+                        </div>
+                        <div class="search-product-menu">
+                            <a href="#" class="active">
+                                <span>СityTravel<br> 10 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Georgian Airways<br> 17 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Еще 10 вариантов</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search-right-product">
+                        <div class="search-right-product-text">
+                            <a href="#" class="search-right-product-bottom">СityTravel</a>
+                            <div class="search-right-product-price">10 047 <span>Р</span></div>
+                            <div class="kind-block">
+                                <div class="kind">
+                                    <span>Эконом</span>
+                                </div>
+                                <a href="#">Способ оплаты</a>
+                            </div>
+                        </div>
+                            <a href="" class="button">купить</a>
+                    </div>
+                </div><div class="search-product">
+                    <div class="search-left-product">
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">туда</div>
+                                <div class="search-left-product-date">
+                                    19 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                TBS 09:15
+                                <span>Тбилиси</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>10:45 VKO</span>
+                                Москва
+                            </div>
+                        </div>
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">Обратно</div>
+                                <div class="search-left-product-date">
+                                    26 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                VKO 21:00
+                                <span>Москва</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>00:30 TBS</span>
+                                Тбилиси
+                            </div>
+                        </div>
+                        <div class="search-product-menu">
+                            <a href="#" class="active">
+                                <span>СityTravel<br> 10 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Georgian Airways<br> 17 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Еще 10 вариантов</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search-right-product">
+                        <div class="search-right-product-text">
+                            <a href="#" class="search-right-product-bottom">СityTravel</a>
+                            <div class="search-right-product-price">10 047 <span>Р</span></div>
+                            <div class="kind-block">
+                                <div class="kind">
+                                    <span>Эконом</span>
+                                </div>
+                                <a href="#">Способ оплаты</a>
+                            </div>
+                        </div>
+                            <a href="" class="button">купить</a>
+                    </div>
+                </div><div class="search-product">
+                    <div class="search-left-product">
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">туда</div>
+                                <div class="search-left-product-date">
+                                    19 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                TBS 09:15
+                                <span>Тбилиси</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>10:45 VKO</span>
+                                Москва
+                            </div>
+                        </div>
+                        <div class="search-block-line">
+                            <div class="search-block-line-td1">
+                                <div class="there">Обратно</div>
+                                <div class="search-left-product-date">
+                                    26 февраля
+                                    <span>2016</span>
+                                </div>
+                            </div>
+                            <div class="search-block-line-td2">
+                                Georgian Airways
+                            </div>
+                            <div class="search-block-line-td3">
+                                VKO 21:00
+                                <span>Москва</span>
+                            </div>
+                            <div class="search-block-line-td4">
+                                2ч 30м
+                                <div class="slide-time">
+                                    <div class="slide-time-bg"></div>
+                                    <div class="slide-time-range-left"></div>
+                                    <div class="slide-time-range-right"></div>
+                                </div>
+                                прямой
+                            </div>
+                            <div class="search-block-line-td5">
+                                <span>00:30 TBS</span>
+                                Тбилиси
+                            </div>
+                        </div>
+                        <div class="search-product-menu">
+                            <a href="#" class="active">
+                                <span>СityTravel<br> 10 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Georgian Airways<br> 17 967 Р</span>
+                            </a>
+                            <a href="#">
+                                <span>Еще 10 вариантов</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="search-right-product">
+                        <div class="search-right-product-text">
+                            <a href="#" class="search-right-product-bottom">СityTravel</a>
+                            <div class="search-right-product-price">10 047 <span>Р</span></div>
+                            <div class="kind-block">
+                                <div class="kind">
+                                    <span>Эконом</span>
+                                </div>
+                                <a href="#">Способ оплаты</a>
+                            </div>
+                        </div>
+                            <a href="" class="button">купить</a>
+                    </div>
+                </div>
+                <a href="#" class="search-block-more">Показать еще варианты</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-block">
+            <div class="footer-block-left">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="all-resirve">Все права защищены. 2016г.</div>
+                <a href="" class="button">Написать нам</a>
+            </div>
+            <div class="footer-block-right">
+                <div class="footer-title">Популярные направления авиаперелётов</div>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Страны</a>
+                    <div>
+                        <li><a href="">Россия</a></li>
+                        <li><a href="">Турция</a></li>
+                        <li><a href="">Израиль</a></li>
+                        <li><a href="">Черногория</a></li>
+                        <li><a href="">Великобритания</a></li>
+                        <li><a href="">Италия</a></li>
+                        <li><a href="">Австрия</a></li>
+                        <li><a href="">Испания</a></li>
+                        <li><a href="">США</a></li>
+                        <li><a href="">Франция</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Города</a>
+                    <div>
+                        <li><a href="">Москва</a></li>
+                        <li><a href="">Стамбул</a></li>
+                        <li><a href="">Тель-Авив</a></li>
+                        <li><a href="">Тиват</a></li>
+                        <li><a href="">Милан</a></li>
+                        <li><a href="">Анталья</a></li>
+                        <li><a href="">Лондон</a></li>
+                        <li><a href="">Рим</a></li>
+                        <li><a href="">Сочи</a></li>
+                        <li><a href="">Czech</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Авиакомпании</a>
+                    <div>
+                        <li><a href="">Air Berlin</a></li>
+                        <li><a href="">Air France</a></li>
+                        <li><a href="">Alitalia</a></li>
+                        <li><a href="">Air Baltic</a></li>
+                        <li><a href="">Emirates</a></li>
+                        <li><a href="">ГТК Россия </a></li>
+                        <li><a href="">KLM Lufthansa</a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Аэропорты</a>
+                    <div>
+                        <li><a href="">Шереметьево</a></li>
+                        <li><a href="">Курумоч</a></li>
+                        <li><a href="">Домодедово</a></li>
+                        <li><a href="">Толмачево</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Гамбург</a></li>
+                        <li><a href="">Кольцово</a></li>
+                        <li><a href="">Внуково</a></li>
+                        <li><a href="">Казань</a></li>
+                        <li><a href="">Czech </a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

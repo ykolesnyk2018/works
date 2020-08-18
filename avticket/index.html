@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Название страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.cycle.all.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-block">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu-mobil-button"></div>
+            <nav class="main-menu">
+                <a href="#">Авиабилеты</a>
+                <a href="#">Отели</a>
+                <a href="#">Спецпредложения</a>
+                <a href="#">Полезная информация</a>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div class="index-title">
+            Самые <span>дешевые авиабилеты</span><br>
+            на прямые рейсы по всему миру
+        </div>
+            <div class="form-block">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Авиабилеты</a></li>
+                        <li><a href="#tabs-2">Отели</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="form-content">
+                            <div class="form-input-block city-of-departure">
+                                <span>Город вылета:</span>
+                                <input type="text" placeholder="Тбилиси, Грузия">
+                            </div>
+                            <div class="form-input-block arrival-city">
+                                <span>Город прибытия:</span>
+                                <input type="text" placeholder="Название города">
+                            </div>
+                            <div class="form-input-block there">
+                                <span>Туда:</span>
+                                <input type="text" placeholder="19 фев, пт.">
+                            </div>
+                            <div class="form-input-block back">
+                                <span>Обратно:</span>
+                                <input type="text" placeholder="26 фев, пт.">
+                            </div>
+                            <div class="form-input-block passenger">
+                                <span>Пассажиры/Класс</span>
+                                <input type="text" placeholder="1 пассажир эконом">
+                            </div>
+                            <div class="form-input-button">
+                                <button>Найти</button>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form-block-checkbox">
+                            <input type="checkbox" id="check"><label for="check">Показать все отели</label>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        2
+                    </div>
+                </div>
+            </div>
+        <div class="index-slide">
+            <div class="index-slide-title">Специальные предложения от лучших авиакомпаний мира</div>
+            <div id="slideshowCont"> 
+                <div class="index-next" id="next"></div>
+                    <div id="slideShow"> 
+                        <ul> 
+                            <li>
+                                <div>
+                                    <img src="images/s7.png" alt="">
+                                </div> 
+                                <div>
+                                    <img src="images/37.png" alt="">
+                                </div> 
+                                <div>
+                                    <img src="images/ab.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/ae.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/lu.png" alt="">
+                                </div> 
+                            </li> 
+                            <li>
+                                <div>
+                                    <img src="images/s7.png" alt="">
+                                </div> 
+                                <div>
+                                    <img src="images/37.png" alt="">
+                                </div> 
+                                <div>
+                                    <img src="images/ab.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/ae.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/lu.png" alt="">
+                                </div> 
+                            </li> 
+                            <li>
+                                <div>
+                                    <img src="images/s7.png" alt="">
+                                </div> 
+                                <div>
+                                    <img src="images/37.png" alt="">
+                                </div> 
+                                <div>
+                                    <img src="images/ab.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/ae.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="images/lu.png" alt="">
+                                </div> 
+                            </li> 
+                        </ul> 
+                    </div> 
+                <div class="index-last" id="last"></div>
+            </div> 
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="index-content">
+        <div class="most-popular-destinations">
+            <div class="most-popular-destinations-title">Самые популярные направления полётов<br> по статистике сайта в зимний период*</div>
+            <div class="most-popular-destinations-block most-popular-destinations-block-yellow">
+                <div class="most-popular-destinations-img">
+                    <img src="images/most-popular-destinations1.jpg" alt="">
+                </div>
+                <div class="most-popular-destinations-block-title">
+                    Адлер
+                    <span>Россия</span>
+                </div>
+                <div class="most-popular-destinations-description">
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="most-popular-destinations-block most-popular-destinations-block-orange">
+                <div class="most-popular-destinations-img">
+                    <img src="images/most-popular-destinations2.jpg" alt="">
+                </div>
+                <div class="most-popular-destinations-block-title">
+                    Банкок
+                    <span>Тайланд</span>
+                </div>
+                <div class="most-popular-destinations-description">
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="most-popular-destinations-block most-popular-destinations-block-green">
+                <div class="most-popular-destinations-img">
+                    <img src="images/most-popular-destinations3.jpg" alt="">
+                </div>
+                <div class="most-popular-destinations-block-title">
+                    Тель-Авив
+                    <span>Израиль</span>
+                </div>
+                <div class="most-popular-destinations-description">
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                    <div class="most-popular-destinations-block-line">
+                        Из Челябинска
+                        <span>от 7 950 Р.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="most-popular-destinations-p">* цены, найденные пользователями за последние 48 часов, не являются офертой</div>
+        </div>
+    </div>
+    <div class="index-avia-tickets">
+        <div class="index-avia-tickets-content">
+            <div class="index-avia-tickets-title">Спецпредложения на авиабилеты</div>
+            <div class="index-avia-tickets-block">
+                <div class="index-avia-tickets-block-title">
+                    В Азию от <span>31 172 Р</span>
+                    <div>осталось 2 дней</div>
+                </div>
+                <div class="index-avia-tickets-block-img">
+                    <img src="images/index-avia-tickets-block-img.png" alt="">
+                </div>
+                <div class="index-avia-tickets-block-description">В Азию от 31172 рублей! Специальное предложение от авиакомпании Qatar Airways</div>
+                <a href="#">Узнать подробности</a>
+                <img src="images/index-avia-tickets-block.jpg" alt="" class="bottom-right">
+            </div>
+            <div class="index-avia-tickets-block">
+                <div class="index-avia-tickets-block-title">
+                    Из Санкт-Петербурга в Латвию от <span>99 €! </span>
+                    <div>осталось 2 дней</div>
+                </div>
+                <div class="index-avia-tickets-block-img">
+                    <img src="images/index-avia-tickets-block-img2.png" alt="">
+                </div>
+                <div class="index-avia-tickets-block-description">В Азию от 31172 рублей! Специальное предложение от авиакомпании Qatar Airways</div>
+                <a href="#" class="index-avia-tickets-block-a-orange">Узнать подробности</a>
+                <img src="images/index-avia-tickets-block2.jpg" alt="" class="bottom-right">
+            </div>
+            <div class="index-avia-tickets-block">
+                <div class="index-avia-tickets-block-title">
+                    В Азию от <span>31 172 Р</span>
+                    <div>осталось 2 дней</div>
+                </div>
+                <div class="index-avia-tickets-block-img">
+                    <img src="images/index-avia-tickets-block-img.png" alt="">
+                </div>
+                <div class="index-avia-tickets-block-description">В Азию от 31172 рублей! Специальное предложение от авиакомпании Qatar Airways</div>
+                <a href="#" class="index-avia-tickets-block-a-yellow">Узнать подробности</a>
+                <img src="images/index-avia-tickets-block3.jpg" alt="" class="bottom-right">
+            </div>
+            <div class="clear"></div>
+            <div class="index-avia-tickets-bottom">
+                <p>* средняя цена по направлению</p>
+                <a href="#" class="index-button">смотреть все предложения</a>
+            </div>
+        </div>
+    </div>
+    <div class="avticket-ru-it-is">
+        <div class="avticket-ru-it-is-title">
+            Avticket.ru это:
+            <span>Многие подобные сервисы предлагают похожие услуги, но только у нас вы можете<br> приобрести самые дешевые билеты<br> на самолет по честным ценам. </span>
+        </div>
+        <div class="avticket-ru-it-is-content">
+            <div class="avticket-ru-it-is-block">
+                <img src="images/icons/avticket-ru-it-is-block1.png" alt="">
+                Быстрый <br>поиск
+            </div>
+            <div class="avticket-ru-it-is-block">
+                <img src="images/icons/avticket-ru-it-is-block2.png" alt="">
+                Популярные<br> направления от<br> ведущих авиакомпаний<br> и постоянные<br> спец.предложения
+            </div>
+            <div class="avticket-ru-it-is-block">
+                <img src="images/icons/avticket-ru-it-is-block3.png" alt="">
+                Недорогие<br> авиабилеты
+            </div>
+            <div class="avticket-ru-it-is-block">
+                <img src="images/icons/avticket-ru-it-is-block4.png" alt="">
+                Круглосуточная<br> поддержка<br> клиентов
+            </div>
+            <div class="avticket-ru-it-is-block">
+                <img src="images/icons/avticket-ru-it-is-block5.png" alt="">
+                Бронирование<br> места без сбора
+            </div>
+            <div class="avticket-ru-it-is-block">
+                <img src="images/icons/avticket-ru-it-is-block6.png" alt="">
+                Работа только<br> с проверенными<br> агентствами
+            </div>
+        </div>
+    </div>
+    <div class="index-articl">
+        <div class="index-articl-block">
+            <div class="index-articl-title">Полезная информация при поиске билетов на самолёт!</div>
+            <div class="articls">
+                <div class="articl article-green">
+                    <div class="articl-title">КАК КУПИТЬ БИЛЕТЫ НА САМОЛЕТ
+    ДЕШЕВО В ОБЕ СТОРОНЫ?</div>
+                    <div class="articl-description">
+                        <p>Люди, привыкшие совершать многочисленные перелеты, как правило, знают все тонкости о передвижении в воздухе. 
+                            Однако не всем известно, где и когда можно приобрести наиболее дешевые авиабилеты.</p> 
+                        <p>Наш сервис создан для тех, кто решил совершить путешествие, при этом, не потратив лишних средств. Стоит только ввести в поиск место вылета и назначения, и можно выбрать билет по оптимальной цене в кратчайшие сроки.</p>
+                    </div>
+                    <img src="images/artixl1.jpg" alt="">
+                </div>
+                <div class="articl article-orange">
+                    <div class="articl-title">ЛЕТАЙТЕ ДЕШЕВО</div>
+                    <div class="articl-description">
+                        <p>В наш динамичный век невозможно обойтись без авиасообщения. Самолеты стали связующим звеном между странами и континентами. /p&gt;
+
+                        </p><p>Тысячи людей ежедневно пересекают воздушный океан. Многие из них приобретают билеты прямо перед вылетом, переплачивая значительную сумму, не зная о том, что на сайте avticket.ru существуют спецпредложения на авиабилеты. 
+    Например, при покупке билета в обе стороны можно сэкономить до 30% от его стоимости, при этом, если заказывать его за два месяца до вылета, то цена будет еще меньшей, это распространяется также и на оплату гостиницы, в которой планируется остановка. </p>
+                    </div>
+                    <img src="images/artixl2.jpg" alt="">
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="more-articles">
+                <a href="#">смотреть все статьи</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-block">
+            <div class="footer-block-left">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="all-resirve">Все права защищены. 2016г.</div>
+                <a href="" class="button">Написать нам</a>
+            </div>
+            <div class="footer-block-right">
+                <div class="footer-title">Популярные направления авиаперелётов</div>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Страны</a>
+                    <div>
+                        <li><a href="">Россия</a></li>
+                        <li><a href="">Турция</a></li>
+                        <li><a href="">Израиль</a></li>
+                        <li><a href="">Черногория</a></li>
+                        <li><a href="">Великобритания</a></li>
+                        <li><a href="">Италия</a></li>
+                        <li><a href="">Австрия</a></li>
+                        <li><a href="">Испания</a></li>
+                        <li><a href="">США</a></li>
+                        <li><a href="">Франция</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Города</a>
+                    <div>
+                        <li><a href="">Москва</a></li>
+                        <li><a href="">Стамбул</a></li>
+                        <li><a href="">Тель-Авив</a></li>
+                        <li><a href="">Тиват</a></li>
+                        <li><a href="">Милан</a></li>
+                        <li><a href="">Анталья</a></li>
+                        <li><a href="">Лондон</a></li>
+                        <li><a href="">Рим</a></li>
+                        <li><a href="">Сочи</a></li>
+                        <li><a href="">Czech</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Авиакомпании</a>
+                    <div>
+                        <li><a href="">Air Berlin</a></li>
+                        <li><a href="">Air France</a></li>
+                        <li><a href="">Alitalia</a></li>
+                        <li><a href="">Air Baltic</a></li>
+                        <li><a href="">Emirates</a></li>
+                        <li><a href="">ГТК Россия </a></li>
+                        <li><a href="">KLM Lufthansa</a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Аэропорты</a>
+                    <div>
+                        <li><a href="">Шереметьево</a></li>
+                        <li><a href="">Курумоч</a></li>
+                        <li><a href="">Домодедово</a></li>
+                        <li><a href="">Толмачево</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Гамбург</a></li>
+                        <li><a href="">Кольцово</a></li>
+                        <li><a href="">Внуково</a></li>
+                        <li><a href="">Казань</a></li>
+                        <li><a href="">Czech </a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

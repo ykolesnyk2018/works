@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Название страницы</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-block">
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="main-menu-mobil-button"></div>
+            <nav class="main-menu">
+                <a href="#">Авиабилеты</a>
+                <a href="#">Отели</a>
+                <a href="#">Спецпредложения</a>
+                <a href="#">Полезная информация</a>
+            </nav>
+            <div class="clear"></div>
+        </div>
+        <div class="form">
+            <div class="form-block">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">Авиабилеты</a></li>
+                        <li><a href="#tabs-2">Отели</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="form-content">
+                            <div class="form-input-block city-of-departure">
+                                <span>Город вылета:</span>
+                                <input type="text" placeholder="Тбилиси, Грузия">
+                            </div>
+                            <div class="form-input-block arrival-city">
+                                <span>Город прибытия:</span>
+                                <input type="text" placeholder="Название города">
+                            </div>
+                            <div class="form-input-block there">
+                                <span>Туда:</span>
+                                <input type="text" placeholder="19 фев, пт.">
+                            </div>
+                            <div class="form-input-block back">
+                                <span>Обратно:</span>
+                                <input type="text" placeholder="26 фев, пт.">
+                            </div>
+                            <div class="form-input-block passenger">
+                                <span>Пассажиры/Класс</span>
+                                <input type="text" placeholder="1 пассажир эконом">
+                            </div>
+                            <div class="form-input-button">
+                                <button>Найти</button>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="form-block-checkbox">
+                            <input type="checkbox" id="check"><label for="check">Показать все отели</label>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        2
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="direction">
+            <div class="direction-block">
+                На это направление есть специальное предложение <span>от <strong>1 172 Р</strong></span> 
+                <a href="#">Узнать подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="breadcrumbs">
+            <a href="#">Поиск дешевых авиабилетов</a>   
+            <a href="#">Страна</a>              
+            <a href="# ">Россия</a>
+        </div>
+        <div class="specials">
+            <img src="images/specials-img3.jpg" alt="">
+            <div class="specials-description">
+                <br>
+                <div class="specials-title">Провоз багажа в самолете<br> общие правила и советыо</div>
+            </div>
+        </div>
+        <div class="faq faq2">
+            <div class="faq2-left">
+                <div class="faq2-main-text">
+                    <p><span>П</span>редставленная информация является лишь общими правилами для перевозки багажа и важными советами для наших пассажиров. Каждая авиакомпания самостоятельно и индивидуально определяет стандартный количественный аспект и вес поклажи, допустимой на данном маршруте. Поэтому, чтобы получить конкретную информацию, каждый пассажир должен ознакомиться с перевозками у конкретного перевозчика.</p>
+                    <p>Зарегистрированная поклажа перевозится в багажном отделении самолета. Пассажиры передают ее во время регистрации. Такой груз должен быть надлежащим образом упакован и закрыт, а его содержимое надежного защищено от повреждений под давлением других чемоданов. Также он должен соответствовать ограничениям, которые налагаются отдельными авиаперевозчиками.</p>
+                    <p>На каждый чемодан и сумку выдается багажная бирка, другой конец которой отдается пассажиру. Он является основой для идентификации багажа по прибытии и жалобы в случае его повреждения или потери. С этого момента ответственность за него находится на стороне перевозчика.</p>
+                </div>
+                <ul>
+                    <li>
+                        <input type="checkbox" checked>
+                        <h2><span>Нормы провоза</span> <i></i></h2>
+                        <div class="answer">
+                            <p>Международных установленных правил относительно массы поклажи не существует. <strong>Допустимый вес багажа в самолете варьируется</strong> в зависимости от компании, услугами которой пользуется пассажир. Однако у всех авиалиний существует своя система франшизы – вес и количество багажа, который можно проводить в трюме самолета.</p>
+                            <div class="answer-title2">Правило перевозчика</div>  
+                            <p>Это правило гласит, что на рейсах, находящихся в ведении нескольких авиакомпаний, действуют правила провоза багажа той авиалинии, которая совершает географически длинный и самый большой участок пути.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <h2><span>Размеры</span> <i></i></h2>
+                        <div class="answer">
+                            <p>
+                                <img src="images/size.jpg" alt="">
+                            </p>
+                            <p>Размер поклажи зависит от типа, класса бронирования и маршрута:</p>
+                            <ul>
+                                <li>150 см – максимальный размер багажа для большинства авиакомпаний, рассчитывается на основании суммы трех величин;</li>
+                                <li>20-32 кг – этот диапазон веса для бюджетных авиакомпаний;</li>
+                                <li>1-4 – разрешенное количество чемоданов.</li>
+                            </ul>
+                            <p>По соображениям безопасности, зарегистрированная кладь подлежит определенным ограничениям.</p>
+                            <ul>
+                                <li>Компании, которые осуществляют регулярные рейсы.</li>
+                            </ul>
+                            <p>Разрешенный бесплатный провоз вещей зависит от зарезервированного класса обслуживания и статуса пассажира:</p>
+                            <ol>
+                                <li>Эконом-класс – 1 багаж до 23 кг.</li>
+                                <li>Эконом-премиум класс – 2 чемодана, каждый по23 кг.</li>
+                                <li>Бизнес-класс – 2 клади, каждая до 32 кг.</li>
+                                <li>Первый класс – 3 багажа, каждый до 32 кг.</li>
+                            </ol>
+                            <ul>
+                                <li><strong>Франшиза авиалиний, совершающих чартерные рейсы, составляет порядка 15 кг.</strong></li>
+                            </ul>
+                            <p>Некоторые компании взимают вес поклажи, в том числе и франшизу. Поэтому, чтобы избежать неприятных сюрпризов, необходимо уточнить разрешенную массу и сборы за превышение габаритов багажа. Также существуют карты лояльности в международных авиакомпаниях, которые позволяют бесплатно провозить вещи больше разрешенного независимо от класса обслуживания.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <h2><span>Некоторые ограничения</span> <i></i></h2>
+                        <div class="answer">
+                            <p>3</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <h2><span>Что можно брать в трюм самолета</span> <i></i></h2>
+                        <div class="answer">
+                            <p>4</p>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <h2><span>Чемоданы для детей</span> <i></i></h2>
+                        <div class="answer">
+                            <p>5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="faq2-right">
+                <div class="the-golden-rules">
+                    <div class="the-golden-rules-title">Золотые правила</div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>1</span>
+                        </div>
+                        <div class="rule-text">Всегда следите за своими вещами. Никогда не оставляйте свою кладь без присмотра, даже на короткое время. В противном случае она станет объектом наблюдения полиции и в конечном итоге может быть уничтожена.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>2</span>
+                        </div>
+                        <div class="rule-text">Не берите багаж от третьих лиц – никогда не соглашайтесь присмотреть за сумками или пакетами от неизвестных вам людей, независимо от мотивов и причин.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>3</span>
+                        </div>
+                        <div class="rule-text">Четко указывайте ваше имя и адрес на внутренней и внешней стороне поклажи.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>4</span>
+                        </div>
+                        <div class="rule-text">Ювелирные изделия, небольшую электронику, деньги, ключи, лекарства, документы и другие ценности лучше всего брать в ручную кладь.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>5</span>
+                        </div>
+                        <div class="rule-text">Все деликатные и хрупкие предметы необходимо обернуть мягкой тканью или бумагой.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>6</span>
+                        </div>
+                        <div class="rule-text">Удалите все метки из чемоданов от предыдущих поездок. В некоторых случаях это может привести к отправке вещей в другой аэропорт.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>7</span>
+                        </div>
+                        <div class="rule-text">Чтобы избежать ошибки по прибытии, отметьте ваш чемодан характерным знаком – ленточку, наклейку и прочее.</div>
+                    </div>
+                    <div class="rule">
+                        <div class="rule-number">
+                            <span>8</span>
+                        </div>
+                        <div class="rule-text">Никогда не перевозите предметы посторонних людей на борту воздушного судна.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-block">
+            <div class="footer-block-left">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt=""></a>
+                </div>
+                <div class="all-resirve">Все права защищены. 2016г.</div>
+                <a href="" class="button">Написать нам</a>
+            </div>
+            <div class="footer-block-right">
+                <div class="footer-title">Популярные направления авиаперелётов</div>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Страны</a>
+                    <div>
+                        <li><a href="">Россия</a></li>
+                        <li><a href="">Турция</a></li>
+                        <li><a href="">Израиль</a></li>
+                        <li><a href="">Черногория</a></li>
+                        <li><a href="">Великобритания</a></li>
+                        <li><a href="">Италия</a></li>
+                        <li><a href="">Австрия</a></li>
+                        <li><a href="">Испания</a></li>
+                        <li><a href="">США</a></li>
+                        <li><a href="">Франция</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Города</a>
+                    <div>
+                        <li><a href="">Москва</a></li>
+                        <li><a href="">Стамбул</a></li>
+                        <li><a href="">Тель-Авив</a></li>
+                        <li><a href="">Тиват</a></li>
+                        <li><a href="">Милан</a></li>
+                        <li><a href="">Анталья</a></li>
+                        <li><a href="">Лондон</a></li>
+                        <li><a href="">Рим</a></li>
+                        <li><a href="">Сочи</a></li>
+                        <li><a href="">Czech</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Авиакомпании</a>
+                    <div>
+                        <li><a href="">Air Berlin</a></li>
+                        <li><a href="">Air France</a></li>
+                        <li><a href="">Alitalia</a></li>
+                        <li><a href="">Air Baltic</a></li>
+                        <li><a href="">Emirates</a></li>
+                        <li><a href="">ГТК Россия </a></li>
+                        <li><a href="">KLM Lufthansa</a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                        <li><a href="">LOT Swiss </a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <a href="#" class="footer-block-right-ul-a">Аэропорты</a>
+                    <div>
+                        <li><a href="">Шереметьево</a></li>
+                        <li><a href="">Курумоч</a></li>
+                        <li><a href="">Домодедово</a></li>
+                        <li><a href="">Толмачево</a></li>
+                        <li><a href="">Владивосток</a></li>
+                        <li><a href="">Гамбург</a></li>
+                        <li><a href="">Кольцово</a></li>
+                        <li><a href="">Внуково</a></li>
+                        <li><a href="">Казань</a></li>
+                        <li><a href="">Czech </a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

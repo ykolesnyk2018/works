@@ -1391,7 +1391,7 @@ table.text-left tr th:first-child{
         display: none;
     }
     .social{
-        float: right;
+        float: none;
         padding: 0;
     }
     .social a{
@@ -1399,7 +1399,7 @@ table.text-left tr th:first-child{
     }
     .copyright{
         font-size: 18px;
-        float: left;
+        float: none;
     }
     footer{
         padding: 0 0 40px 0;
@@ -2764,8 +2764,8 @@ table tr th{
     margin: 0 0 35px 0;
 }
 .social{
-    padding: 8px 0 0 0;
-    float: right;
+    padding: 8px 0 20px 0;
+    float: none;
 }
 .social svg{
     fill: #256DAF;
@@ -2806,7 +2806,7 @@ table tr th{
 }
 .copyright{
     font-size: 24px;
-    float: left;
+    float: none;
     margin: 0 390px 0 0;
 }
 footer{
@@ -3263,7 +3263,7 @@ table.text-left tr th:first-child{
         margin: 0;
     }
     .social{
-        float: right;
+        float: none;
     }
     .smart-contract{
         margin: 0 0 150px 0;
@@ -3442,7 +3442,7 @@ table.text-left tr th:first-child{
         display: none;
     }
     .social{
-        float: right;
+        float: none;
         padding: 0;
     }
     .social a{

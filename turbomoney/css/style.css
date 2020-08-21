@@ -56,7 +56,7 @@ body{
 }
 .main div.city{
     position: absolute;
-    z-index: 1;
+    z-index: -1;
 }
 .main div.statistics{
     z-index: 0;
@@ -131,13 +131,13 @@ input{
     border: 1px solid #9D9EB3;
     padding: 10.1px 30px;
 }
-button{
+form button{
     border: 0;
     cursor: pointer;
     background: none;
 }
 .btn,
-button{
+form button{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -152,7 +152,7 @@ button{
     transition: 0.4s;
 }
 .btn:hover,
-button:hover{
+form button:hover{
     background: #1393F6;
 }
 .btn.bg{
@@ -274,6 +274,7 @@ button:hover{
     margin: 0 0 0 0;
     font-size: 24px;
     line-height: 38px;
+    color: #C4E5F8;
 }
 .relative{
     position: relative;
@@ -512,6 +513,7 @@ table tr th{
 .how-autopool-works p{
     font-size: 24px;
     line-height: 33px;
+    color: #C4E5F8;
 }
 .autopools{
     display: flex;
@@ -704,6 +706,7 @@ table tr th{
 .faq-block-content{
     max-height: 0;
     overflow: hidden;
+    transition: 0.5s;
 }
 .faq-block-top.active + .faq-block-content{
     max-height: 300px;
@@ -803,6 +806,7 @@ footer{
     position: absolute;
     left: -135px;
     top: 0;
+    z-index: -1;
 }
 .main-menu-btn{
     display: none;

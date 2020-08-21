@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @font-face {
     font-family: 'VarelaRound';
     src: local('Varela Round'), local('VarelaRound-Regular'), url('fonts/VareLaround/Varelaround.woff2') format('woff2'), url('fonts/VareLaround/Varelaround.woff') format('woff'), url('fonts/VareLaround/Varelaround.ttf') format('truetype');
@@ -4100,5 +4099,4 @@ table.text-left tr th:first-child{
     .my-team-content{
         padding: 15px 0 20px 20px;
     }
->>>>>>> f030898de1e6583448aa7b9648f927932341310e
 }

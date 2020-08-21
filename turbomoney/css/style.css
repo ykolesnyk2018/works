@@ -1395,7 +1395,7 @@ table.text-left tr th:first-child{
         padding: 0;
     }
     .social a{
-        margin: 0 15px;
+        margin: 0 0 0 0;
     }
     .copyright{
         font-size: 18px;
@@ -1863,7 +1863,7 @@ table.text-left tr th:first-child{
         padding: 13px 0 0 0;
     }
     .social a{
-        margin: 0 15px 0 0;
+        margin: 0 0 15px 0;
     }
     .cube5{
         top: -90px;
@@ -2773,7 +2773,7 @@ table tr th{
     display: block;
 }
 .social a{
-    margin: 0 38px;
+    margin: 0 0 20px 0;
     display: inline-block;
     vertical-align: middle;
 }
@@ -3446,11 +3446,11 @@ table.text-left tr th:first-child{
         padding: 0;
     }
     .social a{
-        margin: 0 15px;
+        margin: 0 0 15px 0;
     }
     .copyright{
         font-size: 18px;
-        float: left;
+        float: none;
     }
     footer{
         padding: 0 0 40px 0;
@@ -3914,7 +3914,7 @@ table.text-left tr th:first-child{
         padding: 13px 0 0 0;
     }
     .social a{
-        margin: 0 15px 0 0;
+        margin: 0 0 15px 0;
     }
     .cube5{
         top: -90px;

@@ -3,6 +3,10 @@ $( document ).ready(function(){
         e.preventDefault();
         $(this).toggleClass('active');
     });
+    $('.my-team-top').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
     $('.main-menu-btn').click(function(e){
         e.preventDefault();
         $('.main-menu').toggleClass('active');
@@ -40,8 +44,26 @@ $( document ).ready(function(){
           slidesToShow: 1,
           variableWidth: true
         });
+        $('.auccount-users').slick({
+          arrows: false,
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          variableWidth: true
+        });
+        $('.earning').slick({
+          arrows: false,
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 1,
+          variableWidth: true
+        });
     };
-    
+    $(function(){
+        $(".tab").tabs();
+    });
     
     
     

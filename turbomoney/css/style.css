@@ -44,6 +44,12 @@ body{
     background: #0A1069;
     overflow: hidden;
 }
+.main.log{
+    height: 100vh;
+    min-height: 886px;
+    margin: 0 0 24px 0;
+    overflow: initial;
+}
 .main div{
     position: relative;
     z-index: 2;
@@ -111,7 +117,27 @@ h1{
 h1 span{
     color: #1393F6;
 }
-.btn{
+h1.small{
+    font-family: 'OpenSansBold';
+    font-size: 45px;
+    margin: 165px 0 37px 0;
+}
+input{
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'OpenSansBold';
+    background: none;
+    border: 1px solid #9D9EB3;
+    padding: 10.1px 30px;
+}
+button{
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+.btn,
+button{
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -125,7 +151,8 @@ h1 span{
     box-sizing: border-box;
     transition: 0.4s;
 }
-.btn:hover{
+.btn:hover,
+button:hover{
     background: #1393F6;
 }
 .btn.bg{
@@ -136,6 +163,11 @@ h1 span{
 }
 .main-section-left{
     float: left;
+}
+.main-section-left p{
+    font-family: 'OpenSansBold';
+    font-size: 16px;
+    color: #9D9EB3;
 }
 .main-section-left .btn{
     margin: 0 30px 0 7px;
@@ -429,6 +461,13 @@ table tr:nth-child(odd) td,
 table tr th{
     background: #1B2076;
 }
+.even table tr:nth-child(even) td{
+    background: #1B2076;
+}
+.even table tr:nth-child(odd) td,
+.even table tr th{
+    background: none;
+}
 .real-one-line{
     margin: 247px 0 0 0;
 }
@@ -672,6 +711,7 @@ table tr th{
 }
 .social{
     padding: 8px 0 0 0;
+    float: right;
 }
 .social svg{
     fill: #256DAF;
@@ -766,6 +806,295 @@ footer{
 }
 .main-menu-btn{
     display: none;
+}
+.sub-title{
+    font-size: 37px;
+    color: #fff;
+    margin: 0 0 31px 0;
+}
+.login-form{}
+.login-form input{
+    width: 551px;
+    box-sizing: border-box;
+    margin: 0 0 38px 0;
+}
+.login-form button{
+    min-width: 176px;
+}
+.login-form button:nth-of-type(1){
+    background: #009DF5;
+}
+.login-form button:nth-of-type(1):hover{
+    background: none;
+}
+.login-form button:last-child{
+    min-width: 332px;
+    margin: 0 0 0 40px;
+}
+.content{
+    margin-bottom: 150px;
+}
+.content h1{
+    font-size: 40px;
+    font-family: 'OpenSansBold';
+    margin: 42px 0 25px 0;
+}
+.content>p{
+    margin: 0 0 20px 0;
+    letter-spacing: 0.9px;
+}
+.auccount-users{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(180deg, #484F9D 0%, #212888 100%);
+    justify-content: space-around;
+    margin: 45px 0 0 0;
+}
+.auccount-user{
+    flex-basis: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0 28px 0;
+}
+.auccount-user-img{
+    display: inline-block;
+    max-width: 90px;
+    vertical-align: middle;
+}
+.auccount-user-img img{
+    max-width: 90px;
+    display: block;
+}
+.auccount-user-img a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'CirceBold';
+    color: #fff;
+}
+.auccount-user-img a span{
+    display: block;
+    margin: 0 0 0 17px;
+}
+.auccount-user-description{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'OpenSansBold';
+    font-size: 16px;
+    text-align: center;
+}
+.auccount-user-description p{
+    margin: 0;
+}
+.earning{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 57px 0 57px 0;
+}
+.earning-block{
+    flex-basis: 510px;
+    text-align: center;
+    background: linear-gradient(180deg, #484F9D 0%, #212888 100%);
+    font-size: 24px;
+    font-family: 'OpenSansBold';
+    padding: 50px 0 50px 0;
+}
+.earning-block span{
+    display: block;
+    font-size: 36px;
+    padding: 15px 0 0 0;
+}
+.products{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product{
+    flex-basis: 372px;
+    background: linear-gradient(180deg, #484F9D 0%, #212888 100%);
+    text-align: center;
+    padding: 0 0 41px 0;
+    margin: 0 0 35px 0;
+}
+.product-status{
+    font-family: 'OpenSansBold';
+    font-size: 14px;
+    color: #C4E5F8;
+    padding: 19px 0 5px 0;
+}
+.product-title{
+    font-family: 'OpenSansBold';
+    font-size: 26px;
+}
+.product-description{}
+.product-description span{
+    display: block;
+    text-align: center;
+    font-size: 62px;
+    font-family: 'OpenSansBold';
+    padding: 29px 0 30px 0;
+}
+.product-description p{
+    font-size: 18px;
+    line-height: 21px;
+    color: #C4E5F8;
+    margin: 0 0 8px 0;
+}
+.product-text{
+    font-family: 'OpenSansBold';
+    font-size: 21px;
+    color: #C4E5F8;
+    margin: 38px 0 61px 0;
+}
+.product-btn{
+    padding: 0 21px;
+}
+.product-btn a{
+    font-family: 'OpenSansBold';
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    border: 1.7px solid #1393F6;
+    padding: 10px 0 11px 0;
+    transition: 0.3s;
+}
+.product-btn a:hover{
+    background: #1393F6;
+}
+.initial{
+    overflow: initial;
+}
+.AutoPool-table table{
+    font-size: 16px;
+    line-height: 22px;
+}
+table a{
+    color: #C4E5F8;
+    text-decoration: none;
+}
+table a:hover{
+    color: #fff;
+}
+.AutoPool-table table tr td{
+    padding: 28.5px 0;
+}
+.AutoPool-table table tr th{
+    font-size: 24px;
+    padding: 52.5px 0;
+}
+.AutoPool-table-nav{
+    background: #1B2076;
+    padding: 23px 55px;
+    font-size: 24px;
+    font-family: 'OpenSansBold';
+    overflow: hidden;
+}
+.AutoPool-table-nav span{
+    display: block;
+    float: left;
+}
+.AutoPool-table-nav a{
+    display: block;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+}
+.AutoPool-table table{
+    margin: 0;
+}
+.AutoPool-table.even table tr th{
+    padding: 28px 0;
+}
+.ui-tabs-nav{
+    font-size: 24px;
+    font-family: 'OpenSansBold';
+    background: #1B2076;
+    padding: 46px 0 46px 81px;
+}
+.ui-tabs-nav li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 91px 0 0;
+}
+.ui-tabs-nav li:last-child{
+    margin: 0;
+}
+.ui-tabs-nav li a{
+    color: #9D9EB3;
+    display: block;
+    text-decoration: none;
+}
+.ui-tabs-nav li.ui-tabs-active a{
+    color: #fff;
+}
+table.text-left,
+table.text-left tr td,
+table.text-left tr th{
+    text-align: left;
+}
+table.text-left tr td:first-child,
+table.text-left tr th:first-child{
+    padding-left: 59px;
+}
+.my-teams{
+    margin: 41px 0 0 0;
+}
+.my-teams .my-team:nth-child(odd) .my-team-top{
+    background: #1B2076;
+    font-family: 'OpenSansBold';
+}
+.my-team-top{
+    padding: 28px 20px 28px 68px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.my-team-top:before{
+    content: "";
+    width: 20px;
+    height: 1.56px;
+    border-radius: 1px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 39px;
+    right: 54px;
+}
+.my-team-top:after{
+    content: "";
+    width: 1.56px;
+    height: 20px;
+    border-radius: 1px;
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    right: 63px;
+}
+.my-team-top.active:after{
+    display: none;
+}
+.my-team-top img,
+.my-team-top span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.my-team-top img{
+    margin: 0 10px 0 0;
+}
+.my-team-content{
+    padding: 15px 0 34px 48px;
+    color: #93CCED;
+    display: none;
+}
+.my-team-top.active + .my-team-content{
+    display: block;
+}
+.my-team-content p{
+    margin: 6px 0;
 }
 @media (max-width: 1620px){
     .container{
@@ -889,6 +1218,18 @@ footer{
     }
     .referral-income{
         margin: 100px 0 0 0;
+    }
+    .auccount-users{
+        padding: 10px 0;
+    }
+    .auccount-user{
+        margin: 0 5%;
+    }
+    .earning-block{
+        flex-basis: 32%;
+    }
+    .AutoPool-table-nav{
+        padding: 23px 12px;
     }
 }
 @media (max-width: 1150px){
@@ -1058,6 +1399,28 @@ footer{
     }
     footer{
         padding: 0 0 40px 0;
+    }
+    .main.log{
+        min-height: 0;
+        height: auto;
+    }
+    h1.small{
+        margin: 230px 0 37px 0;
+    }
+    .main.log{
+        margin: 0 0 170px 0;
+    }
+    .product{
+        flex-basis: 48%;
+    }
+    .AutoPool-table{
+        overflow: auto;
+    }
+    .AutoPool-table table{
+        min-width: 1200px;
+    }
+    .AutoPool-table-nav{
+        font-size: 22px;
     }
 }
 @media (max-width: 767px){
@@ -1504,5 +1867,181 @@ footer{
     }
     .cube5 img{
         width: 100px;
+    }
+    h1.small{
+        font-size: 24px;
+        text-align: left;
+        margin: 0 0 40px 0;
+    }
+    .sub-title{
+        font-size: 20px;
+    }
+    .login-form input{
+        width: 100%;
+    }
+    button{
+        font-size: 16px;
+        padding: 6.2px 15px;
+        margin: 0 0 17px 0;
+    }
+    .login-form button,
+    .login-form button:last-child{
+        min-width: 0;
+        margin: 0 0 17px 0;
+        width: 100%;
+    }
+    .login-form button:last-child{
+        margin: 0;
+    }
+    input{
+        font-size: 14px;
+        padding: 7.4px 14px;
+    }
+    .main.log{
+        margin: 0 0 90px 0;
+    }
+    .auccount-users{
+        display: block;
+        background: none;
+        position: relative;
+    }
+    .auccount-users:before{
+        content: "";
+        width: 100vh;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: -14px;
+        background: linear-gradient(180deg, #484F9D 0%, #212888 100%);
+    }
+    .auccount-user{
+        margin: 0;
+        padding: 0px 30px 16px 22px;
+    }
+    .auccount-users .slick-list{
+        overflow: inherit;
+        padding: 19px 0 0 0;
+    }
+    .auccount-users .slick-track{
+        overflow: hidden;
+    }
+    .earning{
+        display: block;
+    }
+    .earning-block{
+        width: 206px;
+    }
+    .content h1{
+        font-size: 24px;
+        text-align: left;
+        margin: 35px 0 31px 0;
+    }
+    .content>p{
+        font-size: 14px;
+        letter-spacing: 0;
+        margin: 0 0 22px 0;
+    }
+    .auccount-user-img img{
+        max-width: 56px;
+    }
+    .auccount-user-img a span{
+        font-size: 9px;
+    }
+    .auccount-user-description{
+        font-size: 12px;
+    }
+    .auccount-user-description p:last-child{
+        font-size: 16px;
+        margin: 7px 0 2px 0;
+    }
+    .earning-block{
+        font-size: 14px;
+        line-height: normal;
+        margin: 0 18px 0 0;
+    }
+    .earning-block span{
+        font-size: 18px;
+        padding: 8px 0 26px 0;
+    }
+    .product{
+        flex-basis: 100%;
+    }
+    .auccount-users{
+        margin: 31px 0 0 0;
+        padding: 0;
+    }
+    .earning{
+        margin: 31px 0 51px 0;
+    }
+    .earning-block{
+        padding: 29px 0 0 0;
+    }
+    .earning .slick-list{
+        overflow: initial;
+    }
+    .earning .slick-track{
+        overflow: hidden;
+    }
+    .product{
+        margin: 0 0 25px 0;
+    }
+    .product-btn a{
+        font-size: 14px;
+    }
+    .AutoPool-table table{
+        min-width: 1000px;
+        margin: 0;
+    }
+    .AutoPool-table table tr th{
+        font-size: 14px;
+        padding: 20.5px 0;
+    }
+    .content{
+        margin-bottom: 50px;
+    }
+    .AutoPool-table-nav{
+        font-size: 24px;
+    }
+    .AutoPool-table.even table tr td,
+    .AutoPool-table.even table tr th{
+        padding: 20px 0 21px 0;
+    }
+    .even table tr:nth-child(even) td{
+        background: none;
+    }
+    .even table tr:nth-child(odd) td,
+    .even table tr th{
+        background: #1B2076;
+    }
+    .AutoPool-table-nav{
+        background: none;
+    }
+    .ui-tabs-nav{
+        padding: 0 0 30px 0;
+        font-size: 20px;
+        background: none;
+    }
+    .ui-tabs-nav li{
+        margin: 0 30px 0 0;
+    }
+    .AutoPool-table.even table.text-left tr td, 
+    .AutoPool-table.even table.text-left tr th{
+        padding-left: 15px;
+    }
+    .my-team-top{
+        padding: 15px 35px 15px 20px;
+    }
+    .my-team-top:before{
+        top: 27px;
+        right: 10px;
+    }
+    .my-team-top:after{
+        top: 18px;
+        right: 19px;
+    }
+    .my-team-content{
+        padding: 15px 0 20px 20px;
     }
 }

@@ -804,9 +804,10 @@ footer{
 }
 .faq-img{
     position: absolute;
-    left: -135px;
+    left: 0;
     top: 0;
     z-index: -1;
+    opacity: 0.6;
 }
 .main-menu-btn{
     display: none;
@@ -1234,6 +1235,9 @@ table.text-left tr th:first-child{
     }
     .AutoPool-table-nav{
         padding: 23px 12px;
+    }
+    .faq-img{
+        left: -300px;
     }
 }
 @media (max-width: 1150px){
@@ -2855,7 +2859,7 @@ footer{
 }
 .faq-img{
     position: absolute;
-    left: -135px;
+    left: 0;
     top: 0;
     z-index: -1;
 }

@@ -2947,7 +2947,7 @@ $(document).ready(function(){
         e.preventDefault();
         $('.popup1').addClass('active');
     });
-    $('.close').click(function(e){
+    $('.close, .hidden').click(function(e){
         e.preventDefault();
         $('.hidden').removeClass('active');
         $('.close').removeClass('active');

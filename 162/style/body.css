@@ -1258,6 +1258,7 @@ footer .column ul li a:hover{
 .mobil-info{
     display: none;
 }
+.popup{}
 @media (max-width: 1179px){
     .container{
         width: 980px;
@@ -1485,5 +1486,51 @@ footer .column ul li a:hover{
     }
     .contact_btn{
         margin: 0 0 0 20px;
+    }
+    .clubs{
+        justify-content: center;
+    }
+    .club{
+        order: 1;
+        margin: 50px 20px 0 20px;
+    }
+    .club:nth-child(2){
+        order: 2;
+    }
+    .clubs_title{
+        margin: 95px 0 0 0;
+    }
+    .clubs-btn{
+        margin: 55px 0 90px 0;
+    }
+    .clubs:after{
+        top: 55px;
+    }
+    .category_title{
+        margin: 100px 0 50px 0;
+    }
+    .be_aware form input{
+        margin: 0 50px 0 0;
+    }
+    .clube_life-title{
+        margin: 50px 0 40px 0;
+    }
+    .about_club_description a{
+        margin: 0 20px 20px 0;
+    }
+    .nearest_title a{
+        position: static;
+        display: block;
+        margin: 10px 0 0 0;
+    }
+    .students_bg .nearest_title{
+        margin: 30px 0 20px 0;
+    }
+    .feedback-form-left{
+        flex-basis: 100%;
+        padding: 0 0 30px 0;
+    }
+    .feedback-form-right{
+        flex-basis: 100%;
     }
 }

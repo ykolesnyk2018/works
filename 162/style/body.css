@@ -153,6 +153,7 @@ ul{
 }
 .overflow{
     overflow: hidden;
+    padding: 0 0 80px 0;
 }
 header{
     position: relative;
@@ -777,9 +778,7 @@ img{
     outline: none;
 }
 .be_aware form input::placeholder{
-    font-size: 18px;
     font-family: 'Inter-ExtraLight-BETA';
-    line-height: 22px;
     color: #FFFFFF;
 }
 .be_aware_form{
@@ -1153,7 +1152,7 @@ img{
 }
 footer{
     background: #F1F1F1;
-    margin: 80px 0 0 0;
+    margin: 0 0 0 0;
     padding: 62px 0 150px 0;
 }
 footer .container{
@@ -1258,7 +1257,75 @@ footer .column ul li a:hover{
 .mobil-info{
     display: none;
 }
+.hidden{
+    display: block;
+    position: fixed;
+    z-index: 97;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.hidden.active{
+    display: block;
+}
+.popup-content{
+    position: fixed;
+    top: 10vh;
+    max-height: 85%;
+    overflow: auto;
+    width: 1192px;
+    left: 50%;
+    margin: 0 0 0 -596px;
+    z-index: 98;
+    display: none;
+}
+.popup-content.active{
+    display: block;
+}
+.close{
+    width: 102px;
+    height: 102px;
+    line-height: 102px;
+    position: fixed;
+    text-align: center;
+    z-index: 98;
+    top: 5vh;
+    left: 50%;
+    margin: -20px 0 0 513px;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+.close.active{
+    display: block;
+}
+.close:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    filter: blur(30px);
+    background: #EB008B;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    transition: 0.4s;
+}
+.close:hover:before{
+    filter: blur(15px);
+}
+.close svg{
+    display: inline-block;
+    vertical-align: middle;
+}
 .popup{}
+button{
+    cursor: pointer;
+}
 @media (max-width: 1179px){
     .container{
         width: 980px;
@@ -1319,6 +1386,13 @@ footer .column ul li a:hover{
     }
     .footer-contacts{
         min-width: 0;
+    }
+    .popup-content{
+        width: 980px;
+        margin: 0 0 0 -480px;
+    }
+    .close{
+        margin: -10px 0 0 431px;
     }
 }
 @media (max-width: 980px){
@@ -1388,6 +1462,7 @@ footer .column ul li a:hover{
         height: 100vh;
         transition: 0.6s;
         min-width: 100vw;
+        width: 100%;
     }
     .mobil-menu-active .main-menu{
         right: 0;
@@ -1532,5 +1607,459 @@ footer .column ul li a:hover{
     }
     .feedback-form-right{
         flex-basis: 100%;
+    }
+    .clubs-btn{
+        order: 3;
+    }
+    .popup-content{
+        width: 740px;
+        margin: 0 0 0 -370px;
+    }
+    .close{
+        margin: -10px 0 0 302px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        width: auto;
+        margin: 0 20px 0 21px;
+    }
+    .contact a:nth-child(1){
+        display: none;
+    }
+    header{
+        padding: 0;
+    }
+    footer .container{
+        display: block;
+    }
+    .main-menu-btn{
+        width: 16px;
+        height: 14px;
+        margin: 14px 10px 0 0;
+    }
+    .main-menu-btn span{
+        height: 2px;
+    }
+    .main-menu-btn span:nth-child(2){
+        top: 6px;
+    }
+    .logo a{
+        display: block;
+    }
+    .logo a img{
+        display: block;
+        height: 24px;
+    }
+    .contact{
+        margin: 10px 0 0 0;
+    }
+    .contact a{
+        font-size: 9px;
+        padding: 3.6px 10px;
+        border-radius: 4px;
+        margin: 0;
+    }
+    .clubs_title{
+        text-align: left;
+        font-size: 36px;
+        line-height: 44px;
+        font-family: 'Inter-Black';
+        margin: 67px 0 0 0;
+    }
+    .clubs_title span{
+        font-size: 11.33px;
+        padding: 7px 16px;
+        right: 7px;
+        top: 9px;
+        border-radius: 5px;
+    }
+    .logo{
+        margin: 7px 0 0 0;
+    }
+    .clubs{
+        display: block;
+        margin: 64px 0 0 0;
+    }
+    .club{
+        margin: 0 0 31px 0;
+        max-width: 100%;
+    }
+    .club_icon{
+        top: -20px;
+        left: 23px;
+        margin: 0;
+    }
+    .club_icon img{
+        max-height: 56px;
+    }
+    .club_title{
+        font-size: 24px;
+        line-height: 30px;
+        padding: 46px 0 0 0;
+    }
+    .club_description{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 10px 0 39px 0;
+    }
+    .club:nth-child(2) .club_title{
+        padding: 34px 0 0 0;
+    }
+    .club_icon_down.spec{
+        margin: -20px 0 74px 0;
+    }
+    .clubs-btn a{
+        width: 100%;
+        font-size: 18px;
+        min-width: 0;
+        padding: 30px 0;
+    }
+    .clubs-btn{
+        margin: 40px 0 110px 0;
+    }
+    .category_title{
+        font-size: 24px;
+        line-height: 29px;
+        margin: 100px 0 36px 0;
+    }
+    .category_title p{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .category_title p br{
+        display: none;
+    }
+    .level{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0 0 0;
+        max-width: inherit;
+    }
+    .level_title{
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0 0 10px 0;
+    }
+    .level_description{
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 11px 0;
+    }
+    .level_btn{
+        position: static;
+        padding: 13px 0 0 0;
+    }
+    .level_btn a{
+        font-size: 14px;
+        padding: 13px 16px;
+    }
+    .level{
+        height: auto;
+        padding: 32px 25px 32px 24px;
+        margin: 0 0 25px 0;
+    }
+    .level_btn.spec{
+        display: block;
+        position: static;
+        padding: 0;
+    }
+    .level_btn.spec a{
+        display: block;
+        font-size: 18px;
+        padding: 17px 19px;
+    }
+    .level_btn.spec a:last-child{    
+        border: 1px solid #652D90;
+        margin: 16px 0 0 0;
+        padding: 16px 0;
+    }
+    .category_level{
+        margin: 0 0 144px 0;
+    }
+    .category_title a{
+        margin: 27px 0 0 0;
+        font-size: 14px;
+        padding: 17px 0;
+        display: block;
+        text-align: center;
+    }
+    .category_title a:last-child{
+        margin: 16px 0 0 0;
+    }
+    .articles{
+        display: block;
+        margin: 0 0 0 0;
+        padding: 19px 0 0 0;
+    }
+    .article_img span.blue{
+        font-size: 12.4px;
+    }
+    .article_img span.blue{
+        padding: 11px 9px;
+        bottom: 34px;
+        border-radius: 5.5px;
+        left: -14px;
+    }
+    .article_title{
+        padding: 15px 0 0 0;
+        font-size: 18px;
+        line-height: normal;
+    }
+    .article_description{
+        font-size: 14px;
+        line-height: 157%;
+        padding: 12px 0;
+    }
+    .article_img span.pink{
+        font-size: 11px;
+        right: -20px;
+        border-radius: 5px;
+        padding: 10px 9px;
+        bottom: 6px;
+    }
+    .nearest_title{
+        font-size: 24px;
+        line-height: 29px;
+        margin: 112px 0 16px 0;
+    }
+    .nearest_title a{
+        font-size: 14px;
+        margin: 6px 0 0 0;
+        text-decoration: underline;
+    }
+    .nearest_block{
+        margin: 21px 0 0 0;
+        padding: 31px 0 7px 0;
+        display: block;
+    }
+    .nearesrt_block_date{
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 15px 0;
+    }
+    .nearesrt_block_date p{
+        font-size: 14px;
+        margin: -3px 0 0 0;
+    }
+    .nearest_block_text{
+        padding: 24px 0 0 0;
+    }
+    .nearest_block_type{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .nearest_block_title{
+        padding: 8px 0;
+    }
+    .nearest_block_title a{
+        font-size: 18px;
+        line-height: 150%;
+        font-family: 'Inter-Regular';
+    }
+    .nearest_block_description{
+        font-family: 'Inter-Regular';
+        font-size: 14px;
+        line-height: 157%;
+    }
+    .nearest_block_commence{
+        font-size: 14px;
+        margin: 20px 0 0 0;
+    }
+    .nearest_block:last-child{
+        margin-bottom: 0;
+    }
+    .be_aware{
+        margin: 29px 0 0 0;
+        padding: 0 24px 0 22px;
+    }
+    .be_aware_form{
+        padding: 20px 0 41px 0;
+        display: block;
+    }
+    .be_aware_text{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .be_aware form input{
+        width: 100%;
+        font-size: 14px;
+        margin: 22px 0 28px 0;
+    }
+    .be_aware_btn{
+        width: 100%;
+        font-size: 14px;
+        line-height: normal;
+        padding: 14px 0;
+    }
+    .clube_life-title{
+        font-size: 24px;
+    }
+    .clube_life-title a{
+        position: static;
+        text-decoration: underline;
+        font-size: 14px;
+        line-height: normal;
+        margin: 11px 0 0 0
+    }
+    .clube_life-title{
+        margin: 64px 0 34px 0;
+    }
+    .club_life{
+        display: block;
+    }
+    .club_date{
+        font-size: 12px;
+        margin: 17px 0 10px 0;
+    }
+    .club_block_title{
+        font-size: 18px;
+        line-height: 27px;
+        font-family: 'Inter-Regular';
+    }
+    .club_life_block.small{
+        display: block;
+    }
+    .club_life_block.small .club_life_block_img{
+        width: 136px;
+        min-width: 0;
+        margin: 0 0 16px 0;
+    }
+    .club_life_block.small .club_life_block_description{
+        padding: 0;
+    }
+    .club_life_block.small .club_date{
+        margin: 0 0 1px 0;
+    }
+    .about_club{
+        padding: 38px 0 0 0;
+    }
+    .about_club_name{
+        font-size: 24px;
+        line-height: normal;
+        padding: 7px 0 11px 0;
+    }
+    .about_club_title{
+        font-size: 24px;
+        line-height: 29px;
+        padding: 0 0 17px 0;
+    }
+    .about_club_text{
+        font-size: 14px;
+        line-height: 22px;
+        margin: 0 0 35px 0;
+    }
+    .about_club_description a{
+        margin: 0 0 17px 0;
+        max-width: 100%;
+    }
+    .about_club_video{
+        display: block;
+        margin: 39px 0 0 0;
+    }
+    .about_club_bg{
+        background: #652D90;
+    }
+    .about_club_bg:before{
+        display: none;
+    }
+    .about_club_item{
+        margin: 0 0 33px 0;
+    }
+    .about_club_item_title{
+        padding: 8px 0;
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .about_club_item_title a{
+        color: #fff;
+    }
+    .about_club_video{
+        padding: 0 0 8px 0;
+    }
+    .students_bg{
+        padding: 34px 0 0 0;
+    }
+    .feedbacks{
+        display: block;
+        padding: 25px 0 0 0;
+    }
+    .feedback-name{
+        margin: 16px 0 14px 0;
+    }
+    .feedback{
+        margin: 0 0 40px 0;
+    }
+    .feedback-form{
+        padding: 32px 30px 43px 20px;
+    }
+    .feedback-form-title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .feedback-form-left{
+        padding: 0 0 12px 0;
+    }
+    .feedback-form-sub-title{
+        font-size: 14px;
+        line-height: 22px;
+        margin: 8px 0 0 0;
+    }
+    .feedback-form form>div{
+        margin: 14px 0 16px 0;
+    }
+    .feedback-form input{
+        font-size: 18px;
+        padding: 15px 16px;
+        border-radius: 8px;
+    }
+    .feedback-form .error p{
+        font-size: 10px;
+        line-height: 12px;
+        margin: 9px 0 0 0;
+        text-align: left;
+    }
+    .feedback-form button{
+        font-size: 14px;
+        padding: 28px 0;
+        margin: 23px 0 0 0;
+    }
+    .feedback-form form>p{
+        margin: 8px 0 0 0;
+    }
+    .overflow{
+        padding: 0 0 65px 0;
+    }
+    footer{
+        padding: 43px 0 30px 0;
+    }
+    footer .column{
+        max-width: 100%;
+        margin: 0 0 47px 0;
+    }
+    .mobil-menu-active{
+        overflow: hidden;
+    }
+    .mobil-menu-active .main-menu{
+        max-height: 100vh;
+        padding-bottom: 50px;
+        overflow: auto;
+    }
+    .mobil-menu-active .main-menu-btn span:nth-child(1),
+    .mobil-menu-active .main-menu-btn span:nth-child(3){
+        top: 5px;
+    }
+    .mobil-menu-active .main-menu:after{
+        position: fixed;
+    }
+    .popup-content{
+        top: 5vh;
+        max-height: 90vh;
+        width: 300px;
+        margin: 0 0 0 -150px;
+    }
+    .close{
+        top: 1vh;
+        margin: -10px 0 0 84px;
     }
 }

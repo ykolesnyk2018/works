@@ -79,7 +79,7 @@
                 </nav>
                 <div class="contact">
                     <a href="#">8-800-555-35-35</a>
-                    <a href="#" class="contact_btn">Запись на урок</a>
+                    <a href="#" class="contact_btn open-popup open-popup1">Запись на урок</a>
                 </div>
             </div>
         </header>
@@ -120,7 +120,7 @@
                 <div class="level">
                     <div class="level_title">Общий английский</div>
                     <div class="level_description">Систематизируем знания и совершенствуем языковые навыки, помогаем в преодолении языкового барьера. </div>
-                    <div class="level_btn">
+                    <div class="level_btn spec">
                         <a href="#">Записаться</a>
                         <a href="#">Подробнее</a>
                     </div>
@@ -144,54 +144,6 @@
                 <div class="level">
                     <div class="level_title">Британские экзамены KET |  PET | FCE</div>
                     <div class="level_description">Занимаемся по сертифицированным материалам, акцентируем работу на развитии устной речи. </div>
-                    <div class="level_btn">
-                        <a href="#">Записаться</a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div> 
-                <div class="level">
-                    <div class="level_title">Общий французкий</div>
-                    <div class="level_description">Развиваем и совершенствуем языковые навыки, делаем акцент на развитии разговорных навыков. </div>
-                    <div class="level_btn">
-                        <a href="#">Записаться</a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div> 
-                <div class="level">
-                    <div class="level_title">Общий французкий</div>
-                    <div class="level_description">Развиваем и совершенствуем языковые навыки, делаем акцент на развитии разговорных навыков. </div>
-                    <div class="level_btn">
-                        <a href="#">Записаться</a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div> 
-                <div class="level">
-                    <div class="level_title">Британские экзамены KET |  PET | FCE</div>
-                    <div class="level_description">Занимаемся по сертифицированным материалам, акцентируем работу на развитии устной речи. </div>
-                    <div class="level_btn">
-                        <a href="#">Записаться</a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div> 
-                <div class="level">
-                    <div class="level_title">Общий французкий</div>
-                    <div class="level_description">Развиваем и совершенствуем языковые навыки, делаем акцент на развитии разговорных навыков. </div>
-                    <div class="level_btn">
-                        <a href="#">Записаться</a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div> 
-                <div class="level">
-                    <div class="level_title">Британские экзамены KET |  PET | FCE</div>
-                    <div class="level_description">Занимаемся по сертифицированным материалам, акцентируем работу на развитии устной речи. </div>
-                    <div class="level_btn">
-                        <a href="#">Записаться</a>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div> 
-                <div class="level">
-                    <div class="level_title">Общий французкий</div>
-                    <div class="level_description">Развиваем и совершенствуем языковые навыки, делаем акцент на развитии разговорных навыков. </div>
                     <div class="level_btn">
                         <a href="#">Записаться</a>
                         <a href="#">Подробнее</a>
@@ -609,9 +561,37 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/slick.js"></script>
+    <div class="hidden"></div>
+    <div class="close">
+        <svg width="27" height="27" viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.5063 2.83692L2.80803 17.5352C1.2572 19.0861 1.2572 21.6005 2.80803 23.1513C4.35887 24.7021 6.87327 24.7021 8.42411 23.1513L23.1224 8.45299C24.6732 6.90215 24.6732 4.38775 23.1224 2.83692C21.5716 1.28608 19.0572 1.28608 17.5063 2.83692Z" fill="white"/>
+            <path d="M23.2834 17.6374L8.45403 2.80803C6.9032 1.2572 4.3888 1.2572 2.83796 2.80803C1.28713 4.35887 1.28713 6.87327 2.83796 8.4241L17.6674 23.2535C19.2182 24.8043 21.7326 24.8043 23.2834 23.2535C24.8343 21.7027 24.8343 19.1883 23.2834 17.6374Z" fill="white"/>
+        </svg>
+    </div>
+    <div class="popup-content popup1">
+                <div class="feedback-form">
+                    <div class="feedback-form-left">
+                        <div class="feedback-form-title">Запишитесь на бесплатный пробный урок</div>
+                        <div class="feedback-form-sub-title">Познакомим с клубом, определим уровень и покажем, как проходит урок</div>
+                    </div>
+                    <div class="feedback-form-right">
+                        <form>
+                            <div>
+                                <input type="text" value="Галина">
+                            </div>
+                            <div class="error">
+                                <input type="text" placeholder="Телефон">
+                                <p>Вы забыли указать «Телефон» это обязательное поле, иначе мы не дозовонимся до вас</p>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Электронная почта">
+                            </div>
+                            <button>Отправить заявку</button>
+                            <p>Оставляя заявку, вы принимаете соглашенин о конфиденциальности.</p>
+                        </form>
+                    </div>
+                </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

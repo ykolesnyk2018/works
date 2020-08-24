@@ -252,6 +252,7 @@ ul{
     font-weight: 400;
     line-height: 30px;
     padding: 0 0 0 98px;
+    cursor: pointer;
 }
 .balance span{
     color: #ffffff;
@@ -1104,6 +1105,145 @@ img{
 .main-menu-btn{
     display: none;
 }
+.balance-content{
+    position: absolute;
+    top: 100%;
+    left: 35px;
+    margin: 35px 0 0 0;
+    border-radius: 15px;
+    z-index: 11;
+    width: 310px;
+    padding: 10px 0;
+    cursor: default;
+    display: none;
+}
+.balance.active .balance-content{
+    display: block;
+}
+.balance-content:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.4);
+    left: -4px;
+    top: -4px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+}
+.balance-content:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: #682891;
+    border: 2px solid #74349c;
+    border-radius: 15px;
+}
+
+
+.setting.active:before{
+    border: 2px solid #fdbd6b;
+}
+.setting-menu{
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    z-index: 10;
+    padding: 10px 10px;
+    min-width: 210px;
+    display: none;
+}
+.setting-menu.active{
+    display: block;
+}
+.setting-menu:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.4);
+    left: -4px;
+    top: -4px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 15px;
+}
+.setting-menu:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: #682891;
+    border: 2px solid #74349c;
+    border-radius: 15px;
+}
+.setting-menu ul{
+    position: relative;
+    z-index: 1;
+    font-size: 21px;
+}
+.setting-menu ul li{
+    margin: 7.5px 0;
+}
+.setting-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 0 0 7px;
+}
+.setting-menu ul li a img{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 7px 0 0;
+}
+.setting-menu ul li a span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.setting-menu ul li.bottom{
+    border-top: 1px solid #4e1671;
+    margin: 20px 0 0 0;
+    padding-top: 19px;
+}
+.setting-menu ul li a:hover{
+    color: #777;
+}
+
+
+.balance-row{
+    position: relative;
+    z-index: 1;
+    font-size: 21px;
+    padding: 12px 0 12px 60px;
+}
+.balance-row img{
+    display: block;
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translate(0, -50%)
+}
+.balance-row span{
+    font-size: 24px;
+    color: #fab96d;
+    display: block;
+    position: absolute;
+    right: 25px;
+    bottom: 12px;
+}
+.balance-row:first-child span{
+    font-size: 28px;
+    color: #90f9c2;
+}
 @media (max-width: 1919px){
     .balance,
     .balance span{
@@ -1223,9 +1363,6 @@ img{
         background-position: top right;
         background-size: auto auto;
     }
-    .cashback-img{
-        display: none;
-    }
     footer:before{
         display: none;
     }
@@ -1241,6 +1378,19 @@ img{
     }
     .baner_img{
         width: 420px;
+    }
+    .users{
+        max-height: 2450px;
+    }
+    .cashback{
+        padding: 0 0 57px 0;
+    }
+    .cashback-img{
+        z-index: 0;
+    }
+    .cashback-description{
+        position: relative;
+        z-index: 1;
     }
 }
 @media (max-width: 1440px){
@@ -1296,6 +1446,15 @@ img{
         box-sizing: border-box;
         padding: 0 20px;
     }
+    .users{
+        max-height: 2354px;
+    }
+    .cashback{
+        margin: 0;
+    }
+    .cashback-img{
+        display: none;
+    }
 }
 @media (max-width: 979px){
     .install{
@@ -1314,6 +1473,13 @@ img{
     .logo{
         display: none;
     }
+    .top-bar nav{
+        padding: 0;
+    }
+    
+    
+    
+    
     .top-bar nav{
         padding: 0 10px;
     }
@@ -1337,8 +1503,11 @@ img{
     .footer_column{
         max-width: 100%;
     }
+    .setting-menu{
+        top: 150px;
+    }
 }
-@media (max-width: 979px){
+@media (max-width: 767px){
     .header{
         display: block;
         text-align: center;
@@ -1580,5 +1749,25 @@ img{
     }
     .actions{
         padding: 40px 0 0 0;
+    }
+    .balance{
+        float: right;
+    }
+    .balance-content{
+        left: auto;
+        right: 25px;
+        text-align: left;
+    }
+    .setting-menu {
+        top: 175px;
+        right: 50%;
+        transform: translate(50%, 30px);
+    }
+    .h_user{
+        display: block;
+        clear: both;
+    }
+    .level{
+        clear: both;
     }
 }

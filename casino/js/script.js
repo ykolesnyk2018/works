@@ -1,3 +1,4 @@
+$( document ).ready(function(){   
     $(function() {
       $('select').styler();
     });
@@ -30,3 +31,8 @@
     $(function(){
         $(".tabs").tabs();
     });
+    var height = $('body').height() - $('footer').height() - $('.users-top-minus').height();
+    $('.users').css({
+        height: height + 'px'
+    });
+});

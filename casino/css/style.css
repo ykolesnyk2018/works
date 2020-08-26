@@ -207,13 +207,8 @@ ul{
     background: #f7f7f7;
     overflow: auto;
     padding: 27px 0 0 0;
-    max-height: 1804px;
-}
-.main .users{
-    max-height: 1228px;
-}
-.users.p2{
-    max-height: 2300px;
+    height: 200px;
+    box-sizing: border-box;
 }
 .user{
     max-width: 240px;
@@ -2059,9 +2054,6 @@ img{
         max-width: 680px;
         margin: 0 auto 40px auto;
     }
-    .users{
-        max-height: inherit;
-    }
     .cashback{
         background-position: top right;
         background-size: auto auto;
@@ -2081,9 +2073,6 @@ img{
     }
     .baner_img{
         width: 420px;
-    }
-    .users{
-        max-height: 2860px;
     }
     .cashback{
         padding: 0 0 57px 0;
@@ -2116,14 +2105,8 @@ img{
     .games{
         padding: 0 20px;
     }
-    .main .users{
-        max-height: 1920px;
-    }
     .level.default:before{
         left: -19px;
-    }
-    .users.p2{
-        max-height: 2860px;
     }
     .actions{
         display: flex;
@@ -2132,9 +2115,6 @@ img{
     }
     .action{
         flex-basis: 46%;
-    }
-    .users.p{
-        max-height: 1690px;
     }
 }
 @media (max-width: 1440px){
@@ -2190,12 +2170,6 @@ img{
         box-sizing: border-box;
         padding: 0 20px;
     }
-    .users{
-        max-height: 3070px;
-    }
-    .main .users{
-        max-height: 2354px;
-    }
     .cashback{
         margin: 0;
     }
@@ -2217,14 +2191,8 @@ img{
     .games.small .game:nth-child(4n){
         margin-right: 0;
     }
-    .users.p2{
-        max-height: 2766px;
-    }
     .social_footer{
         margin: 0;
-    }
-    .users.p{
-        max-height: 1625px;
     }
 }
 @media (max-width: 1223px){
@@ -2251,20 +2219,11 @@ img{
     .column_title{
         margin: 0 0 0 -20px;
     }
-    .main .users{
-        max-height: 1895px;
-    }
     .bottom-border{
         display: none;
     }
-    .users.p2 {
-        max-height: 3065px;
-    }
     .action{
         flex-basis: 680px;
-    }
-    .users.p{
-        max-height: 2640px;
     }
     .footer_column{
         max-width: 49%;
@@ -2272,9 +2231,6 @@ img{
 }
 @media (max-width: 979px){
     .install{
-        display: none;
-    }
-    .users{
         display: none;
     }
     .left_bar{
@@ -2289,10 +2245,6 @@ img{
     }
     .top-bar nav{
         padding: 0;
-    }
-    
-    .users.p2 {
-        max-height: 3155px;
     }
     
     

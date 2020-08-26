@@ -2200,6 +2200,9 @@ img{
     .main .header{
         padding: 0;
     }
+    .footer_column{
+        max-width: 48%;
+    }
 }
 @media (max-width: 1223px){
     .ui-tabs-nav{
@@ -2699,6 +2702,9 @@ img{
     }
     .social_footer .column_title{
         margin-left: 0;
+    }
+    .games{
+        text-align: center;
     }
 }
 

@@ -210,7 +210,7 @@ ul{
     max-height: 1804px;
 }
 .main .users{
-    max-height: 1496px;
+    max-height: 1228px;
 }
 .user{
     max-width: 240px;
@@ -2219,7 +2219,7 @@ img{
         margin: 0;
     }
     .main .users{
-        max-height: 2164px;
+        max-height: 1895px;
     }
     .bottom-border{
         display: none;

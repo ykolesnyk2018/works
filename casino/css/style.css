@@ -879,7 +879,7 @@ footer:before{
     text-transform: uppercase;
     letter-spacing: 0.48px;
 	font-family: 'BarlowCondensed-BoldItalic';
-    margin: 0 0 32px 0;
+    margin: 0 0 32px -20px;
 }
 
 .footer_column{
@@ -1940,6 +1940,10 @@ img{
     position: relative;
     z-index: 3;
 }
+.language_footer .column_title,
+.social_footer .column_title{
+    margin: 0 0 20px 0;
+}
 @media (max-width: 1919px){
     .balance,
     .balance span{
@@ -2202,6 +2206,9 @@ img{
     .users.p2{
         max-height: 2766px;
     }
+    .social_footer{
+        margin: 0;
+    }
 }
 @media (max-width: 1223px){
     .ui-tabs-nav{
@@ -2225,7 +2232,7 @@ img{
         margin-right: 0;
     }
     .column_title{
-        margin: 0;
+        margin: 0 0 0 -20px;
     }
     .main .users{
         max-height: 1895px;
@@ -2306,7 +2313,7 @@ img{
         margin: 0;
     }
     .social_footer .column_title{
-        margin: 0 0 25px 0;
+        margin: 0 0 25px -20px;
     }
 }
 @media (max-width: 767px){

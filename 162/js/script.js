@@ -7306,26 +7306,12 @@ $.fn.extend({
 
 
 
+    $(function(){
+        $('.tabs').tabs();
+    });
 
 
 $(document).ready(function(){
-    $('.count-slider1').slick({
-        arrows: true,
-        dots: true,
-        infinite: false
-    });
-        var len = document.querySelector(".count-slider1 .slick-dots").children.length;
-        $(".count1 span").text(len);
-    
-    $('.count-slider2').slick({
-        arrows: true,
-        dots: true,
-        infinite: false
-    });
-        var len = document.querySelector(".count-slider2 .slick-dots").children.length;
-        $(".count2 span").text(len);
-    
-    
     if(window.innerWidth > 767){
         $('.category_level').slick({
           arrows: false,
@@ -7347,6 +7333,11 @@ $(document).ready(function(){
           ]
         });
     };
+    $('.books_slider').slick({
+          arrows: true,
+          infinite: false,
+          variableWidth: true
+    });
     $('.main-menu-btn').click(function(e){
         e.preventDefault();
         $('body').toggleClass('mobil-menu-active');
@@ -7366,7 +7357,19 @@ $(document).ready(function(){
         $('.close').removeClass('active');
         $('.popup-content').removeClass('active');
     });
-    $(function(){
-        $('.tabs').tabs();
+    $('.count-slider1').slick({
+        arrows: true,
+        dots: true,
+        infinite: false,
     });
+    var len1 = document.querySelector(".count-slider1 .slick-dots").children.length;
+    $(".count1 span").text(len1);
+    
+    $('.count-slider2').slick({
+        arrows: true,
+        dots: true,
+        infinite: false,
+    });
+    var len2 = document.querySelector(".count-slider2 .slick-dots").children.length;
+    $(".count2 span").text(len2);
 });

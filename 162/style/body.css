@@ -1253,7 +1253,7 @@ footer .column ul li a:hover{
 .club_life.news{
     margin: 0 0 -107px 0;
 }
-.news-btns a.active{
+.news-btns li.ui-state-active a{
     font-family: 'Inter-Black';
     font-size: 36px;
     line-height: 44px;
@@ -1262,22 +1262,31 @@ footer .column ul li a:hover{
 .news-outside.news{
     margin: 0 0 142px 0;
 }
-.news-btns a.active:hover{
+.news-btns li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+}
+.news-btns li a:hover{
     color: #EB008B;
 }
-.news-btns a{
+.news-btns li.ui-state-active a:hover{
+    color: #EB008B;
+}
+.news-btns li a{
+    display: block;
     font-size: 36px;
     line-height: 44px;
     color: #1A1A1A;
-    margin: 0 20px 0 0;
     letter-spacing: 0.4px;
 }
-.news-btns a:last-child{
+.news-btns li a:last-child{
     margin: 0 0 0 0;
 }
-.news-btns a:hover{
+.news-btns li a:hover{
     transition: 0.3s;
     color: #00C1EB;
+    background: none;
 }
 .adress-btn a{
     display: inline-block;
@@ -1357,6 +1366,9 @@ footer .column ul li a:hover{
 .close.active{
     display: block;
 }
+.feedbacks.margin{
+    margin: 0 0 80px 0;
+}
 .close:before{
     content: "";
     width: 100%;
@@ -1410,6 +1422,26 @@ button{
     line-height: 77px;
     color: #652D90;
     margin: 0;
+    cursor: pointer;
+}
+.about_club_video.about{
+    position: relative;
+}
+.about_club_video.about:after{
+    content: '';
+    width: 286px;
+    right: -75px;
+    top: -70px;
+    position: absolute;
+    height: 286px;
+    background: #00C1EB;
+    filter: blur(40px);
+    border-radius: 50%;
+    z-index: -1;
+}
+.page_title h1:hover{
+    color: #EB008B;
+    transition: 0.3s;
 }
 .page_title p{
     font-family: 'Inter-ExtraLight-BETA';
@@ -1417,6 +1449,13 @@ button{
     line-height: 33px;
     color: #999999;
     margin: 40px 0 84px 1px;
+}
+.page_title p.description-about{
+    font-size: 36px;
+    line-height: 48px;
+    color: #1A1A1A;
+    font-family: 'Inter-Bold';
+    margin: 38px 0 40px 0;
 }
 .events_title{
     font-size: 36px;
@@ -1431,6 +1470,116 @@ button{
     font-family: 'Inter-ExtraLight-BETA';
     color: #652D90;
     margin: 0 0 0 27px;
+}
+.about-us-content p.p-about{
+    font-size: 24px;
+    line-height: 33px;
+    color: #999999;
+    margin: 0 0 58px 2px;
+}
+.clube_life-title.new_title{
+    margin: 99px 0 23px 3px;
+}
+.about-us-img{
+    position: relative;
+    margin: 97px 0 14px 0;
+}
+.about-us-img:after{
+    position: absolute;
+    content: '';
+    background: url(../images/about-us2.png) no-repeat;
+    width: 109px;
+    height: 108px;
+    right: -31px;
+    top: 145px;
+}
+.about_club_item_title p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #999999;
+    max-width: 477px;
+    width: 100%;
+    letter-spacing: 0.2px;
+    font-family: 'Inter-ExtraLight-BETA';
+}
+.about-us-img span{
+    font-family: 'Inter-Black';
+    right: -52px;
+    position: absolute;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-18.11deg);
+    background: #EB008B;
+    padding: 18px 22px 16px 22px;
+    border-radius: 8px;
+    top: 76px;
+}
+.books{
+    margin: 57px 0 80px 3px;
+}
+.books_left{
+    width: 540px;
+    float: left;
+    position: relative;
+    z-index: 5;
+}
+.books_title{
+    font-family: 'Inter-Black';
+    font-size: 48px;
+    line-height: 58px;
+    color: #652D90;
+    margin: 0 0 16px 0;
+}
+.books_description{
+    font-size: 24px;
+    line-height: 36px;
+    color: #1A1A1A;
+}
+.books_left p{
+    margin: 8px 0 0 0;
+}
+.books_btn{
+    margin: 40px 0 0 -5px;
+    max-width: 360px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 16px 54px 16px 54px;
+    border: 1px solid #652D90;
+    border-radius: 8px;                
+}
+.feedback-form.margin{
+    margin: 162px 0 0 0;
+}
+.books_btn a{
+    font-size: 18px;
+    line-height: 22px;
+    color: #652D90;
+}
+.books_right{
+    width: 500px;
+    float: right;
+    margin: 23px 82px 0 0;
+}
+.about-us-content{
+    max-width: 784px;
+    width: 100%;
+}
+.about-us-content p{
+    font-size: 24px;
+    line-height: 33px;
+    color: #1A1A1A;
+    font-family: 'Inter-Regular';
+    margin: 0 0 33px 3px;
+}
+.about-us-content h3{
+    font-family: 'Inter-Black';
+    font-size: 48px;
+    line-height: 58px;
+    margin: 89px 0 17px 3px;
+    color: #652D90;
 }
 .contacts{
     margin: 56px 0 0 0;
@@ -1584,6 +1733,10 @@ button{
 .right_block.right{
     right: 12px;
 }
+.news-socials a svg{
+    display: inline-block;
+    vertical-align: middle;
+}
 .news-socials a{
     background: #F1F1F1;
     border-radius: 50%;
@@ -1703,19 +1856,19 @@ button{
 .method-description{
     flex-basis: 714px;
 }
-.ui-tabs-nav{
+.methods-tab .ui-tabs-nav{
     font-size: 18px;
     margin: -6px 0 56px 0;
 }
-.ui-tabs-nav li{
+.methods-tab .ui-tabs-nav li{
     display: inline-block;
     vertical-align: middle;
     margin: 0 28px 10px 0;
 }
-.ui-tabs-nav li:last-child{
+.methods-tab .ui-tabs-nav li:last-child{
     margin-right: 0;
 }
-.ui-tabs-nav li a{
+.methods-tab .ui-tabs-nav li a{
     display: block;
     text-decoration: none;
     background: #652D90;
@@ -1723,10 +1876,10 @@ button{
     color: #fff;
     padding: 17.5px 25px;
 }
-.ui-tabs-nav li:hover a{
+.methods-tab .ui-tabs-nav li:hover a{
     background: #00C1EB;
 }
-.ui-tabs-nav li.ui-tabs-active a{
+.methods-tab .ui-tabs-nav li.ui-tabs-active a{
     background: #EB008B;
 }
 .method-title{
@@ -1750,6 +1903,118 @@ button{
 }
 .method-text p{
     margin: 0 0 8px 0;
+}
+.events-inside{
+    position: relative;
+    padding: 0 0 76px 0;
+    margin: 0 0 112px 0;
+}
+.events-inside:before{
+    content: "";
+    width: 100vw;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 0 0 50%;
+    left: -50%;
+    background: #F1F1F1;
+}
+.events-inside-left{
+    width: 172px;
+    float: left;
+    margin: 0 32px 0 0;
+}
+.events-inside-right{
+    width: 784px;
+    float: left;
+    position: relative;
+}
+.events-inside-btn{
+    font-size: 14px;
+    margin: 16px 0 128px 0;
+}
+.events-inside-btn a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background: #EB008B;
+    border-radius: 8px;
+    padding: 11.5px 0;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 11px 0 0;
+}
+.events-inside-btn a:last-child{
+    margin: 0;
+}
+.events-inside-btn a:hover{
+    background: #00C1EB;
+}
+.min-articles{
+    margin: 40px 0 0 0;
+    font-family: 'Inter-Regular';
+}
+.min-article{
+    margin: 0 0 31px 0;
+}
+.min-article span{
+    font-size: 18px;
+    line-height: 150%;
+    color: #999;
+}
+.events-inside-right .min-article p{
+    font-size: 18px;
+    line-height: 150%;
+    color: #1A1A1A;
+    margin: 8px 0 0 0;
+}
+.events-inside-commence{
+    margin: 22px 0 42px 0;
+    font-size: 36px;
+    color: #1A1A1A;
+    font-family: 'Inter-Regular';
+}
+.events-inside-right img{
+    display: block;
+    border-radius: 8px;
+    margin: 42px 0 57px 0;  
+}
+.events-inside-right p{
+    font-size: 18px;
+    line-height: 150%;
+    color: #999999;
+    margin: 9px 0 29px 0;
+    font-family: 'Inter-Regular';
+}
+.events-inside-right b{
+    font-size: 24px;
+    color: #1A1A1A;
+    font-weight: normal;
+    line-height: 150%;
+}
+.soc{}
+.soc a{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    background: #F1F1F1;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 11px 0 0;
+}
+.soc a svg{
+    display: inline-block;
+    vertical-align: middle;
+    fill: #633484;
+}
+.events-inside-absolute{
+    width: 172px;
+    position: absolute;
+    top: 184px;
+    left: -203px;
 }
 @media (max-width: 1179px){
     .container{
@@ -1905,11 +2170,17 @@ button{
     .method-description{
         padding: 0 0 0 30px;
     }
-    .ui-tabs-nav li{
+    .methods-tab .ui-tabs-nav li{
         margin: 0 15px 20px 0;
     }
-    .ui-tabs-nav li a{
+    .methods-tab .ui-tabs-nav li a{
         padding: 17.5px 15px;
+    }
+    .events-inside-right{
+        width: 760px;
+    }
+    .books_right{
+        float: left;
     }
 }
 @media (max-width: 980px){
@@ -2138,8 +2409,113 @@ button{
     .close{
         margin: -10px 0 0 302px;
     }
+    .events-inside-right{
+        width: 535px;
+    }
+    .events-inside-commence{
+        font-size: 30px;
+    }
 }
 @media (max-width: 767px){
+    .about_club_item_title.about a{
+        color: #1A1A1A;
+    }
+    .books{
+        margin: 86px 0 80px 3px;
+    }
+    .books_title{
+        font-size: 24px;
+        line-height: 58px;
+        margin: 0 0 -2px -2px;
+    }
+    .books_btn a{
+        font-size: 14px;
+    }
+    .books_btn{
+        max-width: 281px;
+        width: 100%;
+        padding: 16px 30px 16px 30px;
+        margin: 21px 0 0 -5px;
+    }
+    .books_description{
+        font-size: 17px;
+        line-height: 26px;
+        margin: 0 0 0 -2px;
+        max-width: 279px;
+        letter-spacing: 0.8px;
+    }
+    .about_club_video.about:after{
+        width: 207px;
+        right: -75px;
+        top: 459px;
+        height: 207px;
+    }
+    .about_club_item_title p.about{
+        margin: 10px 0 -4px 0;
+        font-size: 14px;
+        max-width: 370px;
+        line-height: 22px;
+    }
+    .about_club_item_title.about{
+        padding: 15px 0;
+    }
+    .about_club_video.about{
+        margin: 34px 0 0 0;
+    }
+    .about_club_item_img.about{
+        max-width: 279px;
+    }
+    .page_title p.description-about {
+        max-width: 275px;
+        width: 100%;
+        font-size: 24px;
+        margin: 20px 0 24px 0;
+        line-height: 32px;
+    }
+    .about-us-content h3{
+        margin: -10px 0 17px 0px;
+        font-size: 25px;
+        line-height: 30px;
+        max-width: 300px;
+        letter-spacing: -0.3px;
+    }
+    .about-us-img{
+        margin: 75px 0 27px 0;
+        max-width: 280px;
+    }
+    .about-us-img span{
+        font-family: 'Inter-Black';
+        right: -29px;
+        position: absolute;
+        font-size: 7px;
+        padding: 4px 10px 0 10px;
+        border-radius: 4px;
+        top: 37px;
+    }
+    .clube_life-title.new_title{
+        margin: 166px 0 14px 0px;
+    }
+    .about-us-content p.p-about{
+        font-size: 17px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+        margin: 0 0 29px 2px;
+    }
+    .about-us-img:after{
+        width: 34px;
+        height: 54px;
+        right: -15px;
+        background-size: 100% 100%;
+        top: 62px;
+    }
+    .about-us-content p{
+        max-width: 281px;
+        letter-spacing: 0.6px;
+        font-size: 17px;
+        margin: 0 0 43px 1px;
+        width: 100%;
+        line-height: 27px;
+    }
      .new{
         max-width: 980px; 
         margin: -2px 0 45px 0;
@@ -2678,13 +3054,13 @@ button{
     .tabs{
         margin: -17px 0 0 0;
     }
-    .ui-tabs-nav{
+    .methods-tab .ui-tabs-nav{
         margin-bottom: 23px;
     }
-    .ui-tabs-nav li{
+    .methods-tab .ui-tabs-nav li{
         margin: 0 1px 8px 0;
     }
-    .ui-tabs-nav li a{
+    .methods-tab .ui-tabs-nav li a{
         padding: 19.5px 25px;
         font-size: 14px;
     }
@@ -2713,5 +3089,74 @@ button{
     }
     .count-slider .slick-slide img{
         max-width:  calc(100vw - 41px);
+    }
+    .events-inside-btn a{
+        display: inline-block;
+        padding: 12.5px 15px;
+    }
+    .events-inside-btn{
+        margin: 55px 0 13px 0;
+        font-size: 12px;
+    }
+    .events-inside-absolute{
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    .events-inside-commence{
+        font-size: 24px;
+        line-height: 133%;
+        margin: 10px 0 18px 0;
+    }
+    .events-inside-left,
+    .events-inside-right{
+        width: 100%;
+        float: none;
+    }
+    .events-inside-absolute{
+        width: 100%;
+    }
+    .min-articles{
+        margin: 22px 0 0 0;
+    }
+    .min-article span{
+        font-size: 14px;
+    }
+    .events-inside-right .min-article p{
+        font-size: 14px;
+    }
+    .min-article{
+        margin: 0 0 26px 0;
+    }
+    .events-inside-right p{
+        font-size: 14px;
+        line-height: 157%;
+        margin: 9px 0 17px 0;
+    }
+    .events-inside-right b{
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .events-inside-right img{
+        margin: 42px 0 25px 0;
+    }
+    .events-inside {
+        padding: 0 0 40px 0;
+        margin: 0 0 -72px 0;
+    }
+    .news-btns{
+        margin: 0;
+        padding: 14px 0 30px 0;
+    }
+    .news-btns li{
+        margin: 0 15px 8px 0;
+    }
+    .news-btns li a,
+    .news-btns li.ui-state-active a{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .news-tabs{
+        margin: 0;
     }
 }

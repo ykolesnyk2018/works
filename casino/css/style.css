@@ -2135,6 +2135,9 @@ img{
     .level{
         display: none;
     }
+    .main .level{
+        display: block;
+    }
     .header{
         padding: 10px 0;
     }
@@ -2194,6 +2197,9 @@ img{
     .social_footer{
         margin: 0;
     }
+    .main .header{
+        padding: 0;
+    }
 }
 @media (max-width: 1223px){
     .ui-tabs-nav{
@@ -2228,6 +2234,12 @@ img{
     .footer_column{
         max-width: 49%;
     }
+    .main .level{
+        display: none;
+    }
+    .main .header{
+        padding: 10px 0;
+    }
 }
 @media (max-width: 979px){
     .install{
@@ -2246,7 +2258,9 @@ img{
     .top-bar nav{
         padding: 0;
     }
-    
+    .users{
+        display: none;
+    }
     
     
     .top-bar nav{

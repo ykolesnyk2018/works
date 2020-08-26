@@ -1,4 +1,4 @@
-$( document ).ready(function(){   
+$(document).ready(function(){   
     $(function() {
       $('select').styler();
     });
@@ -31,8 +31,11 @@ $( document ).ready(function(){
     $(function(){
         $(".tabs").tabs();
     });
-    var height = $('body').height() - $('footer').height() - $('.users-top-minus').height();
-    $('.users').css({
-        height: height + 'px'
-    });
+    
+    setTimeout(function(){
+        var height = $('.right_bar').height() - $('.users-top-minus').height();
+        $('.users').css({
+            height: height + 'px'
+        });
+    },500);
 });

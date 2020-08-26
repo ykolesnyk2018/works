@@ -935,7 +935,7 @@ footer:before{
 }
 .action>div{
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 .action:before{
     content: "";
@@ -964,6 +964,7 @@ footer:before{
 }
 .action-decription p{
     margin: 10px 0 7px 0;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.7);
 }
 .action-decription p.big{
     font-size: 33px;
@@ -979,6 +980,7 @@ footer:before{
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 2;
 }
 .action-img img{
     display: block;
@@ -998,6 +1000,7 @@ footer:before{
     padding: 0 0 0 19px;
     position: relative;
     display: block;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.7);
 }
 .action-decription ul li span{
     color: #feff3e;
@@ -2122,6 +2125,17 @@ img{
     .users.p2{
         max-height: 2860px;
     }
+    .actions{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .action{
+        flex-basis: 46%;
+    }
+    .users.p{
+        max-height: 1690px;
+    }
 }
 @media (max-width: 1440px){
     .tickets_content{
@@ -2209,6 +2223,9 @@ img{
     .social_footer{
         margin: 0;
     }
+    .users.p{
+        max-height: 1625px;
+    }
 }
 @media (max-width: 1223px){
     .ui-tabs-nav{
@@ -2242,6 +2259,15 @@ img{
     }
     .users.p2 {
         max-height: 3065px;
+    }
+    .action{
+        flex-basis: 680px;
+    }
+    .users.p{
+        max-height: 2640px;
+    }
+    .footer_column{
+        max-width: 49%;
     }
 }
 @media (max-width: 979px){
@@ -2700,6 +2726,13 @@ img{
         left: 0;
         z-index: 1;
         background: rgba(0,0,0,0.2)
+    }
+    .action{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .social_footer .column_title{
+        margin-left: 0;
     }
 }
 

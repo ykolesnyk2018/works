@@ -2,3 +2,57 @@
     display: inline-block;
     vertical-align: bottom;
 }
+.count-slider{
+    overflow: hidden;
+    width: 100%;
+}
+.count-slider .slick-slide{
+    float: left;
+}
+.count-slider img{
+    display: block;
+}
+.count-slider .slick-list{
+    overflow: hidden;
+}
+.count-slider .slick-arrow{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30%;
+    border: 0;
+    background: none;
+    font-size: 0;
+    z-index: 1;
+}
+.count-slider .slick-next{
+    right: 0;
+}
+.count-slider .slick-prev{
+    left: 0;
+}
+.count-slider .slick-arrow:hover{
+    background: rgba(0,0,0,0.15);
+}
+.count-slider .slick-dots{
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: rgba(26, 26, 26, 0.5);
+    padding: 8.5px 35px 8.5px 14px;
+    border-radius: 20px;
+    z-index: 2;
+}
+.count-slider .slick-dots li{
+    display: none;animation-delay: 
+}
+.count-slider .slick-dots li.slick-active{
+    display: block;
+}
+.count-slider .slick-dots li.slick-active button{
+    font-size: 18px;
+    color: #fff;
+    border: 0;
+    background: none;
+    font-family: 'Inter-Regular';
+}

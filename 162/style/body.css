@@ -2505,6 +2505,9 @@ button{
     text-decoration: none;
     padding: 25.5px 0 25.5px 0;
 }
+#tab2 .new{
+    margin: 0 0 45px 0;
+}
 @media (max-width: 1179px){
     .container{
         width: 980px;

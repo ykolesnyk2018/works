@@ -67,6 +67,10 @@ $( document ).ready(function(){
         e.preventDefault();
         $('.popup1').addClass('active');
     });
+    $('.open-popup2').click(function(e){
+        e.preventDefault();
+        $('.popup2').addClass('active');
+    });
     $('.close, .hidden').click(function(e){
         e.preventDefault();
         $('.hidden').removeClass('active');

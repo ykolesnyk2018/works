@@ -750,6 +750,7 @@ footer .container{
     display: block;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 .footer-nav>a{
     color: #fff;
@@ -877,6 +878,9 @@ footer .container{
 }
 .mobile-btn{
     display: none;
+}
+.overflow{
+    overflow: hidden;
 }
 @media (max-width: 1139px){
     .container{ 

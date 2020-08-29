@@ -19,11 +19,11 @@
         });
     };
 $( document ).ready(function(){
-    $('.main-menu-btn').click(function(e){
+    $('.main-menu-btn, .main-menu ul li a').click(function(e){
         e.preventDefault();
         $('body').toggleClass('mobile-menu-active');
     });
-    $('.up').click( function(){ // ловим клик по ссылке с классом go_to
+    $('.up, .main-menu ul li a').click( function(){ // ловим клик по ссылке с классом go_to
 	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
         if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
 	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); // анимируем скроолинг к элементу scroll_el
@@ -39,5 +39,38 @@ $( document ).ready(function(){
                     $('.up').removeClass('active');
                 }
     });
-    
+     $('.tarif1-btn').click(function(e){
+        $(".tarif1 .tarif-price b").text("1900");
+        $(".tarif2 .tarif-price b").text("2900");
+        $(".tarif3 .tarif-price b").text("7500");
+        $(".tarif-duration").text("3 месяца");
+    });
+     $('.tarif2-btn').click(function(e){
+        $(".tarif-price b").text("7500");
+        $(".tarif1 .tarif-price b").text("2900");
+        $(".tarif2 .tarif-price b").text("3900");
+        $(".tarif3 .tarif-price b").text("10000");
+        $(".tarif-duration").text("6 месяцев");
+    });
+     $('.tarif3-btn').click(function(e){
+        $(".tarif1 .tarif-price b").text("4900");
+        $(".tarif2 .tarif-price b").text("5900");
+        $(".tarif3 .tarif-price b").text("15000");
+        $(".tarif-duration").text("1 год");
+    });
+     $('.open-popup').click(function(e){
+        e.preventDefault();
+        $('.hidden').addClass('active');
+        $('.close').addClass('active');
+    });
+    $('.open-popup1').click(function(e){
+        e.preventDefault();
+        $('.popup1').addClass('active');
+    });
+    $('.close, .hidden').click(function(e){
+        e.preventDefault();
+        $('.hidden').removeClass('active');
+        $('.close').removeClass('active');
+        $('.popup').removeClass('active');
+    });
 });

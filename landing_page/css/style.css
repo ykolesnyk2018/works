@@ -487,6 +487,10 @@ h3{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+.tarif-btn a.active{
+    background: #3CBB91;
+    color: #fff;
+}
 .tarif-title{
     font-weight: 600;
     font-size: 36px;
@@ -588,6 +592,13 @@ h3{
     position: absolute;
     bottom: 100%;
     left: 0;
+}
+.tarif-top span{
+    cursor: pointer;
+}
+.tarif-top span:hover{
+    color: #999;
+    transition: 0.3s;
 }
 .hit-top{
     bottom: 100%;
@@ -802,6 +813,67 @@ footer .container{
 }
 .main-title br{
     display: none;
+}
+.hidden{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 97;
+    display: none;
+}
+.hidden.active{
+    display: block;
+}
+.popup{
+    width: 440px;
+    position: fixed;
+    top: 5vh;
+    max-height: 90vh;
+    overflow: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 98;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: none;
+}
+.popup.active{
+    display: block;
+}
+.popup .default{
+    margin: 0;
+    width: 100%;
+}
+.popup .default input{
+    margin: 0 0 15px 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15.4px 20px 15.4px 26px;
+}
+.popup .default button{
+    position: static;
+    margin: 0 auto;
+    display: block;
+}
+.popup-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 0 30px 0;
+}
+.close{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #000;
+    cursor: pointer;
 }
 @media (max-width: 1139px){
     .container{ 
@@ -1374,7 +1446,7 @@ footer .container{
     .main-menu-btn{
         position: absolute;
         right: 0;
-        top: -67px;
+        top: -40px;
         margin: 0;
     }
     .free-test-btn{
@@ -1447,6 +1519,10 @@ footer .container{
     }
     .mobile-menu-active .free-test-btn{
         margin: 31px 0 0 auto;
+        display: block;
+        position: absolute;
+        right: 0;
+        transition: 0.5s;
     }
     .main-menu ul:before{
         width: 70vw;
@@ -1604,6 +1680,13 @@ footer .container{
     }
     .how-use-text{
         margin: 0 auto;
+    }
+    .popup{
+        width: 290px;
+    }
+    .free-test-btn{
+        right: -100vw;
+        position: absolute;
     }
     .footer-nav ul li{
         display: block;

@@ -77,7 +77,8 @@ $( document ).ready(function(){
         $('.close').removeClass('active');
         $('.popup').removeClass('active');
     });
-    
+});
+
     
 	$(".main-form").submit(function() {
 		$.ajax({
@@ -93,4 +94,3 @@ $( document ).ready(function(){
 		});
 		return false;
 	});
-});

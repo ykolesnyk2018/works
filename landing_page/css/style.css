@@ -265,6 +265,9 @@ header{
     right: 0;
     font-size: 14px;
 }
+.footer-nav nav ul li span{
+    display: none;
+}
 .how-it-work{
     max-width: 800px;
     margin: 0 auto;
@@ -881,6 +884,10 @@ footer .container{
 }
 .overflow{
     overflow: hidden;
+}
+.all-ok{
+    color: green;
+    text-align: center;
 }
 @media (max-width: 1139px){
     .container{ 
@@ -1702,6 +1709,13 @@ footer .container{
     .mobile-form,
     .main form.mobile-form{
         display: none;
+    }
+    .footer-nav a{
+        display: none;
+    }
+    .footer-nav nav ul li span{
+        display: block;
+        margin: 10px 0 0 0;
     }
     .mobile-btn{
         display: block;

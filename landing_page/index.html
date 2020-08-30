@@ -70,8 +70,8 @@
                         Идеально для увеличения потока заявок с онлайн-карт и локального поиска, более 50 площадок в базе.
                         <span>15 дней бесплатно. Пробуйте!</span>
                     </div>
-                    <form class="mobile-form main-form1" method="post">
-                        <input type="text" placeholder="Введите ваш email" required name="email">
+                    <form class="mobile-form" id="form1" method="post">
+                        <input type="email" placeholder="Введите ваш email" required name="email">
                         <button>Начать бесплатно</button>
                     </form>
                     <a href="#" class="mobile-btn open-popup open-popup1">Начать бесплатно</a>
@@ -122,8 +122,8 @@
                         <img src="images/thanls-img.jpg" alt="">
                     </div>
                     <div class="ps-text">P.S. Да кстати, если вы уже знакомы с нами,то ниже будет кнопка.<br> Нажмите на нее и мы вам вышлем бесплатный доступ на 15 дней</div>
-                    <form class="default mobile-form main-form">
-                        <input type="text" placeholder="Введите ваш email">
+                    <form class="default mobile-form" id="form2" method="post">
+                        <input type="email" placeholder="Введите ваш email" required name="email">
                         <button>Начать бесплатно</button>
                     </form>
                     <a href="#" class="mobile-btn open-popup open-popup1">Начать бесплатно</a>
@@ -502,8 +502,8 @@
                         <span>Попробуйте!</span>
                     </div>
                     <div class="free-form-right">
-                        <form class="default mobile-form main-form">
-                            <input type="text" placeholder="Введите ваш email">
+                        <form class="default mobile-form" id="form3" method="post">
+                            <input type="email" placeholder="Введите ваш email"  required name="email">
                             <button>Бесплатный тест</button>
                         </form>
                         <a href="#" class="mobile-btn open-popup open-popup1">Бесплатный тест</a>
@@ -533,7 +533,7 @@
                     <div class="footer-nav">
                         <nav>
                             <ul>
-                                <li><a class="open-popup open-popup2">Тех. поддержка:</a></li>
+                                <li><a class="open-popup open-popup2">Тех. поддержка: <span>team@reviewss.me</span></a></li>
                                 <li><a href="#how-it-work">Как это работает</a></li>
                                 <li><a href="#tarifs">Тарифы</a></li>
                                 <li><a href="#contacts">Контакты</a></li>
@@ -578,18 +578,18 @@
                 <div class="popup popup1">
                     <div class="close">x</div>
                     <div class="popup-title">Заявка на бесплатный тест</div>
-                    <form class="default">
-                        <input type="text" placeholder="Ваш телефон">
-                        <input type="text" placeholder="Ваш email">
+                    <form class="default" id="form4" method="post">
+                        <input type="text" placeholder="Ваш телефон" name="phone" required>
+                        <input type="email" placeholder="Ваш email" name="email" required>
                         <button>Отправить заявку</button>
                     </form>
                 </div>
                 <div class="popup popup2">
                     <div class="close">x</div>
                     <div class="popup-title">Служба поддержки</div>
-                    <form class="default">
-                        <input type="text" placeholder="Ваш телефон">
-                        <input type="text" placeholder="Ваш email">
+                    <form class="default" id="form5" method="post">
+                        <input type="text" placeholder="Ваш телефон" name="phone" required>
+                        <input type="email" placeholder="Ваш email" name="email" required>
                         <button>Отправить запрос</button>
                     </form>
                 </div>
@@ -597,21 +597,5 @@
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/script.js"></script>
-        <script>
-            $(".main-form1").submit(function() {
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php",
-                    data: $(this).serialize()
-                }).done(function() {
-                    $(this).find("input").val("");
-
-                    document.getElementsByClassName('main-form1').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
-
-                    $(".main-form1").trigger("reset");
-                });
-                return false;
-            });
-        </script>
     </body>
 </html>

@@ -1,4 +1,73 @@
+$("#form1").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
 
+                    document.getElementById('form1').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+
+                    $("#form1").trigger("reset");
+                });
+                return false;
+            });
+            $("#form2").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+
+                    document.getElementById('form2').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+
+                    $("#form2").trigger("reset");
+                });
+                return false;
+            });
+            $("#form3").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+
+                    document.getElementById('form3').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+
+                    $("#form3").trigger("reset");
+                });
+                return false;
+            });
+            $("#form4").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail2.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+
+                    document.getElementById('form4').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+
+                    $("#form4").trigger("reset");
+                });
+                return false;
+            });
+            $("#form5").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail2.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+
+                    document.getElementById('form5').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+
+                    $("#form5").trigger("reset");
+                });
+                return false;
+            });
     
     if(window.innerWidth < 992){
         $('.clients').slick({
@@ -18,6 +87,7 @@
             ]
         });
     };
+            
 $( document ).ready(function(){
     $('.main-menu-btn, .main-menu ul li a').click(function(e){
         e.preventDefault();

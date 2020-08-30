@@ -78,19 +78,3 @@ $( document ).ready(function(){
         $('.popup').removeClass('active');
     });
 });
-
-    
-	$(".main-form").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-            
-            document.getElementsByClassName('main-form').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
-			
-            $(".main-form").trigger("reset");
-		});
-		return false;
-	});

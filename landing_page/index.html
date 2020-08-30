@@ -70,7 +70,7 @@
                         Идеально для увеличения потока заявок с онлайн-карт и локального поиска, более 50 площадок в базе.
                         <span>15 дней бесплатно. Пробуйте!</span>
                     </div>
-                    <form class="mobile-form main-form" method="post">
+                    <form class="mobile-form main-form1" method="post">
                         <input type="text" placeholder="Введите ваш email" required name="email">
                         <button>Начать бесплатно</button>
                     </form>
@@ -597,5 +597,21 @@
         <script src="js/jquery-1.12.4.min.js"></script>
         <script src="js/jquery-ui.min.js"></script>
         <script src="js/script.js"></script>
+        <script>
+            $(".main-form1").submit(function() {
+                $.ajax({
+                    type: "POST",
+                    url: "mail.php",
+                    data: $(this).serialize()
+                }).done(function() {
+                    $(this).find("input").val("");
+
+                    document.getElementsByClassName('main-form').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+
+                    $(".main-form").trigger("reset");
+                });
+                return false;
+            });
+        </script>
     </body>
 </html>

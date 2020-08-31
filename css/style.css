@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: Arial;
+    padding: 0 0 30px 0;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0 40px 0;
+}
+.slogan{
+    font-weight: bold;
+    font-size: 24px;
+}
+.slogan .yellow{
+    color: orange;
+}
+.pink{
+    color: hotpink;
+}
+.contacts{
+}
+.contacts p{
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0 0 0 20px;
+}
+.contacts p a{
+    color: skyblue;
+    text-decoration: none;
+}
+.contacts p a:hover{
+    color: cadetblue;
+}
+.contacts img{
+    max-width: 24px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%)
+}
+.contacts a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.projects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project{
+    flex-basis: 50%;
+    overflow: hidden;
+}
+.project>p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.project a{
+    display: block;
+    font-size: 16px;
+    color: skyblue;
+    text-decoration: none;
+    margin: 10px 0;
+}
+.project a:hover{
+    text-decoration: underline;
+}

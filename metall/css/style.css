@@ -1,0 +1,1425 @@
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans SemiBold'), local('fonts/firasans/Firasans-SemiBold'), url('fonts/firasans/Firasanssemibold.woff2') format('woff2'), url('fonts/firasans/Firasanssemibold.woff') format('woff'), url('fonts/firasans/Firasanssemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSansMedium';
+    src: local('Fira Sans Medium'), local('fonts/firasans/Firasans-Medium'), url('fonts/firasans/Firasansmedium.woff2') format('woff2'), url('fonts/firasans/Firasansmedium.woff') format('woff'), url('fonts/firasans/Firasansmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Medium Italic'), local('fonts/firasans/Firasans-MediumItalic'), url('fonts/firasans/Firasansmediumitalic.woff2') format('woff2'), url('fonts/firasans/Firasansmediumitalic.woff') format('woff'), url('fonts/firasans/Firasansmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Italic'), local('fonts/firasans/Firasans-Italic'), url('fonts/firasans/Firasansitalic.woff2') format('woff2'), url('fonts/firasans/Firasansitalic.woff') format('woff'), url('fonts/firasans/Firasansitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans ExtraLight'), local('fonts/firasans/Firasans-ExtraLight'), url('fonts/firasans/Firasansextralight.woff2') format('woff2'), url('fonts/firasans/Firasansextralight.woff') format('woff'), url('fonts/firasans/Firasansextralight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSans Light';
+    src: local('Fira Sans Light Italic'), local('fonts/firasans/Firasans-LightItalic'), url('fonts/firasans/Firasanslightitalic.woff2') format('woff2'), url('fonts/firasans/Firasanslightitalic.woff') format('woff'), url('fonts/firasans/Firasanslightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FiraSansLight';
+    src: local('Fira Sans Light'), local('fonts/firasans/Firasans-Light'), url('fonts/firasans/Firasanslight.woff2') format('woff2'), url('fonts/firasans/Firasanslight.woff') format('woff'), url('fonts/firasans/Firasanslight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSansBook';
+    src: local('Fira Sans Book'), local('fonts/firasans/Firasans-Book'), url('fonts/firasans/Firasansbook.woff2') format('woff2'), url('fonts/firasans/Firasansbook.woff') format('woff'), url('fonts/firasans/Firasansbook.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSansRegular';
+    src: local('Fira Sans Regular'), local('fonts/firasans/Firasans-Regular'), url('fonts/firasans/Firasansregular.woff2') format('woff2'), url('fonts/firasans/Firasansregular.woff') format('woff'), url('fonts/firasans/Firasansregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Heavy'), local('fonts/firasans/Firasans-Heavy'), url('fonts/firasans/Firasansheavy.woff2') format('woff2'), url('fonts/firasans/Firasansheavy.woff') format('woff'), url('fonts/firasans/Firasansheavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans SemiBold Italic'), local('fonts/firasans/Firasans-SemiBoldItalic'), url('fonts/firasans/Firasanssemibolditalic.woff2') format('woff2'), url('fonts/firasans/Firasanssemibolditalic.woff') format('woff'), url('fonts/firasans/Firasanssemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Bold Italic'), local('fonts/firasans/Firasans-BoldItalic'), url('fonts/firasans/Firasansbolditalic.woff2') format('woff2'), url('fonts/firasans/Firasansbolditalic.woff') format('woff'), url('fonts/firasans/Firasansbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans ExtraLight Italic'), local('fonts/firasans/Firasans-ExtraLightItalic'), url('fonts/firasans/Firasansextralightitalic.woff2') format('woff2'), url('fonts/firasans/Firasansextralightitalic.woff') format('woff'), url('fonts/firasans/Firasansextralightitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'FiraSansBold';
+    src: local('Fira Sans Bold'), local('fonts/firasans/Firasans-Bold'), url('fonts/firasans/Firasansbold.woff2') format('woff2'), url('fonts/firasans/Firasansbold.woff') format('woff'), url('fonts/firasans/Firasansbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Heavy Italic'), local('fonts/firasans/Firasans-HeavyItalic'), url('fonts/firasans/Firasansheavyitalic.woff2') format('woff2'), url('fonts/firasans/Firasansheavyitalic.woff') format('woff'), url('fonts/firasans/Firasansheavyitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans ExtraBold'), local('fonts/firasans/Firasans-ExtraBold'), url('fonts/firasans/Firasansextrabold.woff2') format('woff2'), url('fonts/firasans/Firasansextrabold.woff') format('woff'), url('fonts/firasans/Firasansextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FiraSans Book';
+    src: local('Fira Sans Book Italic'), local('fonts/firasans/Firasans-BookItalic'), url('fonts/firasans/Firasansbookitalic.woff2') format('woff2'), url('fonts/firasans/Firasansbookitalic.woff') format('woff'), url('fonts/firasans/Firasansbookitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans ExtraBold Italic'), local('fonts/firasans/Firasans-ExtraBoldItalic'), url('fonts/firasans/Firasansextrabolditalic.woff2') format('woff2'), url('fonts/firasans/Firasansextrabolditalic.woff') format('woff'), url('fonts/firasans/Firasansextrabolditalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+body{
+    font-family: 'FiraSansBook';
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header{
+    padding: 31px 0 16px 0;
+    border-bottom: 2px solid #BF3D3D;
+    background: #fff;
+}
+.logo{
+    float: left;
+    margin: 0 51px 0 0;
+}
+.main-menu{
+    float: left;
+    font-family: 'FiraSansMedium';
+    font-size: 12px;
+    margin: -3px 0 0 0;
+}
+.main-menu ul{}
+.main-menu ul li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 29px 0 0;
+}
+.main-menu ul li:last-child{
+    margin: 0;
+}
+.main-menu ul li a{
+    display: block;
+    color: #282828;
+    position: relative;
+    text-decoration: none;
+    position: relative;
+}
+.main-menu ul li a svg{
+    display: block;
+    fill: #282828;
+}
+.main-menu ul li a.catalog-btn{
+    padding: 0 0 0 12px;
+}
+.main-menu ul li a.catalog-btn:before{
+    content: "";
+    width: 9px;
+    height: 8px;
+    position: absolute;
+    background: url(../images/icons/catalog-close.svg) no-repeat;
+    top: 2px;
+    left: 1px;
+}
+.main-menu ul li a.catalog-btn.active:before{
+    background: url(../images/icons/catalog-open.svg) left top no-repeat;
+}
+.main-menu ul li a.active:after,
+.main-menu ul li.active a:after,
+.main-menu ul li:hover a:after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -4px;
+    background: #BF3D3D;
+    left: 0;
+}
+.social{
+    float: left;
+}
+.social a{
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #454545;
+}
+.social a svg{
+    display: block;
+    fill: #454545;
+}
+.header-right{
+    float: right;
+}
+.header-right>div{
+    display: inline-block;
+    vertical-align: top;
+}
+.contact{
+    margin: -6px 0 0 0;
+}
+.contact a{
+    text-decoration: none;
+}
+.contact a svg{
+    fill: #2B2B2B;
+}
+.phone{
+    font-size: 15px;
+    font-family: 'FiraSansRegular';
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 0 19px;
+}
+.phone a{
+    color: #282828;
+    text-decoration: none;
+}
+.phone a:hover{
+    color: #BF3D3D;
+}
+.phone a svg{
+    fill: #2B2B2B;
+    margin: 4px 5px 0 0;
+}
+.cart{
+    margin: -10px 0 0 28px;
+}
+.cart a{
+    display: inline-block;
+    text-decoration: none;
+}
+.order-call{
+    display: block;
+    font-size: 11px;
+    color: #BF3D3D;
+    text-align: right;
+}
+.order-call span{
+    display: inline-block;
+    border-bottom: 1px dashed #BF3D3D;
+}
+.order-call:hover span{
+    border: 0;
+    padding: 0 0 1px 0;
+}
+.cart a svg{
+    fill: #2B2B2B;
+}
+.cart a:hover svg{
+    fill: #BF3D3D;
+}
+.breadcrumbs{
+    font-size: 12px;
+    margin: 49px 0 29px 0;
+    font-family: 'FiraSansLight';
+}
+.breadcrumbs a{
+    display: inline-block;
+    vertical-align: middle;
+    color: #A0A0A0;
+    position: relative;
+    margin: 0 8px 0 0;
+}
+.breadcrumbs a:after{
+    content: "|";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: -8px;
+}
+.breadcrumbs a:last-child:after{
+    display: none;
+}
+.breadcrumbs a:last-child{
+    text-decoration: none;
+}
+.breadcrumbs a:hover{
+    text-decoration: none;
+}
+h1{
+    font-weight: normal;
+    margin: 29px 0 20px 0;
+    padding: 0;
+    font-size: 34px;
+    color: #282828;
+    font-family: 'FiraSansBold';
+}
+.actions{
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+    font-family: 'FiraSansBold';
+}
+.action{
+    display: block;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    border-right: 1px solid #F4F4F4;
+    font-size: 16px;
+    line-height: 19px;
+    color: #282828;
+    padding: 0 0 32px 0;
+}
+.action-img{
+    line-height: 80px;
+    height: 80px;
+    padding: 22px 0 10px  0;
+}
+.action-img img{
+    display: inline-block;
+    vertical-align: middle;
+}
+.action-title-bold{
+    max-width: 95px;
+    margin: 27px auto 26px auto;
+    font-size: 21px;
+    line-height: 25px;
+}
+.action a{
+    width: 140px;
+    margin: 0 auto;
+    display: block;
+    border: 2px solid #BF3D3D;
+    letter-spacing: 0.1em;
+    color: #BF3D3D;
+    text-decoration: none;
+    font-family: 'FiraSansMedium';
+    text-transform: uppercase;
+    font-size: 11px;
+    box-sizing: border-box;
+    padding: 6px 0 4px 0;
+}
+.select-parameters{
+    background: #fff;
+    margin: 40px 0 0 0;
+}
+.select-parameters-top{
+    font-family: 'FiraSansMedium';
+    border: 3px solid #BF3D3D;
+    padding: 0 0 0 32px;
+    letter-spacing: 0.05em;
+    color: #282828;
+    font-size: 20px;
+    padding: 13px 0 9px 29px;
+    position: relative;
+    cursor: pointer;
+}
+.select-parameters-top.active{
+    border-bottom: 0;
+}
+.select-parameters-top:after{
+    content: "";
+    width: 88px;
+    height: 100%;
+    border-left: 3px solid #BF3D3D; 
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../images/select-parameters-arrow.svg) center center no-repeat;
+    background-position: center 10px;
+}
+.select-parameters-top.active + .select-parameters-content{
+    display: block;
+}
+.select-parameters-content{
+    width: 100%;
+    height: 307px;
+    border: 3px solid #BF3D3D;
+    box-sizing: border-box;
+    display: none;
+}
+.select-parameters-row{
+    width: auto;
+    overflow: auto;
+    height: 238px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 8px 10px 0 26px;
+    padding: 0 19px 0 0;
+}
+.select-parameters-column{
+    flex-basis: 189px;
+}
+.select-parameters-title{
+    font-size: 18px;
+    font-family: 'FiraSansBold';
+    border-bottom: 1px solid #BF3D3D;
+    padding: 12.5px 0 10px 0;
+    margin: 0 0 20px 0;
+}
+.checkbox{
+    margin: 0 0 8px 0;
+}
+.checkbox input{
+    display: none;
+}
+.checkbox label{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'FiraSansLight';
+    padding: 0 0 0 31px;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox label:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 15px;
+    height: 15px;
+    border: 1px solid #F4F4F4;
+    box-sizing: border-box;
+}
+.checkbox input:checked + label:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    left: 3.5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: #BF3D3D;
+    position: absolute;
+}
+/* полоса прокрутки (скроллбар) */
+.select-parameters-row::-webkit-scrollbar {
+    width: 6px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    background-color: #F4F4F4;
+    border-radius: 10px;
+}
+/* ползунок скроллбара */
+.select-parameters-row::-webkit-scrollbar-thumb {
+    background-color: #DADADA;
+    border-radius: 10px;
+}
+.select-parameters-row::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+.select-parameters-row::-webkit-scrollbar-button:vertical:start:decrement {
+    display: none;
+}
+.select-parameters-row::-webkit-scrollbar-button:vertical:end:increment {
+    display: none;
+}
+.select-parameters-row::-webkit-scrollbar-button:horizontal:start:decrement {
+    display: none;
+}
+.select-parameters-row::-webkit-scrollbar-button:horizontal:end:increment {
+    display: none;
+}
+.select-parameters-content{}
+.select-parameters-content button{
+    display: block;
+    margin: 4px 30px 0 auto;
+    width: 200px;
+    border: 2px solid #BF3D3D;
+    background: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #BF3D3D;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'FiraSansMedium';
+    padding: 11.5px 0;
+    font-size: 11px;
+    transition: 0.3s;
+}
+.select-parameters-content button:hover{
+    background: #BF3D3D;
+    color: #fff;
+}
+.cart-table{
+    margin: 37px 0px 48px 0;
+}
+.cart-table-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 29px 0;
+}
+.cart-table-top-left{
+    font-size: 14px;
+    padding: 3px 0 0 2px;
+}
+.cart-table-top-left a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #BF3D3D;
+    border-bottom: 1px dashed #BF3D3D;
+    margin: 0 0 0 5px;
+}
+.cart-table-top-left a:hover{
+    border: 0;
+    padding: 0 0 1px 0;
+}
+.cart-table-top-right{
+    font-family: 'FiraSansBold';
+    font-size: 14px;
+    color: #BF3D3D;
+    position: relative;
+    padding: 0 3px 0 0;
+}
+.cart-table-top-right:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(../images/icons/review.svg) no-repeat;
+    position: absolute;
+    left: -15px;
+    top: 40%;
+    transform: translate(0,-50%);
+}
+.add-to-cart{
+    width: 65px;
+    height: 48px;
+    line-height: 48px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #fff;
+    transition: 0.3s;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.add-to-cart svg{
+    fill: #BF3D3D;
+    display: inline-block;
+    vertical-align: middle;
+    fill: #BF3D3D;
+}
+.cart-table table tr:nth-child(odd) .add-to-cart{
+    background: #BF3D3D;
+}
+.cart-table table tr:nth-child(odd) .add-to-cart svg{
+    fill: #fff;
+}
+.cart-table table tr:nth-child(odd) .add-to-cart:hover svg{
+    fill: #BF3D3D;
+}
+.cart-table table tr:nth-child(odd) .add-to-cart:hover{
+    background: #fff;
+}
+.add-to-cart:hover{
+    background: #BF3D3D;
+}
+.add-to-cart:hover svg{
+    fill: #fff;
+}
+.cart-table table{
+    width: 100%;
+}
+.cart-table table th{
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+    text-align: right;
+    font-weight: normal;
+    padding-bottom: 7px; 
+}
+.cart-table table th a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    color: #282828;
+    position: relative;
+    padding: 0 18px 0 0;
+}
+.cart-table table th a:after{
+    content: "";
+    width: 14px;
+    height: 9px;
+    position: absolute;
+    background: url(../images/icons/table-arrow.svg) center bottom no-repeat;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.cart-table table th:first-child{
+    text-align: left;
+    padding-left: 17px;
+}
+.cart-table table th:first-child a{
+    font-family: 'FiraSansBold';
+    font-size: 15px;
+    line-height: 18px;
+}
+.cart-table table{
+    padding: 0;
+    border: 0;
+    border-spacing: 0;
+}
+.cart-table table tr td{
+    padding: 5px 0;
+    border-bottom: 10px solid #E5E5E5;
+}
+.cart-table table tr td:nth-child(1){
+    min-width: 234px;
+    max-width: 234px;
+}
+.cart-table table tr td:nth-child(2){
+    min-width: 117px;
+    max-width: 117px;
+}
+.cart-table table tr td:nth-child(3){
+    min-width: 110px;
+    max-width: 110px;
+}
+.cart-table table tr td:nth-child(4){
+    min-width: 89px;
+    max-width: 89px;
+}
+.cart-table table tr td:nth-child(5){
+    min-width: 118px;
+    max-width: 110px;
+}
+.cart-table table tr td:nth-child(6){
+    min-width: 89px;
+    max-width: 89px;
+}
+.cart-table table tr td:nth-child(7){
+    min-width: 117px;
+    max-width: 117px;
+}
+.cart-table table tr td:nth-child(8){
+    min-width: 65px;
+    max-width: 65px;
+}
+.cart-table table tr:last-child td{
+    border-bottom: 0;
+}
+.cart-table table tr td{
+    background: #fff;
+    border-right: 1px solid #E5E5E5;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: right;
+    padding: 0 10px 0 0;
+    box-sizing: border-box;
+}
+.cart-table .center{
+    text-align: center;
+}
+.cart-table table tr td:first-child{
+    font-family: 'FiraSansBold';
+    text-align: left;
+    padding: 0 0 0 17px;
+    position: relative;
+}
+.cart-table table tr td:first-child:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #54A017;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.cart-table table tr td:last-child{
+    border-right: 0;
+}
+.cart-table table tr:nth-child(odd) td{
+    background: #DADADA;
+}
+.cart-table table tr td input{
+    width: 89px;
+    display: block;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid #BF3D3D;
+    text-align: center;
+    font-family: 'FiraSansBook';
+    padding: 13.4px 0;
+}
+*:focus{
+    outline: 0;
+}
+.cart-nav{
+    font-size: 14px;
+    float: left;
+}
+.cart-nav ul{
+    font-family: 'FiraSansLight';
+}
+.cart-nav ul li{
+    display: block;
+    float: left;
+}
+.cart-nav ul li a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #DADADA;
+    color: #282828;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+}
+.cart-nav ul li a svg{
+    display: inline-block;
+    vertical-align: middle;
+    stroke: #2B2B2B;
+}
+.cart-nav ul li.active a,
+.cart-nav ul li a:hover{
+    color: #fff;
+    background: #BF3D3D;
+    border: 1px solid #BF3D3D;
+    height: 22px;
+    margin: 1px 0 0 0;
+    padding: 0;
+}
+.cart-nav ul li.active a svg,
+.cart-nav ul li a:hover svg{
+    stroke: #fff;
+}
+.cart-table-bottom{
+    position: relative;
+    margin: 24px 0 0 0;
+}
+.cart-table-bottom-right{
+    float: right;
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+    color: #282828;
+    padding: 0 50px 0 0;
+}
+.jq-selectbox{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.jq-selectbox>select{
+    display: none;
+}
+.jq-selectbox__select{
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+}
+.jq-selectbox__select-text{
+    color: #282828;
+    border: 1px solid #DADADA;
+    padding: 2.6px 25px 2.6px 5px;
+    position: relative;
+    cursor: pointer;
+}
+.jq-selectbox__select-text:after{
+    content: "";
+    width: 12px;
+    height: 7px;
+    display: block;
+    position: absolute;
+    transform: translate(0,-50%);
+    background: url(../images/icons/select.svg) no-repeat;
+    right: 11px;
+    top: 50%;
+}
+.jq-selectbox__dropdown{
+    background: #fff;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid #DADADA;
+    border-top: 0;
+}
+.jq-selectbox__dropdown li{
+    cursor: pointer;
+    padding: 3px 0 3px 10px;
+    border-bottom: 1px solid #DADADA;
+}
+.jq-selectbox__dropdown li:hover{
+    background: #fafafa;
+}
+.jq-selectbox__dropdown li:last-child{
+    border: 0;
+}
+.show-more{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+}
+.show-more a{
+    display: block;
+    color: #BF3D3D;
+    text-decoration: none;
+    border-bottom: 1px dashed #BF3D3D;
+    padding: 0 3px;
+}
+.show-more a:hover{
+    border: 0;
+    padding-bottom: 1px; 
+}
+.description-of-table{
+    font-size: 12px;
+    font-family: 'FiraSansLight';
+    margin: 27px 0 0 0;
+}
+.description-of-table p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 13px 0 0;
+    position: relative;
+    padding: 0 0 0 12px;
+}
+.description-of-table p.there-is:before{
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 5px;
+    height: 5px;
+    background: #54A017;
+    position: absolute;
+}
+.description-of-table p.there-is-no:before{
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 5px;
+    height: 5px;
+    background: #FED606;
+    position: absolute;
+}
+.frequently-search{
+    font-size: 14px;
+    font-family: 'FiraSansLight';
+    color: #282828;
+    margin: 48px 0 0 0;
+}
+.frequently-search span{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 21px 0 0;
+}
+.frequently-search a{
+    display: inline-block;
+    vertical-align: middle;
+    color: #BF3D3D;
+    text-decoration: none;
+    border-bottom: 1px dashed #BF3D3D; 
+    margin: 0 37px 0 0;
+}
+.frequently-search a:hover{
+    border: 0;
+    padding: 0 0 1px 0;
+}
+.frequently-search a:last-child{
+    margin: 0;
+}
+.buy-with-this-product-content{}
+.buy-with-this-product-content-title{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    font-family: 'FiraSansMedium';
+    margin: 0 0 24px 0;
+}
+.buy-with-this-products{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-with-this-product{
+    width: 220px;
+    background: #fff;
+    padding: 20px 23px 39px 23px;
+    box-sizing: border-box;
+}
+.buy-with-this-product-img{
+    width: 100%;
+    height: 176px;
+    line-height: 176px;
+    text-align: center;
+}
+.buy-with-this-product-img a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.buy-with-this-product-img a img{
+    display: block;
+}
+.buy-with-this-product-title{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'FiraSansBold';
+    padding: 12px 0 23px 0; 
+}
+.buy-with-this-product-btn{}
+.buy-with-this-product-btn a{
+    color: #BF3D3D;
+    font-size: 10px;
+    font-family: 'FiraSansMedium';
+    text-decoration: none;
+    border: 2px solid #BF3D3D;
+    display: block;
+    width: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.how-make-order{}
+.how-make-order-title{
+    font-family: 'FiraSansMedium';
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: #282828;
+    margin: 50px 0 36px 0;
+}
+.how-make-order-content{
+    display: flex;
+    justify-content: space-between;
+}
+.how-make-order-block{
+    border-left: 2px solid #BF3D3D;
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'FiraSansLight';
+    padding: 0 0 0 16px;
+}
+.how-make-order-block .number{
+    font-size: 70px;
+    font-family: 'FiraSansMedium';
+    color: #BF3D3D;
+    line-height: normal;
+    margin: -11px 0 1px 0;
+}
+.how-make-order-block a{
+    display: inline-block;
+    text-decoration: none;
+    color: #282828;
+    font-size: 14px;
+    position: relative;
+}
+.how-make-order-block a:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    bottom: 2px;
+    left: 0;
+    border-bottom: 1px dashed #282828;
+    position: absolute;
+}
+.how-make-order-block a:hover:before{
+    display: none;
+}
+.how-make-order-block a.red{
+    display: block;
+    font-family: 'FiraSansBold';
+    color: #BF3D3D;
+    font-size: 18px;
+    margin: 0 0 3px 0;
+}
+.how-make-order-block a.red:before{
+    display: none;
+}
+.video{
+    padding: 11px 11px;
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    margin: 52px 0 50px 0;
+}
+iframe{
+    display: block;
+    border: 0;
+    width: 100%;
+    height: 580px;
+    margin: 0;
+    padding: 0;
+}
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+}
+.feature{
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    border-right: 1px solid #F4F4F4;
+    border-bottom: 1px solid #F4F4F4;
+    color: #282828;
+    height: 263px;
+    line-height: 263px;
+    text-align: center;
+}
+.feature>p{
+    margin: 0 15px;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.feature>p span{
+    display: block;
+    color: #BF3D3D;
+    font-family: 'FiraSansBold';
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+}
+.feature:nth-child(3n){
+    border-right: 0;
+}
+.tabs{
+    margin: 50px 0;
+}
+.ui-tabs-nav{
+    font-family: 'FiraSansMedium';
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    padding: 0 0 29px 0;
+}
+.ui-tabs-nav li{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 40px 0 0;
+}
+.ui-tabs-nav li a{
+    display: block;
+    text-decoration: none;
+    color: #A0A0A0;
+}
+.ui-tabs-nav li.ui-state-active a{
+    color: #282828;
+}
+form button{
+    font-family: 'FiraSansMedium';
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 13px;
+    color: #fff;
+    border: 0;
+    background: #BF3D3D;
+    clear: both;
+    display: block;
+    padding: 10px 26px 9px 29px;
+    margin: 0 0 0 0;
+}
+.form-bg{
+    position: relative;
+    background: url(../images/form-bg.jpg) center top no-repeat;
+    margin: 73px 0 0 0;
+}
+.form-title{
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    font-family: 'FiraSansMedium';
+    max-width: 315px;
+    margin: 0 0 19px 0;
+}
+.form-title .large{
+    display: block;
+    font-size: 34px;
+    font-family: 'FiraSansBold';
+    padding: 45px 0 11px 0;
+    letter-spacing: 0;
+}
+.form-title .red{
+    color: #BF3D3D;
+}
+.form-bg form{}
+.form-bg form .left{
+    width: 185px;
+    float: left;
+    margin: 0 22px 0 0;
+}
+.form-bg form .right{
+    width: 266px;
+    float: left;
+}
+.form-bg form input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    background: none;
+    font-size: 13px;
+    font-family: 'FiraSansLight';
+    padding: 6.4px 10px 6.4px 13px;
+    color: #fff;
+    margin: 0 0 23px 0;
+}
+.form-bg form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    background: none;
+    height: 87px;
+    font-size: 13px;
+    font-family: 'FiraSansLight';
+    color: #fff;
+    padding: 5px 11px;
+}
+input[type="file"]{
+    display: none;
+}
+.file{
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    margin: 26px 0 0 0;
+    display: block;
+}
+.file img,
+.file span{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.file span{
+    margin: 0 4px;
+}
+.file span:before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+}
+.file:hover span:before{
+    display: none;
+}
+.form-bg .container{
+    padding: 0 0 43px 60px;
+    box-sizing: border-box;
+    position: relative;
+}
+.woman{
+    position: absolute;
+    top: -28px;
+    right: 60px;
+}
+footer{
+    background: #454545;
+    padding: 34px 0 0 0;
+}
+footer .container{
+    width: 820px;
+    box-sizing: border-box;
+    padding: 0 0 31px 3px;
+}
+.footer-column{
+    float: left;
+}
+.footer-column:nth-child(1){
+    width: 217px;
+}
+.footer-column:nth-child(2){
+    width: 176px;
+}
+.footer-column-title{
+    font-size: 14px;
+    font-family: 'FiraSansBold';
+    color: #fff;
+    margin: 0 0 13px 0;
+}
+.footer-column ul{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'FiraSansLight';
+}
+.footer-column ul li{
+    margin: 0 0 5.5px 0;
+}
+.footer-column ul li a{
+    text-decoration: none;
+    color: #A0A0A0;
+}
+.footer-column ul li a:hover{
+    color: #fff;
+}
+.footer-right{
+    width: 279px;
+    float: right;
+    margin: -1px 0 0 0;
+}
+.footer-right form{
+    position: relative;
+    margin: 1px 0 21px 0;
+}
+.footer-right form input{
+    width: 100%;
+    border: 2px solid #fff;
+    background: none;
+    font-size: 12px;
+    font-family: 'FiraSansLight';
+    box-sizing: border-box;
+    padding: 7px 30px 7px 11px;
+}
+.footer-right form button{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0,-50%);
+    border: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.footer-right>a{
+    display: block;
+    position: relative;
+    padding: 0 0 0 20px;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0 11px 0;
+}
+.footer-right>a svg{
+    position: absolute;
+    fill: #fff;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.footer-right-bottom{
+    margin: 16px 0 0 0;
+    overflow: hidden;
+}
+.footer-right-bottom>a{
+    width: 145px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'FiraSansMedium';
+    background: #BF3D3D;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 0;
+    display: block;
+    float: left;
+}
+.footer-social{
+    float: right;
+    margin: 4px 16px 0 0;
+}
+.footer-social a{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 7px;
+}
+.footer-social a:first-child{
+    margin: 0;
+}
+.footer-social a svg{
+    display: block;
+    fill: #fff;
+}
+.copyright{
+    background: #2B2B2B;
+    font-size: 12px;
+    line-height: 14px;
+    color: #A0A0A0;
+    font-family: 'FiraSansLight';
+}
+.copyright .container{
+    padding: 12px 0;
+}
+.up{
+    font-size: 9px;
+    text-transform: uppercase;
+    font-family: 'FiraSansBold';
+    color: #fff;
+    padding: 37px 0 0 0;
+    background: url(../images/icons/up.svg) center top no-repeat;
+    position: fixed;
+    left: 50%;
+    margin: 0 0 0 480px;
+    bottom: 150px;
+    display: none;
+}
+.up.active{
+    display: block;
+}
+.main-menu-dropdown{
+    width: 100%;
+    min-height: 450px;
+    position: absolute;
+    top: 58px;
+    background: #fff;
+    z-index: 10;
+    font-size: 14px;
+    color: #282828;
+    font-family: 'FiraSansLight';
+    left: 0;
+    display: none;
+}
+.main-menu-dropdown.active{
+    display: block;
+}
+.main-menu-dropdown ul{
+    display: inline-block;
+}
+.main-menu-dropdown ul li{
+    display: block;
+    position: relative;
+}
+.main-menu-dropdown ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 16.1px 0;
+}
+.main-menu-dropdown>.container>ul{
+    position: relative;
+}
+.main-menu-dropdown>.container>ul:after{
+    content: "";
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+    position: absolute;
+    background: #BF3D3D;
+    z-index: -1;
+}
+.main-menu-dropdown>.container>ul>li>a{
+    padding-right: 56px;
+    position: relative;
+    z-index: 1;
+    text-align: right;
+}
+.main-menu-dropdown>.container>ul>li>a:after{
+    content: "";
+    width: 50vw;
+    height: 100%;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    right: 0;
+    top: 0;
+    position: absolute;
+}
+.main-menu-dropdown>.container>ul>li.active>a:after,
+.main-menu-dropdown>.container>ul>li>a:hover:after{
+    background: linear-gradient(103deg, #BF3D3D, #d68282);
+    z-index: -1;
+}
+.main-menu-dropdown ul li ul{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+.main-menu-dropdown ul li:hover>ul{
+    display: block;
+}
+.main-menu-dropdown ul li ul li a{
+    color: #282828;
+    width: 225px;
+    border: 1px solid #F4F4F4;
+    border-top: 0;
+    background: #fff;
+    padding-left: 16px;
+}
+.main-menu-dropdown ul li ul li:first-child a{
+    border-top: 1px solid #F4F4F4;
+}
+.main-menu-dropdown ul li ul li:hover>a{
+    background: #F4F4F4;
+}
+.main-menu-dropdown ul li.more>a:before{
+    content: "";
+    width: 7px;
+    height: 12px;
+    background: url(../images/icons/main-menu-b-arrow.svg) top right no-repeat;
+    position: absolute;
+    display: block;
+    right: 13px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.main-menu-dropdown>.container>ul>li.more>a:before{
+    content: "";
+    width: 7px;
+    height: 12px;
+    background: url(../images/icons/main-menu-w-arrow.svg) top right no-repeat;
+    position: absolute;
+    display: block;
+    right: 13px;
+    top: 50%;
+    transform: translate(0,-50%);
+}

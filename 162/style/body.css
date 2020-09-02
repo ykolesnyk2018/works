@@ -379,7 +379,7 @@ header .container{
 }
 .club_icon{
     position: absolute;
-    top: -20%;
+    top: -14%;
     left: 47px;
     margin-bottom: 43px;
 }
@@ -388,7 +388,7 @@ header .container{
     line-height: 40px;
     font-family: 'Inter-Regular';
     color: #1A1A1A;
-    padding: 40px 0 0 0;
+    padding: 60px 0 0 0;
 }
 .club_description{
     font-family: 'Inter-Regular';

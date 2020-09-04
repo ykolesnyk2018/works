@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Fira Sans';
     src: local('Fira Sans SemiBold'), local('fonts/firasans/Firasans-SemiBold'), url('fonts/firasans/Firasanssemibold.woff2') format('woff2'), url('fonts/firasans/Firasanssemibold.woff') format('woff'), url('fonts/firasans/Firasanssemibold.ttf') format('truetype');
-    font-weight: 600;
+    font-weight: 600; 
     font-style: normal;
 }
 @font-face {

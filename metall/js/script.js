@@ -3,7 +3,7 @@ $( document ).ready(function(){
     $(function() {
         $(".more-btn").click(function(){
             $(this).toggleClass("active");
-        });
+        }); 
     });
     if(window.innerWidth < 767){
         $('.buy-with-this-products').slick({

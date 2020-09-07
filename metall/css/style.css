@@ -168,7 +168,7 @@ header{
 .main-menu ul li a:hover svg{
     fill: #BF3D3D;
 }
-.main-menu ul li.catalog-btn a{
+.main-menu ul li.catalog-btn a{ 
     padding: 0 0 0 12px;
 }
 .main-menu ul li.catalog-btn a:before{

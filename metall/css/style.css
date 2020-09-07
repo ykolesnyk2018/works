@@ -2633,7 +2633,7 @@ footer .container{
 .tab-mobile{
     display: none;
 }
-@media (max-width: 1919px){
+@media (max-width: 1659px){
     .main-banner-left>img,
     .main-banner-right>img{
         width: auto;

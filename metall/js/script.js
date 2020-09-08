@@ -1,8 +1,17 @@
 $( document ).ready(function(){
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 350) {
+            $('.cart-box').addClass('active');
+        }
+        else { 
+            $('.cart-box').removeClass('active');
+        }
+    });
+    
     
     $(function() {
         $(".more-btn").click(function(){
-            $(this).toggleClass("active");
+            $('.main-video-bottom').toggleClass("active");
         }); 
     });
     if(window.innerWidth < 767){

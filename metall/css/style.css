@@ -1513,6 +1513,7 @@ footer .container{
 }
 .main-menu-dropdown>.container>ul{
     position: relative;
+    margin: 0 0 0 -125px;
 }
 .main-menu-dropdown>.container>ul:after{
     content: "";
@@ -2974,6 +2975,9 @@ footer .container{
     }
     .product-tab{
         margin: 47px 0 38px 0;
+    }
+    .main-menu-dropdown>.container>ul{
+        margin: 0;
     }
 }
 @media (max-width: 767px){

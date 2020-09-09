@@ -263,7 +263,17 @@ header .container{
     color: #fff;
     border: 2px solid #008dd2;
     border-left: 0;
-    padding: 17.2px 8px;
+    padding: 17.2px 15px;
+    position: relative;
+}
+.main-menu>ul>li.active>a:after{
+    content: "";
+    left: 15px;
+    right: 15px;
+    height: 5px;
+    background: #e31e25;
+    bottom: 0;
+    position: absolute;
 }
 .main-menu>ul>li:first-child>a{
     border-left: 2px solid #008dd2;
@@ -1069,6 +1079,15 @@ textarea{
     }
     .video{
         width: 290px;
+    }
+    
+    .main-menu>ul>li>a{
+        font-size: 16px;
+        padding: 17.2px 9px;
+    }
+    .main-menu>ul>li.active>a:after{
+        left: 9px;
+        right: 9px;
     }
 }
 @media (max-width: 959px){

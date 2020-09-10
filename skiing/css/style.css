@@ -74,6 +74,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'RobotoRegular';
+    line-height: 1.2;
 }
 .container{
     width: 1110px;
@@ -375,7 +376,7 @@ h1{
     content: "";
     width: 100vw;
     height: 140px;
-    background: url(../images/snow.jpg) top center no-repeat;
+    background: url(../images/snow.jpg) top center;
     position: absolute;
     top: -56px;
     left: 50%;
@@ -531,15 +532,18 @@ input{
 .close-mobil-search{
     display: none;
 }
-    .up{
+.up{
+    display: none;
+}
+    .up.active{
         display: block;
         width: 61px;
         height: 61px;
         border: 2px solid #fff;
         background: #008dd2 url(../images/icons/up.png) center center no-repeat;
-        position: absolute;
-        top: 0;
-        right: -20px;
+        position: fixed;
+        bottom: 150px;
+        right: 20px;
         transform: translate(0,-50%);
         border-radius: 50%;
         cursor: pointer;
@@ -571,7 +575,7 @@ input{
     letter-spacing: -1.15px;
 }
 .faq-title:before{
-    content: "-";
+    content: "+";
     font-size: 28px;
     color: #008dd2;
     font-family: Arial;
@@ -581,12 +585,13 @@ input{
     position: absolute;
 }
 .faq-title.active:before{
-    content: "+";
+    content: "-";
 }
 .faq-title.active + .faq-content{
     display: block;
     border: 2px solid #ecf6fb;
     border-top: 0;
+    background: #fff;
 }
 .faq-content{
     display: none;
@@ -651,19 +656,19 @@ ol li a:hover{
 }
 .content-left{
     width: 290px;
-    height: 760px;
+    height: 1174px;
     position: absolute;
-    bottom: 580px;
+    top: 500px;
     left: 0;
     background: url(../images/content-left.png) no-repeat;
     z-index: -1;
 }
 .content-right{
     width: 290px;
-    height: 440px;
+    height: 1116px;
     background: url(../images/content-right.png) no-repeat;
     position: absolute;
-    bottom: 580px;
+    top: 500px;
     right: 0;
     z-index: -1;
 }
@@ -685,7 +690,7 @@ h2{
     position: absolute;
     bottom: 0;
     left: 0;
-    background: url(../images/slide-mask.png) top center no-repeat;
+    background: url(../images/slide-mask.png) top center;
     z-index: 1;
 }
 .main-slider:after{
@@ -703,6 +708,7 @@ h2{
     float: left;
     height: 640px;
     background-position: top center;
+    background-size: cover;
 }
 .main-slider .slick-arrow{
     display: block;
@@ -901,7 +907,7 @@ h2{
     left: 50%;
     margin: 0 0 0 -50vw;
     z-index: 0;
-    background: url(../images/mask.png) center bottom no-repeat;
+    background: url(../images/mask.png) center bottom;
     position: absolute;
     transform: rotate(180deg);
 }
@@ -913,7 +919,7 @@ h2{
     left: 50%;
     margin: 0 0 0 -50vw;
     z-index: 0;
-    background: url(../images/mask.png) center bottom no-repeat;
+    background: url(../images/mask.png) center bottom;
     position: absolute;
 }
 .video-content{}
@@ -947,7 +953,37 @@ h2{
     position: relative;
 }
 .video-img a{
+    width: 100%;
+    height: 100%;
     display: block;
+    position: relative;
+}
+.pre-view .video-img a:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.15);
+}
+.pre-view .video-img a:after{
+    content: "";
+    width: 52px;
+    height: 36px;
+    background: url(../images/icons/youtube-video.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    opacity: 0.6;
+}
+.pre-view .video-img a:hover:after{
+    opacity: 1;
+}
+.pre-view .video-img a:hover:before{
+    display: none;
 }
 .video-img a img{
     display: block;
@@ -1172,6 +1208,7 @@ textarea{
         background: rgba(0,0,0,0.95);
         padding: 0 0 50px 0;
         box-sizing: border-box;
+        z-index: 10;
     }
     .mobil-menu-title{
         font-size: 20px;
@@ -1346,5 +1383,9 @@ textarea{
     }
     .video-bag{
         margin: 0 0 17px 0;
+    }
+    .content-right,
+    .content-left{
+        display: none;
     }
 }

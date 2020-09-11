@@ -43,14 +43,16 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1
     });
-    
     $(window).scroll(function () {
         if ($(document).scrollTop() > 600) {
-                $('.up').addClass('active');
+            $('.up').addClass('active');
         }
         else { 
             $('.up').removeClass('active');
         }
+    });
+    $(function() {
+      $('select').styler();
     });
     
     
@@ -152,10 +154,7 @@ $(document).ready(function(){
         });
     });
     
-    
-    $(function() {
-      $('select.styler').styler();
-    });
+
     $(function(){
         $(".tabs").tabs();
     });

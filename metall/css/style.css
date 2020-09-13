@@ -5632,7 +5632,7 @@ footer .container{
     }
     .offer.hover{
         overflow: inherit;
-    }
+    } 
     .offer.hover:hover .offer-hidden,
     .offer.hover .offer-hidden{
         display: none;

@@ -5656,4 +5656,10 @@ footer .container{
     .trader-contacts .contacts-bottom{
         padding: 25px 0 0 0;
     }
+    .full .main-banner.retail{
+        padding: 0 0 20px 0;
+    }
+    .offers2 .offers-content:after{
+        left: -13px;
+    }
 }

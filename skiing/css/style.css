@@ -553,6 +553,7 @@ input{
         transform: translate(0,-50%);
         border-radius: 50%;
         cursor: pointer;
+        z-index: 10;
     }
 .error{
     font-size: 18px;
@@ -664,19 +665,25 @@ ol li a:hover{
     width: 290px;
     height: 1174px;
     position: absolute;
-    top: 900px;
+    top: 500px;
     left: 0;
     background: url(../images/content-left.png) no-repeat;
     z-index: -1;
+}
+.main-page .content-left{
+    top: 900px;
 }
 .content-right{
     width: 290px;
     height: 1116px;
     background: url(../images/content-right.png) no-repeat;
     position: absolute;
-    top: 1227px;
+    top: 827px;
     right: 0;
     z-index: -1;
+}
+.main-page .content-left{
+    top: 1227px;
 }
 h2{
     font-size: 30px;
@@ -826,7 +833,7 @@ h2{
     width: 45px;
     height: 55px;
     box-sizing: border-box;
-    padding: 15px 0 0 0;
+    line-height: 67px;
     font-size: 30px;
     color: #fff;
     text-align: center;
@@ -1145,6 +1152,7 @@ textarea{
 .jq-selectbox{
     display: inline-block;
     position: relative;
+    z-index: 10;
 }
 .jq-selectbox select{
     display: none;
@@ -1327,7 +1335,17 @@ textarea{
 }
 .list-block{
     border-bottom: 1px solid #d9e3e8;
-    padding: 20px 40px 0 56px;
+    padding: 20px 40px 24px 56px;
+    position: relative;
+}
+.list-block:before {
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    color: #000;
+    content: "\f56d";
+    position: absolute;
+    top: 15px;
+    left: 20px;
 }
 .list-block:first-child{
     border-top: 1px solid #d9e3e8;
@@ -1402,9 +1420,23 @@ textarea{
     color: #008dd2;
     padding: 20px 0 17px 55px;
     border-bottom: 1px solid #d9e3e8;
+    position: relative;
+}
+.documents-content a:before {
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    color: #000;
+    content: "\f56d";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0,-50%);
 }
 .documents-content a:first-child{
     border-top: 1px solid #d9e3e8;
+}
+.documents-content a:hover{
+    text-decoration: none;
 }
 .result-inside{
     margin: -19px 0 0 0;
@@ -1628,9 +1660,6 @@ textarea{
     .catalog .video{
         width: 48%;
         margin: 0 0 30px 0;
-    }
-    .list-block{
-        padding: 20px 0px 21px 25px;
     }
     .gallery-block{
         width: 350px;
@@ -1880,5 +1909,21 @@ textarea{
     }
     .group-images img{
         max-width: 100%;
+    }
+    .video-img a img{
+        width: 100%;
+    }
+    .group-images img{
+        width: 100%;
+    }
+    .video-img{
+        height: inherit;
+    }
+    .gallery-block{
+        height: inherit;
+    }
+    .video-img a img{
+        position: static;
+        transform: translate(0,0);
     }
 }

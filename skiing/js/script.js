@@ -83,9 +83,6 @@ $(document).ready(function(){
     
     
     
-    
-    
-    
     $(function() {
         $(".more-btn").click(function(){
             $(this).toggleClass("active");

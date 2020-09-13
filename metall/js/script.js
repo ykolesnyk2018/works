@@ -14,6 +14,62 @@ $( document ).ready(function(){
             $('.main-video-bottom').toggleClass("active");
         }); 
     });
+    $(function() {
+        $(".contact-faq-title").click(function(){
+            $(this).toggleClass("active");
+        }); 
+    });
+    $('.trust-slider').slick({
+        arrows: true,
+        infinite: true,
+        slidesToShow: 3,
+        variableWidth: true,
+        slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 940,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+    });
+    $('.machine-park-slider').slick({
+        arrows: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 940,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+    });
     if(window.innerWidth < 767){
         $('.buy-with-this-products').slick({
           arrows: true,

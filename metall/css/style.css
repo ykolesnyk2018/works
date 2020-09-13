@@ -4487,6 +4487,10 @@ footer .container{
         height: 94px;
         line-height: 94px;
     }
+    .gost-left.vacancies{
+        float: none;
+        margin: 0 auto 30px auto;
+    }
 }
 @media (max-width: 767px){
     .container,
@@ -4565,13 +4569,13 @@ footer .container{
     }
     .gost-left{
         float: none; 
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
     }
     .gost-right{
         float: none;
         max-width: 660px;
         width: 100%;
-        margin: 70px auto 0 auto;
+        margin: 0 auto 0 auto;
     }
     .contract a{
         display: block;

@@ -110,7 +110,7 @@ body{
     font-family: 'FiraSansBook';
     margin: 0;
     padding: 0;
-    background: #E5E5E5;
+    background: #F4F4F4;
 }
 ul,
 ol{
@@ -980,6 +980,11 @@ h1{
     padding: 8px 0;
     box-sizing: border-box;
 }
+.buy-with-this-product-btn a:hover{
+    background: #BF3D3D;
+    color: #fff;
+    transition: 0.3s;
+}
 img{
     display: block;
     max-width: 100%;
@@ -1286,6 +1291,7 @@ footer .container{
     font-family: 'FiraSansLight';
     box-sizing: border-box;
     padding: 7px 30px 7px 11px;
+    color: #fff;
 }
 .footer-right form button{
     display: block;
@@ -1611,7 +1617,7 @@ footer .container{
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
     background: #fff;
     z-index: 10;
-    top: 300px;
+    top: 0;
     display: none;
 }
 .cart-box.active{

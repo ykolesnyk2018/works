@@ -287,7 +287,13 @@ a{
     text-align: right;
 }
 header{
-    margin: 32px;
+    padding: 32px 0 10px 0;
+    background: #fff;
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .contacts a{
     font-size: 18px;
@@ -472,6 +478,7 @@ header .container:before{
 }
 .overflow{
     overflow: hidden;
+    padding: 120px 0 0 0;
 }
 .about{
     padding: 0 0 155px 0;
@@ -611,6 +618,7 @@ header .container:before{
 }
 .faq{
     margin: 0 0 3px 0;
+    position: relative;
 }
 .faq-content ul{
     font-size: 12px;
@@ -692,6 +700,8 @@ header .container:before{
     max-height: 0;
     transition: 0.5s;
     overflow: hidden;
+    position: absolute;
+    z-index: 1;
 }
 
 .faq-title.active + .faq-content{
@@ -1115,5 +1125,49 @@ footer:after{
     }
     .map-description p{
         font-size: 16px;
+    }
+    .popup{
+        width: 300px;
+        padding: 0 10px 20px 10px;
+        z-index: 8;
+    }
+    .overflow{
+        padding: 0;
+    }
+    header{
+        position: relative;
+        z-index: 1;
+        padding: 0;
+    }
+    .reverse .block-title{
+        text-align: left;
+    }
+    .foreign-companies .block-right{
+        margin: 25px 0 0 0;
+    }
+    .map{
+        margin: 0;
+        height: auto;
+    }
+    .map-description{
+        position: relative;
+        transform: translate(0,0);
+        top: auto;
+        margin: 0;
+        left: auto;
+        padding-left: 0;
+    }
+    .map iframe{
+        height: 400px;
+    }
+    .maintance-content{
+        text-align: center;
+    }
+    .mblock-content ul{
+        text-align: left;
+        margin: 21px 0 15px 8px;
+    }
+    .maintance-block{
+        margin: 0 auto;
     }
 }

@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mebelvdom</title>
+    <link rel="stylesheet" href="css/style.css?2592000">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container clearfix">
+                <div class="header-left">
+                    <a href="index.html">
+                        <img src="images/logo1.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/logo2.svg" alt="">
+                    </a>
+                </div>
+                <div class="main-menu">
+                    <ul>
+                        <li>
+                            <a href="#">О турнире</a>
+                            <ul>
+                                <li><a href="#">Все альбомы</a></li> 
+                                <li><a href="#">Все видео</a></li> 
+                                <li><a href="#">Пресс-центр</a></li> 
+                                <li><a href="#">Аккредитация</a></li>
+                            </ul>
+                        </li> 
+                        <li>
+                            <a href="#">Сетки</a>
+                            <ul>
+                                <li><a href="#">Все альбомы</a></li> 
+                                <li><a href="#">Все видео</a></li> 
+                                <li><a href="#">Пресс-центр</a></li> 
+                                <li><a href="#">Аккредитация</a></li>
+                            </ul>
+                        </li> 
+                        <li>
+                            <a href="#">Игроки</a>
+                            <ul>
+                                <li><a href="#">Все альбомы</a></li> 
+                                <li><a href="#">Все видео</a></li> 
+                                <li><a href="#">Пресс-центр</a></li> 
+                                <li><a href="#">Аккредитация</a></li>
+                            </ul>
+                        </li> 
+                        <li>
+                            <a href="#">Расписание</a>
+                            <ul>
+                                <li><a href="#">Все альбомы</a></li> 
+                                <li><a href="#">Все видео</a></li> 
+                                <li><a href="#">Пресс-центр</a></li> 
+                                <li><a href="#">Аккредитация</a></li>
+                            </ul>
+                        </li> 
+                        <li>
+                            <a href="#">Фанзона</a>
+                            <ul>
+                                <li><a href="#">Все альбомы</a></li> 
+                                <li><a href="#">Все видео</a></li> 
+                                <li><a href="#">Пресс-центр</a></li> 
+                                <li><a href="#">Аккредитация</a></li>
+                            </ul>
+                        </li> 
+                        <li>
+                            <a href="#">Медиа</a>
+                            <ul>
+                                <li><a href="#">Все альбомы</a></li> 
+                                <li><a href="#">Все видео</a></li> 
+                                <li><a href="#">Пресс-центр</a></li> 
+                                <li><a href="#">Аккредитация</a></li>
+                            </ul>
+                        </li> 
+                        <li class="empty"><a href="#">Партнеры</a></li> 
+                        <li class="empty"><a href="#">Livescore</a></li>
+                    </ul>
+                </div>
+                <div class="header-btns">
+                    <div class="buy">
+                        <a href="#" class="open-popup open-popup1">Купить билет</a>
+                    </div>
+                    <div class="search-btn">
+                        <a href="#">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 17L13.1333 13.1333M15.2222 8.11111C15.2222 12.0385 12.0385 15.2222 8.11111 15.2222C4.18375 15.2222 1 12.0385 1 8.11111C1 4.18375 4.18375 1 8.11111 1C12.0385 1 15.2222 4.18375 15.2222 8.11111Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="language">
+                        <div class="selected">Ru</div>
+                        <ul>
+                            <li><a href="#">Ru</a></li>
+                            <li><a href="#">En</a></li>
+                            <li><a href="#">Gr</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <a href="#">
+                        <img src="images/header-right1.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/header-right2.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/header-right3.svg" alt="">
+                    </a>
+                    <a href="#" class="for-mobil">
+                        <img src="images/gaz-min.svg" alt="">
+                    </a>
+                    <a href="#" class="for-mobil search-btn-mob">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#253238" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 17L13.1333 13.1333M15.2222 8.11111C15.2222 12.0385 12.0385 15.2222 8.11111 15.2222C4.18375 15.2222 1 12.0385 1 8.11111C1 4.18375 4.18375 1 8.11111 1C12.0385 1 15.2222 4.18375 15.2222 8.11111Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </a>
+                    <div class="main-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="search-popup">
+            <div class="container clearfix">
+                <form>
+                    <input type="text" placeholder="Поиск">
+                    <button>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#253238" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 17L13.1333 13.1333M15.2222 8.11111C15.2222 12.0385 12.0385 15.2222 8.11111 15.2222C4.18375 15.2222 1 12.0385 1 8.11111C1 4.18375 4.18375 1 8.11111 1C12.0385 1 15.2222 4.18375 15.2222 8.11111Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="main-menu-mobil">
+            <ul>
+                <li class="child">
+                    <a href="#">
+                        О турнире
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6L12 0H0L6 6Z"/>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Все альбомы</a></li>
+                        <li><a href="#">Все видео</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Аккредитация</a></li>
+                    </ul>
+                </li>
+                <li class="child">
+                    <a href="#">
+                        Сетки
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6L12 0H0L6 6Z"/>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Все альбомы</a></li>
+                        <li><a href="#">Все видео</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Аккредитация</a></li>
+                    </ul>
+                </li>
+                <li class="child">
+                    <a href="#">
+                        Игроки
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6L12 0H0L6 6Z"/>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Все альбомы</a></li>
+                        <li><a href="#">Все видео</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Аккредитация</a></li>
+                    </ul>
+                </li>
+                <li class="child">
+                    <a href="#">
+                        Расписание
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6L12 0H0L6 6Z"/>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Все альбомы</a></li>
+                        <li><a href="#">Все видео</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Аккредитация</a></li>
+                    </ul>
+                </li>
+                <li class="child">
+                    <a href="#">
+                        Фанзона
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6L12 0H0L6 6Z"/>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Все альбомы</a></li>
+                        <li><a href="#">Все видео</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Аккредитация</a></li>
+                    </ul>
+                </li>
+                <li class="child">
+                    <a href="#">
+                        Медиа
+                        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 6L12 0H0L6 6Z"/>
+                        </svg>
+                    </a>
+                    <ul>
+                        <li><a href="#">Все альбомы</a></li>
+                        <li><a href="#">Все видео</a></li>
+                        <li><a href="#">Пресс-центр</a></li>
+                        <li><a href="#">Аккредитация</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Партнеры</a></li>
+                <li><a href="#">Livescore</a></li>
+            </ul>
+            <div class="buy-btn">
+                <a href="#" class="open-popup open-popup1">Купить билет</a>
+            </div>
+            <div class="mobil-search">
+                <form>
+                    <input type="text" placeholder="Поиск">
+                    <button>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#253238" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 17L13.1333 13.1333M15.2222 8.11111C15.2222 12.0385 12.0385 15.2222 8.11111 15.2222C4.18375 15.2222 1 12.0385 1 8.11111C1 4.18375 4.18375 1 8.11111 1C12.0385 1 15.2222 4.18375 15.2222 8.11111Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="new-header">
+            <div class="new-header-line1"></div>
+            <div class="new-header-line2"></div>
+            <div class="new-header-line3"></div>
+            <div class="container clearfix">
+                <div class="new-header-top">
+                    <h1>Программа</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="programms tabs no-for-mobil clearfix">
+                <ul>
+                    <li><a href="#programm1"><span>24.09</span> Понедельник</a></li>
+                    <li><a href="#programm2"><span>25.09</span> Вторник</a></li>
+                    <li><a href="#programm3"><span>26.09</span> Среда</a></li>
+                    <li><a href="#programm4"><span>27.09</span> Четверг</a></li>
+                    <li><a href="#programm5"><span>28.09</span> Пятница</a></li>
+                    <li><a href="#programm6"><span>29.09</span> Суббота</a></li>
+                    <li><a href="#programm7"><span>30.09</span> Воскресенье</a></li>
+                    <li><a href="#programm8"><span>31.09</span> Понедельник</a></li>
+                    <li><a href="#programm9"><span>1.10</span> Вторник</a></li>
+                    <li><a href="#programm10"><span>2.10</span> Среда</a></li>
+                </ul>
+                <div class="programms-content">
+                    <div id="programm1">
+                        <div class="programm-content-title">26 сентября, среда</div>
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="programm2"></div>
+                    <div id="programm3"></div>
+                    <div id="programm4"></div>
+                    <div id="programm5"></div>
+                    <div id="programm6"></div>
+                    <div id="programm7"></div>
+                    <div id="programm8"></div>
+                    <div id="programm9"></div>
+                    <div id="programm10"></div>
+                </div>
+            </div>
+            <div class="programms for-mobil">
+                <div class="accordion-block">
+                    <div class="accordion-title">24.09  Понедельник</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <div class="accordion-title">25.09  Вторник</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <div class="accordion-title active">26.09  Среда</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <div class="accordion-title">27.09  Четверг</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <div class="accordion-title">28.09  Пятница</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <div class="accordion-title">29.09  Суббота</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-block">
+                    <div class="accordion-title">30.09  Воскресенье</div>
+                    <div class="accordion-content">
+                        <div class="programm">
+                            <div class="programm-time">11:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">12:30</div>
+                            <div class="programm-title">
+                                <a href="#">Жеребьевка турнира. Внимание вход свободный. КСК «Сибур Арена», Футбольная алея 8</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Матчи квалификации</a>
+                            </div>
+                        </div>
+                        <div class="programm">
+                            <div class="programm-time">14:00</div>
+                            <div class="programm-title">
+                                <a href="#">Пресс-конференция по итогам жеребьевки. КСК «Сибур Арена», Футбольная алея 8 (зона кафе для зрителей, пресс-центр)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="official-partners clearfix">
+                <div class="official-partners-left">
+                    <img src="images/partners-left1.svg" alt="">
+                    <p>Генеральные<br> партнеры</p>
+                </div>
+                <div class="partners-center">
+                    <a href="#" class="petromir">
+                        <img src="images/icon/petromir.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/eriell.png" alt="">
+                    </a>
+                    <a href="#" class="emirates">
+                        <img src="images/icon/emirates.svg" alt="">
+                    </a>
+                    <p>Официальные партнеры</p>
+                </div>
+                <div class="partners-right">
+                    <div class="partners-right-content">
+                        <a href="#">
+                            <img src="images/partners-img7.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img4.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/petromir2.svg" alt="">
+                        </a>
+                    </div>
+                    <p>Генеральные информационные<br> партнеры</p>
+                </div>
+                <div class="partners-last">
+                    <div class="partners-last-content">
+                        <a href="#">
+                            <img src="images/partners-img1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img2.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img3.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img4.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img5.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img6.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img7.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="images/partners-img8.png" alt="">
+                        </a>
+                    </div>
+                    <p>Партнеры</p>
+                </div>
+            </div>
+        </div>
+        <div class="container clearfix">
+            <div class="join-us clearfix">
+                <div class="join-us-right">
+                    <a href="#">
+                        <span>2015 - Милош Районич</span>
+                    </a>
+                    <a href="#">
+                        <span>2016 - Александр Зверев</span>
+                    </a>
+                    <a href="#">
+                        <span>2017 - Дамир Джумхур</span>
+                    </a>
+                    <a href="#">
+                        <span>2018 - Доминик Тим</span>
+                    </a>
+                    <img src="images/join-us.png" alt="">
+                </div>
+                <div class="join-us-left">
+                    <div class="join-us-title">Присоединяйтесь к нам в социальных сетях!</div>
+                    <div class="join-us-links">
+                        <a href="#">#formulatx</a>      
+                        <a href="#">#spbopen</a>      
+                        <a href="#">#unstoppablespirit</a> 
+                        <a href="#">#formulatx</a>   
+                        <a href="#">#spbopen</a>
+                    </div>
+                    <div class="join-us-btns">
+                        <a href="#" class="tw">
+                            <img src="images/icon/tw.svg" alt="">
+                        </a>
+                        <a href="#" class="fb">
+                            <img src="images/icon/fb.svg" alt="">
+                        </a>
+                        <a href="#" class="vk">
+                            <img src="images/icon/vk.svg" alt="">
+                        </a>
+                        <a href="#" class="in">
+                            <img src="images/icon/in.svg" alt="">
+                        </a>
+                        <a href="#" class="you">
+                            <img src="images/icon/you.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container clearfix">
+                <div class="footer-left">
+                    <a href="#">
+                        <img src="images/dooter-logo1.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="images/dooter-logo2.svg" alt="">
+                    </a>
+                    <p>© 2015-2019 Все права защищены. Международный теннисный турнир ATP ST. Petersburg Open </p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-btns">
+                        <a href="#" class="open-popup open-popup1">
+                            <span>Купить билет</span>
+                        </a>
+                        <a href="#">
+                            <span>VIP</span>
+                        </a>
+                        <a href="#">
+                            <span>Фан-зона</span>
+                        </a>
+                    </div>
+                    <div class="footer-phone">
+                        <a href="tel:+7812920-38-99">+7 812 920-38-99</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="fixed-btns">
+            <a href="#">
+                <span class="icon">
+                    <img src="images/icon/play.svg" alt="">
+                </span>
+                <span>TV эфир</span>
+            </a>
+            <a href="#">
+                <span class="icon">
+                    <img src="images/icon/radio.svg" alt="">
+                </span>
+                <span>Радио</span>
+            </a>
+        </div>
+        <div class="overflow"></div>
+        <div class="popup popup1">
+            <div class="buy-popup">
+                <div class="buy-popup-block">
+                    <div class="buy-popup-block-img">
+                        <a href="#">
+                            <img src="images/popup-logo1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="buy-popup-block-title bold">Генеральный билетный партнер</div>
+                    <div class="buy-popup-block-btn btn">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="buy-popup-block">
+                    <div class="buy-popup-block-img">
+                        <a href="#">
+                            <img src="images/popup-logo2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="buy-popup-block-title">Официальный билетный партнер</div>
+                    <div class="buy-popup-block-btn btn">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="buy-popup-block">
+                    <div class="buy-popup-block-img">
+                        <a href="#">
+                            <img src="images/popup-logo3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="buy-popup-block-title">Официальный билетный партнер</div>
+                    <div class="buy-popup-block-btn btn">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="buy-popup-block">
+                    <div class="buy-popup-block-img">
+                        <a href="#">
+                            <img src="images/popup-logo4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="buy-popup-block-title">Официальный билетный партнер</div>
+                    <div class="buy-popup-block-btn btn">
+                        <a href="#">Купить</a>
+                    </div>
+                </div>
+                <div class="warning">Продажа билетов осуществляется <span>ТОЛЬКО</span> у официальных партнеров! </div>
+                <div class="popup-bottom btn">
+                    <a href="#">Билеты и VIP предложения</a>
+                </div>
+            </div>
+            <div class="close">
+                <img src="images/icon/close.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.min.js?2592000"></script>
+    <script src="js/jquery-ui.min.js?2592000"></script>
+    <script src="js/script.js?2592000"></script>
+</body>
+</html>

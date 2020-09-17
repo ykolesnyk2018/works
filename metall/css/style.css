@@ -2184,6 +2184,7 @@ footer .container{
 .article-img{
     width: 100%;
     height: 144px;
+    overflow: hidden;
 }
 .article-img img{
     display: block;
@@ -4435,6 +4436,9 @@ footer .container{
         float: none;
         margin: 0 auto 30px auto;
     }
+    .offer-hidden p{
+        padding: 10px 5px 10px 0;
+    }
 }
 @media (max-width: 767px){
     .container,
@@ -5595,7 +5599,7 @@ footer .container{
         display: block;
     }
     .trader-contacts{
-        margin: 80px 0 0 0;
+        margin: 80px 0 40px 0;
     }
     .trader-contacts .contacts-bottom{
         padding: 25px 0 0 0;
@@ -5605,5 +5609,49 @@ footer .container{
     }
     .offers2 .offers-content:after{
         left: -13px;
+    }
+    .wholesale .services-btn{
+        display: block;
+        padding: 0;
+        margin: 20px 0 0 0;
+        text-align: left;
+    }
+    .wholesale .services-btn a{
+        text-align: center;
+    }
+    .offers2 .offer{
+        display: flex;
+        align-items: center;
+        padding: 19px 0;
+    }
+    .offers2 .offer .offer-title{
+        margin: 0 0 0 15px;
+    }
+    .offers2 .offer .offer-btn{
+        margin: 0 40px 0 auto;
+        align-content: flex-end;
+    }
+    .retail .services-btn{
+        display: block;
+        text-align: left;
+        margin: 25px 0 0 0;
+    }
+    .retail .services-btn a{
+        text-align: center;
+    }
+    .how-make-order-content2 .how-make-order-block{
+        border: 0;
+        border-left: 2px solid #BF3D3D;
+        text-align: left;
+        position: relative;
+        padding: 0 0 0 70px;
+    }
+    .how-make-order-content2 .how-make-order-block .number{
+        width: 70px;
+        margin: -42px 0 0 0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        text-align: center;
     }
 }

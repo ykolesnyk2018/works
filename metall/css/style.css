@@ -2185,9 +2185,11 @@ footer .container{
     background: #fff;
     color: #282828;
     box-sizing: border-box;
-    padding: 0 0 29px 0;
 }
-.article:hover{
+.article-description-bg{
+    padding: 1px 0 29px 0;
+}
+.article-description-bg:hover{
     background: #BF3D3D;
     color: #fff;
 }
@@ -2196,6 +2198,9 @@ footer .container{
     position: relative;
     color: #fff;
     padding: 24px 0 25px 56px;
+}
+.article.full .article-description-bg:hover{
+    background: none;
 }
 .article.full>*{
     position: relative;
@@ -2224,10 +2229,10 @@ footer .container{
     color: #fff;
 }
 .article.full .article-btn a:before,
-.article:hover .article-btn a:before{
+.article-description-bg:hover .article-btn a:before{
     background: url(../images/icons/main-menu-w-arrow.svg) right center no-repeat;
 }
-.article:hover .article-btn a{
+.article-description-bg:hover .article-btn a{
     color: #fff;
 }
 .article-btn a:hover:after{
@@ -2395,6 +2400,10 @@ footer .container{
 }
 .product-slider .slick-slide{
     float: left;
+    text-align: center;
+}
+.product-slider .slick-slide img{
+    margin: 0 auto;
 }
 .product-nav .slick-slide{
     float: left;

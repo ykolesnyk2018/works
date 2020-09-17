@@ -1,38 +1,8 @@
 @font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans SemiBold'), local('fonts/firasans/Firasans-SemiBold'), url('fonts/firasans/Firasanssemibold.woff2') format('woff2'), url('fonts/firasans/Firasanssemibold.woff') format('woff'), url('fonts/firasans/Firasanssemibold.ttf') format('truetype');
-    font-weight: 600; 
-    font-style: normal;
-}
-@font-face {
     font-family: 'FiraSansMedium';
     src: local('Fira Sans Medium'), local('fonts/firasans/Firasans-Medium'), url('fonts/firasans/Firasansmedium.woff2') format('woff2'), url('fonts/firasans/Firasansmedium.woff') format('woff'), url('fonts/firasans/Firasansmedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Medium Italic'), local('fonts/firasans/Firasans-MediumItalic'), url('fonts/firasans/Firasansmediumitalic.woff2') format('woff2'), url('fonts/firasans/Firasansmediumitalic.woff') format('woff'), url('fonts/firasans/Firasansmediumitalic.ttf') format('truetype');
-    font-weight: 500;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Italic'), local('fonts/firasans/Firasans-Italic'), url('fonts/firasans/Firasansitalic.woff2') format('woff2'), url('fonts/firasans/Firasansitalic.woff') format('woff'), url('fonts/firasans/Firasansitalic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans ExtraLight';
-    src: local('Fira Sans ExtraLight'), local('fonts/firasans/Firasans-ExtraLight'), url('fonts/firasans/Firasansextralight.woff2') format('woff2'), url('fonts/firasans/Firasansextralight.woff') format('woff'), url('fonts/firasans/Firasansextralight.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'FiraSans Light';
-    src: local('Fira Sans Light Italic'), local('fonts/firasans/Firasans-LightItalic'), url('fonts/firasans/Firasanslightitalic.woff2') format('woff2'), url('fonts/firasans/Firasanslightitalic.woff') format('woff'), url('fonts/firasans/Firasanslightitalic.ttf') format('truetype');
-    font-weight: 200;
-    font-style: italic;
 }
 @font-face {
     font-family: 'FiraSansLight';
@@ -53,58 +23,10 @@
     font-style: normal;
 }
 @font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Heavy'), local('fonts/firasans/Firasans-Heavy'), url('fonts/firasans/Firasansheavy.woff2') format('woff2'), url('fonts/firasans/Firasansheavy.woff') format('woff'), url('fonts/firasans/Firasansheavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans SemiBold Italic'), local('fonts/firasans/Firasans-SemiBoldItalic'), url('fonts/firasans/Firasanssemibolditalic.woff2') format('woff2'), url('fonts/firasans/Firasanssemibolditalic.woff') format('woff'), url('fonts/firasans/Firasanssemibolditalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Bold Italic'), local('fonts/firasans/Firasans-BoldItalic'), url('fonts/firasans/Firasansbolditalic.woff2') format('woff2'), url('fonts/firasans/Firasansbolditalic.woff') format('woff'), url('fonts/firasans/Firasansbolditalic.ttf') format('truetype');
-    font-weight: 700;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans ExtraLight Italic'), local('fonts/firasans/Firasans-ExtraLightItalic'), url('fonts/firasans/Firasansextralightitalic.woff2') format('woff2'), url('fonts/firasans/Firasansextralightitalic.woff') format('woff'), url('fonts/firasans/Firasansextralightitalic.ttf') format('truetype');
-    font-weight: 100;
-    font-style: italic;
-}
-@font-face {
     font-family: 'FiraSansBold';
     src: local('Fira Sans Bold'), local('fonts/firasans/Firasans-Bold'), url('fonts/firasans/Firasansbold.woff2') format('woff2'), url('fonts/firasans/Firasansbold.woff') format('woff'), url('fonts/firasans/Firasansbold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans Heavy Italic'), local('fonts/firasans/Firasans-HeavyItalic'), url('fonts/firasans/Firasansheavyitalic.woff2') format('woff2'), url('fonts/firasans/Firasansheavyitalic.woff') format('woff'), url('fonts/firasans/Firasansheavyitalic.ttf') format('truetype');
-    font-weight: 900;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans ExtraBold'), local('fonts/firasans/Firasans-ExtraBold'), url('fonts/firasans/Firasansextrabold.woff2') format('woff2'), url('fonts/firasans/Firasansextrabold.woff') format('woff'), url('fonts/firasans/Firasansextrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'FiraSans Book';
-    src: local('Fira Sans Book Italic'), local('fonts/firasans/Firasans-BookItalic'), url('fonts/firasans/Firasansbookitalic.woff2') format('woff2'), url('fonts/firasans/Firasansbookitalic.woff') format('woff'), url('fonts/firasans/Firasansbookitalic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Fira Sans';
-    src: local('Fira Sans ExtraBold Italic'), local('fonts/firasans/Firasans-ExtraBoldItalic'), url('fonts/firasans/Firasansextrabolditalic.woff2') format('woff2'), url('fonts/firasans/Firasansextrabolditalic.woff') format('woff'), url('fonts/firasans/Firasansextrabolditalic.ttf') format('truetype');
-    font-weight: 800;
-    font-style: italic;
 }
 body{
     font-family: 'FiraSansBook';
@@ -1379,9 +1301,13 @@ footer .container{
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    font-family: 'Fira Sans';
+    font-family: 'FiraSansBook';
     color: #282828;
     margin: 0 20px 0 0;
+}
+.about-left p span,
+.about-right p span{
+    font-family: 'FiraSansBold';
 }
 .about-right{
     max-width: 460px;
@@ -1390,7 +1316,7 @@ footer .container{
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    font-family: 'Fira Sans';
+    font-family: 'FiraSansBook';
     color: #282828;
 }
 .feedbacks{
@@ -1678,6 +1604,9 @@ footer .container{
     font-weight: normal;
 }
 .cart-box-bottom p span{
+    font-family: 'FiraSansBold';
+}
+.cart-box-bottom p span.red{
     color: #BF3D3D;
     font-family: 'FiraSansBold';
 }

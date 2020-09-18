@@ -204,15 +204,22 @@ $( document ).ready(function(){
         $('.grid').addClass('grid1');
         $('.grid-nav').addClass('grid1');
     }    
-    if(windowWidth < 767){
         $('.competition-slider').slick({
           dots: false,
           infinite: true,
           speed: 300,
-          slidesToShow: 1,
-          slidesToShow: 1
+          variableWidth: true,
+            responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                variableWidth: false
+              }
+            }
+          ]
         });
-    }    
     competition-slider
     $('.players-slider-bg .slick-arrow').click(function(e){
         e.preventDefault();

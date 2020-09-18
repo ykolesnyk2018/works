@@ -2363,6 +2363,7 @@ header .container{
     width: 543px;
     float: left;
     position: relative;
+    text-align: center;
 }
 .official-partners-left:before{
     content: "";
@@ -2381,6 +2382,7 @@ header .container{
     vertical-align: middle;
     position: relative;
     z-index: 1;
+    margin: 45px 0 0 0;
 }
 .official-partners-left p{
     margin: 26px 0 45px 48px;
@@ -6899,9 +6901,6 @@ h3{
     overflow: hidden;
     margin: 0 25px 0 0;
 }
-.competition-block:nth-child(4n){
-    margin: 0 0 0 0;
-}
 .competition-block-img{
     width: 100%;
     height: 283px;
@@ -7073,6 +7072,10 @@ h3{
     flex-basis: 220px;
     font-size: 20px;
     line-height: 140%;
+    color: #253238;
+}
+.mediafile-text a{
+    text-decoration: none;
     color: #253238;
 }
 .hotels{
@@ -7426,6 +7429,54 @@ h3{
 .match-tab{
     display: none;
 }
+.competition-slider{
+        position: relative;
+    }
+    .competition-slider .slick-arrow{
+        display: block;
+        position: absolute;
+        top: 110px;
+        font-size: 0;
+        width: 51px;
+        height: 57px;
+        background: none;
+        border: 0;
+        z-index: 1;
+    }
+    .competition-slider .slick-next.slick-arrow{
+        right: -6px;
+        left: auto;
+    }
+    .competition-slider .slick-prev.slick-arrow{
+        left: -6px;
+    }
+    .competition-slider .slick-arrow:before{
+        content: "";
+        background: #F04438;
+        width: 41px;
+        height: 57px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transform: skew(-14deg);
+    }
+    .competition-slider .slick-arrow:after{
+        content: "";
+        background: url(../images/icon/main-slider-arrow.svg) no-repeat;
+        width: 7px;
+        height: 20px;
+        margin: -10px 0 0 -8.5px;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+    }
+    .competition-slider .slick-prev.slick-arrow:after{
+        transform: rotate(180deg);
+    }
+
 @media (min-width: 1921px){
     header .container{
         max-width: 1860px;
@@ -9396,12 +9447,6 @@ h3{
     }
     .competition-block-tag{
         margin: -22px 0 0 -17px;
-    }
-    .competition-block:nth-child(4){
-        display: none;
-    }
-    .competition-block:nth-child(3){
-        margin: 0 0 0 0;
     }
     .magazines-title{
         font-size: 32px;
@@ -12035,53 +12080,6 @@ h3{
     .competition-block:nth-child(4){
         display: block;
     }
-    .competition-slider{
-        position: relative;
-    }
-    .competition-slider .slick-arrow{
-        display: block;
-        position: absolute;
-        top: 77px;
-        font-size: 0;
-        width: 51px;
-        height: 57px;
-        background: none;
-        border: 0;
-        z-index: 1;
-    }
-    .competition-slider .slick-next.slick-arrow{
-        right: -6px;
-        left: auto;
-    }
-    .competition-slider .slick-prev.slick-arrow{
-        left: -6px;
-    }
-    .competition-slider .slick-arrow:before{
-        content: "";
-        background: #F04438;
-        width: 41px;
-        height: 57px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        transform: skew(-14deg);
-    }
-    .competition-slider .slick-arrow:after{
-        content: "";
-        background: url(../images/icon/main-slider-arrow.svg) no-repeat;
-        width: 7px;
-        height: 20px;
-        margin: -10px 0 0 -8.5px;
-        background-size: 100% 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 1;
-    }
-    .competition-slider .slick-prev.slick-arrow:after{
-        transform: rotate(180deg);
-    }
     .magazine{
         width: 130px;
         height: 177px;
@@ -12304,6 +12302,15 @@ h3{
     }
     .match-center.active{
         display: block;
+    }
+    .competition-slider .slick-arrow{
+        top: 77px;
+    }
+    .competition-block{
+        margin: 0;
+    }
+    .competition-slider .slick-next.slick-arrow{
+        right: -18px;
     }
 }
 @media (max-width: 370px){

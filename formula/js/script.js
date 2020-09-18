@@ -26,6 +26,24 @@ $( document ).ready(function(){
         $('.grid').removeClass('grid5');
     });
     
+    $('.match-tab1').click(function(e){
+        e.preventDefault();
+        $('.match-tab2').removeClass('active');
+        $('.match-center2').removeClass('active');
+        
+        $(this).addClass('active');
+        $('.match-center1').addClass('active');
+    });
+    $('.match-tab2').click(function(e){
+        e.preventDefault();
+        $('.match-tab1').removeClass('active');
+        $('.match-center1').removeClass('active');
+        
+        $(this).addClass('active');
+        $('.match-center2').addClass('active');
+    });
+    
+    
     $('.btn-grid1').click(function(e){
         e.preventDefault();
         $('.grid-nav').addClass('grid1');
@@ -186,6 +204,16 @@ $( document ).ready(function(){
         $('.grid').addClass('grid1');
         $('.grid-nav').addClass('grid1');
     }    
+    if(windowWidth < 767){
+        $('.competition-slider').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToShow: 1
+        });
+    }    
+    competition-slider
     $('.players-slider-bg .slick-arrow').click(function(e){
         e.preventDefault();
         $('.players-nav-li').removeClass('active');

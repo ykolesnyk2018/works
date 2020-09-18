@@ -335,6 +335,28 @@ nav.nav-top{
 .action-slider{
     margin: 48px 0 116px 0;
 }
+.call-img{
+    float: left;
+}
+.right-call{
+    float: left;
+    margin: 0 0 0 32px;
+}
+.right-call-tittle{
+    font-size: 32px;
+    font-family: 'HelveticaNeueCyr-Roman';
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.right-call-text{
+    font-family: 'HelveticaNeueCyr-Light';
+    font-size: 16px;
+    line-height: 145%;
+    color: #FFFFFF;
+    max-width: 245px;
+    margin: 16px 0 0 0;
+    opacity: 0.6;
+}
 .slide{
     background: #F0F0F0;
     width: 100%;
@@ -823,6 +845,7 @@ a.back-btn:hover svg{
 }
 .call-right form button{
     border: 0;
+    cursor: pointer;
     background: #2F80ED;
     border-radius: 0px 1px 1px 0px;
     padding: 26px 46px 22px 46px;
@@ -1360,6 +1383,14 @@ img{
     left: 108px;
     right: auto;
 }
+.error p{
+    margin: 14px 0 0 0;
+    font-size: 14px;
+    color: #EB5757;
+}
+.error input{
+    background: #fff url(../images/warning.svg) right 20px center no-repeat;
+}
 @media (max-width: 1640px){
     .container{
         width: 960px;
@@ -1576,6 +1607,13 @@ img{
     .call-right{
         float: none;
     }
+    .call-left.ok{
+        float: left;
+        max-width: 500px;
+    }
+    .call-right.ok{
+        float: right;
+    }
     .form-item:nth-child(1),
     .form-item:nth-child(2){
         width: calc(50% - 58px);
@@ -1639,14 +1677,26 @@ img{
     .container{
         width: 740px;
     }
+    .call-right.ok{
+        float: left;
+    }
     nav.nav-top{
         padding: 10px 0 0 0;
     }
     .container li{
         margin: 10px 14px 0 0;
     }
+    .call-title{
+        font-size: 32px;
+    }
     .top-right{
         padding: 15px 0 15px 0;
+    }
+    .call-img img{
+        width: 40px;
+    }
+    .right-call.ok{
+        margin: 0 0 0 15px;
     }
     .nav-btn a{
         padding: 15px 22px;
@@ -1780,6 +1830,12 @@ img{
         max-width: 740px;
         width: auto;
         margin: 0 16px;
+    }
+    .call-img{
+        display: none;
+    }
+    .right-call.ok{
+        margin: 0;
     }
     nav.navigation a{
         width: 26px;
@@ -2175,6 +2231,7 @@ img{
     }
     .call-right form button{
         width: 100%;
+        padding: 26px 22px 22px 22px;
     }
     .call-right form button:after{
         content: "Вызвать замерщика";

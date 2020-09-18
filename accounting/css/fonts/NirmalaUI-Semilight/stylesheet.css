@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Nirmala UI Semilight';
+    src: url('NirmalaUI-Semilight.eot');
+    src: url('NirmalaUI-Semilight.eot?#iefix') format('embedded-opentype'),
+        url('NirmalaUI-Semilight.woff2') format('woff2'),
+        url('NirmalaUI-Semilight.woff') format('woff'),
+        url('NirmalaUI-Semilight.ttf') format('truetype'),
+        url('NirmalaUI-Semilight.svg#NirmalaUI-Semilight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,14 @@
+<svg width="159" height="150" viewBox="0 0 159 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="159" height="150">
+<path d="M35.557 0.555176H158.225L123.563 149.806H0.894531L35.557 0.555176Z" fill="#051D5A"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="-8.95067" y="0.784192" width="174.874" height="148.793" rx="1.60311" fill="white" stroke="#F5F5F5" stroke-width="0.458032"/>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="-10" y="0" width="177" height="150">
+<rect x="-8.95067" y="0.784192" width="174.874" height="148.793" rx="1.60311" fill="white" stroke="white" stroke-width="0.458032"/>
+</mask>
+<g mask="url(#mask1)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24.2169 0.555176H-9.17969V40.3555H24.2169V0.555176ZM74.3105 0.555176H40.9139V40.3555H74.3105V0.555176ZM74.3109 0.555176H166.152V20.4553H74.3109V0.555176ZM166.152 40.3556H74.3109V60.2558H166.152V40.3556ZM74.3109 80.1556H166.152V100.056H74.3109V80.1556ZM166.152 119.956H-9.17969V139.856H166.152V119.956ZM40.9139 60.2558H74.3105V100.056H40.9139V60.2558ZM24.2169 60.2558H-9.17969V100.056H24.2169V60.2558Z" fill="#1C6DC1"/>
+</g>
+</g>
+</svg>

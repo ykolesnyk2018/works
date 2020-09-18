@@ -320,7 +320,6 @@
                         <div class="who-win-content clearfix">
                             <div class="left">53%</div>
                             <div class="percent">
-                                <div style="width: 53%;"></div>
                             </div>
                             <div class="right">33%</div>
                         </div>
@@ -444,7 +443,6 @@
                         <div class="who-win-content clearfix">
                             <div class="left">53%</div>
                             <div class="percent">
-                                <div style="width: 53%;"></div>
                             </div>
                             <div class="right">33%</div>
                         </div>
@@ -716,6 +714,16 @@
     </div>
     <script src="js/jquery-1.12.4.min.js?2592000"></script>
     <script src="js/jquery-ui.min.js?2592000"></script>
-    <script src="js/script.js?2592000"></script>
+    <script>
+        $(function(){
+            $(".percent").slider({
+              value: 60,
+              orientation: "horizontal",
+              range: "min",
+              animate: true
+            });
+        });
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1896,6 +1896,30 @@ img{
     .certificate{
         max-width: 165px;
     }
+    
+    .top .container{
+        position: relative;
+    }
+    .socials{
+        display: none;
+    }
+    .phone a{
+        padding: 0;
+    }
+    .phone a:before{
+        display: none;
+    }
+    .top-right{
+        position: absolute;
+        left: 220px;
+        bottom: -68px;
+    }
+    .container li{
+        margin: 10px 5px 20px 0;
+    }
+    .container li:last-child{
+        margin-right: 0;
+    }
 }
 @media (max-width: 767px){
     .container{
@@ -2431,5 +2455,20 @@ img{
         max-width: 140px;
         display: block;
         margin: 0 auto;
+    }
+    .top-right{
+        position: static;
+    }
+    .socials{
+        display: block;
+    }
+    .phone a:before{
+        display: block;
+    }
+    .menu-active header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 }

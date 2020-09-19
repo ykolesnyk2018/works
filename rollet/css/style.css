@@ -1435,6 +1435,7 @@ img{
 .content h1,
 .content h4{
     text-align: left;
+    margin: 0;
 }
 @media (max-width: 1640px){
     .container{

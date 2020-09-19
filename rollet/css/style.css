@@ -1700,6 +1700,7 @@ img{
         height: 400px;
         margin: 0 0 0 0;
         overflow: hidden;
+        display: none;
     }
     .main-slider-left,
     .main-slider-right{

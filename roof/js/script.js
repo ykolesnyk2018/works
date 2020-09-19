@@ -25,6 +25,19 @@ $( document ).ready(function(){
             // instead of a settings object
           ]
     });
+    $('.fast-choose-color').slick({
+        arrows: true,
+        infinite: true,
+        focusOnSelect: true,
+        variableWidth: true,
+        slidesToScroll: 1
+    });
+    
+    
+    
+    
+    
+    
     $(window).scroll(function () {
         if ($(document).scrollTop() > 350) {
             $('.cart-box').addClass('active');

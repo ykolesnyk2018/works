@@ -179,7 +179,7 @@ nav.nav-top{
 .nav-bottom>nav>ul>li{
     display: inline-block;
     vertical-align: middle;
-    margin: 0 50px 0 0 ;
+    margin: 0 30px 0 0 ;
     position: relative;
 }
 .nav-bottom>nav>ul>li:hover:after{
@@ -612,8 +612,15 @@ nav.nav-top{
     letter-spacing: 0.5px;
 }
 .call-right{
+    max-width: 884px;
+    width: 100%;
     float: right;
     margin: 51px 50px 0 0;
+    text-align: left;
+}
+.thanks{
+    display: inline-block;
+    text-align: left;
 }
 .call-right form input:nth-child(1){
 }
@@ -680,10 +687,10 @@ h4{
     max-width: 662px;
     color: #4F4F4F;
 }
-.bread li{
+.bread>li{
     display: inline-block;
     vertical-align: middle;
-    margin: 0 20px 0 0;
+    margin: 0 15px 0 0;
     position: relative;
 }
 .bread li ul{
@@ -694,8 +701,10 @@ h4{
     left: 0;
     background: #fff;
     padding: 0 0;
+    border: 1px solid #ccc;
     border-left: 3px solid darkblue;
-    border-bottom: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 .bread li ul li:hover a{
     color: #2F80ED;
@@ -705,11 +714,16 @@ h4{
 }
 .bread li ul li{
     display: block;
-    padding: 5px 0;
+    padding: 0 0;
     margin: 0;
 }
 .bread li ul li a{
     display: block;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.bread li ul li:last-child a{
+    border: 0;
 }
 .bread li a{
     display: block;
@@ -719,7 +733,7 @@ h4{
     letter-spacing: 0.02em;
     color: #828282;
     position: relative;
-    padding: 5px 10px;
+    padding: 10px 0 10px 0;
 }
 .bread a:hover{
     color: #333333;
@@ -846,8 +860,9 @@ a.back-btn:hover svg{
     letter-spacing: 0.02em;
     color: #828282;
     content: '/';
-    top: 2px;
-    right: -15px;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: -12.5px;
 }
 .bread li:last-child a:after{
     content: '';
@@ -883,6 +898,9 @@ a.back-btn:hover svg{
     top: 14px;
     font-size: 12px;
 }
+.call-right form{
+    position: relative;
+}
 .call-right form button{
     border: 0;
     cursor: pointer;
@@ -892,6 +910,9 @@ a.back-btn:hover svg{
     float: left;
     height: 72px;
     box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 input[type=text]::-webkit-input-placeholder{
     font-family: 'HelveticaNeueCyr-UltraLight';
@@ -1437,13 +1458,48 @@ img{
     text-align: left;
     margin: 0;
 }
-@media (max-width: 1640px){
+.content{
+    line-height: 1.5;
+}
+table{
+    width: 100%;
+    border: 1px solid #000;
+}
+table th{
+    text-align: left;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+table th:last-child{
+    border-right: 0;
+}
+table td{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+table td:last-child{
+    border-right: 0;
+}
+@media (max-width: 1670px){
+    .container{
+        width: auto;
+        margin: 0 15px;
+    }
+    .grid-block.long{
+        width: 505px;
+    }
+    .call-right.ok{
+        margin: 40px 0 0 0;
+    }
+}
+@media (max-width: 1450px){
     .container{
         width: 930px;
+        margin: 0 auto;
     }
     .call-right.ok{
         float: none;
-        margin: 0;
+        margin: 40px 0 0 0;
     }
     .call-img{
         float: none;
@@ -1752,6 +1808,29 @@ img{
         position: static;
         transform: translate(0);
     }
+    .top .container{
+        position: relative;
+    }
+    .phone a{
+        padding: 0;
+    }
+    .phone a:before{
+        display: none;
+    }
+    .top-right{
+        position: absolute;
+        left: 260px;
+        bottom: -75px;
+    }
+    .top .container li{
+        margin: 10px 23px 20px 0;
+    }
+    .top .container li:last-child{
+        margin-right: 0;
+    }
+    .top .container li a{
+        font-size: 12px;
+    }
 }
 @media (max-width: 959px){
     .container{
@@ -1795,7 +1874,7 @@ img{
         padding: 10px 0 0 0;
     }
     .top .container li{
-        margin: 10px 14px 0 0;
+        margin: 10px 5px 20px 0;
     }
     .call-title{
         font-size: 32px;
@@ -1935,29 +2014,12 @@ img{
     .certificate{
         max-width: 165px;
     }
-    
-    .top .container{
-        position: relative;
-    }
     .socials{
         display: none;
     }
-    .phone a{
-        padding: 0;
-    }
-    .phone a:before{
-        display: none;
-    }
     .top-right{
-        position: absolute;
         left: 220px;
         bottom: -68px;
-    }
-    .top .container li{
-        margin: 10px 5px 20px 0;
-    }
-    .top .container li:last-child{
-        margin-right: 0;
     }
 }
 @media (max-width: 767px){
@@ -2508,6 +2570,15 @@ img{
         position: fixed;
         top: 0;
         left: 0;
+        width: 100%;
+        background: #fff;
+    }
+    .call-right form button{
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+    .call-left, .call-right{
         width: 100%;
     }
 }

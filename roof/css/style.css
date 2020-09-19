@@ -887,7 +887,7 @@ header{
     vertical-align: bottom;
     font-size: 12px;
 }
-.slick-arrow{
+.feedbacks-slider .slick-arrow{
     width: 10px;
     height: 15px;
     position: absolute;
@@ -899,10 +899,10 @@ header{
     font-size: 0;
     cursor: pointer;
 }
-.slick-prev.slick-arrow{
+.feedbacks-slider .slick-prev.slick-arrow{
     left: -45px;
 }
-.slick-next.slick-arrow{
+.feedbacks-slider .slick-next.slick-arrow{
     transform: rotate(180deg);
     right: -45px;
 }
@@ -1387,6 +1387,294 @@ button.btn-feeds:hover{
     color: #fff;
     transition: 0.3s;
 }
+.from-manufacturer{
+    margin: 36px 0 0 0;
+}
+.from-manufacturer-content{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+.from-manufacturer-block{
+    flex-basis: 160px;
+    min-height: 252px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.from-manufacturer-block-img{
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+.from-manufacturer-block-img img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.from-manufacturer-block-title{
+    font-size: 16px;
+    font-family: 'FiraSansBold';
+    margin: 22px 0 18px 0;
+    text-align: center;
+    transition: 0.4s;
+}
+.from-manufacturer-block-title a{
+    color: #282828;
+    text-decoration: none;
+}
+.from-manufacturer-block-btn{
+    font-family: 'FiraSansBold';
+    font-size: 11px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.from-manufacturer-block-btn a{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border: 2px solid #BF3D3D;
+    color: #BF3D3D;
+    text-decoration: none;
+    padding: 8.2px 0 6.2px 0;
+}
+.from-manufacturer-block-hidden{
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.4s;
+    background: rgba(191,61,61,0.85);
+    padding: 62px 20px 0 23px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'FiraSansLight';
+}
+.from-manufacturer-block:hover .from-manufacturer-block-hidden{
+    top: 0;
+}
+.from-manufacturer-block-hidden p{
+    margin: 0 0 20px 0;
+}
+.from-manufacturer-block-hidden p span{
+    font-family: 'FiraSansBold';
+    display: block;
+}
+.from-manufacturer-block:hover .from-manufacturer-block-title{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+}
+.from-manufacturer-block:hover .from-manufacturer-block-title a{
+    color: #fff;
+}
+.from-manufacturer-block:hover .from-manufacturer-block-btn{
+    left: 20px;
+    right: 20px;
+    position: absolute;
+    bottom: 23px;
+    z-index: 2;
+}
+.from-manufacturer-block:hover .from-manufacturer-block-btn a{
+    padding: 4.2px 0 2.2px 0;
+    border: 2px solid #fff;
+    color: #fff;
+}
+.fast-choose{
+    margin: 44px 0 0 0;
+}
+.fast-choose-title{
+    font-family: 'FiraSansBold';
+    font-size: 20px;
+    color: #282828;
+    margin: 0 0 50px 0;
+}
+.fast-choose-content{
+    position: relative;
+}
+.fast-choose-row{
+    display: flex;
+    align-items: center;
+    margin: 0 0 32px 0;
+}
+.fast-choose-row-label{
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+    color: #282828;
+    margin: 0 34px 0 0;
+}
+.fast-choose-type>div{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
+}
+.fast-choose-type>div input[type="radio"]{
+    display: none;
+}
+.fast-choose-type>div label{
+    font-family: 'FiraSansLight';
+    display: block;
+    text-align: center;
+    width: 60px;
+    font-size: 16px;
+    color: #A0A0A0;
+    border-bottom: 3px solid #DADADA;
+    cursor: pointer;
+    padding: 0 0 2px 0;
+}
+.fast-choose-type>div input:checked + label{
+    border-bottom: 3px solid #BF3D3D;
+}
+.fast-choose-color{
+    max-width: 550px;
+    position: relative;
+}
+.fast-choose-color .slick-slide{
+    margin: 0 10px 0 0;
+}
+.fast-choose-color>div input{
+    display: none;
+}
+.fast-choose-color>div label{
+    width: 60px;
+    height: 60px;
+    line-height: 54px;
+    padding: 3px 3px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-family: 'FiraSansBold';
+}
+.fast-choose-color>div label span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+.fast-choose-color>div input:checked + label{
+    border: 3px solid #BF3D3D;
+    padding: 0;
+}
+.fast-choose-color .slick-prev{
+    display: none !important;
+}
+.fast-choose-color .slick-next{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    border: 0;
+    background: url(../images/icon/red-arrow.svg) no-repeat;
+    padding: 0;
+    width: 7px;
+    height: 10px;
+    font-size: 0;
+}
+.checkbox input{
+    display: none;
+}
+.checkbox label{
+    position: relative;
+    padding: 0 0 0 29px;
+    cursor: pointer;
+}
+.checkbox label:before{
+    content: "";
+    width: 21px;
+    height: 21px;
+    box-sizing: border-box;
+    border: 1px solid #DEDEDE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+.checkbox input:checked + label:after{
+    content: "";
+    width: 29px;
+    height: 27px;
+    background: url(../images/icon/checkbox.svg) no-repeat;
+    position: absolute;
+    left: -1px;
+    top: -7px;
+    z-index: 1;
+}
+.fast-choose-row-thickness>div{
+    margin: 0 14px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.fast-choose-row-thickness>div:last-child{
+    margin-right: 0;
+}
+.fast-choose-bottom{
+    margin: -3px 0 0 0;
+}
+.fast-choose-bottom-left{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #282828;
+    font-family: 'FiraSansLight';
+    margin: 0 50px 0 0;
+}
+.fast-choose-bottom-left span{
+    font-family: 'FiraSansBold';
+    color: #BF3D3D;
+    font-size: 20px;
+    margin: 0 3px 0 5px;
+}
+.fast-choose-bottom-right{
+    display: inline-block;
+    vertical-align: middle;
+}
+.fast-choose-bottom-right a{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #A0A0A0;
+    border: 2px solid #A0A0A0;
+    text-transform: uppercase;
+    padding: 7.2px 0;
+    width: 145px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'FiraSansBold';
+    margin: 0 20px 0 0;
+}
+.fast-choose-bottom-right a:last-child{
+    margin: 0;
+}
+.fast-choose-bottom-right a:hover,
+.fast-choose-bottom-right a.active{
+    color: #BF3D3D;
+    border: 2px solid #BF3D3D;
+}
+.fast-choose-img{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    width: 275px;
+    height: 275px;
+}
+.fast-choose-img img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 @media (max-width: 939px){
     .container{
         width: 740px;
@@ -1693,10 +1981,10 @@ button.btn-feeds:hover{
         left: 18px;
         right: 7px;
     }
-    .slick-prev.slick-arrow{
+    .feedbacks-slider .slick-prev.slick-arrow{
         left: 0;
     }
-    .slick-next.slick-arrow{
+    .feedbacks-slider .slick-next.slick-arrow{
         right: 0;
     }
     .feedbacks-btn{

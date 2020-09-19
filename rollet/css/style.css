@@ -611,7 +611,7 @@ nav.nav-top{
 }
 .call-right{
     float: right;
-    margin: 51px 0 0 0;
+    margin: 51px 50px 0 0;
 }
 .call-right form input:nth-child(1){
 }
@@ -631,6 +631,10 @@ nav.nav-top{
 .form-item{
     position: relative;
     float: left;
+    margin: 0 1px 0 0;
+}
+.form-item.none{
+    margin: 0;
 }
 .form-item:nth-child(1){
     width: 520px;
@@ -654,7 +658,7 @@ nav.nav-top{
 }
 .top-title.one{
     background: #F0F0F0;
-    padding: 16px 0 198px 0 ;
+    padding: 32px 0 198px 0 ;
 }
 .bread{
     
@@ -664,6 +668,8 @@ h1{
     margin: 30px auto 0 auto;
     font-family: 'HelveticaNeueCyr-Light';
     max-width: 662px;
+    font-size: 38px;
+    letter-spacing: 0.2px;
 }
 h4{
     text-align: center;
@@ -884,6 +890,7 @@ nav.navigation a.active:hover{
 }
 nav.navigation{
     text-align: center;
+    margin: 0 auto;
 }
 nav.navigation a{
     font-family: 'HelveticaNeueCyr-Bold';
@@ -1393,10 +1400,37 @@ img{
 }
 @media (max-width: 1640px){
     .container{
-        width: 960px;
+        width: 930px;
+    }
+    .call-right.ok{
+        float: none;
+        margin: 0;
+    }
+    .call-img{
+        float: none;
+    }
+    .call-img img{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .right-call{
+        margin: 0 auto;
+        float: none;
+    }
+    .right-call-text{
+        display: inline-block;
+    }
+    .call-img{
+        display: block;
+    }
+    .nav-bottom>nav>ul>li>a{
+        font-size: 12px;
+    }
+    .top .container li a{
+        font-size: 12px;
     }
     .bread-content p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .catalog-bg{
         padding: 64px 0 0 0;
@@ -1441,7 +1475,7 @@ img{
         font-size: 14px;
     }
     .logo{
-        margin: 22px 0 0 0;
+        margin: 28px 0 0 0;
         width: 100%;
         max-width: 170px;
     }
@@ -1463,7 +1497,7 @@ img{
         right: 0;
     }
     .nav-bottom>nav>ul>li>a{
-        padding: 40px 0 16px 0;
+        padding: 25px 0 16px 0;
     }
     .nav-bottom>nav>ul>li a.more:after{
         top: 65%;
@@ -1542,14 +1576,14 @@ img{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .new:nth-child(even){
-        margin: 0 0 0 0;
+    .new.catalog{
+        margin: 0 auto;
     }
     .new a{
         font-size: 16px;
     }
     .new{
-        margin:  0 0 20px 0;
+        margin:  0 auto 20px auto;
     }
     .date{
         font-size: 16px;
@@ -1612,11 +1646,12 @@ img{
         max-width: 500px;
     }
     .call-right.ok{
-        float: right;
+        float: none;
+        display: inline-block;
     }
     .form-item:nth-child(1),
     .form-item:nth-child(2){
-        width: calc(50% - 58px);
+        width: calc(50% - 59px);
     }
     .certificate{
         max-width: 225px;
@@ -1678,7 +1713,38 @@ img{
         width: 740px;
     }
     .call-right.ok{
+        margin: 40px 0 0 0;
+    }
+    footer{
+        padding: 50px 0 60px 0;
+        position: relative;
+    }
+    .copy-right{
+        position: absolute;
+        bottom: 15px;
+        left: 40px;
+    }
+    .footer-left{
+        float: none;
+        margin: 0 0 30px 0;
+        max-width: 100%;
+    }
+    .footer-right{
+        border-bottom: 1px solid #D3D3D3;
+        padding: 0 0 20px 0;
+    }
+    .call-right.ok{
         float: left;
+    }
+    .phone.footer-contact a.mail{
+        position: absolute;
+        right: 0;
+        margin: 0;
+        top: 0;
+    }
+    .phone.footer-contact{
+        position: relative;
+        width: 100%;
     }
     nav.nav-top{
         padding: 10px 0 0 0;
@@ -1695,15 +1761,15 @@ img{
     .call-img img{
         width: 40px;
     }
-    .right-call.ok{
-        margin: 0 0 0 15px;
-    }
     .nav-btn a{
         padding: 15px 22px;
     }
+    .call-img{
+        margin:  0 0 10px 0;
+    }
     .nav-bottom>nav>ul>li{
         margin: 0 19px 0 0;
-}
+    }
     .nav-bottom>nav>ul>li>a{
         padding: 30px 0 16px 0;
         font-size: 11px;
@@ -1844,7 +1910,7 @@ img{
         font-size: 14px;
     }
     .socials{
-        margin: 0;
+        margin: -1px 0 0 0;
         float: right;
     }
     nav.navigation{
@@ -1909,7 +1975,7 @@ img{
         display: none;
     }
     .top-right{
-        padding: 15px 0 11px 0;
+        padding: 15px 0 28px 0;
     }
     .logo{
         margin: 17px 0 0 0px;
@@ -2011,12 +2077,12 @@ img{
     .main-menu-mobil.active{
         display: block;
         width: 100%;
-        top: 108px;
+        top: 102px;
         left: 0;
         position: fixed;
         z-index: 10;
         background: #fff;
-        height: calc(100vh - 108px);
+        height: calc(100vh - 102px);
         overflow: auto;
     }
     .main-menu-mob>ul{
@@ -2164,6 +2230,12 @@ img{
         font-size: 18px;
         margin: 31px 0 8px 0;
     }
+    .bottom-prev{
+        padding: 0 0 0 13px;
+    }
+    .bottom-next{
+        padding: 0 13px 0 0 ;
+    }
     .working-time{
         text-align: center;
         font-size: 14px;
@@ -2201,6 +2273,7 @@ img{
     }
     .menu-active{
         overflow: hidden;
+        height: 100vh;
     }
     .menu-active header{
         border-bottom: 1px solid #D3D3D3;
@@ -2209,13 +2282,13 @@ img{
     }
     .bottom-nav{
         margin: 45px 0;
-        font-size: 18px;
+        font-size: 13px;
     }
     .bottom-prev:before{
         top: 40%;
     }
     .bottom-next:before{
-        top: 11%;
+        top: 6%;
     }
     .form-item:nth-child(1), 
     .form-item:nth-child(2){
@@ -2227,7 +2300,7 @@ img{
     }
     .bread-content p{
         margin-bottom: 26px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .call-right form button{
         width: 100%;

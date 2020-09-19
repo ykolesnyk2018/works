@@ -1662,7 +1662,7 @@ img{
     .main-slider-right{
         width: 600px;
     }
-    .main-slider-left{
+    .main-slider-left{ 
         padding: 0 20px 0 20px;
         position: relative;
         z-index: 1;

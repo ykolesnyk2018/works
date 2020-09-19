@@ -1664,6 +1664,9 @@ img{
     }
     .main-slider-left{
         padding: 0 20px 0 20px;
+        position: relative;
+        z-index: 1;
+        background: #fff;
     }
     .main-slider .slick-prev.slick-arrow{
         left: 20px; 

@@ -59,7 +59,6 @@ img{
     clear: both;
 }
 header{
-    background: #E5E5E5;
     padding: 10px 0 0 0;
 }
 .logo{
@@ -822,6 +821,20 @@ header{
     float: none;
     padding: 0 0 59px 0;
 }
+.feedback.feeds{
+    margin: 65px 0 0 0;
+}
+.feeds{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feedback.feeds .feedback-img{
+    left: 16%;
+}
+.feedback.feeds .feedback-text{
+    text-align: left;
+}
 .feedback-img{
     position: absolute;
     top: -39px;
@@ -1215,6 +1228,13 @@ footer>.container{
     margin: 44px 0 0 0;
     text-transform: uppercase;
 }
+.main-description{
+    font-size: 14px;
+    line-height: 17px;
+    font-family: 'FiraSansLight';
+    margin: 30px 0 46px 0;
+    color: #000;
+}
 .news{
     margin: 21px 0 0 0;
 }
@@ -1259,6 +1279,9 @@ footer>.container{
     margin: 10px 0 0 0;
     color: #282828;
 }
+nav.navigation.feeds{
+    margin: 31px 0 0 0;
+}
 nav.navigation{
     
 }
@@ -1299,6 +1322,70 @@ nav.navigation{
 .navigation ul li a.prev svg,
 .next svg:hover{
     stroke: #2b2b2b;
+}
+.feeds-form-bg{
+    background: #F4F4F4;
+    padding: 50px 0;
+    margin: 33px 0 0 0;
+}
+.feeds-form-title{
+    font-family: 'FiraSansBold';
+    font-size: 20px;
+    line-height: 24px;
+    color: #282828;
+}
+.feeds-form-left{
+    float: left;
+    margin: 37px 0 0 0;
+}
+.feeds-form-left input{
+    display: block;
+    border: 2px solid #DEDEDE;
+    max-width: 280px;
+    width: 100%;
+    margin: 0 0 20px 0;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'FiraSansLight';
+    color: #A0A0A0;
+    padding: 8px 13px 8px 13px;
+}
+.feeds-form-left input:last-child{
+    margin: 0;
+}
+.feeds-form-right{
+    float: right;
+    margin: 37px 0 0 0;
+}
+.feeds-form-right input{
+    display: block;
+    border: 2px solid #DEDEDE;
+    margin: 0 0 20px 0;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'FiraSansLight';
+    color: #A0A0A0;
+    padding: 8px 13px 8px 13px;
+    min-height: 84px;
+    max-width: 599px;
+    width: 100%;
+}
+button.btn-feeds{
+    clear: both;
+    display: block;
+    font-size: 11px;
+    font-family: 'FiraSansBold';
+    line-height: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 2px solid #BF3D3D;
+    color: #BF3D3D;
+    padding: 10px 20px;
+}
+button.btn-feeds:hover{
+    background: #BF3D3D;
+    color: #fff;
+    transition: 0.3s;
 }
 @media (max-width: 939px){
     .container{
@@ -1643,6 +1730,9 @@ nav.navigation{
     }
 }
 @media (max-width: 767px){
+    header{
+        background: #e5e5e5;
+    }
     .container{
         width: auto;
         margin: 0 13px;

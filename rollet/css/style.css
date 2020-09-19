@@ -1690,6 +1690,7 @@ img{
         display: flex;
         flex-wrap: wrap;
         padding: 0 0 120px 0;
+        overflow: hidden;
     }
     .main-slider-left{
         order: 2;
@@ -1700,7 +1701,6 @@ img{
         height: 400px;
         margin: 0 0 0 0;
         overflow: hidden;
-        display: none;
     }
     .main-slider-left,
     .main-slider-right{

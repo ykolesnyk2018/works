@@ -58,6 +58,9 @@ img{
     display: block;
     clear: both;
 }
+a{
+    text-decoration: none;
+}
 header{
     padding: 10px 0 0 0;
 }
@@ -1736,9 +1739,86 @@ button.btn-feeds:hover{
     height: 21px;
     background-size: 100% 100%;
 }
+.new-inside-conent{
+    margin: 29px 0 0 0;
+    max-width: 578px;
+}
+.new-inside{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.new-inside-top{
+    margin: 0 0 9px 0;
+}
+.inside-left{
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+    line-height: 17px;
+    color: #A0A0A0;
+    float: left;
+    margin: 2px 0 0 0;
+}
+.new-inside-right{
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+    line-height: 17px;
+    color: #A0A0A0;
+}
+.new-inside-right a{
+    display: inline-block;
+    margin: 0 0 0 7px;
+    vertical-align: middle;
+}
+.new-inside-conent p{
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+    line-height: 17px;
+    margin: 19px 0 0 0;
+    color: #282828;
+}
+.new-inside-conent a.inside{
+    font-size: 12px;
+    line-height: 14px;
+    color: #BF3D3D;
+    font-family: 'FiraSansLight';
+    position: relative;
+    margin: 21px 0 0 0;
+    display: inline-block;
+}
+.new-inside-conent a.inside:after{
+    position: absolute;
+    content: '';
+    background: url(../images/icon/arrow-inside.svg) no-repeat;
+    width: 7px;
+    height: 12px;
+    top: 50%;
+    right: -15px;
+    transform: translate(0,-50%);
+}
+.tabs-contact {
+    margin: 29px 0 0 0;
+}
+.tabs-contact a{
+    font-size: 12px;
+    font-family: 'FiraSansBold';
+    line-height: 14px;
+    color: #282828;
+    padding: 16px;
+    border-bottom: 2px solid #A0A0A0;
+}
+.tabs-contact a.active{
+    border-bottom: 2px solid #BF3D3D;
+}
 @media (max-width: 939px){
     .container{
         width: 740px;
+    }
+    .feeds-form-right{
+        max-width: 399px;
+        margin: 37px 0 0 0;
     }
     .feedback.feeds{
         width: 320px;
@@ -2084,6 +2164,33 @@ button.btn-feeds:hover{
 @media (max-width: 767px){
     header{
         background: #e5e5e5;
+    }
+    .main-title{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .inside-left{
+        float: none;
+        margin: 0;
+    }
+    .new-inside-right{
+        float: none;
+        margin: 10px 0 0 0;
+    }
+    .feeds-form-left{
+        margin: 37px 0 20px 3px;
+    }
+    .feeds-form-left{
+        max-width: 399px;
+        width: 100%;
+    }
+    .feeds-form-left input{
+        max-width: 399px;
+        width: 100%;
+    }
+    .feeds-form-right{
+        float: none;
+        margin: 0 0 0 3px;
     }
     .feedback.feeds{
         width: 420px;

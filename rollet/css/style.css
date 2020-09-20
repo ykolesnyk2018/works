@@ -925,18 +925,19 @@ input[type=text]::-webkit-input-placeholder{
     display: flex;
     flex-wrap: wrap;
     padding: 48px 0 0 0;
-    column-gap: 20px;
 }
 .catalog-bg{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    column-gap: 20px;
 }
 .new.catalog{
-    margin: 0 0 30px 0;
+    margin: 0 20px 30px 0;
     max-width: none;
     width: calc(25% - 20px);
+}
+.new>a:nth-child(4n){
+    margin-right: 0;
 }
 .new>a:nth-child(1){
     display: block;
@@ -957,6 +958,10 @@ input[type=text]::-webkit-input-placeholder{
 .new{
     width: calc(25% - 15px);
     display: block;
+    margin: 0 20px 30px 0;
+}
+.new:nth-child(4n){
+    margin-right: 0;
 }
 .new:last-child{
     margin: 0;
@@ -1874,15 +1879,23 @@ table td:last-child{
     .top .container li a{
         font-size: 12px;
     }
-    .new.catalog{
-        margin: 0 0 30px 0;
+    .new.catalog,
+    .new.catalog:nth-child(4n){
+        margin: 0 20px 30px 0;
         max-width: none;
         width: calc(33.33% - 14px);
     }
-    .new{
+    .new.catalog:nth-child(3n){
+        margin-right: 0;
+    }
+    .new,
+    .new:nth-child(4n){
         width: calc(50% - 10px);
         display: block;
-        margin: 0 0 30px 0;
+        margin: 0 20px 30px 0;
+    }
+    .new:nth-child(2n){
+        margin-right: 0;
     }
     .call-right{
         text-align: left;
@@ -2081,9 +2094,15 @@ table td:last-child{
         left: 220px;
         bottom: -68px;
     }
-    .new.catalog{
+    .new.catalog,
+    .new.catalog:nth-child(3n),
+    .new.catalog:nth-child(4n){
         max-width: none;
         width: calc(50% - 10px);
+        margin: 0 20px 30px 0;
+    }
+    .new.catalog:nth-child(2n){
+        margin-right: 0;
     }
     .phone a{
         padding: 0 0 0 0;
@@ -2703,6 +2722,20 @@ table td:last-child{
     }
     .news{
         padding: 20px 0 0 0;
+    }
+    .new.catalog,
+    .new.catalog:nth-child(3n),
+    .new.catalog:nth-child(4n){
+        max-width: none;
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .new.catalog:nth-child(2n){
+        margin-right: 0;
+    }
+    .new,
+    .new:nth-child(4n){
+        margin: 0 0 30px 0;
     }
 }
 @media (max-width: 350px){

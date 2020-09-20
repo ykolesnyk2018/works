@@ -32,6 +32,11 @@ $( document ).ready(function(){
         variableWidth: true,
         slidesToScroll: 1
     });
+    $(function() {
+        $(".filter-top").click(function(){
+            $(this).toggleClass("active");
+        }); 
+    });
     
     
     

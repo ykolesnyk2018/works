@@ -1675,6 +1675,37 @@ button.btn-feeds:hover{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.filter{
+    border: 3px solid #BF3D3D;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+}
+.filter-top{
+    border-bottom: 3px solid #BF3D3D;
+    position: relative;
+    color: #282828;
+    font-size: 20px;
+    font-family: 'FiraSansMedium';
+    padding: 11.5px 0 11.5px 29px;
+    cursor: pointer;
+}
+.filter-top:after{
+    content: "";
+    width: 89px;
+    height: 100%;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    padding: 1px 0;
+    background: url(../images/icon/filter-arrow.svg) center 13px no-repeat;
+    border-left: 3px solid #BF3D3D;
+}
+.filter-top.active:after{
+    transform: rotate(180deg);
+    border: 0;
+    border-right: 3px solid #BF3D3D;
+}
 @media (max-width: 939px){
     .container{
         width: 740px;

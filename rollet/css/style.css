@@ -1242,7 +1242,7 @@ a.mail:before{
 }
 .grid-block.long{
     height: 863px;
-    width: 536px;
+    width: calc(100% - 1120px);
     top: 0;
     left: 700px;
 }
@@ -1511,9 +1511,6 @@ table td:last-child{
         width: auto;
         margin: 0 15px;
     }
-    .grid-block.long{
-        width: 505px;
-    }
     .call-right.ok{
         margin: 40px 0 0 0;
     }
@@ -1656,7 +1653,7 @@ table td:last-child{
     }
     .grid-block.long{
         height: 580px;
-        width: 336px;
+        width: calc(100% - 620px);
         left: 360px;
     }
     .grid-block.right{

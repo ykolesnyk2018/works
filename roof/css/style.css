@@ -1301,7 +1301,6 @@ nav.navigation{
     color: #fff;
 }
 .navigation ul li a{
-    display: block;
     width: 24px;
     text-align: center;
     line-height: 27px;
@@ -1312,6 +1311,15 @@ nav.navigation{
     color: #282828;
     box-sizing: border-box;
     text-decoration: none;
+}
+.navigation ul li a:hover{
+    color: #fff;
+    background: #BF3D3D;
+    transition: 0.3s;
+}
+.navigation ul li a.prev:hover svg,
+a.next:hover svg{
+    stroke: #fff;
 }
 .navigation ul li a.prev svg,
 .next svg{
@@ -1364,7 +1372,7 @@ nav.navigation{
     width: 100%;
     
 }
-.feeds-form-right input{
+.feeds-form-right textarea{
     display: block;
     border: 2px solid #DEDEDE;
     margin: 0 0 20px 0;
@@ -2076,6 +2084,16 @@ button.btn-feeds:hover{
 @media (max-width: 767px){
     header{
         background: #e5e5e5;
+    }
+    .feedback.feeds{
+        width: 420px;
+        margin: 65px auto 0 auto;
+    }
+    nav.navigation.feeds{
+        margin: 40px auto 0 auto;
+        max-width: 220px;
+        width: 100%;
+}
     }
     .container{
         width: auto;

@@ -2740,6 +2740,9 @@ table td:last-child{
     .certificate:nth-child(2n){
         margin-right: 0;
     }
+    body{
+        -webkit-text-size-adjust: 100%;
+    }
 }
 @media (max-width: 350px){
     .shares-all a{

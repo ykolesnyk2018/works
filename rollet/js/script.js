@@ -89,6 +89,12 @@ $(document).ready(function(){
         });
     });
     $(function() {
+        $(".news-show").click(function(){
+            $(this).toggleClass("active");
+            $('.main-news').toggleClass("active");
+        });
+    });
+    $(function() {
         $(".mobil-menu-btn, .make-call").click(function(){
             $(this).toggleClass("active");
             $('body').toggleClass("menu-active");

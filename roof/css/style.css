@@ -1715,6 +1715,19 @@ button.btn-feeds:hover{
     border: 0;
     border-right: 3px solid #BF3D3D;
 }
+.filter-column .checkbox label{
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+}
+.filter-column .checkbox label:before{
+    width: 15px;
+    height: 15px;
+}
+.filter-column .checkbox input:checked + label:after{
+    width: 23px;
+    height: 21px;
+    background-size: 100% 100%;
+}
 @media (max-width: 939px){
     .container{
         width: 740px;

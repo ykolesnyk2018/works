@@ -8,7 +8,7 @@
 		url('fonts/helveticaneuecyr-bold/helveticaneuecyr-bold.svg#helveticaneuecyr-bold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 @font-face {
-	font-family: 'HelveticaNeueCyr-UltraLight';
+	font-family: 'HelveticaNeueCyr-Light';
 	src: url('fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.eot'); /* IE 9 Compatibility Mode */
 	src: url('fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
 		url('fonts/helveticaneuecyr-ultralight/helveticaneuecyr-ultralight.woff2') format('woff2'), /* Super Modern Browsers */
@@ -138,7 +138,7 @@ nav.nav-top{
 .schedule{
     margin: 0 7px 0 0;
     font-size: 14px;
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     letter-spacing: 0.07em;
     color: #828282;
     display: inline-block;
@@ -414,7 +414,7 @@ nav.nav-top{
     font-size: 14px;
     line-height: 140%;
     color: #242424;
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
 }
 .slide-right{
     float: right;
@@ -443,7 +443,7 @@ nav.nav-top{
     margin: 0 95px 0 0;
 }
 .cooperate-text{
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     font-size: 18px;
     line-height: 145%;
     color: #4F4F4F;
@@ -602,7 +602,7 @@ nav.nav-top{
     width: 100%;
 }
 .call-text{
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     font-size: 16px;
     line-height: 145%;
     color: #FFFFFF;
@@ -915,13 +915,16 @@ a.back-btn:hover svg{
     right: 0;
 }
 input[type=text]::-webkit-input-placeholder{
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     font-size: 16px;
     line-height: 145%;
     color: #fff;
 }
 .news{
+    display: flex;
+    flex-wrap: wrap;
     padding: 48px 0 0 0;
+    column-gap: 20px;
 }
 .catalog-bg{
     display: flex;
@@ -934,14 +937,14 @@ input[type=text]::-webkit-input-placeholder{
     max-width: none;
     width: calc(25% - 20px);
 }
-.new.catalog>a:nth-child(1){
+.new>a:nth-child(1){
     display: block;
     position: relative;
     width: 100%;
     height: 216px;
     overflow: hidden;
 }
-.new.catalog>a:nth-child(1) img{
+.new>a:nth-child(1) img{
     display: block;
     position: absolute;
     top: 50%;
@@ -951,10 +954,8 @@ input[type=text]::-webkit-input-placeholder{
     min-height: 100%;
 }
 .new{
-    max-width: 396px;
-    width: 100%;
-    display: inline-block;
-    margin: 0 19.5px 0 0 ;
+    width: calc(25% - 15px);
+    display: block;
 }
 .new:last-child{
     margin: 0;
@@ -1050,7 +1051,7 @@ nav.navigation li{
     color: #333333;
 }
 .date{
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     font-size: 18px;
     line-height: 145%;
     color: #4F4F4F;
@@ -1116,7 +1117,7 @@ a.mail:before{
     background: url(../images/icons/mail.svg) no-repeat;
 }
 .copy-right{
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     font-size: 16px;
     line-height: 145%;
     color: #4F4F4F;
@@ -1162,7 +1163,7 @@ a.mail:before{
     margin: 0 0 12px 0;
 }
 .right-block ul li a{
-    font-family: 'HelveticaNeueCyr-UltraLight';
+    font-family: 'HelveticaNeueCyr-Light';
     font-size: 16px;
     line-height: 145%;
     color: #4F4F4F;
@@ -1201,7 +1202,6 @@ a.mail:before{
 .grid-block.white{
     height: 332px;
     overflow: hidden;
-    width: 674px;
     top: 0;
     left: 0;
 }
@@ -1240,12 +1240,6 @@ a.mail:before{
     background: #fff url(../images/icons/grid-arrow.svg) center center no-repeat;
     border-radius: 50%;
 }
-.grid-block.long{
-    height: 863px;
-    width: calc(100% - 1120px);
-    top: 0;
-    left: 700px;
-}
 .grid-block-default-btn{
     font-size: 18px;
     padding: 0 0 79px 0;
@@ -1257,18 +1251,27 @@ a.mail:before{
     padding: 0 20px 0 0;
     background: url(../images/icons/grid-arrow.svg) right center no-repeat;
 }
+.grid-block.long{
+    height: 863px;
+    top: 0;
+    left: calc(45% + 20px);
+}
 .grid-block.right{
-    width: 396px;
     top: 0;
     right: 0;
 }
-.grid-block.left-bottom{
-    width: 674px;
+.grid-block.right,
+.grid-block.long,
+.grid-block.right-bottom{
+    width: calc(26%);
+}
+.grid-block.left-bottom,
+.grid-block.white{
+    width: calc(45%);
     bottom: 0;
     left: 0;
 }
 .grid-block.right-bottom{
-    width: 396px;
     bottom: 0;
     right: 0;
     background: #2F80ED;
@@ -1296,6 +1299,7 @@ a.mail:before{
 }
 .grid-block-images img{
     margin: 0 20px 0 0;
+    max-width: 123px;
 }
 .grid-block-images img:last-child{
     margin: 0;
@@ -1506,6 +1510,18 @@ table td{
 }
 table td:last-child{
 }
+.news-show{
+    display: none;
+}
+.certificates{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.certificate{
+    max-width: none;
+    width: calc(25% - 15px)
+}
 @media (max-width: 1670px){
     .container{
         width: auto;
@@ -1513,6 +1529,18 @@ table td:last-child{
     }
     .call-right.ok{
         margin: 40px 0 0 0;
+    }
+}
+@media (max-width: 1600px){
+    .nav-bottom>nav{
+        margin: 0 0 0 40px;
+    }
+    .nav-bottom>nav>ul>li{
+        margin: 0 20px 0 0;
+    }
+    .call-right{
+        max-width: 940px;
+        margin-right: 0;
     }
 }
 @media (max-width: 1450px){
@@ -1691,14 +1719,10 @@ table td:last-child{
     }
     .news{
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
     }
     .new a{
         font-size: 16px;
-    }
-    .new{
-        margin:  0 auto 20px auto;
     }
     .date{
         font-size: 16px;
@@ -1832,18 +1856,16 @@ table td:last-child{
         position: relative;
     }
     .phone a{
-        padding: 0;
-    }
-    .phone a:before{
-        display: none;
+        padding: 0 0 0 30px;
     }
     .top-right{
         position: absolute;
         left: 260px;
         bottom: -75px;
+        z-index: 1;
     }
     .top .container li{
-        margin: 10px 23px 20px 0;
+        margin: 0 23px 20px 0;
     }
     .top .container li:last-child{
         margin-right: 0;
@@ -1855,6 +1877,11 @@ table td:last-child{
         margin: 0 0 30px 0;
         max-width: none;
         width: calc(33.33% - 14px);
+    }
+    .new{
+        width: calc(50% - 10px);
+        display: block;
+        margin: 0 0 30px 0;
     }
 }
 @media (max-width: 959px){
@@ -2050,6 +2077,12 @@ table td:last-child{
         max-width: none;
         width: calc(50% - 10px);
     }
+    .phone a{
+        padding: 0 0 0 0;
+    }
+    .phone a:before{
+        display: none;
+    }
 }
 @media (max-width: 767px){
     .container{
@@ -2071,7 +2104,7 @@ table td:last-child{
     }
     .socials{
         margin: -1px 0 0 0;
-        float: right;
+        float: left;
     }
     nav.navigation{
         margin: 30px auto;
@@ -2126,7 +2159,7 @@ table td:last-child{
         display: none;
     }
     .phone{
-        float: left;
+        float: right;
     }
     .nav-btn{
         display: none;
@@ -2612,5 +2645,59 @@ table td:last-child{
     }
     .new.catalog{
         width: 100%;
+    }
+    .new{
+        width: 100%;
+        max-width: none;
+    }
+    .news-show{
+        display: block;
+        font-size: 14px;
+        color: #333;
+        background: #E0E0E0;
+        padding: 16px 0;
+        width: 158px;
+        text-align: center;
+        border-radius: 24px;
+        margin: 30px auto 0 auto;
+    }
+    .news-show.active{
+        display: none;
+    }
+    .main-news .new:nth-child(1) ~ div.new{
+        display: none;
+    }
+    .main-news.active .new:nth-child(1) ~ div.new{
+        display: block;
+    }
+    .certificates{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 12px;
+    }
+    .certificate,
+    .certificate:nth-child(even){
+        max-width: none;
+        width: calc(50% - 6px);
+        margin: 0 0 12px 0;
+        overflow: hidden;
+    }
+    .certificate a{
+        display: block;
+        overflow: hidden;
+    }
+    .certificate a img{
+        display: block;
+    }
+    .new>a:nth-child(1){
+        height: 180px;
+    }
+    .news{
+        padding: 20px 0 0 0;
+    }
+}
+@media (max-width: 350px){
+    .shares-all a{
+        font-size: 13px;
     }
 }

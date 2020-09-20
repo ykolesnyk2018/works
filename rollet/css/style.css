@@ -2698,6 +2698,9 @@ table td:last-child{
     .main-news.active .new:nth-child(1) ~ div.new{
         display: block;
     }
+    .new:nth-child(4n){
+        width: 100%;
+    }
     .certificates{
         display: flex;
         flex-wrap: wrap;

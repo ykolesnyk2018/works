@@ -2285,7 +2285,7 @@ table td:last-child{
     .main-menu-mob>ul>li{
         border-bottom: 1px solid #D3D3D3;
     }
-    .main-menu-mob>ul>li>a{
+    .main-menu-mob>ul>li>a{ 
         display: block;
         font-size: 11px !important; 
         padding: 21px 0 20px 48px;
@@ -2298,6 +2298,7 @@ table td:last-child{
         content: "";
         width: 12px;
         height: 8px;
+        font-size: 11px !important; 
         position: absolute;
         top: 22px;
         left: 22px;

@@ -612,7 +612,7 @@ nav.nav-top{
     letter-spacing: 0.5px;
 }
 .call-right{
-    max-width: 884px;
+    max-width: 990px;
     width: 100%;
     float: right;
     margin: 51px 50px 0 0;
@@ -923,8 +923,32 @@ input[type=text]::-webkit-input-placeholder{
 .news{
     padding: 48px 0 0 0;
 }
+.catalog-bg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
 .new.catalog{
-    margin: 0 13.5px 48px 0;
+    margin: 0 0 30px 0;
+    max-width: none;
+    width: calc(25% - 20px);
+}
+.new.catalog>a:nth-child(1){
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 216px;
+    overflow: hidden;
+}
+.new.catalog>a:nth-child(1) img{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
 }
 .new{
     max-width: 396px;
@@ -946,6 +970,7 @@ nav.navigation a.active:hover{
 nav.navigation{
     text-align: center;
     margin: 0 auto;
+    width: 100%;
 }
 nav.navigation a{
     font-family: 'HelveticaNeueCyr-Bold';
@@ -1354,11 +1379,11 @@ img{
 }
 .main-slider-title{}
 .main-slider-right{
-    width: 1120px;
+    width: auto;
     height: 799px;
-    float: right;
     overflow: hidden;
     position: relative;
+    margin: 0 0 0 536px;
 }
 .main-slider-right img{
     display: block;
@@ -1672,9 +1697,6 @@ table td:last-child{
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    .new.catalog{
-        margin: 0 auto;
-    }
     .new a{
         font-size: 16px;
     }
@@ -1831,6 +1853,11 @@ table td:last-child{
     }
     .top .container li a{
         font-size: 12px;
+    }
+    .new.catalog{
+        margin: 0 0 30px 0;
+        max-width: none;
+        width: calc(33.33% - 14px);
     }
 }
 @media (max-width: 959px){
@@ -2021,6 +2048,10 @@ table td:last-child{
     .top-right{
         left: 220px;
         bottom: -68px;
+    }
+    .new.catalog{
+        max-width: none;
+        width: calc(50% - 10px);
     }
 }
 @media (max-width: 767px){
@@ -2373,7 +2404,7 @@ table td:last-child{
         font-size: 14px;
         color: #828282;
         letter-spacing: 0.02em;
-        padding: 0 0 20px 0;
+        padding: 0 0 60px 0;
     }
     .phone a {
         font-size: 18px;
@@ -2580,6 +2611,9 @@ table td:last-child{
         right: auto;
     }
     .call-left, .call-right{
+        width: 100%;
+    }
+    .new.catalog{
         width: 100%;
     }
 }

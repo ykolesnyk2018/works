@@ -705,6 +705,7 @@ h4{
     border-left: 3px solid darkblue;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    z-index: 1;
 }
 .bread li ul li:hover a{
     color: #2F80ED;
@@ -2286,7 +2287,7 @@ table td:last-child{
     }
     .main-menu-mob>ul>li>a{
         display: block;
-        font-size: 14px;
+        font-size: 14px !important;
         padding: 21px 0 20px 48px;
         letter-spacing: 0.02em;
         color: #242424;

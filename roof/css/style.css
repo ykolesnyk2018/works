@@ -2463,7 +2463,14 @@ a.dashed:hover{
     float: left;
     margin: 0 20px 20px 0;
 }
-.gallery a:nth-child(3n){
+.gallery-title{
+    font-size: 20px;
+    line-height: 24px;
+    color: #282828;
+    font-family: 'FiraSansBold';
+    margin: 42px 0 26px 0;
+}
+.gallery a:nth-type-child(3n){
     margin-right: 0;
 }
 .gallery a img{
@@ -2472,6 +2479,50 @@ a.dashed:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.gallerey-video{
+    
+}
+.gallerey-video-title{
+    font-family: 'FiraSansBold';
+    font-size: 20px;
+    line-height: 24px;
+    margin: 42px 0 18px 0;
+}
+.gallerey-video-block{
+    width: 924px;
+    height: 568px;
+    border: 7px solid #F4F4F4;
+    border-radius: 7px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+.gallerey-video-block iframe{
+    width: 100%;
+    height: 100%;
+}
+.cert-description{
+    font-family: 'FiraSansLight';
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 31px 0 0 0;
+    max-width: 782px;
+    width: 100%;
+    margin: 31px 0 61px 0;
+}
+.certificates a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    width: 220px;
+    height: 295px;
+    overflow: hidden;
+    float: left;
+    margin: 0 20px 40px 0;
+}
+.certificates a:nth-child(4n){
+    margin: 0 0 20px 0;
 }
 @media (max-width: 939px){
     .container{
@@ -2905,6 +2956,13 @@ a.dashed:hover{
         width: 380px;
         margin: 115px 0 0 0;
     }
+    .gallerey-video-block{
+        max-width: 100%;
+        height: 368px;
+    }
+    .certificates a:nth-child(4n){
+        margin: 0 20px 20px 0;
+    }
 }
 @media (max-width: 767px){
     header{
@@ -3284,5 +3342,19 @@ a.dashed:hover{
     }
     .tabs-contact .ui-tabs-nav{
         display: none;
+    }
+    .gallery a{
+        width: 100%;
+    }
+    .gallerey-video-block{
+        height: 200px;
+    }
+    .certificates a{
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    .certificates a:nth-child(4n){
+        margin: 0 auto 20px auto;
     }
 }

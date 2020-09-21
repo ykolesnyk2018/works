@@ -26,24 +26,6 @@ $( document ).ready(function(){
         $('.grid').removeClass('grid5');
     });
     
-    $('.match-tab1').click(function(e){
-        e.preventDefault();
-        $('.match-tab2').removeClass('active');
-        $('.match-center2').removeClass('active');
-        
-        $(this).addClass('active');
-        $('.match-center1').addClass('active');
-    });
-    $('.match-tab2').click(function(e){
-        e.preventDefault();
-        $('.match-tab1').removeClass('active');
-        $('.match-center1').removeClass('active');
-        
-        $(this).addClass('active');
-        $('.match-center2').addClass('active');
-    });
-    
-    
     $('.btn-grid1').click(function(e){
         e.preventDefault();
         $('.grid-nav').addClass('grid1');
@@ -121,11 +103,12 @@ $( document ).ready(function(){
     $(function(){
         $(".tabs").tabs();
     });
-    $('.press-center-left').slick({
+      $('.press-center-slider').slick({
       infinite: true,
       arrows: true,
       dots: true,
       slidesToShow: 1,
+      adaptiveHeight: true,
       slidesToScroll: 1
     });
     $('.main-slider').slick({
@@ -167,7 +150,7 @@ $( document ).ready(function(){
       ]
     });
     $('select').styler();
-    $('.adaptive-slider').slick({
+        $('.adaptive-slider').slick({
           dots: false,
           infinite: true,
           speed: 300,
@@ -182,8 +165,8 @@ $( document ).ready(function(){
               }
             }
           ]
-    });
-    $('.magazines-slider').slick({
+        });
+        $('.magazines-slider').slick({
           arrows: true,
           dots: false,
           infinite: false,
@@ -204,7 +187,7 @@ $( document ).ready(function(){
         $('.grid').addClass('grid1');
         $('.grid-nav').addClass('grid1');
     }    
-        $('.competition-slider').slick({
+          $('.competition-slider').slick({
           dots: false,
           infinite: true,
           speed: 300,
@@ -256,7 +239,7 @@ $( document ).ready(function(){
         }
     });
     
-    /* Навигация для слайдера с Игроками */
+    /* РќР°РІРёРіР°С†РёСЏ РґР»СЏ СЃР»Р°Р№РґРµСЂР° СЃ РРіСЂРѕРєР°РјРё */
     $('.players-nav-li:nth-child(1)').click(function(e){
         e.preventDefault();
         $('.players-slider .slick-dots li:nth-child(1) button').click();
@@ -316,5 +299,5 @@ $( document ).ready(function(){
         $(".players-slider-bg .slick-dots li").attr("aria-selected", 'false');
         $(".players-slider-bg .slick-dots li:nth-child(10)").attr("aria-selected", 'true');
     });
-    /* Навигация для слайдера с Игроками */
+    /* РќР°РІРёРіР°С†РёСЏ РґР»СЏ СЃР»Р°Р№РґРµСЂР° СЃ РРіСЂРѕРєР°РјРё */
 });

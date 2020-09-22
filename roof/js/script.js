@@ -47,6 +47,7 @@ $( document ).ready(function(){
         $(".default-products").click(function(){
             $(this).addClass("active");
             $('.products').removeClass("row");
+            $('.row-products').removeClass("active");
         }); 
     });
     $(function() {
@@ -62,18 +63,58 @@ $( document ).ready(function(){
     });
     $('select#tab-select').change(function() {
 
-        var $data_tab = $(this).find(':selected').data('tab')
+            var $data_tab = $(this).find(':selected').data('tab')
 
-        if($data_tab == 1){
-            $('a[href="#tab1"]').click();
-        };
-        if($data_tab == 2){
-            $('a[href="#tab2"]').click();
-        };
-        if($data_tab == 3){
-            $('a[href="#tab3"]').click();
-        };
+            if($data_tab == 1){
+                $('a[href="#tab1"]').click();
+            };
+            if($data_tab == 2){
+                $('a[href="#tab2"]').click();
+            };
+            if($data_tab == 3){
+                $('a[href="#tab3"]').click();
+            };
+            if($data_tab == 4){
+                $('a[href="#tab4"]').click();
+            };
+            if($data_tab == 5){
+                $('a[href="#tab5"]').click();
+            };
+            if($data_tab == 6){
+                $('a[href="#tab6"]').click();
+            };
+            if($data_tab == 7){
+                $('a[href="#tab7"]').click();
+            };
+            if($data_tab == 8){
+                $('a[href="#tab8"]').click();
+            };
+        });
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
     });
+    $('.slider-nav').slick({
+      arrows: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      focusOnSelect: true
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

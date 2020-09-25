@@ -1,5 +1,11 @@
 $( document ).ready(function(){
     $(function() {
+        $(".mobil-menu-btn").click(function(){
+            $(this).toggleClass('active');
+            $('.main-menu').toggleClass('active');
+        });
+    });
+    $(function() {
         $(".share-btn").click(function(){
             $(this).toggleClass('active');
         });

@@ -563,8 +563,8 @@ button:focus{
 }
 @media (max-width: 767px){
      .container{
-        width: 310px;
-        margin: 0 auto;
+        width: auto;
+        margin: 0 10px;
     }
     .main-menu{
         display: none;
@@ -636,7 +636,7 @@ button:focus{
         margin: 15px 26px 0 0;
     }
     .logo{
-        padding: 23px 10px 20px 0;
+        padding: 15px 10px 5px 0;
         order: 1;
         width: 50%;
     }
@@ -671,6 +671,18 @@ button:focus{
         position: absolute;
         left: 0;
         transition: 0.4s;
+        transition: 0.5s;
+    }
+    .mobil-menu-btn.active span:nth-child(1){
+        top: 8px;
+        transform: rotate(-45deg);
+    }
+    .mobil-menu-btn.active span:nth-child(2){
+        display: none;
+    }
+    .mobil-menu-btn.active span:nth-child(3){
+        top: 8px;
+        transform: rotate(45deg);
     }
     header .container>*{
         border-right: none;
@@ -683,6 +695,29 @@ button:focus{
         margin: 0;
     }
     .search-content{
-        width: 310px;
+        width: calc(100vw - 20px);
+    }
+    .main-menu.active{
+        width: 100vw;
+        position: absolute;
+        display: block;
+        top: 45px;
+        left: 0;
+        background: #fff;
+        z-index: 10;
+        box-sizing: border-box;
+        padding: 0;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    }
+    .main-menu ul{
+        margin: 0 10px;
+    }
+    .main-menu ul li{
+        display: block;
+        margin: 0;
+    }
+    .main-menu ul li a{
+        padding: 10px 0;
+        font-size: 15px;
     }
 }

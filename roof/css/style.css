@@ -281,6 +281,10 @@ header{
     text-align: center;
     padding: 7.2px 0;
 }
+.main-banner-btn a:hover{
+    background: #fff;
+    color: #BF3D3D;
+}
 .good-roof{}
 .good-roof-title{
     font-family: 'FiraSansBold';
@@ -325,6 +329,12 @@ header{
 .good-roof-block-text p{
     margin: 0 0 10px 0;
 }
+.good-roof-block-text a{
+    color: #282828;
+}
+.good-roof-block-text a:hover{
+    text-decoration: underline;
+}
 .good-roof-block-btn{
     position: absolute;
     width: 100%;
@@ -350,6 +360,9 @@ header{
     right: 0;
     top: 50%;
     transform: translate(0,-50%);
+}
+.good-roof-block-btn a:hover{
+    text-decoration: underline;
 }
 .why-we{}
 .why-we-title{
@@ -1204,9 +1217,9 @@ footer>.container{
     font-size: 12px;
     line-height: 14px;
     color: #A0A0A0;
-    text-decoration: none;
     margin: 0 15px 0 0;
     font-family: 'FiraSansLight';
+    text-decoration: underline;
 }
 .bread-crumbs a:hover{
     color: #BF3D3D;
@@ -1221,6 +1234,7 @@ footer>.container{
 }
 .bread-crumbs a:last-child{
     margin: 0;
+    text-decoration: none;
 }
 .bread-crumbs a:last-child:after{
     display: none;
@@ -1402,7 +1416,7 @@ button.btn-feeds{
     text-transform: uppercase;
     border: 2px solid #BF3D3D;
     color: #BF3D3D;
-    padding: 8px 20px;
+    padding: 9px 20px 7px 20px;
     margin: 0 0 0 3px;
 }
 button.btn-feeds:hover{
@@ -1681,10 +1695,19 @@ button.btn-feeds:hover{
 .fast-choose-bottom-right a:last-child{
     margin: 0;
 }
-.fast-choose-bottom-right a:hover,
+.fast-choose-bottom-right a:hover{
+    border: 2px solid #A0A0A0;
+    background: #A0A0A0;
+    color: #fff;
+}
 .fast-choose-bottom-right a.active{
-    color: #BF3D3D;
     border: 2px solid #BF3D3D;
+    color: #BF3D3D;
+}
+.fast-choose-bottom-right a.active:hover{
+    border: 2px solid #BF3D3D;
+    background: #BF3D3D;
+    color: #fff;
 }
 .fast-choose-img{
     position: absolute;
@@ -2694,6 +2717,10 @@ a.dashed:hover{
     box-sizing: border-box; 
     letter-spacing: 0.1em;
 }
+.product-inside-price-row-right a.border:hover{
+    background: #BF3D3D;
+    color: #fff;
+}
 .product-inside-price-row-right .no-border{
     font-family: 'FiraSansLight';
     font-size: 14px;
@@ -2712,6 +2739,9 @@ a.dashed:hover{
     left: 0;
     bottom: 0;
     border-bottom: 1px dashed #282828;
+}
+.product-inside-price-row-right .no-border:hover:before{
+    display: none;
 }
 .with-height{}
 .with-height-title{

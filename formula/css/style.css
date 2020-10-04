@@ -7030,8 +7030,8 @@ h3{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    min-height: 100%;
-    min-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 .magazines-slider{
     position: relative;
@@ -7109,6 +7109,8 @@ h3{
 .mediafile-icon img{
     display: inline-block;
     vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
 }
 .mediafile-text{
     flex-basis: 220px;
@@ -7473,52 +7475,77 @@ h3{
 }
 .competition-slider{
         position: relative;
-    }
-    .competition-slider .slick-arrow{
-        display: block;
-        position: absolute;
-        top: 110px;
-        font-size: 0;
-        width: 51px;
-        height: 57px;
-        background: none;
-        border: 0;
-        z-index: 1;
-    }
-    .competition-slider .slick-next.slick-arrow{
-        right: -6px;
-        left: auto;
-    }
-    .competition-slider .slick-prev.slick-arrow{
-        left: -6px;
-    }
-    .competition-slider .slick-arrow:before{
-        content: "";
-        background: #F04438;
-        width: 41px;
-        height: 57px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        transform: skew(-14deg);
-    }
-    .competition-slider .slick-arrow:after{
-        content: "";
-        background: url(../images/icon/main-slider-arrow.svg) no-repeat;
-        width: 7px;
-        height: 20px;
-        margin: -10px 0 0 -8.5px;
-        background-size: 100% 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 1;
-    }
-    .competition-slider .slick-prev.slick-arrow:after{
-        transform: rotate(180deg);
-    }
-
+}
+.competition-slider .slick-arrow{
+    display: block;
+    position: absolute;
+    top: 110px;
+    font-size: 0;
+    width: 51px;
+    height: 57px;
+    background: none;
+    border: 0;
+    z-index: 1;
+}
+.competition-slider .slick-next.slick-arrow{
+    right: -6px;
+    left: auto;
+}
+.competition-slider .slick-prev.slick-arrow{
+    left: -6px;
+}
+.competition-slider .slick-arrow:before{
+    content: "";
+    background: #F04438;
+    width: 41px;
+    height: 57px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: skew(-14deg);
+}
+.competition-slider .slick-arrow:after{
+    content: "";
+    background: url(../images/icon/main-slider-arrow.svg) no-repeat;
+    width: 7px;
+    height: 20px;
+    margin: -10px 0 0 -8.5px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+.competition-slider .slick-prev.slick-arrow:after{
+    transform: rotate(180deg);
+}
+.new-article{
+    width: 378px;
+}
+.new-article-img{
+    position: relative;
+    height: 267px;
+}
+.new-article-img a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.new-article-img a img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.new-article-category{
+    position: absolute;
+    bottom: -10px;
+}
 @media (min-width: 1921px){
     header .container{
         max-width: 1860px;
@@ -8714,7 +8741,7 @@ h3{
         margin: 0 10px 0 0;
     }
     .players-table-link a:after{
-        content: "ÐŸÑ€Ð¾Ñ„Ð¸Ð»ÑŒ";
+        content: "ÃÅ¸Ã‘â‚¬ÃÂ¾Ã‘â€žÃÂ¸ÃÂ»Ã‘Å’";
         display: inline-block;
         vertical-align: middle;
     }

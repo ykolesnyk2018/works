@@ -1,3 +1,6 @@
+$(function(){
+        $(".tabs").tabs();
+    });
 $( document ).ready(function(){
     $('.players-nav-li').click(function(e){
         e.preventDefault();
@@ -99,9 +102,6 @@ $( document ).ready(function(){
     $('.accordion-title').click(function(e){
         e.preventDefault();
         $(this).toggleClass('active');
-    });
-    $(function(){
-        $(".tabs").tabs();
     });
       $('.press-center-slider').slick({
       infinite: true,

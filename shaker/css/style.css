@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+body{
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+}
+ul,
+ol{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+*:focus{
+	outline: 0;
+}
+img{
+	max-width: 100%;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	width: ;
+	margin: 0 auto;
+} 
+header{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0 20px 0 20px;
+}
+.logo{}
+.logo a{
+	text-decoration: none;
+	display: block;
+}
+.logo a img{
+	display: block;
+}
+.header-right{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.phone{}
+.phone a{
+	display: block;
+	text-decoration: none;
+	font-size: 24px;
+	color: #000;
+}
+.phone .phone-status{
+	display: block;
+	position: relative;
+	padding: 0 0 0 25px;
+	font-size: 14px;
+}
+.phone .phone-status:before{
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin: -7px 0 0 0;
+	background: grey;
+	border-radius: 50%;
+}
+.phone .phone-status.green:before{
+	background: #23c60b;
+}
+.btn{
+	font-size: 14px;
+	font-weight: bold;
+	border: 2px solid #000;
+	display: inline-block;
+	padding: 11.6px 15px;
+	border-radius: 20px;
+}
+.main-menu{
+	font-size: 14px;
+	font-weight: bold;
+}

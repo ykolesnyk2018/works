@@ -1,3 +1,6 @@
+    $(function(){
+        $(".tabs").tabs();
+    });
 $( document ).ready(function(){
     $('.players-nav-li').click(function(e){
         e.preventDefault();
@@ -70,6 +73,11 @@ $( document ).ready(function(){
         e.preventDefault();
         $(this).toggleClass('active');
     });
+    $('.yk_new-show-btn').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.yk_news-hide').toggleClass('active');
+    });
     
     $('.open-popup').click(function(e){
         e.preventDefault();
@@ -100,10 +108,7 @@ $( document ).ready(function(){
         e.preventDefault();
         $(this).toggleClass('active');
     });
-    $(function(){
-        $(".tabs").tabs();
-    });
-      $('.press-center-slider').slick({
+     $('.press-center-slider').slick({
       infinite: true,
       arrows: true,
       dots: true,
@@ -125,6 +130,13 @@ $( document ).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1
     });
+	$('.yk_news-slider').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1,
+	  variableWidth: true
+	});
     $('.photo-gallery-slider').slick({
       dots: false,
       infinite: true,
@@ -186,7 +198,7 @@ $( document ).ready(function(){
         
         $('.grid').addClass('grid1');
         $('.grid-nav').addClass('grid1');
-    }    
+    };    
           $('.competition-slider').slick({
           dots: false,
           infinite: true,
@@ -203,7 +215,6 @@ $( document ).ready(function(){
             }
           ]
         });
-    competition-slider
     $('.players-slider-bg .slick-arrow').click(function(e){
         e.preventDefault();
         $('.players-nav-li').removeClass('active');

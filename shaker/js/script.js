@@ -37,7 +37,45 @@ $(document).ready(function(){
 	  speed: 300,
 	  slidesToShow: 1
 	});
-	
+	$('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  asNavFor: '.slider-nav',
+  	  adaptiveHeight: true
+	});
+	$('.slider-nav').slick({
+	  arrows: false,
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  vertical: true,
+	  verticalSwiping: true,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  centerMode: false,
+	  focusOnSelect: true,
+		responsive: [
+			{
+			  breakpoint: 1169,
+			  settings: {
+				  vertical: false,
+				  verticalSwiping: false,
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+				  slidesToShow: 10,
+				  slidesToScroll: 1,
+				  infinite: false
+			  }
+			}
+			// You can unslick at a given breakpoint now by adding:
+			// settings: "unslick"
+			// instead of a settings object
+		  ]
+	});
 	
 	$(window).scroll(function () {
 		if ($(document).scrollTop() > 100) {

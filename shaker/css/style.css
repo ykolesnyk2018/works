@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;300&display=swap');
 body{
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
@@ -937,7 +937,8 @@ footer .phone a{
 .own-productions{}
 .own-productions-title{
 	font-size: 30px;
-	margin: 43px 0 39px 0
+	margin: 43px 0 39px 0;
+	font-weight: 500;
 }
 .own-productions-content{
 	display: flex;
@@ -950,12 +951,18 @@ footer .phone a{
 	height: 455px;
 	position: relative;
 }
+.default .own-production{
+	height: 275px;
+}
 .own-production-title a{
 	color: #010101;
 	font-size: 24px;
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
+}
+.default .own-production-title a{
+	font-size: 14px;
 }
 .own-production-title{
 	padding: 0 0 0 10px;
@@ -996,6 +1003,11 @@ footer .phone a{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: block;
+	transition: 0.5s;
+}
+.default .own-production:hover>a>img{
+	max-width: 65;
+	max-height: 65%;
 }
 .fluid{
 	padding: 0 20px;
@@ -1149,6 +1161,242 @@ footer .phone a{
 	bottom: 10px;
 	left: 10px;
 	z-index: 2;
+}
+.constructor{
+	display: flex;
+	flex-wrap: wrap;
+}
+.min-slide-img{
+	width: 98px;
+	height: 98px;
+	position: relative;
+}
+.min-slide-img img{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 90%;
+}
+.min-slide{
+	display: flex;
+	align-items: flex-start;
+	cursor: pointer;
+}
+.slider-nav .min-slide.slick-current>.min-slide-img{
+	background: #eaeaea;
+}
+.slider-nav{
+	flex-basis: 250px;
+}
+.min-slide{
+	margin: 0 0 10px 0;
+}
+.min-slide-title{
+	margin: -5px 0 0 15px;
+	font-size: 14px;
+}
+.slider-for{
+	display: block;
+	margin: 0 0 0 auto;
+	overflow: hidden;
+	width: 731px;
+}
+.constructor-preview{
+	text-align: center;
+	width: 300px;
+	position: relative;
+	padding: 35px 0 0 0;
+}
+.constructor-preview img{
+	display: inline-block;
+}
+.slider-for .slick-list,
+.slider-for .slick-track{
+	overflow: hidden;
+}
+.slider-for .slick-slide{
+	display: flex;
+}
+.add{
+	width: 30px;
+	height: 30px;
+	line-height: 24px;
+	text-align: center;
+	vertical-align: middle;
+	border: 3px solid #8e8e8e;
+	border-radius: 50%;
+	box-sizing: border-box;
+	color: #8e8e8e;
+	font-size: 40px;
+	display: block;
+	font-weight: 300;
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+}
+.add:hover{
+	color: #000;
+	border: 3px solid #000;
+}
+.add.active{
+	color: #fff;
+	background: #000;
+	border: 3px solid #000;
+	transform: rotate(-45deg);
+}
+.add1{
+	top: 0;
+}
+.add2{
+	top: 130px;
+}
+.add3{
+	top: 270px;
+}
+.add4{
+	left: 140px;
+	top: 0;
+}
+.constructor-description{
+	flex-grow: 1;
+}
+.group-radio{
+	display: flex;
+	align-items: center;
+}
+.group-radio>div{
+}
+.group-radio>div:last-child{
+}
+.constructor-description-title{
+    font-size: 24px;
+    margin: -7px 0 9px 0;
+}
+.color-radio .radio input[type="radio"]{
+	display: none;
+}
+.color-radio{
+	margin: 0 0 10px -5px;
+}
+.color-radio .radio label{
+	display: block;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	border: 1px solid #919191;
+	cursor: pointer;
+	transition: 0.7s;
+	position: relative;
+	overflow: hidden;
+	margin: 5px 10px;
+}
+.color-radio .radio input[type="radio"]:checked + label{
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+.color-radio .radio label.red{
+	background: #ff0403;
+}
+.color-radio .radio label.white{
+	background: #fff;
+}
+.color-radio .radio label.blue{
+	background: #0005fe;
+}
+.color-radio .radio label.orange{
+	background: #ff7806;
+}
+.color-radio .radio label.yellow{
+	background: #fff510;
+}
+.color-radio .radio label.gray{
+	background: #2c2c2c;
+}
+.color-radio .radio label.green{
+	background: #46da66;
+}
+.color-radio .radio label.light-gray{
+	background: #d5d4d4;
+}
+.color-radio .radio label.green-red{
+	background: #6cff0f;
+}
+.color-radio .radio label.green-red:before{
+	content: "";
+	width: 150%;
+	height: 50%;
+	background: #ff0403;
+	position: absolute;
+	bottom: 0;
+	left: -40%;
+	transform: rotate(45deg);
+}
+.radio.default{
+	position: relative;
+}
+.radio.default input{
+	display: none;
+}
+.radio.default label{
+	display: block;
+	position: relative;
+	font-size: 24px;
+	padding: 0 0 0 32px;
+	cursor: pointer;
+}
+.radio.default label:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 2px solid #8e8e8e;
+	border-radius: 50%;
+	box-sizing: border-box;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	background: #eaeaea;
+}
+.radio.default input:checked + label:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	top: 11px;
+	background: #000;
+	position: absolute;
+	left: 6px;
+}
+.personal-logo-title{
+	font-size: 16px;
+	margin: 32px 0 12px 0;
+}
+.personal-logo .radio{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 16px 0 0;
+}
+.code{
+	font-size: 16px;
+	margin: 52px 0 40px 0px;
+}
+.constructor-title{
+	width: 100%;
+	font-size: 30px;
+	margin: 37px 0 43px 0;
+}
+.constructor .btn{
+	min-width: 162px;
+	box-sizing: border-box;
+}
+.margin-zero{
+	margin: 0;
+}
+.what-we-do-bg.margin-zero{
+	margin: 45px 0 0 0;
 }
 @media (max-width: 1440px){
 	header{
@@ -1314,6 +1562,14 @@ footer .phone a{
 	}
 	.what-we-do-block{
 		flex-basis: 33%;
+	}
+	.slider-nav{
+		flex-basis: none;
+		width: 100%;
+	}
+	.slider-for{
+		width: 100%;
+		margin: 30px 0 0 0;
 	}
 }
 @media (max-width: 767px){
@@ -1617,5 +1873,48 @@ footer .phone a{
 	}
 	.main-menu.active ul li a{
 		color: #000;
+	}
+	.slider-nav .slick-list,
+	.slider-nav .slick-track{
+		height: auto !important;
+	}
+	.constructor-preview{
+		display: none;
+	}
+	.mrow-2.default{
+		grid-gap: 10px;
+	}
+	.mrow-2.default .own-production{
+		width: calc(50% - 5px);
+		height: 134px;
+	}
+	.mrow-2 .own-production-title a:before{
+		width: 10px;
+		height: 5px;
+		background-size: 200% 200%;
+		background-position: right top;
+	}
+	.mrow-2 .own-production-title a:hover:before{
+		background-position: right bottom;
+	}
+	.min-slide{
+		width: 124px !important;
+		height: 130px;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.min-slide-title{
+		position: absolute;
+		top: 5px;
+		left: 10px;
+		margin: 0;
+	}
+	.min-slide-title br{
+		display: none;
+	}
+	.min-slide-img{
+		width: 100%;
+		height: 100%;
 	}
 }

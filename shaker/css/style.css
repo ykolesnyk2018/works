@@ -285,7 +285,7 @@ button:hover{
 	padding: 0 0 50px 0;
 }
 .form.inside{
-	margin: -52px 0 0 0;
+	margin: 0 0 0 0;
 }
 .form-left,
 .form-right{
@@ -301,6 +301,9 @@ button:hover{
 	font-size: 24px;
 	margin: 0;
 	padding: 45px 0 38px 0;
+}
+.inside.form h2{
+	padding-top: 0;
 }
 .form-user{
 	display: flex;
@@ -2542,6 +2545,6 @@ ul.default li:before{
 		display: none;
 	}
 	.form.inside{
-		margin: -28px 0 0 0;
+		margin: 0 0 0 0;
 	}
 }

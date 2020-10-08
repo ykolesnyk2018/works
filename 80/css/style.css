@@ -268,10 +268,11 @@ header>.container{
 .header-bottom-menu ul li a{
     padding: 8.5px 0;
     display: block;
-    min-width: 140px;
+    min-width: 136px;
     color: #000;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'SeroPro-Bold';
 }
 .header-bottom-menu ul li a:hover{
 	background: 
@@ -295,7 +296,7 @@ header>.container{
 }
 .slider h3{
     font-family: 'SeroPro-Light';
-    padding: 56px 0 0 30px;
+    padding: 52px 0 0 30px;
     font-size: 31px;
     margin: 0;
     color: #282828;
@@ -303,6 +304,7 @@ header>.container{
 }
 .slider h3 p,
 .slider h3 span{
+	display: block;
     font-family: 'SeroPro-bold';
     margin: 0;
 }
@@ -399,7 +401,7 @@ header>.container{
     color: #fff;
     position: relative;
     z-index: 1;
-    padding: 55px 0 0 30px;
+    padding: 55px 0 0 33px;
 }
 .baner-title span{
     font-family: 'SeroPro-bold';
@@ -407,12 +409,13 @@ header>.container{
 }
 .top-form{
     width: 100%;
+	padding: 0 0 36px 0;
 }
 .form-title{
     text-align: center;
     font-size: 27px;
     color: #282828;
-    margin: 0 0 0 0;
+    margin: 37px 0 32px 0;
 }
 .top-form form{
     display: flex;
@@ -421,6 +424,7 @@ header>.container{
     width: 100%;
 }
 .top-form form input{
+    width: 277px;
     border: 1px solid #dcdcdc;
     border-radius: 1px;
     font-size: 15px;
@@ -435,8 +439,10 @@ header>.container{
 .top-form form input,
 .top-form form button{
     display: block;
-    width: calc(25% - 45px / 3);
     box-sizing: border-box;
+}
+.top-form form button{
+	width: 262px;
 }
 .top-form form input.f-user{
     background-image: url(../images/icons/f-user.png);
@@ -462,6 +468,7 @@ header>.container{
 .manufacturers{
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
+	padding: 0 0 61px 0;
 }
 .title{
     font-family: 'SeroPro-bold';
@@ -469,9 +476,10 @@ header>.container{
     color: #282828;
     text-transform: uppercase;
     text-align: center;
+	letter-spacing: 3px;
 }
 .manufacturers-title{
-    margin: 0 0 0 0;
+    margin: 43px 0 51px 0;
 }
 .manufacturers-all{
     text-align: center;
@@ -482,15 +490,16 @@ header>.container{
     font-size: 15px;
     color: #004992;
     text-decoration: none;
+	padding: 0 0 0 20px;
 }
 .manufacturers-all a:after{
     content: "";
-    width: 100%;
     height: 1px;
     border-bottom: 1px dashed #004992;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 20px;
+	right: 0;
 }
 .manufacturers-all a:hover:after{
     display: none;
@@ -501,11 +510,12 @@ header>.container{
     height: 10px;
     background: url(../images/icons/small-arrow.png) no-repeat;
     position: absolute;
-    left: -23px;
-    top: 10px;
+    left: 0;
+    top: 3px;
 }
 .manufacturers-slider{
     position: relative;
+	margin: 0 0 58px 0;
 }
 .manufacturers-slider .slick-track{
     display: flex;
@@ -537,12 +547,16 @@ header>.container{
 .gray{
     background: #f7f7f7;
 }
+.direction-title{
+	padding: 67px 0 59px 0;
+}
 .direction-content{
-    display: flex;
-    flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 .direction-content>*{
     flex-basis: 33.33%;
+	margin: 0 0 40px 0;
 }
 .direction-content>ul>li>a{
     font-size: 15px;
@@ -562,12 +576,15 @@ header>.container{
     height: 10px;
     position: absolute;
     left: 0;
-    top: 50%;
-    margin: -5px 0 0 0;
+    top: 4px;
+    margin: 0 0 0 0;
     background: url(../images/icons/menu-arrow.png) no-repeat;
 }
 .direction-content>ul>li>ul{
-    padding: 0 0 0 25px;
+    padding: 12px 0 0 26px;
+}
+.direction-content>ul>li>ul li{
+	margin: 0 0 15px 0;
 }
 .direction-content>ul>li>ul li a{
     color: #313131;

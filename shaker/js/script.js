@@ -115,6 +115,7 @@ $(document).ready(function(){
 	  arrows: true,
 	  slidesToShow: 6,
 	  slidesToScroll: 1,
+  	  focusOnSelect: true,
 	  vertical: true,
 	  verticalSwiping: true,
 	  asNavFor: '.product-inside-slider',

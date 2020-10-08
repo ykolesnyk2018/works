@@ -2017,6 +2017,7 @@ header.white.open .logo img.black{
 		background: #fff;
 		z-index: -1;
 		position: absolute;
+		top: 0;
 	}
 }
 @media (max-width: 1169px){

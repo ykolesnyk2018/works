@@ -1,4 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;300&display=swap');
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Medium.eot');
+    src: local('Montserrat Medium'), local('Montserrat-Medium'),
+        url('font/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/Montserrat-Medium.woff2') format('woff2'),
+        url('font/Montserrat-Medium.woff') format('woff'),
+        url('font/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('Montserrat-ExtraBold.eot');
+    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+        url('font/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('font/Montserrat-ExtraBold.woff') format('woff'),
+        url('font/Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
 body{
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
@@ -91,7 +112,7 @@ header{
 .btn,
 button{
 	font-size: 14px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 	border: 2px solid #000;
 	display: inline-block;
 	padding: 11.6px 15px;
@@ -119,7 +140,7 @@ button:hover{
 }
 .main-menu{
 	font-size: 14px;
-	font-weight: bold;
+	font-family: 'MontserratBold';
 }
 .main-menu ul{}
 .main-menu ul li{
@@ -186,7 +207,7 @@ button:hover{
 }
 .article-title{
 	font-size: 16px;
-	font-weight: bold;
+	font-family: 'MontserratBold';
 }
 .article-title a{
 	color: #000;
@@ -217,7 +238,7 @@ button:hover{
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 16px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 	cursor: pointer;
 	padding: 0 0 20px 0;
 	background: url(../images/arrow.svg) center bottom no-repeat;
@@ -261,7 +282,7 @@ button:hover{
 	justify-content: space-between;
 	align-items: center;
 	font-size: 16px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 }
 .navigation ul li{
 	display: inline-block;
@@ -490,7 +511,7 @@ footer{
 	display: block;
 	width: 180px;
 	font-size: 14px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 }
 .show_popup-video span.img{
 	display: inline-block;
@@ -542,7 +563,7 @@ footer .phone a{
 .footer-menu ul li a{
 	display: block;
 	color: #fff;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 	font-size: 14px;
 	text-decoration: none;
 }
@@ -589,7 +610,7 @@ footer .phone a{
 }
 .popup-title{
 	font-size: 16px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 	text-align: center;
 	padding: 70px 0 35px 0;
 }
@@ -950,7 +971,7 @@ footer .phone a{
 	left: 0;
 	top: 10px;
 	font-size: 14px;
-	font-weight: bold;
+	font-family: 'MontserratBold';
 	color: #fff;
 	box-sizing: border-box;
 	padding: 0 0 0 10px;
@@ -1153,7 +1174,7 @@ footer .phone a{
 	position: absolute;
 	left: 20px;
 	top: 14px;
-	font-weight: bold;
+	font-family: 'MontserratBold';
 }
 .choose{
 	display: flex;
@@ -1588,7 +1609,7 @@ footer .phone a{
 .product-inside-price p{
 	margin: -6px 0 45px 0;
 	font-size: 30px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 }
 .product-inside-price .btn{
 	min-width: 165px;
@@ -1743,7 +1764,7 @@ ul.default li:before{
 	border-radius: 50%;
 	text-align: center;
 	font-size: 14px;
-	font-weight: bold;
+    font-family: 'MontserratBold';
 	transition: 0.4s;
 	flex-wrap: wrap;
 }

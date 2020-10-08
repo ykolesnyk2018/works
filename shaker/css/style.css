@@ -42,6 +42,8 @@ header{
 }
 .logo{
 	padding: 5px 0 0 0;
+	position: relative;
+	z-index: 1;
 }
 .logo a{
 	text-decoration: none;
@@ -377,6 +379,9 @@ input{
 input::placeholder{
 	color: #000;
 }
+input:hover::placeholder{
+	color: #b5b5b5;
+}
 input[type="file"]{
 	display: none;
 }
@@ -594,6 +599,30 @@ footer .phone a{
 }
 .popup .checkbox label:before{
 	border: 1px solid #000;
+}
+.popup .checkbox input:checked + label:before{
+	background: #fff;
+}
+.popup .checkbox label:hover:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	position: absolute;
+    top: 8px;
+    left: 4px;
+	background: #b5b5b5;
+}
+.popup .checkbox input:checked + label:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	position: absolute;
+    top: 8px;
+    left: 4px;
+	background: #000;
+}
+.popup .checkbox label:hover:before{
+	background: #fff;
 }
 #popup-form button{
 	width: 160px;
@@ -839,6 +868,13 @@ footer .phone a{
 	font-size: 40px;
 	margin: 230px 0 15px 0;
 }
+.main-slider-title a{
+	color: #fff;
+	text-decoration: none;
+}
+.main-slider-title a:hover{
+	color: #1a98f8;
+}
 .main-slider-btn{
 	font-size: 24px;
 }
@@ -945,9 +981,15 @@ footer .phone a{
 	transition: 0.4s;
 	padding: 0;
 }
+.slick-dots li button:hover{
+	background: #1a98f8;
+}
 .slick-dots li.slick-active button{
 	width: 18px;
 	height: 18px;
+}
+.slick-dots li.slick-active button:hover{
+	background: #fff;
 }
 .own-productions{}
 .own-productions-title{
@@ -998,10 +1040,10 @@ footer .phone a{
 	transform: translate(0,-50%);
 	margin: 0 0 0 7px;
 }
-.own-production-title a:hover{
+.own-production:hover .own-production-title a{
 	color: #1a98f8;
 }
-.own-production-title a:hover:before{
+.own-production:hover .own-production-title a:before{
 	background-position: bottom left;
 }
 .own-production>a{
@@ -1160,7 +1202,7 @@ footer .phone a{
 	position: relative;
 	margin: 0;
 }
-.grid .article-description{
+.grid .half .article-description{
 	position: static;
 }
 .half .article-title{
@@ -1771,19 +1813,40 @@ ul.default li:before{
 .choose-city-nav li{}
 .choose-city-nav li a{
 	color: #fff;
-	text-decoration: underline;
+	text-decoration: none;
 	font-size: 14px;
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.choose-city-nav li a:after{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+}
+.choose-city-nav li a:hover:after{
+	background: #1a98f8;
 }
 .choose-city-nav li a:hover{
-	text-decoration: none;
+	color: #1a98f8;
 }
-.choose-city-nav li.active a{
+.choose-city-nav li a.active{
 	color: #1a98f8;
 	text-decoration: none;
 }
+.choose-city-nav li a.active:after{
+	display: none;
+}
 .choose-city-content{
-	display: flex;
 	flex-wrap: wrap;
+	display: none;
+}
+.choose-city-content.active{
+	display: flex;
 }
 .choose-city-content a{
 	flex-basis: 33.33%;
@@ -1794,6 +1857,48 @@ ul.default li:before{
 }
 .choose-city-content a:hover{
 	color: #1a98f8;
+}
+.main-banner{
+	overflow: hidden;
+}
+header.white.open:before{
+	content: "";
+	display: block;
+	width: 100vw;
+	margin: 0 0 0 -50vw;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background: #fff;
+	z-index: -1;
+}
+.white.open .phone a, 
+.white.open .main-menu ul li a, 
+.white.open .phone .phone-status{
+	color: #000;
+}
+.white.open .main-menu ul li a:hover{
+	color: #1a98f8;
+}
+.white.open .main-menu-btn span{
+	background: #000;
+}
+header.white .logo img.black{
+	display: none;
+}
+header.white.open .logo img{
+	display: none;
+}
+header.white.open .logo img.black{
+	display: block;
+}
+.white .main-menu-btn:hover span{
+	background: #1a98f8;
+}
+.white.open .btn{
+	color: #000;
+	border: 2px solid #000;
 }
 @media (max-width: 1440px){
 	header{
@@ -1815,8 +1920,10 @@ ul.default li:before{
 	.main-menu-btn{
 		width: 30px;
 		height: 22px;
-		position: relative;
+		position: absolute;
 		z-index: 1;
+		left: 50%;
+		margin: 0 0 0 calc(50vw - 65px);
 	}
 	.main-menu-btn span{
 		display: block;
@@ -1900,6 +2007,16 @@ ul.default li:before{
 		top: auto;
 		bottom: auto;
 		margin: 60px 0 0 0;
+	}
+	header.white .main-menu:before{
+		content: "";
+		width: 100vw;
+		height: 100%;
+		margin: 0 0 0 -50vw;
+		left: 50%;
+		background: #fff;
+		z-index: -1;
+		position: absolute;
 	}
 }
 @media (max-width: 1169px){
@@ -1993,6 +2110,11 @@ ul.default li:before{
 		position: relative;
 		display: inline-block;
 		vertical-align: middle;
+	}
+	.main-menu-btn{
+		position: relative;
+		left: auto;
+		margin: 0;
 	}
 }
 @media (max-width: 767px){

@@ -13,6 +13,14 @@ $(document).ready(function(){
 	});
 	/* popUp */
 	
+	$('.choose-city-nav li a').click(function() {
+		var toggle_id = $('#' + $(this).attr("data-target"));
+		$('.choose-city-nav li a').removeClass('active');
+		$('.choose-city-content').removeClass('active');
+		$(toggle_id).addClass("active");
+		$(this).addClass("active");
+	}); 
+	
 	$('.toggle').click(function() {
 		var toggle_id = $('#' + $(this).attr("data-target"));
 		$(toggle_id).toggleClass("active");

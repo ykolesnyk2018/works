@@ -2677,7 +2677,7 @@ header.white.open .logo img.black{
 	}
 	.constructor-description-absolute{
 		position: absolute;
-		top: 40px;
+		top: 35px;
 		left: 0;
 		z-index: 1;
 		height: 520px;

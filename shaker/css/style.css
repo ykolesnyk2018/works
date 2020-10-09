@@ -21,6 +21,17 @@
 	
     font-style: normal;
 }
+@font-face {
+    font-family: 'MontserratSemiBold';
+    src: url('Montserrat-SemiBold.eot');
+    src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+        url('font/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/Montserrat-SemiBold.woff2') format('woff2'),
+        url('font/Montserrat-SemiBold.woff') format('woff'),
+        url('font/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 body{
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
@@ -340,9 +351,11 @@ button:hover{
 	margin: 52px 0 0 0;
 }
 .form h2{
+    font-family: 'MontserratSemiBold';
 	font-size: 24px;
 	margin: 0;
 	padding: 45px 0 38px 0;
+	font-weight: normal;
 }
 .inside.form h2{
 	padding-top: 0;

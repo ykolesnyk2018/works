@@ -274,8 +274,9 @@ header>.container{
     transition: 0.3s;
     font-family: 'SeroPro-Bold';
 }
-.header-bottom-menu ul li a:hover{
-	background: 
+.header-bottom-menu ul li:hover{
+	background: #f7f7f7;
+    transition: 0.3s;
 }
 .container.top{
     display: flex;
@@ -479,6 +480,10 @@ header>.container{
     text-transform: uppercase;
     text-align: center;
 	letter-spacing: 3px;
+}
+.title.brands{
+    margin: 62px 0 55px 0;
+    letter-spacing: 2px;
 }
 .manufacturers-title{
     margin: 43px 0 51px 0;
@@ -1079,6 +1084,195 @@ h1{
 .our-project-btn a:hover:before{
 	display: none;
 }
+.trade-mark{
+    border-top: 1px solid #e5e5e5;
+}
+.mark-logo-mark{
+    margin: 53px 0 0 2px;
+}
+.trade-mark-text{
+    margin: 41px 0 0 2px;
+    font-size: 15px;
+    color: #313131;
+    line-height: 18px;
+}
+.a-trade-mark a{
+    padding: 0 0 0 18px;
+    margin: 18px 0 0 0;
+    display: inline-block;
+    font-size: 15px;
+    color: #313131;
+    text-decoration: none;
+    position: relative;
+}
+.a-trade-mark a:before{
+    position: absolute;
+    content: '';
+    background: url(../images/icons/arrow-a.png) no-repeat;
+    width: 5px;
+    height: 10px;
+    left: 3px;
+    top: 5px;
+}
+.a-trade-mark a:after{
+    position: absolute;
+    content: '';
+    border-bottom: 1px dashed #004992;
+    height: 1px;
+    left: 20px;
+    bottom: -2px;
+    right: 0;
+}
+.brand-products{
+    background: #f7f7f7;
+    border-top: 1px solid #e5e5e5;
+    margin: 69px 0 0 0;
+    padding: 0 0 77px 0;
+}
+.brand-products-title{
+    font-size: 27px;
+    font-family: 'SeroPro-bold';
+    padding: 58px 0 58px 0;
+}
+.brand-products-blocks{
+    grid-gap: 39px 31px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 0 8px 0;
+}
+.brand-products-block-img{
+    position: relative;
+    height: 165.5px;
+    overflow: hidden;
+    width: 100%;
+}
+.brand-products-block-img img{
+    min-height: 100%;
+    position: absolute;
+    min-width: 100%;
+    max-width: none;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.brand-products-block>ul{
+    padding: 41px 0 0 3px;
+}
+.brand-products-block>ul>li>a{
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'SeroPro-bold';
+    display: block;
+    position: relative;
+    padding: 0 0 0 25px;
+    max-width: 335px;
+    letter-spacing: 1.5px;
+}
+.brand-products-block>ul>li>a:before{
+    content: "";
+    width: 5px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    margin: 0 0 0 0;
+    background: url(../images/icons/menu-arrow.png) no-repeat;
+}
+.brand-products-block>ul>li>ul{
+    padding: 12px 0 0 26px;
+}
+.brand-products-block>ul>li>ul li{
+    margin: 0 0 16px 0;
+}
+.brand-products-block>ul>li>ul li a {
+    color: #313131;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+}
+.border-bottom-2{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 12px 0 0 0;
+}
+.breadcrumbs.bottom{
+    padding: 20px 0 5px 0;
+}
+.h1-padding{
+    padding: 64px 0 74px 0;
+    text-transform: uppercase;
+}
+.inner-description{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0 22px 0;
+}
+.desc-text{
+    width: 49%;
+    font-size: 21px;
+    margin: 20px 0 0 0;
+    line-height: 26px;
+}
+.desc-text a{
+    text-decoration: none;
+    color: #004892;
+    text-transform: uppercase;
+}
+.desc-text span{
+    color: #000000;
+    font-family: 'SeroPro-Medium';
+}
+.desc-img{
+    width: 50%;
+}
+.description-about-company{
+    padding: 48px 0 24px 0;
+}
+.description-about-company p{
+    font-size: 15px;
+    margin: 0 0 26px 0;
+    line-height: 23px;
+}
+.description-about-company p a{
+    text-decoration: none;
+    color: #004892;
+    text-transform: uppercase;
+}
+.description-about-company p span{
+    color: #000000;
+    font-family: 'SeroPro-Medium';
+}
+.last-block{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 20px 0;
+}
+.last-block-img{
+    width: 50%;
+}
+.last-block-text{
+    width: 47%;
+    font-size: 15px;
+    margin: 7px 0 0 0;
+    line-height: 24px;
+}
+.last-block-text span{
+    font-family: 'SeroPro-Medium';
+}
+.last-block-text p{
+    font-family: 'SeroPro-Bold';
+    margin: 48px 0 0 0;
+}
+.manufacturers-title.margin{
+    margin: 54px 0 54px 0;
+}
+.manufacturers.padding{
+    padding: 0 0 47px 0;
+}
+.title.margin3{
+    margin: 64px 0 58px 0;
+}
 @media (max-width: 1280px){
 	.manufacturers .slick-prev.slick-arrow,
 	.news-slider .slick-prev.slick-arrow{
@@ -1124,6 +1318,10 @@ h1{
 	.new{
 		max-width: 460px;
 	}
+    .last-block-img{
+        display: flex;
+        align-items: center;
+    }
 }
 @media (max-width: 940px){
 	.container{
@@ -1237,6 +1435,14 @@ h1{
 		flex-basis: 33.33%;
 		margin: 0 0 20px 0;
 	}
+    .brand-products-blocks{
+        grid-template-columns: 1fr 1fr;
+    }
+    .desc-text{
+        font-size: 16px;
+        margin: 0;
+        line-height: 22px;
+    }
 }
 @media (max-width: 767px){
 	.container{
@@ -1407,4 +1613,42 @@ h1{
 	.footer-nav ul li{
 		margin: 0 10px 10px 0;
 	}
+    .brand-products-blocks{
+        grid-template-columns: 1fr;
+    }
+    .brand-products-block-img{
+        max-width: 300px;
+    }
+    .mark-logo-mark{
+        margin: 30px 0 0 0;
+    }
+    .trade-mark-text{
+        margin: 30px 0 0 0;
+    }
+    .a-trade-mark a{
+        font-size: 13px;
+    }
+    .h1-padding{
+        padding: 30px 0;
+    }
+    .inner-description{
+        flex-wrap: wrap;
+    }
+    .desc-text{
+        width: 100%;
+    }
+    .desc-img{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .last-block{
+        flex-wrap: wrap;
+    }
+    .last-block-img{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    .last-block-text{
+        width: 100%;
+    }
 }

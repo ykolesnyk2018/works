@@ -246,8 +246,21 @@ button:hover{
     font-family: 'MontserratBold';
 	cursor: pointer;
 	padding: 0 0 20px 0;
-	background: url(../images/arrow.svg) center bottom no-repeat;
 	position: relative;
+}
+.show-more span svg{
+	fill: #000;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+}
+.show-more span:hover svg{
+	fill: #1a98f8;
+}
+.show-more:hover span{
+	color: #1a98f8;
 }
 .show-more .hide{
 	display: none;
@@ -257,11 +270,7 @@ button:hover{
 	padding: 20px 0 0 0;
 	background: none;
 }
-.show-more.active .hide:before{
-	content: "";
-	width: 24px;
-	height: 14px;
-	background: url(../images/arrow.svg) center center no-repeat;
+.show-more.active .hide svg{
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -302,6 +311,11 @@ button:hover{
 .navigation ul li a{
 	color: #000;
 	text-decoration: none;
+}
+.navigation ul li:hover a,
+.navigation ul li:hover svg{
+	color: #1a98f8;
+	fill: #1a98f8;
 }
 .form-bg{
 	background: #f5f5f5;
@@ -1031,8 +1045,8 @@ footer .phone a{
 }
 .own-production{
 	width: calc(25% - 60px / 4);
+	height: calc((100vw - (60px / 4) - 103px) / 4);
 	background: #f5f5f5;
-	height: 455px;
 	position: relative;
 	margin: 0 20px 20px 0;
 }
@@ -1084,7 +1098,8 @@ footer .phone a{
 	height: 100%;
 }
 .own-production>a>img{
-	max-height: 80%;
+	max-height: 60%;
+	min-height: 55%;
 	max-width: 80%;
 	position: absolute;
 	top: 50%;
@@ -1238,14 +1253,15 @@ footer .phone a{
 }
 .half .article-title{
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 20px;
+	left: 20px;
 	z-index: 2;
 }
 .half .article-title a{
 	color: #fff;
 }
-.half .article-title a:hover{
+.half .article-title a:hover,
+.article-title a:hover{
 	color: #1a98f8;
 }
 .half .article-btn{
@@ -1293,6 +1309,9 @@ footer .phone a{
 .min-slide-title{
 	margin: -5px 0 0 15px;
 	font-size: 14px;
+}
+.min-slide:hover .min-slide-title{
+	color: #006cfe;
 }
 .slider-for{
 	display: block;
@@ -1386,7 +1405,6 @@ footer .phone a{
 	box-sizing: border-box;
 	border: 1px solid #919191;
 	cursor: pointer;
-	transition: 0.7s;
 	position: relative;
 	overflow: hidden;
 	margin: 5px 10px;
@@ -1395,6 +1413,9 @@ footer .phone a{
 	width: 30px;
 	height: 30px;
 	margin: 0 5px;
+}
+.color-radio .radio label:hover{
+	border: 1px solid #000;
 }
 .color-radio .radio label.red{
 	background: #ff0403;
@@ -1457,6 +1478,9 @@ footer .phone a{
 	left: 0;
 	top: 5px;
 	background: #eaeaea;
+}
+.radio.default label:hover:before{
+	border: 2px solid #000;
 }
 .radio.default input:checked + label:after{
 	content: "";
@@ -1539,6 +1563,9 @@ footer .phone a{
 	padding: 0;
 	font-size: 0;
 }
+.product-inside-nav .slick-arrow:hover{
+	background: url(../images/icons/product-slider-hover.svg) no-repeat;
+}
 .product-inside-nav .slick-prev.slick-arrow{
 	top: 0;
 }
@@ -1592,7 +1619,7 @@ footer .phone a{
 	cursor: pointer;
 }
 .product-inside-slider .slick-arrow:hover{
-	opacity: 0.6;
+	background: url(../images/icons/product-slide-ver-hover.svg) no-repeat;
 }
 .product-inside-slider .slick-prev.slick-arrow{
 	left: 0;
@@ -1726,7 +1753,6 @@ ul.default li:before{
 	align-items: stretch;
 	flex-wrap: wrap;
 	align-items: center;
-	grid-gap: 20px 20px;
 	margin: 0 0 50px 0;
 }
 .works>a{
@@ -1736,6 +1762,7 @@ ul.default li:before{
 	text-decoration: none;
 	position: relative;
 	overflow: hidden;
+	margin: 0 20px 20px 0;
 }
 .works>a img{
 	max-width: none;
@@ -1796,8 +1823,6 @@ ul.default li:before{
 	transition: 0.5s;
 }
 .btn-show span:hover b:after{
-	width: 0;
-	height: 0;
 }
 .choose-city-hidden{
 	position: absolute;

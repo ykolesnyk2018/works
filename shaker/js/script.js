@@ -13,6 +13,14 @@ $(document).ready(function(){
 	});
 	/* popUp */
 	
+	$('.choose-city-nav li a').click(function() {
+		var toggle_id = $('#' + $(this).attr("data-target"));
+		$('.choose-city-nav li a').removeClass('active');
+		$('.choose-city-content').removeClass('active');
+		$(toggle_id).addClass("active");
+		$(this).addClass("active");
+	}); 
+	
 	$('.toggle').click(function() {
 		var toggle_id = $('#' + $(this).attr("data-target"));
 		$(toggle_id).toggleClass("active");
@@ -27,6 +35,12 @@ $(document).ready(function(){
             $('.articles').toggleClass("articles-more");
         }); 
     });
+    $(function() {
+        $(".btn-show").click(function(){
+            $(this).toggleClass("active");
+            $('.works').toggleClass("active");
+        }); 
+    });
     $(function(){
         $(".tabs").tabs();
     });
@@ -34,8 +48,10 @@ $(document).ready(function(){
 	  arrows: false,
 	  dots: true,
 	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 1
+	  speed: 1000,
+	  slidesToShow: 1,
+	  autoplay: true,
+	  autoplaySpeed: 4000
 	});
 	$('.slider-for').slick({
 	  slidesToShow: 1,
@@ -77,12 +93,56 @@ $(document).ready(function(){
 		  ]
 	});
 	
-	$(window).scroll(function () {
-		if ($(document).scrollTop() > 100) {
-			$('.main-menu').addClass('fixed');
-		}
-		else { 
-			$('.fixed').removeClass('fixed');
+	
+	$('.product-inside-slider').slick({
+	  arrows: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  fade: true,
+	  asNavFor: '.product-inside-nav',
+  	  adaptiveHeight: true,
+	  dots: true,
+		dotsClass: 'custom_paging',
+		customPaging: function (slider, i) {
+			//FYI just have a look at the object to find available information
+			//press f12 to access the console in most browsers
+			//you could also debug or look in the source
+			console.log(slider);
+			var slideNumber   = (i + 1),
+				totalSlides = slider.slideCount;
+			return '<a class="custom-dot" role="button" title="' + slideNumber + ' of ' + totalSlides + '"><span class="string"> ' + slideNumber + ' / ' + totalSlides + '</span></a>';
 		}
 	});
+	$('.product-inside-nav').slick({
+	  arrows: true,
+	  slidesToShow: 6,
+	  slidesToScroll: 1,
+  	  focusOnSelect: true, 
+	  vertical: true,
+	  verticalSwiping: true,
+	  asNavFor: '.product-inside-slider',
+	  dots: false,
+		responsive: [
+			{
+			  breakpoint: 767,
+			  settings: {
+	  			  slidesToShow: 3,
+	  			  slidesToScroll: 1,
+				  vertical: false,
+				  verticalSwiping: false
+			  }
+			}
+		  ]
+	});
+    if(window.innerWidth < 767){
+		$('.works').slick({
+			arrows: false,
+		  dots: false,
+		  infinite: false,
+		  speed: 300,
+		  slidesToShow: 1,
+		  variableWidth: true,
+  		  focusOnSelect: true
+		});
+    };
 });

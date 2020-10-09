@@ -124,6 +124,7 @@ button{
 	color: #000;
 	text-align: center;
 	cursor: pointer;
+	-webkit-appearance: none;
 }
 .btn:hover,
 button:hover{
@@ -399,6 +400,7 @@ input{
 	font-size: 14px;
 	padding: 0 0 6px 18px;
 	margin: 0 0 26px 0;
+	-webkit-appearance: none;
 }
 input::placeholder{
 	color: #000;

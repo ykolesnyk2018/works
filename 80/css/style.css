@@ -1362,6 +1362,62 @@ h1{
     border: none;
     transition: 0.3s;
 }
+.location-content{
+    width: 315px;
+    position: absolute;
+    top: 100%;
+    left: -130px;
+    background: #004992;
+    border-radius: 2px;
+    text-align: center;
+    padding: 25px 0;
+    margin: 20px 0 0 0;
+    display: none;
+    z-index: 10;
+}
+.location-content.active{
+    display: block;
+}
+.location-content:before{
+    content: "";
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #004992;
+    position: absolute;
+    left: 115px;
+    bottom: 100%;
+}
+.location-content-title{
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    text-transform: initial;
+    font-family: 'SeroPro-Light';
+    margin: 0 0 17px 0;
+}
+.location-content a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    text-transform: initial;
+    padding: 10px 0;
+}
+.location-content a.small{
+    width: 82px;
+}
+.location-content a.big{
+    width: 157px;
+}
+.location-content a:hover{
+    opacity: 0.8;
+}
 @media (max-width: 1280px){
 	.manufacturers .slick-prev.slick-arrow,
 	.news-slider .slick-prev.slick-arrow{

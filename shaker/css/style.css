@@ -125,6 +125,7 @@ button{
 	text-align: center;
 	cursor: pointer;
 	-webkit-appearance: none;
+	background: none;
 }
 .btn:hover,
 button:hover{

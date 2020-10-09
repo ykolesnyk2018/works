@@ -1777,6 +1777,9 @@ ul.default li:before{
 	overflow: hidden;
 	margin: 0 20px 20px 0;
 }
+.works>a:nth-child(4n){
+	margin-right: 0;
+}
 .works>a img{
 	max-width: none;
 	min-width: 100%;
@@ -2189,6 +2192,9 @@ header.white.open .logo img.black{
 	}
 	.our-manufacture{
 		height: 202px;
+	}
+	.works>a{
+		height: 170px;
 	}
 }
 @media (max-width: 767px){
@@ -2745,5 +2751,11 @@ header.white.open .logo img.black{
 	}
 	.form.inside{
 		margin: 0 0 0 0;
+	}
+	.works>a{
+		height: 275px;
+	}
+	.works>a:nth-child(4n){
+		margin-right: 20px;
 	}
 }

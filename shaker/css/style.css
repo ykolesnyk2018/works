@@ -1126,24 +1126,21 @@ footer .phone a{
 	background-position: bottom left;
 }
 .own-production>a{
-	display: block;
+	display: flex;
+	align-items: center;
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
 .own-production>a>img{
-	max-height: 60%;
-	min-height: 55%;
+	max-height: 70%;
 	max-width: 80%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
 	display: block;
 	transition: 0.5s;
+	margin: 0 auto;
 }
 .own-production>a:hover>img{
-	min-height: 75%;
+	transform: scale(1.2);
 }
 .default .own-production:hover>a>img{
 	max-width: 65;
@@ -2016,6 +2013,11 @@ header.white.open .logo img.black{
 .white.open .btn{
 	color: #000;
 	border: 2px solid #000;
+}
+@media (min-width: 2700px){
+	.own-production>a>img{
+		min-height: 55%;
+	}
 }
 @media (max-width: 1440px){
 	header{

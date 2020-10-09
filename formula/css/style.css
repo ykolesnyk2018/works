@@ -1042,7 +1042,7 @@ header .container{
     flex-wrap: wrap;
     margin: 7px 0 60px 0;
 }
-.offers-on-main{
+.offers.visible{
 	margin: 90px 0 100px 0;
 }
 .offer{
@@ -3987,8 +3987,8 @@ img.mfp-img {
     overflow: auto;
     background: #fff;
     display: none;
-	transform: translate(0,-50%);
     padding: 10px 50px 0 50px;
+	transform: translate(0,-50%);
 }
 .popup.active{
     display: block;
@@ -4000,7 +4000,7 @@ img.mfp-img {
     align-items: center;
     position: relative;
     z-index: 1;
-    min-height: 88px;
+    min-height: 90px;
     padding: 0 36px 0 0;
 }
 .buy-popup-block:nth-child(2n):before{
@@ -4117,7 +4117,7 @@ img.mfp-img {
     font-size: 20px;
     line-height: 140%;
     color: #253238;
-    padding: 25px 0 30px 0;
+    padding: 30px 0 30px 0;
     text-align: center;
 }
 .warning span{
@@ -4156,6 +4156,7 @@ img.mfp-img {
 	overflow: hidden;
 	z-index: 1;
 	padding: 27px 0;
+    color: #fff;
 }
 .attention:before{
 	content: "";
@@ -4174,6 +4175,8 @@ img.mfp-img {
     font-family: 'ProximaNova-Black';
 	margin: 0 0 0 136px;
 	position: relative;
+    z-index: 1;
+    max-width: 800px;
 }
 .attention-left:before{
 	content: "";
@@ -4188,8 +4191,6 @@ img.mfp-img {
 .attention.active{
     display: flex;
 	align-items: center;
-	justify-content: center;
-	color: #fff;
 }
 .attention-close{
 	width: 100px;
@@ -7623,6 +7624,7 @@ h3{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	transition: 0.5s;
 }
 .yk_new-img>a img{
 	display: block;
@@ -7635,14 +7637,16 @@ h3{
 	max-width: none;
 	transition: 0.3s;
 }
-.yk_new-img>a:hover img{
-	min-height: 120%;
-	min-width: 120%;
+.yk_new-img>a:hover{
+	transform: scale(1.2);
 }
 .yk_new-img-tag{
 	position: absolute;
 	bottom: -15px;
-	left: 30px;
+	left: 0;
+	height: 30px;
+	overflow: hidden;
+	padding: 0 10px 0 30px;
 }
 .yk_new-img-tag a{
 	display: inline-block;
@@ -7751,7 +7755,7 @@ h3{
 .popup-blocks{
 	display: inline-flex;
 	background: #f4f4f4;
-	padding: 25px 0 20px 0;
+	padding: 20px 0;
 	margin: 0 0;
 	width: 100%;
 	position: relative;
@@ -7829,7 +7833,7 @@ h3{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-between;
-	margin: 30px 0 0 0;
+	margin: 20px 0 0 0;
 }
 .popup-2-form input{
 	width: 380px;
@@ -9458,7 +9462,7 @@ a.none-2{
         margin: 0 10px 0 0;
     }
     .players-table-link a:after{
-        content: "ÐŸÑ€Ð¾Ñ„Ð¸Ð»ÑŒ";
+        content: "";
         display: inline-block;
         vertical-align: middle;
     }
@@ -10454,19 +10458,26 @@ a.none-2{
         margin: 0 0 0 12px;
     }
 	.attention-left{
-		margin: 0 0 0 300px;
-		width: 258px;
+		margin: 0 0 0 60px;
+        width: auto;
+		max-width: 350px;
 	}
 	.attention-logo a{
 		margin: 0 20px 0 0;
 	}
+    .attention{
+        justify-content: space-between;
+    }
 	.attention .support-right{
 		margin: 0;
-		top: 42px;
-		left: 602px;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
 	}
 	.attention-logo{
-		margin: 0px 0 0 327px;
+		margin: 0px 0 0 0;
 		z-index: 1;
 	}
 	.yk_news{
@@ -12903,8 +12914,11 @@ a.none-2{
 		left: 0;
 		top: 20px;
 	}
+    .attention-left{
+        max-width: 100%;
+    }
 	.attention-logo{
-		margin: 0 0 0 301px
+		margin: 0 0 0 301px;
 	}
 	.attention .support-right a{
 		height: 26px;

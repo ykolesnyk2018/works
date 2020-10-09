@@ -48,8 +48,10 @@ $(document).ready(function(){
 	  arrows: false,
 	  dots: true,
 	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 1
+	  speed: 1000,
+	  slidesToShow: 1,
+	  autoplay: true,
+	  autoplaySpeed: 4000
 	});
 	$('.slider-for').slick({
 	  slidesToShow: 1,

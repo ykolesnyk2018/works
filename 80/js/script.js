@@ -12,6 +12,11 @@ $(document).ready(function(){
 		$('.overlay_popup, .popup').hide();
 	});
 	/* popUp */
+    $('.toggle').click(function() {
+		var toggle_id = $('#' + $(this).attr("data-target"));
+		$(toggle_id).toggleClass("active");
+		$(this).toggleClass("active");
+	}); 
     $(function() {
         $(".class-name").click(function(){
             $(this).toggleClass("active");
@@ -32,13 +37,36 @@ $(document).ready(function(){
       speed: 300,
       slidesToShow: 6,
       slidesToScroll: 1,
-      adaptiveHeight: true
+	  responsive: [
+		{
+		  breakpoint: 1140,
+		  settings: {
+			slidesToShow: 4
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1,
+  			adaptiveHeight: true
+		  }
+		}
+	  ]
     });
     $('.news-slider').slick({
       dots: false,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
-      variableWidth: true
+      variableWidth: true,
+	  responsive: [
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 1,
+  			adaptiveHeight: true
+		  }
+		}
+	  ]
     });
 });

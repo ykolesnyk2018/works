@@ -401,6 +401,7 @@ input{
 	padding: 0 0 6px 18px;
 	margin: 0 0 26px 0;
 	-webkit-appearance: none;
+	appearance: none;
 }
 input::placeholder{
 	color: #000;

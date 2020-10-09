@@ -4155,6 +4155,7 @@ img.mfp-img {
 	overflow: hidden;
 	z-index: 1;
 	padding: 27px 0;
+    color: #fff;
 }
 .attention:before{
 	content: "";
@@ -4173,6 +4174,8 @@ img.mfp-img {
     font-family: 'ProximaNova-Black';
 	margin: 0 0 0 136px;
 	position: relative;
+    z-index: 1;
+    max-width: 800px;
 }
 .attention-left:before{
 	content: "";
@@ -9455,7 +9458,7 @@ a.none-2{
         margin: 0 10px 0 0;
     }
     .players-table-link a:after{
-        content: "ÐŸÑ€Ð¾Ñ„Ð¸Ð»ÑŒ";
+        content: "";
         display: inline-block;
         vertical-align: middle;
     }
@@ -10451,19 +10454,26 @@ a.none-2{
         margin: 0 0 0 12px;
     }
 	.attention-left{
-		margin: 0 0 0 300px;
-		width: 258px;
+		margin: 0 0 0 60px;
+        width: auto;
+		max-width: 350px;
 	}
 	.attention-logo a{
 		margin: 0 20px 0 0;
 	}
+    .attention{
+        justify-content: space-between;
+    }
 	.attention .support-right{
 		margin: 0;
-		top: 42px;
-		left: 602px;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
 	}
 	.attention-logo{
-		margin: 0px 0 0 327px;
+		margin: 0px 0 0 0;
 		z-index: 1;
 	}
 	.yk_news{
@@ -12900,8 +12910,11 @@ a.none-2{
 		left: 0;
 		top: 20px;
 	}
+    .attention-left{
+        max-width: 100%;
+    }
 	.attention-logo{
-		margin: 0 0 0 301px
+		margin: 0 0 0 301px;
 	}
 	.attention .support-right a{
 		height: 26px;

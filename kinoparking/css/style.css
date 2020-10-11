@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('fonts/Gilroy/Gilroy-ExtraBold.eot');
+    src: local('Gilroy ExtraBold'), local('fonts/Gilroy/Gilroy-ExtraBold'),
+        url('fonts/Gilroy/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gilroy/Gilroy-ExtraBold.woff') format('woff'),
+        url('fonts/Gilroy/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+body{
+	margin: 0;
+    font-family: 'Gilroy';
+}
+header{
+	background: url(../images/header.jpg) center top no-repeat;
+	background-size: cover;
+	min-height: 960px;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+header:before{
+	content: "";
+	width: 1180px;
+	height: 419px;
+	background: url(../images/header-top-left.png) no-repeat;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.logo{
+	position: absolute;
+	top: 34px;
+	left: 110px;
+}
+.kino-logo{
+	position: absolute;
+	top: 57px;
+	right: 71px;
+}
+h1{
+	font-size: 72px;
+	display: block;
+	margin: auto 0 0 0;
+	text-align: center;
+	padding: 0;
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+header:after{
+	content: "";
+	width: 645px;
+	height: 229px;
+	position: absolute;
+	background: url(../images/header-bottom.png) no-repeat;
+	bottom: 0;
+	right: 0;
+}
+.second-section{
+	text-align: center;
+	background: #29235C url(../images/bg.png) center top;
+	position: relative;
+	z-index: 1;
+	padding: 90px 0 110px 0;
+}
+.second-section:before{
+	content: "";
+	position: absolute;
+	top: 70px;
+	left: 220px;
+	width: 225px;
+	height: 210px;
+	background: url(../images/ball.svg) no-repeat;
+	z-index: -1;
+}
+.second-section-title{
+	font-size: 36px;
+	line-height: 44px;
+	color: #fff;
+	padding: 0 0 40px 0;
+}
+.second-section-small-title{
+	font-size: 36px;
+	line-height: 44px;
+	color: #fff;
+}
+.second-section-figure{
+	position: absolute;
+	width: 1070px;
+	height: 120px;
+	background: url(../images/bg1.svg) left bottom no-repeat;
+	overflow: hidden;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+}
+.second-section-figure:before{
+	content: "";
+	width: 1080px;
+	height: 349px;
+	background: url(../images/bg2.svg) no-repeat;
+	position: absolute;
+	bottom: -115px;
+	left: 532px;
+}
+.third-section{
+	background: url(../images/pattern.jpg) center top;
+	text-align: center;
+	color: #322207;
+}
+.third-section-title{
+	font-size: 52px;
+}
+.shedule{
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 24px;
+	position: relative;
+}
+.shedule:before{
+	content: "";
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	left: 100px;
+	top: 0;
+	background: #000;
+}
+.shedule>div{
+	margin: 0 0 20px 0;
+}
+.shedule>div span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+}

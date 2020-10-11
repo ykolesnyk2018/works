@@ -20,6 +20,9 @@ $(document).ready(function(){
 		$(toggle_id).addClass("active");
 		$(this).addClass("active");
 	}); 
+	$('.toggle.add').click(function() {
+		$('.constructor-bg').toggleClass("active");
+	}); 
 	
 	$('.toggle').click(function() {
 		var toggle_id = $('#' + $(this).attr("data-target"));

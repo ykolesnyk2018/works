@@ -2135,7 +2135,7 @@ header.white.open .logo img.black{
 	.main-slider-title{
 		margin: 125px 0 25px 0;
 	}
-	header.white .main-menu:before{
+	.main-menu:before{
 		content: "";
 		width: 100vw;
 		height: 100%;
@@ -2314,7 +2314,7 @@ header.white.open .logo img.black{
 		margin: 11px 0 0 0;
 	}
 	.main-menu{
-		top: 84px;
+		top: 83px;
 	}
 	.main-title{
 		font-size: 16px;

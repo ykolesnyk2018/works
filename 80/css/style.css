@@ -1746,7 +1746,7 @@ h1{
 		line-height: normal;
 	}
 	.slick-track .new{
-		width: calc(100vw - 80px);
+		width: calc(100vw - 60px);
 	}
 	.new-description{
 		padding: 20px 0 25px 0;

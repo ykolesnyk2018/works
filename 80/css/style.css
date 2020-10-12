@@ -1878,8 +1878,16 @@ h1{
 		position: relative;
 	}
 	.location{
+		min-width: 50%;
 		display: block;
 		margin: 5px 0 0 10px;
+	}
+	.location-content{
+		left: 0;
+	}
+	.location-content:before{
+		left: 30px;
+		margin: 0 0 -1px 0;
 	}
 	.mail{
 		margin: 0 0 0 auto;

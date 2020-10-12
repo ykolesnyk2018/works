@@ -2718,7 +2718,7 @@ header.white.open .logo img.black{
 		background: none;
 		top: 0;
 		left: auto;
-		right: 10px;
+		right: 20px;
 		color: #000;
 	}
 	.constructor-description-title{
@@ -2883,13 +2883,13 @@ header.white.open .logo img.black{
 		opacity: 0;
 	}
 	
-	.main-slider .slick-slide .show-video-btn{
+	.main-slider .slick-slide .show-video-btn.for-mobil{
 		display: block;
 		left: auto;
 		position: relative;
 		top: auto;
 		bottom: auto;
-		margin: 60px 0 0 0;
+		margin: auto 0 20px 0;
 	}
 	.popup.container{
 		width: 90%;
@@ -2940,5 +2940,8 @@ header.white.open .logo img.black{
 		height: 1px;
 		background: #fff;
 		z-index: 7;
+	}
+	.form-bg.margin-zero{
+		margin: 0;
 	}
 }

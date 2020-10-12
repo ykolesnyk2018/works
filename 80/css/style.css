@@ -179,7 +179,7 @@ header>.container{
 .location:after{
     content: '';
     position: absolute;
-    background: url(../images/icons/location.png) no-repeat;
+    background: url(../images/icons/location.png?604800) no-repeat;
     width: 9px;
     height: 11px;
     top: 50%;
@@ -200,7 +200,7 @@ header>.container{
 .phone a:before{
     content: '';
     position: absolute;
-    background: url(../images/icons/phone.png) no-repeat;
+    background: url(../images/icons/phone.png?604800) no-repeat;
     width: 11px;
     height: 11px;
     top: 50%;
@@ -218,7 +218,7 @@ header>.container{
 .mail a:before{
     content: '';
     position: absolute;
-    background: url(../images/icons/mail.png) no-repeat;
+    background: url(../images/icons/mail.png?604800) no-repeat;
     width: 14px;
     height: 11px;
     top: 50%;
@@ -452,13 +452,13 @@ header>.container{
 	width: 262px;
 }
 .top-form form input.f-user{
-    background-image: url(../images/icons/f-user.png);
+    background-image: url(../images/icons/f-user.png?604800);
 }
 .top-form form input.f-phone{
-    background-image: url(../images/icons/f-phone.png);
+    background-image: url(../images/icons/f-phone.png?604800);
 }
 .top-form form input.f-location{
-    background-image: url(../images/icons/f-location.png);
+    background-image: url(../images/icons/f-location.png?604800);
 }
 .top-form form button{
     border: 0;
@@ -526,7 +526,7 @@ header>.container{
     content: "";
     width: 5px;
     height: 10px;
-    background: url(../images/icons/small-arrow.png) no-repeat;
+    background: url(../images/icons/small-arrow.png?604800) no-repeat;
     position: absolute;
     left: 0;
     top: 3px;
@@ -549,7 +549,7 @@ header>.container{
 .manufacturers .slick-arrow{
     width: 14px;
     height: 31px;
-    background: url(../images/icons/arrow.png) center center no-repeat;
+    background: url(../images/icons/arrow.png?604800) center center no-repeat;
     border: 0;
     font-size: 0;
     position: absolute;
@@ -598,7 +598,7 @@ header>.container{
     left: 0;
     top: 4px;
     margin: 0 0 0 0;
-    background: url(../images/icons/menu-arrow.png) no-repeat;
+    background: url(../images/icons/menu-arrow.png?604800) no-repeat;
 }
 .direction-content>ul>li>ul{
     padding: 12px 0 0 26px;
@@ -691,7 +691,7 @@ header>.container{
     display: inline-block;
     position: relative;
     padding: 0 0 0 12px;
-    background: url(../images/icons/small-arrow.png) left center no-repeat;
+    background: url(../images/icons/small-arrow.png?604800) left center no-repeat;
 }
 .new-btn a:hover{
     text-decoration: underline;
@@ -699,7 +699,7 @@ header>.container{
 .news-slider .slick-arrow {
     width: 14px;
     height: 31px;
-    background: url(../images/icons/arrow.png) center center no-repeat;
+    background: url(../images/icons/arrow.png?604800) center center no-repeat;
     border: 0;
     font-size: 0;
     position: absolute;
@@ -800,7 +800,7 @@ header>.container{
     content: "";
     width: 5px;
     height: 10px;
-    background: url(../images/icons/small-arrow.png) no-repeat;
+    background: url(../images/icons/small-arrow.png?604800) no-repeat;
     position: absolute;
     top: 5px;
     left: 0;
@@ -891,7 +891,7 @@ footer>.container{
     box-sizing: border-box;
     font-family: 'SeroPro';
     padding: 13.5px 50px 13.5px 56px;
-    background: #fff url(../images/icons/footer-mail.png) 24px center no-repeat;
+    background: #fff url(../images/icons/footer-mail.png?604800) 24px center no-repeat;
 }
 .footer-form input::placeholder{
     color: #8f8f8f;
@@ -901,14 +901,14 @@ footer>.container{
     border: 1px solid #004992;
     width: 39px;
     height: 37px;
-    background: #004992 url(../images/icons/white-arrow.png) center center no-repeat;
+    background: #004992 url(../images/icons/white-arrow.png?604800) center center no-repeat;
     position: absolute;
     top: 50%;
     margin: -18.5px 0 0 0;
     right: 6px;
 }
 .footer-form button:hover{
-    background-color: #fff url(../images/icons/white-arrow.png) center center no-repeat;
+    background-color: #fff url(../images/icons/white-arrow.png?604800) center center no-repeat;
 }
 .news-title{
 	margin: 66px 0 55px 0;
@@ -952,7 +952,7 @@ footer>.container{
 	content: "";
 	width: 5px;
 	height: 10px;
-	background: url(../images/icons/menu-arrow.png) no-repeat;
+	background: url(../images/icons/menu-arrow.png?604800) no-repeat;
 	position: absolute;
     top: 5px;
     right: -27px;
@@ -1081,7 +1081,7 @@ h1{
 	content: "";
 	width: 5px;
 	height: 10px;
-	background: url(../images/icons/menu-arrow.png) no-repeat;
+	background: url(../images/icons/menu-arrow.png?604800) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 5px;
@@ -1096,7 +1096,7 @@ h1{
 	content: "";
 	width: 5px;
 	height: 10px;
-	background: url(../images/icons/small-arrow.png) no-repeat;
+	background: url(../images/icons/small-arrow.png?604800) no-repeat;
 	position: absolute;
 	top: 5px;
 	left: 0;
@@ -1143,7 +1143,7 @@ h1{
 .a-trade-mark a:before{
     position: absolute;
     content: '';
-    background: url(../images/icons/arrow-a.png) no-repeat;
+    background: url(../images/icons/arrow-a.png?604800) no-repeat;
     width: 5px;
     height: 10px;
     left: 3px;
@@ -1213,7 +1213,7 @@ h1{
     left: 0;
     top: 4px;
     margin: 0 0 0 0;
-    background: url(../images/icons/menu-arrow.png) no-repeat;
+    background: url(../images/icons/menu-arrow.png?604800) no-repeat;
 }
 .brand-products-block>ul>li>ul{
     padding: 12px 0 0 26px;

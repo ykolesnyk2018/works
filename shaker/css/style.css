@@ -2536,6 +2536,9 @@ header.white.open .logo img.black{
 		padding: 46px 0;
 		display: block;
 		text-align: center;
+		background-image: url(../images/choose-mobil.png);
+		background-repeat: no-repeat;
+		background-position:  center center;
 	}
 	.choose>p{
 		margin: 8px 0;

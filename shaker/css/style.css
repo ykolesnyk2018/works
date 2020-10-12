@@ -2944,4 +2944,17 @@ header.white.open .logo img.black{
 	.form-bg.margin-zero{
 		margin: 0;
 	}
+	.shaker-socials{
+		display: block;
+		top: auto;
+		bottom: 10px;
+		right: 10px;
+	}
+	.shaker-socials.social a{
+		display: none;
+	}
+	.shaker-socials.social a.shaker-icon{
+		display: block;
+		margin: 0;
+	}
 }

@@ -1642,7 +1642,9 @@ h1{
 		display: none;
 	}
 	.phone{
+		min-width: calc(50% - 10px);
 		margin: 0;
+		text-align: right;
 	}
 	.phone a{
 		padding: 0;
@@ -1881,6 +1883,7 @@ h1{
 		min-width: 50%;
 		display: block;
 		margin: 5px 0 0 10px;
+		box-sizing: border-box;
 	}
 	.location-content{
 		left: 0;

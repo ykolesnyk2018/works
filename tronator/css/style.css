@@ -1,0 +1,180 @@
+@font-face {
+	font-family: 'AvenirNextCyr-Regular';
+	src: url('fonts/avenirnextcyr-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/avenirnextcyr-regular/avenirnextcyr-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/avenirnextcyr-regular/avenirnextcyr-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/avenirnextcyr-regular/avenirnextcyr-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/avenirnextcyr-regular/avenirnextcyr-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/avenirnextcyr-regular/avenirnextcyr-regular.svg#avenirnextcyr-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'AvenirNextCyr-Thin';
+	src: url('fonts/avenirnextcyr-thin/avenirnextcyr-thin.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/avenirnextcyr-thin/avenirnextcyr-thin.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/avenirnextcyr-thin/avenirnextcyr-thin.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/avenirnextcyr-thin/avenirnextcyr-thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/avenirnextcyr-thin/avenirnextcyr-thin.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/avenirnextcyr-thin/avenirnextcyr-thin.svg#avenirnextcyr-thin') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'AvenirNextCyr-Bold';
+	src: url('fonts/avenirnextcyr-bold/avenirnextcyr-bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/avenirnextcyr-bold/avenirnextcyr-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/avenirnextcyr-bold/avenirnextcyr-bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/avenirnextcyr-bold/avenirnextcyr-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/avenirnextcyr-bold/avenirnextcyr-bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/avenirnextcyr-bold/avenirnextcyr-bold.svg#avenirnextcyr-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'AvenirNextCyr-Demi';
+	src: url('fonts/avenirnextcyr-demi/avenirnextcyr-demi.eot'); /* IE 9 Compatibility Mode */
+	src: url('fonts/avenirnextcyr-demi/avenirnextcyr-demi.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('fonts/avenirnextcyr-demi/avenirnextcyr-demi.woff2') format('woff2'), /* Super Modern Browsers */
+		url('fonts/avenirnextcyr-demi/avenirnextcyr-demi.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('fonts/avenirnextcyr-demi/avenirnextcyr-demi.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('fonts/avenirnextcyr-demi/avenirnextcyr-demi.svg#avenirnextcyr-demi') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+body{
+	margin: 0;
+    font-family: 'AvenirNextCyr-Regular';
+    background: #E5E5E5;
+}
+ul,
+ol{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+*:focus{
+	outline: 0;
+}
+img{
+	max-width: 100%;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+a{
+    text-decoration: none;
+}
+.container{
+	width: 1604px;
+	margin: 0 auto;
+}
+header>.container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0 0 0;
+}
+.logo{
+}
+.reg{
+    align-items: center;
+    margin: 30px 82px 0 0;
+}
+.reg a{
+    font-family: 'AvenirNextCyr-Demi';
+    color: #142658;
+    font-size: 18px;
+    line-height: 24px;
+}
+.reg a:hover{
+    color: #fff;
+    transition: 0.1s;
+}
+.main-section>.container{
+    position: relative;
+}
+.main-section>.container:after{
+    content: '';
+    width: 401px;
+    height: 100%;
+    background: #66FEF2;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+}
+.main-section{
+    position: relative;
+}
+
+.social{
+}
+.social a{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    padding: 0 0 43px 0;
+}
+.header-bottom{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.header-left{
+    width: 560px;
+    margin: 217px 0 0 0;
+    position: relative;
+}
+/*
+.header-left:before{
+    position: absolute;
+    content: 'TRONATOR';
+    text-transform: uppercase;
+    color: rgba(20, 38, 88, 0.11);
+    letter-spacing: 4.5px;
+    font-family: 'AvenirNextCyr-Demi';
+    bottom: 0;
+    font-size: 364px;
+    line-height: 24px;
+    left: 0;
+    z-index: -2;
+}
+*/
+.header-left-title{
+    font-family: 'AvenirNextCyr-Demi';
+    font-size: 110px;
+    line-height: 24px;
+    color: #000;
+}
+.header-left-text{
+    font-family: 'AvenirNextCyr-Thin';
+    color: #4B4F55;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 53px 0 0 0;
+}
+.header-left-btn{
+    display: inline-flex;
+    margin: 51px 0 0 0;
+}
+.header-left-btn a{
+    border: 1px solid #142658;
+    background: #142658;
+    font-family: 'AvenirNextCyr-Demi';
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    padding: 16px 78px 16px 78px;
+}
+.header-left-btn a:hover{
+    color: #142658;
+    border: 1px solid #142658;
+    background: #66FEF2;
+}
+.header-right{
+    padding: 41px 78px 189px 0;
+}

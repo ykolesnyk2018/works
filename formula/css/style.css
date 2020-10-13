@@ -8658,6 +8658,11 @@ a.none-2{
 	transform: translate(-50%,-50%);
 	max-width: none;
 }
+.newspaper-img.min img{
+	min-width: 0;
+	max-height: 90%;
+	max-width: 90%;
+}
 h1 span.red{
 	font-size: 42px;
 	color: #F04438;

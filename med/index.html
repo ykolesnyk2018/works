@@ -22,7 +22,7 @@
 </head>
 <body>
 	<div class="container">
-		<div class="attention">
+		<div class="attention active" id="attention">
 			<div class="attention-left">О нас</div>
 			<div class="attention-text">
 				<span>Общественное объединение «Научно-медицинское общество»</span> было создано в 2013 г. ведущими специалистами различных областей медицины, с целью содействия научным исследованиям, повышения информированности общества в области медицины...
@@ -30,6 +30,7 @@
 					<a href="#">подробнее</a>
 				</div>
 			</div>
+			<div class="toggle attention-close" data-target="attention"></div>
 		</div>
 		<header>
 			<div class="logo">
@@ -37,7 +38,12 @@
 					<img src="images/logo.png" alt="">
 				</a>
 			</div>
-			<nav class="main-menu">
+			<div class="toggle main-menu-btn" data-target="main-menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav class="main-menu" id="main-menu">
 				<ul>
 					<li class="active"><a href="index.html">Главная</a></li>
 					<li><a href="#">Детям</a></li>
@@ -100,23 +106,87 @@
 			<div class="container">
 				<div class="main-slider-container">
 					<div class="main-slider-left">
-						<b>Детям</b>
+						<b>Врачам</b>
 						<p>
 							Социальная поддержка<br> 
 							детей с онкологическими,<br> 
-							гематологическими и другими<br>
+							гематологическими и другими<br> 
 							тяжелыми заболеваниями
 						</p>
 					</div>
 					<div class="main-slider-right">
-						<img src="images/slider1.png" alt="">
+						<img src="images/slider2.png" alt="">
 					</div>
 				</div>
 			</div>
 			<div class="programms-bg">
 				<div class="container">
-					<div class="programms-title title">Програмы для детей</div>
+					<div class="programms-title title">Програмы врачам</div>
 					<div class="programms">
+						<div class="programm">
+							<div class="programm-title">
+								<b>Социально-<br> медицинский<br> форум</b>
+								<p>«Верить и жить»</p>
+							</div>
+							<img src="images/programm4.png" alt="">
+						</div>
+						<div class="programm">
+							<div class="programm-title">
+								<p>Школа<br> практического<br> врача</p>
+							</div>
+							<img src="images/programm5.png" alt="">
+						</div>
+						<div class="programm">
+							<div class="programm-title">
+								<p>Научно-<br> исследовательская<br> деятельность</p>
+							</div>
+							<img src="images/programm6.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="container">
+				<div class="main-slider-container">
+					<div class="main-slider-left">
+						<b>Пациентам</b>
+						<p>
+							Социальная поддержка<br> 
+							детей с онкологическими,<br> 
+							гематологическими и другими<br> 
+							тяжелыми заболеваниями
+						</p>
+					</div>
+					<div class="main-slider-right">
+						<img src="images/slider3.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="programms-bg">
+				<div class="container">
+					<div class="programms-title title">Програмы врачам</div>
+					<div class="programms half">
+						<div class="programm">
+							<div class="programm-title">
+								<b>Социально-<br> медицинский форум</b>
+								<p>«Верить и жить»</p>
+							</div>
+							<img src="images/programm7.png" alt="">
+						</div>
+						<div class="programm">
+							<div class="programm-title">
+								<b>Выездные<br> семинары</b>
+								<p>Сау-Бала</p>
+							</div>
+							<img src="images/programm8.png" alt="">
+						</div>
+						<div class="programm">
+							<div class="programm-title">
+								<p>Школа<br> пациентов</p>
+							</div>
+							<img src="images/programm9.png" alt="">
+						</div>
 						<div class="programm">
 							<div class="programm-title">
 								<b>Арт терапия</b>
@@ -124,85 +194,73 @@
 							</div>
 							<img src="images/programm1.png" alt="">
 						</div>
-						<div class="programm">
-							<div class="programm-title">
-								<b>Движение</b>
-								<p>Дети помогают<br> детям</p>
-							</div>
-							<img src="images/programm2.png" alt="">
-						</div>
-						<div class="programm">
-							<div class="programm-title">
-								<b>Конкурс</b>
-								<p>"Давай нарисуем<br> сказку"</p>
-							</div>
-							<img src="images/programm3.png" alt="">
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="charity-block">
-			<div class="charity-block-title title">Благотворительность</div>
-			<div class="charities">
-				<div class="charity">
-					<div class="charity-icon">
-						<img src="images/charity1.png" alt="">
+	<div class="overflow">
+		<div class="container">
+			<div class="charity-block">
+				<div class="charity-block-title title">Благотворительность</div>
+				<div class="charities">
+					<div class="charity">
+						<div class="charity-icon">
+							<img src="images/charity1.png" alt="">
+						</div>
+						<div class="charity-title">
+							История больных
+						</div>
+						<div class="charity-text">Посмотреть архив истории<br>  больных</div>
 					</div>
-					<div class="charity-title">
-						История больных
+					<div class="charity">
+						<div class="charity-icon">
+							<img src="images/charity2.png" alt="">
+						</div>
+						<div class="charity-title">
+							Отчет
+						</div>
+						<div class="charity-text">Посмотреть итог<br> собранных денег</div>
 					</div>
-					<div class="charity-text">Посмотреть архив истории<br>  больных</div>
-				</div>
-				<div class="charity">
-					<div class="charity-icon">
-						<img src="images/charity2.png" alt="">
-					</div>
-					<div class="charity-title">
-						Отчет
-					</div>
-					<div class="charity-text">Посмотреть итог<br> собранных денег</div>
 				</div>
 			</div>
-		</div>
-		<div class="i_wont_help-bg">
-			<div class="i_wont_help-title"></div>
-			<form>
-				<div class="group-checkbox">
-					<div class="checkbox">
-						<input type="radio" id="c1" name="b1">
-						<label for="c1"><span>100</span> т</label>
+			<div class="i_wont_help-bg">
+				<div class="i_wont_help-title">Хочу помочь!</div>
+				<form>
+					<div class="group-checkbox">
+						<div class="checkbox">
+							<input type="radio" id="c1" name="b1">
+							<label for="c1"><span>100</span> т</label>
+						</div>
+						<div class="checkbox">
+							<input type="radio" id="c2" name="b1">
+							<label for="c2"><span>200</span> т</label>
+						</div>
+						<div class="checkbox">
+							<input type="radio" id="c3" name="b1">
+							<label for="c3"><span>300</span> т</label>
+						</div>
+						<div class="checkbox">
+							<input type="radio" id="c4" name="b1">
+							<label for="c4"><span>500</span> т</label>
+						</div>
+						<div class="checkbox">
+							<input type="radio" id="c5" name="b1">
+							<label for="c5"><span>1 000</span> т</label>
+						</div>
 					</div>
-					<div class="checkbox">
-						<input type="radio" id="c2" name="b1">
-						<label for="c2"><span>200</span> т</label>
+					<div class="main-input">
+						<input type="text" placeholder="Введите свою сумму">
+						<button>отправить</button>
 					</div>
-					<div class="checkbox">
-						<input type="radio" id="c3" name="b1">
-						<label for="c3"><span>300</span> т</label>
-					</div>
-					<div class="checkbox">
-						<input type="radio" id="c4" name="b1">
-						<label for="c4"><span>500</span> т</label>
-					</div>
-					<div class="checkbox">
-						<input type="radio" id="c5" name="b1">
-						<label for="c5"><span>1 000</span> т</label>
-					</div>
-				</div>
-				<div class="main-input">
-					<input type="text" placeholder="Введите свою сумму">
-					<button>отправить</button>
-				</div>
-			</form>
-		</div>
-		<div class="pay-through">
-			<span>Оплата через:</span>
-			<img src="images/icons/pay-kind1.png" alt="">
-			<img src="images/icons/pay-kind2.png" alt="">
-			<img src="images/icons/pay-kind3.png" alt="">
+				</form>
+			</div>
+			<div class="pay-through">
+				<span>Оплата через:</span>
+				<img src="images/icons/pay-kind1.png" alt="">
+				<img src="images/icons/pay-kind2.png" alt="">
+				<img src="images/icons/pay-kind3.png" alt="">
+			</div>
 		</div>
 	</div>
 	<div class="green">

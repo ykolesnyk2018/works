@@ -50,16 +50,33 @@
                 </nav>
             </div>
             <div class="header-right">
-                <div class="toggle location" data-target="location">
+                <div class="toggle location active" data-target="location">
                     <span>Алматы</span>
-                    <div class="location-content" id="location">
-                        <form>
-                            <div class="location-content-title">Вы находитесь в Алматы?</div>
-                            <a href="#" class="small">Да</a>
-                            <a href="#" class="big">Другой город</a>
-                        </form>
-                    </div>
                 </div>
+				<div class="location-content active" id="location">
+					<form>
+						<div class="location-content-title">Вы находитесь в Алматы?</div>
+						<a class="toggle small" data-target="location">Да</a>
+						<a class="toggle big" data-target="cities">Другой город</a>
+						<ul class="cities" id="cities">
+							<li><a href="#">Алма-Ата</a></li>
+							<li><a href="#">Астана</a></li>
+							<li><a href="#">Шыкмент</a></li>
+							<li><a href="#">Караганда</a></li>
+							<li><a href="#">Актобе</a></li>
+							<li><a href="#">Тараз</a></li>
+							<li><a href="#">Павловар</a></li>
+							<li><a href="#">Семей</a></li>
+							<li><a href="#">Усть-Каменогорск</a></li>
+							<li><a href="#">Кызылорда</a></li>
+							<li><a href="#">Уральск</a></li>
+							<li><a href="#">Костанай</a></li>
+							<li><a href="#">Атырау</a></li>
+							<li><a href="#">Петропавловск</a></li>
+							<li><a href="#">Актау</a></li>
+						</ul>
+					</form>
+				</div>
                 <div class="phone">
                     <a href="#">+7 727 390 62 62</a>
                 </div>
@@ -101,6 +118,39 @@
         </div>    
     </header>
     <div class="main-banner">
+        <div class="container top">
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/slide-1.png?604800" alt="">
+                    <h3>Световые решения <span>Philips</span></h3>
+                </div>
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="images/slide-1.png?604800" alt="">
+                    </div>
+                    <h3>Световые решения <p>Philips</p></h3>
+                </div>
+                <div class="slide">
+                    <img src="images/slide-1.png?604800" alt="">
+                    <h3>Световые решения <p>Philips</p></h3>
+                </div>
+            </div>
+            <div class="baner">
+                <img src="images/baner-1.png?604800" alt="">
+                <div class="baner-title">Скидки <span>50%</span> <br> на удлинители</div>
+            </div>
+            <div class="top-form">
+                <div class="form-title">Оставьте заявку и менеджер свяжется с Вами</div>
+                <form>
+                    <input type="text" placeholder="Имя" class="f-user">
+                    <input type="text" placeholder="Телефон" class="f-phone">
+                    <input type="text" placeholder="Город" class="f-location">
+                    <button>Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="main-banner for-mobil">
         <div class="container top">
             <div class="slider">
                 <div class="slide">

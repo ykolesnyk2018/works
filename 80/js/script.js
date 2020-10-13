@@ -17,6 +17,10 @@ $(document).ready(function(){
 		$(toggle_id).toggleClass("active");
 		$(this).toggleClass("active");
 	}); 
+    $('.close-toggle').click(function() {
+		var toggle_id = $('#' + $(this).attr("data-target"));
+		$(toggle_id).removeClass("active");
+	}); 
     $(function() {
         $(".class-name").click(function(){
             $(this).toggleClass("active");

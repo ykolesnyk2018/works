@@ -20,11 +20,27 @@ $(document).ready(function(){
     $(function(){
         $(".tabs").tabs();
     });
-	$('.one-time').slick({
-	  dots: true,
+	$('.main-slider').slick({
+	  dots: false,
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 1,
 	  adaptiveHeight: true
+	});
+	$('.news-slider').slick({
+	  infinite: true,
+	  arrows: false,
+	  dots: true,
+	  speed: 300,
+  	  slidesToScroll: 3,
+	  variableWidth: true
+	});
+	$('.gallery-slider').slick({
+	  infinite: true,
+	  arrows: false,
+	  dots: true,
+	  speed: 300,
+	  slidesToShow: 3,
+  	  slidesToScroll: 1
 	});
 });

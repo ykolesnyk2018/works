@@ -152,6 +152,7 @@ header>.container{
 .header-right{
     display: inline-flex;
     margin: 0 0 0 auto;
+	position: relative;
 }
 .header-left{
 }
@@ -420,7 +421,7 @@ header>.container{
 }
 .form-title{
     text-align: center;
-    font-size: 27px;
+    font-size: 25px;
     color: #282828;
     margin: 37px 0 32px 0;
 }
@@ -450,6 +451,7 @@ header>.container{
 }
 .top-form form button{
 	width: 262px;
+	padding: 5px 0 0 0;
 }
 .top-form form input.f-user{
     background-image: url(../images/icons/f-user.png?604800);
@@ -1077,6 +1079,9 @@ h1{
 	padding: 0 0 6px 20px;
 	position: relative;
 }
+.our-project-text ul li span{
+	font-family: 'SeroPro-Bold';
+}
 .our-project-text ul li:before{
 	content: "";
 	width: 5px;
@@ -1418,6 +1423,32 @@ h1{
 }
 .location-content a:hover{
     opacity: 0.8;
+}
+.toggle{
+	cursor: pointer;
+}
+.cities{
+	overflow: auto;
+	height: 250px;
+	border: 1px solid #ccc;
+	margin: 20px 30px 0 30px;
+	padding: 10px 0;
+	display: none;
+	background: #fff;
+}
+.cities.active{
+	display: block;
+}
+.cities li{
+	width: 100%;
+	display: block;
+}
+.cities li a{
+	display: block;
+	text-align: left;
+	background: none;
+	padding: 10px 0 10px 10px;
+	border-bottom: 1px solid #ccc;
 }
 @media (max-width: 1280px){
 	.manufacturers .slick-prev.slick-arrow,
@@ -1835,7 +1866,7 @@ h1{
     }
     .our-projects-top-tags a{
         display: inline-block;
-        margin: 0 0 10px 0;
+        margin: 0 25px 10px 0;
     }
     .navigation{
         flex-wrap: wrap;
@@ -1896,9 +1927,36 @@ h1{
 		margin: 0 0 0 auto;
 	}
 	.contact-block{
-		flex-basis: 100%;
+		min-width: 200px;
 	}
 	header{
 		padding: 10px 0 0 0;
+	}
+	.brand-products-block-img{
+		max-width: 100%;
+	}
+	.brand-products-block>ul>li>a{
+		max-width: 100%;
+	}
+	.footer-form{
+		width: 100%;
+	}
+	.footer-logo{
+		width: 100%;
+	}
+	.footer-logo a{
+		justify-content: center;
+	}
+	.footer-nav ul{
+		justify-content: center;
+	}
+	.footer-form-title{
+		text-align: center;
+	}
+	.main-banner{
+		display: none;
+	}
+	.main-banner.for-mobil{
+		display: block;
 	}
 }

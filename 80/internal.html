@@ -50,16 +50,33 @@
                 </nav>
             </div>
             <div class="header-right">
-                <div class="toggle location" data-target="location">
+                <div class="toggle location active" data-target="location">
                     <span>Алматы</span>
-                    <div class="location-content" id="location">
-                        <form>
-                            <div class="location-content-title">Вы находитесь в Алматы?</div>
-                            <a href="#" class="small">Да</a>
-                            <a href="#" class="big">Другой город</a>
-                        </form>
-                    </div>
                 </div>
+				<div class="location-content active" id="location">
+					<form>
+						<div class="location-content-title">Вы находитесь в Алматы?</div>
+						<a class="toggle small" data-target="location">Да</a>
+						<a class="toggle big" data-target="cities">Другой город</a>
+						<ul class="cities" id="cities">
+							<li><a href="#">Алма-Ата</a></li>
+							<li><a href="#">Астана</a></li>
+							<li><a href="#">Шыкмент</a></li>
+							<li><a href="#">Караганда</a></li>
+							<li><a href="#">Актобе</a></li>
+							<li><a href="#">Тараз</a></li>
+							<li><a href="#">Павловар</a></li>
+							<li><a href="#">Семей</a></li>
+							<li><a href="#">Усть-Каменогорск</a></li>
+							<li><a href="#">Кызылорда</a></li>
+							<li><a href="#">Уральск</a></li>
+							<li><a href="#">Костанай</a></li>
+							<li><a href="#">Атырау</a></li>
+							<li><a href="#">Петропавловск</a></li>
+							<li><a href="#">Актау</a></li>
+						</ul>
+					</form>
+				</div>
                 <div class="phone">
                     <a href="#">+7 727 390 62 62</a>
                 </div>

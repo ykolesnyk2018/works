@@ -105,7 +105,7 @@ img{
 	content: "";
 	width: 98px;
 	height: 127px;
-	background: url(../images/attention.png) no-repeat;
+	background: url(../images/attention.png?604800) no-repeat;
 	position: absolute;
     top: 19px;
     left: 307px;
@@ -114,7 +114,7 @@ img{
 	content: "";
 	width: 60px;
 	height: 93px;
-	background: url(../images/icons/green-arrow.png) no-repeat;
+	background: url(../images/icons/green-arrow.png?604800) no-repeat;
 	position: absolute;
     left: 64px;
     top: 83px;
@@ -126,7 +126,7 @@ img{
 	top: 50%;
 	right: 55px;
 	transform: translate(0,-50%);
-	background: url(../images/icons/close.svg) no-repeat;
+	background: url(../images/icons/close.svg?604800) no-repeat;
 	cursor: pointer;
 }
 .attention-close:hover{
@@ -244,7 +244,7 @@ header{
 	position: absolute;
     bottom: -40px;
     left: -162px;
-	background: url(../images/main-slide-arrow1.png) no-repeat;
+	background: url(../images/main-slide-arrow1.png?604800) no-repeat;
 }
 .main-slider-right:after{
 	content: "";
@@ -253,7 +253,7 @@ header{
 	position: absolute;
     top: 0;
     right: -162px;
-	background: url(../images/main-slide-arrow2.png) no-repeat;
+	background: url(../images/main-slide-arrow2.png?604800) no-repeat;
 }
 .main-slider-right img{
 	display: block;
@@ -427,7 +427,7 @@ header{
 	content: "";
 	width: 266px;
 	height: 121px;
-	background: url(../images/i_wont_help-arrow.png) no-repeat;
+	background: url(../images/i_wont_help-arrow.png?604800) no-repeat;
 	position: absolute;
     right: -85px;
     top: 135px;
@@ -672,7 +672,7 @@ button{
 	content: "";
 	width: 125px;
 	height: 164px;
-	background: url(../images/icons/form.png) no-repeat;
+	background: url(../images/icons/form.png?604800) no-repeat;
 	position: absolute;
 	top: -21px;
 	right: 95px;
@@ -681,7 +681,7 @@ button{
 	content: "";
 	width: 83px;
 	height: 141px;
-	background: url(../images/form-arrow.png) no-repeat;
+	background: url(../images/form-arrow.png?604800) no-repeat;
 	position: absolute;
     right: 146px;
     bottom: -55px;
@@ -820,7 +820,7 @@ footer .container{
 	width: 61px;
 	height: 61px;
 	border-radius: 50%;
-	background: #eff7ef url(../images/icons/arrow.svg) center center no-repeat;
+	background: #eff7ef url(../images/icons/arrow.svg?604800) center center no-repeat;
 	position: absolute;
 	top: 100px;
 	margin: 0 0 0 0;
@@ -872,7 +872,7 @@ footer .container{
 	transform: translate(0,-50%);
 	width: 183px;
 	height: 170px;
-	background: url(../images/page-title.png) no-repeat;
+	background: url(../images/page-title.png?604800) no-repeat;
 }
 .title-of-page>div{
 	position: relative;
@@ -931,7 +931,7 @@ footer .container{
 	content: "";
 	width: 4px;
 	height: 7px;
-	background: url(../images/icons/breadcrumbs.png) no-repeat;
+	background: url(../images/icons/breadcrumbs.png?604800) no-repeat;
 	position: absolute;
 	top: 50%;
 	margin: -3.5px 0 0 0;

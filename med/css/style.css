@@ -95,7 +95,7 @@ img{
 	background: #eff7ef;
 	border: 1px solid #e6f1e6;
 	position: relative;
-	margin: 0 -15px;
+	margin: 36px -15px 0 -15px;
 }
 .attention:after{
 	content: "";
@@ -109,6 +109,8 @@ img{
 .attention-left{
 	font-size: 37px;
     font-family: 'MullerThin';
+	width: 34%;
+	text-align: center;
 }
 .attention-text{
 	max-width: 600px;

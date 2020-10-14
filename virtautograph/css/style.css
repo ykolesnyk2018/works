@@ -1,0 +1,214 @@
+@font-face {
+	font-family: 'GothamProBlack';
+	src: url('GothamPro-Black.eot');
+	src: local('Gotham Pro Black'), local('GothamPro-Black'),
+		url('font/GothamPro/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('font/GothamPro/GothamPro-Black.woff') format('woff'),
+		url('font/GothamPro/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GothamProBlackItalic';
+	src: url('GothamPro-BlackItalic.eot');
+	src: local('Gotham Pro Black Italic'), local('GothamPro-BlackItalic'),
+		url('font/GothamPro/GothamPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('font/GothamPro/GothamPro-BlackItalic.woff') format('woff'),
+		url('font/GothamPro/GothamPro-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'GothamProBold';
+	src: url('GothamPro-Bold.eot');
+	src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+		url('font/GothamPro/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('font/GothamPro/GothamPro-Bold.woff') format('woff'),
+		url('font/GothamPro/GothamPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+body{
+	margin: 0;
+}
+ul,
+ol{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+*:focus{
+	outline: 0;
+}
+img{
+	max-width: 100%;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container{
+	text-align: center;
+	margin: 0 auto;
+}
+.wrapper{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/bg.png) right center no-repeat;
+	z-index: 1;
+	align-items: center;
+}
+.wrapper:before{
+	content: "";
+	width: 67vw;
+	height: 100vh;
+	background: #1D70B7;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: -10vw;
+	transform: skew(-14deg);
+}
+.bottom{
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+.text{
+	font-family: 'GothamProBlackItalic';
+	color: #fff;
+	font-size: 92px;
+	line-height: 110px;
+	text-transform: uppercase;
+	margin: 34px 0 76px 0;
+}
+.btn{
+	font-size: 24px;
+	font-family: 'GothamProBold';
+	text-align: center;
+}
+.btn a{
+	display: inline-block;
+	color: #29235C;
+	text-decoration: none;
+	background: #FCEE18;
+	padding: 18.4px 0;
+	width: 255px;
+	border-radius: 32px;
+}
+.btn a:hover{
+	color: #fff;
+}
+.el{
+	position: absolute;
+	display: block;
+	z-index: -1;
+}
+.el1{
+	top: 0;
+	left: 200px;
+}
+.el2{
+	top: -30px;
+	left: -50px;
+}
+.el3{
+	top: -30px;
+	right: 60vw;
+}
+.el4{
+	top: 400px;
+	right: 45vw;
+}
+.el4{
+	top: 450px;
+	right: 45vw;
+}
+.el5{
+	top: 550px;
+	right: 45vw;
+}
+.el6{
+	top: 90px;
+	right: 25vw;
+	transform: rotate(6deg);
+}
+.el8{
+	top: 0;
+	right: 0;
+}
+@media (max-width: 1300px){
+	.text{
+		font-size: 50px;
+		line-height: 1.1;
+	}
+	.logo{
+		max-width: 50vw;
+		margin: 0 auto;
+	}
+	.bottom img{
+		max-width: 15vw;
+	}
+}
+@media (max-width: 1169px){
+	.el{
+		display: none;
+	}
+	.wrapper:before{
+		left: -20vw;
+	}
+	.el1{
+		top: -40px;
+		left: auto;
+		right: 60vw;
+		display: block;
+	}
+	.el2{
+		top: 0;
+		left: auto;
+		right: 60vw;
+		display: block;
+	}
+	.el4{
+		top: 100px;
+		left: auto;
+		right: 65vw;
+		display: block;
+	}
+}
+@media (max-width: 767px){
+	.text{
+		font-size: 32px;
+	}
+	.btn{
+		font-size: 16px;
+	}
+	.btn a{
+		width: 180px;
+		padding: 13px 0;
+	}
+	.wrapper{
+		background-size: cover;
+		background-position: center center;
+	}
+	.wrapper:before{
+		left: -30vw;
+	}
+	.logo{
+		max-width: 80vw;
+	}
+	.bottom{
+		position: static;
+		margin: 30px auto 0 auto;
+	}
+	.bottom img{
+		max-width: 180px;
+	}
+	.text{
+		margin: 20px 0 40px 0;
+	}
+}

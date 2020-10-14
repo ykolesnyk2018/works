@@ -59,6 +59,7 @@ img{
 	overflow: hidden;
 	position: relative;
 	background: url(../images/bg.png) right center no-repeat;
+	background-size: cover;
 	z-index: 1;
 	align-items: center;
 }
@@ -118,23 +119,23 @@ img{
 }
 .el3{
 	top: -30px;
-	right: 60vw;
+	left: 0;
 }
 .el4{
 	top: 400px;
-	right: 45vw;
+	left: 0;
 }
 .el4{
 	top: 450px;
-	right: 45vw;
+	left: 0;
 }
 .el5{
 	top: 550px;
-	right: 45vw;
+	left: 0;
 }
 .el6{
 	top: 90px;
-	right: 25vw;
+	left: 0;
 	transform: rotate(6deg);
 }
 .el8{

@@ -25,7 +25,7 @@
 		url('font/GothamPro/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
 		url('font/GothamPro/GothamPro-Bold.woff') format('woff'),
 		url('font/GothamPro/GothamPro-Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-weight: bold; 
 	font-style: normal;
 }
 body{

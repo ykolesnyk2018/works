@@ -121,7 +121,15 @@ $( document ).ready(function(){
       arrows: true,
       dots: true,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+	  responsive: [
+		{
+		  breakpoint: 767,
+		  settings: {
+			  adaptiveHeight: true
+		  }
+		}
+	  ]
     });	
     $('.players-slider').slick({
       infinite: true,

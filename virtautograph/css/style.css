@@ -58,14 +58,14 @@ img{
 	height: 100vh;
 	overflow: hidden;
 	position: relative;
-	background: url(../images/bg.png) right center no-repeat;
+	background: url(../images/bg.png) right -5vw center no-repeat;
 	background-size: cover;
 	z-index: 1;
 	align-items: center;
 }
 .wrapper:before{
 	content: "";
-	width: 67vw;
+	width: 60vw;
 	height: 100vh;
 	background: #1D70B7;
 	position: absolute;

@@ -4,6 +4,7 @@
 	src: local('☺'), url('fonts/Flecha/FlechaM-Light.woff') format('woff'), url('fonts/Flecha/FlechaM-Light.ttf') format('truetype'), url('fonts/Flecha/FlechaM-Light.svg?604800') format('svg');
 	font-weight: normal;
     font-style: normal;
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'FlechaL-Light';
@@ -11,6 +12,7 @@
 	src: local('☺'), url('fonts/Flecha/FlechaL-Light.woff') format('woff'), url('fonts/Flecha/FlechaL-Light.ttf') format('truetype'), url('fonts/Flecha/FlechaL-Light.svg?604800') format('svg');
 	font-weight: normal;
     font-style: normal;
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'FlechaM-LightItalic';
@@ -18,6 +20,7 @@
 	src: local('☺'), url('fonts/Flecha/FlechaM-LightItalic.woff') format('woff'), url('fonts/Flecha/FlechaM-LightItalic.ttf') format('truetype'), url('fonts/Flecha/FlechaM-LightItalic.svg?604800') format('svg');
 	font-weight: normal;
     font-style: normal;
+	font-display: fallback;
 }
 @font-face {
 	font-family: 'AkzidenzGroteskPro-Light';
@@ -27,6 +30,7 @@
 		url('fonts/ak/akzidenzgroteskpro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('fonts/ak/akzidenzgroteskpro-light.ttf') format('truetype'), /* Safari, Android, iOS */
 		url('fonts/ak/akzidenzgroteskpro-light.svg?604800#akzidenzgroteskpro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+	font-display: fallback;
 }
 body{
 	margin: 0;

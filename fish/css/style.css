@@ -1,21 +1,21 @@
 @font-face {
 	font-family: 'FlechaM-Light';
 	src: url('fonts/Flecha/FlechaM-Light.eot');
-	src: local('☺'), url('fonts/Flecha/FlechaM-Light.woff') format('woff'), url('fonts/Flecha/FlechaM-Light.ttf') format('truetype'), url('fonts/Flecha/FlechaM-Light.svg') format('svg');
+	src: local('☺'), url('fonts/Flecha/FlechaM-Light.woff') format('woff'), url('fonts/Flecha/FlechaM-Light.ttf') format('truetype'), url('fonts/Flecha/FlechaM-Light.svg?604800') format('svg');
 	font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'FlechaL-Light';
 	src: url('fonts/Flecha/FlechaL-Light.eot');
-	src: local('☺'), url('fonts/Flecha/FlechaL-Light.woff') format('woff'), url('fonts/Flecha/FlechaL-Light.ttf') format('truetype'), url('fonts/Flecha/FlechaL-Light.svg') format('svg');
+	src: local('☺'), url('fonts/Flecha/FlechaL-Light.woff') format('woff'), url('fonts/Flecha/FlechaL-Light.ttf') format('truetype'), url('fonts/Flecha/FlechaL-Light.svg?604800') format('svg');
 	font-weight: normal;
     font-style: normal;
 }
 @font-face {
 	font-family: 'FlechaM-LightItalic';
 	src: url('fonts/Flecha/FlechaM-LightItalic.eot');
-	src: local('☺'), url('fonts/Flecha/FlechaM-LightItalic.woff') format('woff'), url('fonts/Flecha/FlechaM-LightItalic.ttf') format('truetype'), url('fonts/Flecha/FlechaM-LightItalic.svg') format('svg');
+	src: local('☺'), url('fonts/Flecha/FlechaM-LightItalic.woff') format('woff'), url('fonts/Flecha/FlechaM-LightItalic.ttf') format('truetype'), url('fonts/Flecha/FlechaM-LightItalic.svg?604800') format('svg');
 	font-weight: normal;
     font-style: normal;
 }
@@ -26,7 +26,7 @@
 		url('fonts/ak/akzidenzgroteskpro-light.woff2') format('woff2'), /* Super Modern Browsers */
 		url('fonts/ak/akzidenzgroteskpro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
 		url('fonts/ak/akzidenzgroteskpro-light.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('fonts/ak/akzidenzgroteskpro-light.svg#akzidenzgroteskpro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+		url('fonts/ak/akzidenzgroteskpro-light.svg?604800#akzidenzgroteskpro-light') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 body{
 	margin: 0;
@@ -146,7 +146,7 @@ header>.container{
 	vertical-align: middle;
 	color: #141414;
 	padding: 0 0 20px 0;
-	background: url(../images/icons/btn-arrow.svg) center bottom no-repeat;
+	background: url(../images/icons/btn-arrow.svg?604800) center bottom no-repeat;
 }
 .main-product-btn a:hover{
 	text-decoration: none;
@@ -238,7 +238,7 @@ header>.container{
 	line-height: 1;
 }
 .born{
-	background: url(../images/born.png) left 30px repeat-x;
+	background: url(../images/born.png?604800) left 30px repeat-x;
 	margin: 136px 0 32px 0;
 }
 .born-img{
@@ -339,7 +339,7 @@ header>.container{
 	width: 13px;
 	height: 21px;
 	position: absolute;
-	background: url(../images/icons/slide-arrow.svg) no-repeat;
+	background: url(../images/icons/slide-arrow.svg?604800) no-repeat;
 	border: 0;
 	font-size: 0;
 	top: 50%;
@@ -774,7 +774,7 @@ img{
 	content: "";
 	width: 12px;
 	height: 11px;
-	background: url(../images/icons/select-arrow.svg) no-repeat;
+	background: url(../images/icons/select-arrow.svg?604800) no-repeat;
 	position: absolute;
 	top: 50%;
 	right: 17px;
@@ -815,7 +815,7 @@ img{
 	color: #fff;
 }
 .enjoy{
-	background: #d6ccc3 url(../images/enjoy.png) center top no-repeat;
+	background: #d6ccc3 url(../images/enjoy.png?604800) center top no-repeat;
 	display: flex;
 	min-height: 581px;
 	align-items: center;
@@ -901,7 +901,7 @@ img{
 .read-more a{
 	color: #fff;
 	display: inline-block;
-	background: url(../images/icons/read-more-arrow.svg) center bottom no-repeat;
+	background: url(../images/icons/read-more-arrow.svg?604800) center bottom no-repeat;
 	padding: 0 0 25px 0;
 }
 .read-more a:hover{

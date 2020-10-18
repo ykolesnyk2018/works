@@ -1,0 +1,43 @@
+@import url(fonts.css);
+$mainColor: #29004C;
+$mainColorHover: #821AD4;
+$MainS: #7A00E6;
+body{
+	margin: 0;
+	color: $mainColor;
+    font-family: 'MullerMedium';
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+}
+header{
+	.container{
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+.main-menu{
+	display: block;
+	font-size: 18px;
+	ul{
+		li{
+			a{
+				display: block;
+				color: $mainColor;
+				text-decoration: none;
+			}
+			&:hover{
+				a{
+					color: $mainColorHover;
+				}
+			}
+		}
+	}
+}

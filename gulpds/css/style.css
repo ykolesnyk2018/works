@@ -1,0 +1,29 @@
+@import url(fonts.css);
+body {
+  margin: 0;
+  color: #29004C;
+  font-family: 'MullerMedium'; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+header .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.main-menu {
+  display: block;
+  font-size: 18px; }
+  .main-menu ul li a {
+    display: block;
+    color: #29004C;
+    text-decoration: none; }
+  .main-menu ul li:hover a {
+    color: #821AD4; }

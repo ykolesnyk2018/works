@@ -56,7 +56,16 @@ $(document).ready(function(){
 		dots: true,
 	    infinite: true,
 	    slidesToShow: 1,
-	    slidesToScroll: 1
+	    slidesToScroll: 1,
+		  responsive: [
+			{
+			  breakpoint: 720,
+			  settings: {
+				arrows: false,
+  				adaptiveHeight: true
+			  }
+			}
+		  ]
 	});
 	$('.feedbacks-slider').slick({
 	  dots: true,

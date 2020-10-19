@@ -386,6 +386,7 @@ input{
 		overflow: hidden;
 		.slick-track{
 			display: flex;
+			align-items: flex-start;
 			.slick-slide{
 				position: relative;
 			}
@@ -834,5 +835,11 @@ footer{
 }
 .toggle{
 	cursor: pointer;
+}
+.main-menu-btn{
+	display: none;
+}
+.search-btn{
+	display: none;
 }
 @import 'media.scss';

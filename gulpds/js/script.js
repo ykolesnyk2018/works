@@ -70,23 +70,41 @@ $(document).ready(function(){
 	$('.feedbacks-slider').slick({
 	  dots: true,
 	  speed: 300,
-	    slidesToScroll: 1,
+	  slidesToScroll: 1,
   	  adaptiveHeight: true,
 	  variableWidth: true,
 	  responsive: [
 		{
-		  breakpoint: 768,
+		  breakpoint: 720,
 		  settings: {
+			  arrows: false,
+	  	      variableWidth: false
 		  }
 		}
 	  ]
 	});
 	
+    if(window.innerWidth < 720){
+		$('.tags').slick({
+		  arrows: false,
+		  dots: false,
+		  speed: 300,
+		  slidesToScroll: 1,
+		  adaptiveHeight: true,
+		  variableWidth: true,
+  		  focusOnSelect: true
+		});
+    };
 	
 	
     $(function() {
-        $(".class-name").click(function(){
-            $(this).toggleClass("active");
+        $(".search-btn, .main-menu-btn").click(function(){
+            $('body').toggleClass("fix");
+        }); 
+    });
+    $(function() {
+        $(".main-menu-btn").click(function(){
+            $('header').toggleClass("main-menu-fix");
         }); 
     });
 });

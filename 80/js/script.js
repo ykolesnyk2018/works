@@ -51,8 +51,7 @@ $(document).ready(function(){
 		{
 		  breakpoint: 767,
 		  settings: {
-			slidesToShow: 1,
-  			adaptiveHeight: true
+			slidesToShow: 1
 		  }
 		}
 	  ]
@@ -74,4 +73,20 @@ $(document).ready(function(){
 		}
 	  ]
     });
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".location-content"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.removeClass("active"); // скрываем его
+			$('.location').removeClass("active");
+		}
+	});
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".header-bottom-menu"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.removeClass("active"); // скрываем его
+			$('.top-menu-btn').removeClass("active");
+		}
+	});
 });

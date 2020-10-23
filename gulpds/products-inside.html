@@ -475,9 +475,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="ct-chart ct-golden-section" id="schedule-ex">
-				<img src="images/graf.png" alt="">
-			</div>
+			<canvas id="myChart"></canvas>
 		</div>
 		<div class="prices">
 			<div class="prices-title-block">
@@ -1287,6 +1285,7 @@
 			</div>
 		</div>
 	</div>
+	<div id="chart"></div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
@@ -1318,5 +1317,31 @@
         });
       });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script>
+		var ctx = document.getElementById('myChart').getContext('2d');
+		var chart = new Chart(ctx, {
+			// The type of chart we want to create
+			type: 'line',
+
+			// The data for our dataset
+			data: {
+				labels: ['Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт'],
+				datasets: [{
+					backgroundColor: 'rgba(229, 66, 82, 0.21)',
+					borderColor: '#E54252',
+					data: [{
+						x: 10,
+						y: 'Июн'
+					}, {
+						x: 15,
+						y: 'Авг'
+					}]
+			},
+
+			// Configuration options go here
+			options: {}
+		});
+	</script>
 </body>
 </html>

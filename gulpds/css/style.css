@@ -2622,6 +2622,9 @@ img {
 .product-insite-tab {
   display: none; }
 
+#myChart {
+  max-height: 300px; }
+
 @media (max-width: 1280px) {
   .currency-lan .currency-lan-block {
     transform: translate(0, 0);

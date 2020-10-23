@@ -25,6 +25,9 @@ $green: #5FEE3C;
 	.container{
 		width: 704px;
 	}
+	body{
+		padding: 61px 0 0 0;
+	}
 	header{
 		padding: 8px 0;
 	}
@@ -53,7 +56,7 @@ $green: #5FEE3C;
 			font-size: 18px;
 		}
 		.main-slider-left{
-			max-width: 376px;
+			max-width: 330px;
 			padding: 0 0 0 64px;
 		}
 		.main-slider-img{
@@ -1113,7 +1116,7 @@ $green: #5FEE3C;
 	}
 	.slider-shell{
 		p{
-			margin: 38px 0 7px 0;
+			margin: 33px 0 7px 0;
 		}
 	}
 	.for-mobil{
@@ -1125,9 +1128,11 @@ $green: #5FEE3C;
 		font-size: 12px;
 		color: $tertiary;
     	font-family: 'MullerRegular';
+		padding: 7px 0 7px 0;
 	}
 	.fm-product-inside-title{
 		font-size: 20px;
+		margin: 0 0 10px 0;
 	}
 	.fm-product-inside-share{
 		display: block;
@@ -1136,6 +1141,11 @@ $green: #5FEE3C;
 		right: 0;
 		svg{
 			fill: $compl;
+		}
+		&:hover{
+			svg{
+				fill: $MainS; 
+			}
 		}
 	}
 	.share{
@@ -1153,15 +1163,21 @@ $green: #5FEE3C;
 					display: none;
 				}
 				.product-inside-price{
+					width: 100%;
 					order: 1;
+					margin: 32px 0px 29px 0;
 				}
 				.btn{
+					width: 100%;
 					order: 2;
 				}
 				.delivery{
+					width: 100%;
 					order: 3;
+					margin: 16px 0 20px 0;
 				}
 				.product-bottom{
+					width: 100%;
 					order: 4;
 				}
 				.product-insite-tab{
@@ -1173,7 +1189,10 @@ $green: #5FEE3C;
 					display: none;
 				}
 				.seller{
+					width: 100%;
 					order: 7;
+					margin: 24px 0 0 0;
+					padding: 18px 16px 26px 16px;
 				}
 			}
 		}
@@ -1224,6 +1243,138 @@ $green: #5FEE3C;
 	}
 	.circle.big{
 		font-size: 70px;
+	}
+	.circle{
+		> span{
+			margin: 6px 0 0 0;
+			span{
+				position: absolute;
+				top: 64px;
+				left: 0;
+				width: 100%;
+			}
+		}
+	}
+	.schedule{ 
+		padding: 14px 16px 30px 16px;
+		.schedule-top{
+			.schedule-title{
+				font-size: 16px;
+				span{
+					display: block;
+					margin: 0 15px 0 0;
+					b{
+						display: none;
+					}
+				}
+				>div{
+					div{
+						margin: 0 0 16px 0;
+					}
+				}
+			}
+			.schedule-btn{ 
+				padding: 0;
+    			margin: 2px 0 0 0;
+				a{
+					padding: 4px 15px;
+					svg{
+						width: 24px;
+					}
+				}
+			}
+		}
+	}
+	.prices{
+		padding: 24px 17px 16px 15px;
+		.prices-title-block{
+			align-items: flex-end;
+			.prices-title{
+				font-size: 16px;
+				line-height: 1;
+			}
+			.prices-btn{
+				a{
+					text-transform: capitalize;
+					b{
+						display: none;
+					}
+					span{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.prices-block{
+		.prices-block-img{
+			display: none;
+			a{}
+		}
+		.prices-block-price{
+			&:after{
+				display: none;
+			}
+			padding: 0;
+			>div{
+				>p{
+					margin: 6px 0 0 0;
+				}
+			}
+		}
+		.prices-block-circle{
+			padding: 0 38px 0 30px;
+			> p{
+				display: none;
+			}
+		}
+		.prices-block-btn{
+			display: none;
+		}
+	}
+	.popup{
+		width: 100%;
+		max-height: 100vh;
+		height: 100vh;
+		box-sizing: border-box;
+		padding: 0 16px 30px 16px;
+		border-radius: 0;
+		.popup-close{
+			right: auto;
+			left: 16px;
+			fill: #000;
+		}
+		.popup-title{
+			font-size: 24px;
+			margin: 70px 0 30px 0;
+		} 
+		form{
+			max-width: 378px;
+			width: 100%;
+		}
+	}
+	.tracking p{
+		font-size: 14px;
+		br{
+			display: none;
+		}
+	}
+	.popup form label{
+		font-size: 14px;
+	}
+	.search-bg.active{
+		display: none;
+	}
+	body{
+		padding: 48px 0 0 0;
+	}
+	.main-slider{
+		.main-slider-left{
+			max-width: 100%;
+		}
+	}
+	.search-form{
+		position: fixed;
 	}
 }
 @media (max-width: 570px){

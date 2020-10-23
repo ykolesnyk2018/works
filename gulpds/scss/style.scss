@@ -19,6 +19,7 @@ body{
 	margin: 0;
 	color: $mainColor;
     font-family: 'MullerMedium';
+	padding: 78px 0 0 0;
 }
 .search-bg{
 	display: none;
@@ -54,8 +55,15 @@ button{
 }
 header{
 	padding: 14px 0;
-	position: relative;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
 	z-index: 11;
+	background: #fff;
+	&.shadow{
+		box-shadow: 0px 5px 30px rgba(136, 0, 255, 0.1);
+	}
 	.container{
 		display: flex;
 		align-items: center;

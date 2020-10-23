@@ -97,7 +97,24 @@ $(document).ready(function(){
 		$(".tabs").tabs();
 	});
     if(window.innerWidth < 720){
+        $(".show_popup").click(function(){
+            $('body').addClass("fix");
+        }); 
+        $(".popup-close").click(function(){
+            $('body').removeClass("fix");
+        }); 
+        $(".search-form form .close-autocomplete").click(function(){
+            $('.search-form').addClass("active");
+        }); 
     };
+	$(window).scroll(function () {
+		if ($(document).scrollTop() > 1) {
+			$('header').addClass('shadow');
+		}
+		else { 
+			$('.shadow').removeClass('shadow');
+		}
+	});
 	
 	
     $(function() {

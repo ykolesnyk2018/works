@@ -321,6 +321,8 @@ header>.container{
     height: 284px;
     z-index: 1;
     overflow: hidden;
+	text-decoration: none;
+	color: #fff;
 }
 .baner img{
     display: block;
@@ -405,6 +407,7 @@ header>.container{
     opacity: 1;
 }
 .baner-title{
+	display: block;
     font-size: 31px;
     color: #fff;
     position: relative;
@@ -547,6 +550,10 @@ header>.container{
 .manufacturers-slider .slick-slide img{
     display: block;
 	margin: 0 auto;
+	filter: grayscale(100%); 
+}
+.manufacturers-slider .slick-slide:hover img{
+	filter: grayscale(0%);
 }
 .manufacturers .slick-arrow{
     width: 14px;
@@ -1422,7 +1429,18 @@ h1{
     width: 157px;
 }
 .location-content a:hover{
-    opacity: 0.8;
+ 	opacity: 0.8;
+}
+.location-content-close{
+	font-size: 26px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	transform: rotate(-45deg);
+}
+.location-content-close:hover{
+	color: #f00;
 }
 .toggle{
 	cursor: pointer;
@@ -1451,6 +1469,48 @@ h1{
 	border-bottom: 1px solid #ccc;
 }
 .main-banner.for-mobil{
+	display: none;
+}
+.fixed{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+}
+.fixed a{
+	display: block;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 0 0 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.4s;
+}
+.fixed a:last-child{
+	margin: 0;
+}
+.fixed a.phone-icon{
+	background: cornflowerblue;
+}
+.fixed a.phone-icon:hover{
+	background: lightblue;
+}
+.fixed a.whatsapp{
+	background: green;
+}
+.fixed a.whatsapp:hover{
+	background: lightgreen;
+}
+.fixed a img{
+	width: 20px;
+	height: 20px;
+}
+.wrapper{
+	overflow: hidden;
+}
+.header-bottom-menu .for-mobil{
 	display: none;
 }
 @media (max-width: 1280px){
@@ -1546,6 +1606,14 @@ h1{
 		bottom: auto;
 		top: 11px;
 		transform: rotate(-45deg);
+	}
+	.top-menu-btn:hover span,
+	.top-menu-btn.active span{
+		background: blue;
+		opacity: 0.6;
+	}
+	.header-bottom-menu ul li:hover{
+		background: none;
 	}
 	.top-menu{
 		width: 100vw;
@@ -1647,7 +1715,7 @@ h1{
         margin: 10px 0 0 0;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 812px){
 	.container{
 		width: auto;
 		margin: 0 10px;
@@ -1655,7 +1723,6 @@ h1{
 	.header-bottom-menu{
 		width: 100%;
 		position: absolute;
-		left: 0;
 		padding: 0 10px;
 		background: #fff;
 		z-index: 5;
@@ -1709,11 +1776,12 @@ h1{
 	}
 	.header-bottom-menu{
 		box-shadow: 0 2px 3px rgba(0,0,0,0.3);
-		left: -110vw;
-		transition: 0.7s;
+		right: -110vw;
+		transition: 1s;
+		left: auto;
 	}
 	.header-bottom-menu.active{
-		left: 0;
+		right: 0;
 	}
 	.header-bottom-menu ul{
 		padding: 10px 0;
@@ -1931,6 +1999,7 @@ h1{
 	}
 	.contact-block{
 		min-width: 200px;
+		text-align: center;
 	}
 	header{
 		padding: 10px 0 0 0;
@@ -1961,5 +2030,26 @@ h1{
 	}
 	.main-banner.for-mobil{
 		display: block;
+	}
+	.header-bottom-menu .for-mobil{
+		display: block;
+	}
+	.header-bottom-menu .for-mobil li a{
+		font-family: 'SeroPro-Light';
+	}
+	.contact-block:before{
+		display: none;
+	}
+	.contact-block-title:before{
+		content: "";
+		width: 5px;
+		height: 10px;
+		background: url(../images/icons/small-arrow.png?604800) no-repeat;
+		position: static;
+		top: 5px;
+		left: 0;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 10px 0 0;
 	}
 }

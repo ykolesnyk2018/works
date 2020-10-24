@@ -19,7 +19,6 @@ $(document).ready(function(){
 	}); 
     $(function() {
         $(".main-menu-btn").click(function(){
-            $(this).toggleClass("active");
             $('.main-menu').toggleClass("active");
         }); 
     });
@@ -61,9 +60,25 @@ $(document).ready(function(){
 		  }
 		}
 	  ]
-    });
-	
- 	$(function(){
+    });	
+	$(function(){
     	$(".tabs").tabs();
  	});
+    
+    $('.product-slide-big').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.products-slides-small'
+    });
+    $('.products-slides-small').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '.product-slide-big',
+      dots: false,
+      arrows: false,
+      focusOnSelect: true,
+        variableWidth: true
+    });
 });

@@ -2522,6 +2522,7 @@ img {
         flex-wrap: wrap;
         margin: 15px 0 0 0; }
         .schedule .schedule-top .schedule-title > div > div {
+          display: none;
           position: relative;
           color: #666666;
           font-family: 'MullerRegular';
@@ -2623,7 +2624,19 @@ img {
   display: none; }
 
 #myChart {
-  max-height: 300px; }
+  max-height: 350px; }
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+  width: 48px !important;
+  height: 4px !important;
+  border-radius: 0 !important;
+  display: inline-block !important;
+  vertical-align: middle !important; }
+
+.apexcharts-legend-series .apexcharts-legend-text {
+  font-size: 14px !important;
+  display: inline-block !important;
+  vertical-align: middle !important; }
 
 @media (max-width: 1280px) {
   .currency-lan .currency-lan-block {

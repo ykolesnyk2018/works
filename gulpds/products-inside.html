@@ -475,7 +475,7 @@
 					</a>
 				</div>
 			</div>
-			<canvas id="myChart"></canvas>
+			<div id="myChart"></div>
 		</div>
 		<div class="prices">
 			<div class="prices-title-block">
@@ -1285,7 +1285,6 @@
 			</div>
 		</div>
 	</div>
-	<div id="chart"></div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
@@ -1317,31 +1316,56 @@
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script>
-		var ctx = document.getElementById('myChart').getContext('2d');
-		var chart = new Chart(ctx, {
-			// The type of chart we want to create
+		var options = {
+		  chart: {
 			type: 'line',
+    		height: '300px'
+		  },
+		  colors: ['#5FEE3C','#F5D152', '#F5526F'],
+		  series: [
+			{
+				name: 'Подешевел',
+				data: [10,20,35,40,39,50,60,81,115],
+		  	},
+			{
+				name: 'Обычная цена',
+				data: [30,40,45,50,49,60,70,91,125],
+		  	},
+			{
+				name: 'Подорожал',
+				data: [40,70,55,90,69,70,90,121,125],
+		  	}
+		  ],
+		  markers: {
+			  size: 1
+		  },
+        legend: {
+          position: 'top',
+          horizontalAlign: 'left',
+          floating: true,
+          offsetY: -5,
+          offsetX: -20
+        },
+		  xaxis: {
+			  categories: ['Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт'],
+			  title: {
+			  }
+		  },
+		  yaxis: {
+			  categories: ['min','med', 'max'],
+			  title: {
+			  },
+			  min: 0,
+			  max: 150
+		  }
+		}
 
-			// The data for our dataset
-			data: {
-				labels: ['Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт'],
-				datasets: [{
-					backgroundColor: 'rgba(229, 66, 82, 0.21)',
-					borderColor: '#E54252',
-					data: [{
-						x: 10,
-						y: 'Июн'
-					}, {
-						x: 15,
-						y: 'Авг'
-					}]
-			},
+		var chart = new ApexCharts(document.querySelector("#myChart"), options);
 
-			// Configuration options go here
-			options: {}
-		});
+		chart.render();
 	</script>
 </body>
 </html>

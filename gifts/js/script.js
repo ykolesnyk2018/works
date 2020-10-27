@@ -50,6 +50,7 @@ $(document).ready(function(){
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
+		centerMode: false,
       variableWidth: true,
 	  responsive: [
 		{

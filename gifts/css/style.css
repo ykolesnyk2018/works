@@ -1164,7 +1164,7 @@ button{
 	display: none;
 }
 .breadcrumbs a:last-child{
-	margin: 0;
+	margin-right: 0;
 }
 .portfolio-top{
 	text-align: center;
@@ -2367,7 +2367,7 @@ select.gray{
         padding-bottom: 0;
     }
     .breadcrumbs a{
-        margin: 10px 30px 0 0;
+        margin: 0 30px 0 0;
     }
     .product-type.produ{
         margin-top: 10px;
@@ -2484,13 +2484,28 @@ select.gray{
 	.portfolio-top{
 		margin: 40px 0;
 	}
+	.inside .product, 
+	.inside .product:nth-of-type(3n), 
+	.free-delivery, 
+	.inside .product:nth-of-type(2n),
+	.inside .product, 
+	.inside .product:nth-of-type(3n){
+		width: 48%;
+	}
+	.banner-center{
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 @media (max-width: 540px){
 	.inside .products{
-		justify-content: center;
+		justify-content: space-between;
 	}
 	.free-delivery{
 		min-height: 360px;
+	}
+	.product-image>a{
+		height: 240px;
 	}
 }
 @media (max-width: 413px){
@@ -2499,7 +2514,7 @@ select.gray{
 		margin: 0 0 10px 0;
 	}
 	.inside .products{
-		justify-content: center;
+		justify-content: space-between;
 	}
 }
 

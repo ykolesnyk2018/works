@@ -463,7 +463,7 @@ img{
 .product-btn a:before{
     position: absolute;
     content: '';
-    background: url(../images/arrow-down.png?604800) no-repeat;
+    background: url(../images/arrow-down.webp?604800) no-repeat;
     bottom: -14px;
     left: 48%;
     width: 8px;
@@ -512,7 +512,7 @@ img{
     margin: 57px 0 0 0 ;
     padding: 28px 0 25px 0;
 	background-size: cover;
-	background-image: url(../images/bg-consult.png?604800);
+	background-image: url(../images/bg-consult.webp?604800);
 	background-size: cover;
 }
 .consalt-title{
@@ -556,7 +556,7 @@ img{
     top: 0;
     left: 0;
     z-index: 0;
-    background: url(../images/product-banner.png?604800) center center no-repeat;
+    background: url(../images/product-banner.webp?604800) center center no-repeat;
 }
 .submit{
     display: -webkit-flex;
@@ -596,14 +596,14 @@ img{
     color: #b6b6b6;
     font-size: 18px;
     padding: 13px 0 13px 82px;
-    background: #fff url(../images/man.png?604800) left 25px center no-repeat;
+    background: #fff url(../images/man.webp?604800) left 25px center no-repeat;
     max-width: 439px; 
     width: 100%;
     box-sizing: border-box;
     
 }
 input.phone{
-    background: #fff url(../images/phone-submit.png?604800) left 23px center no-repeat;
+    background: #fff url(../images/phone-submit.webp?604800) left 23px center no-repeat;
     padding: 13px 0 13px 69px;
     border-left: none;
     border-right: none;
@@ -684,7 +684,7 @@ input.phone{
 .how-we-work-one:before{
     position: absolute;
     content: '';
-    background: url(../images/arrow-2.png?604800) no-repeat;
+    background: url(../images/arrow-2.webp?604800) no-repeat;
     left: 9px;
     top: 74px;
     width: 51px;
@@ -698,7 +698,7 @@ input.phone{
 .how-we-work-two:before{
     position: absolute;
     content: '';
-    background: url(../images/arrow-1.png?604800) no-repeat;
+    background: url(../images/arrow-1.webp?604800) no-repeat;
     left: -8px;
     top: -52px;
     width: 31px;
@@ -712,7 +712,7 @@ input.phone{
 .how-we-work-three:before{
     position: absolute;
     content: '';
-    background: url(../images/arrow-3.png?604800) no-repeat;
+    background: url(../images/arrow-3.webp?604800) no-repeat;
     left: 0;
     top: -25px;
     width: 18px;
@@ -726,7 +726,7 @@ input.phone{
 .how-we-work-four:before{
     position: absolute;
     content: '';
-    background: url(../images/arrow-4.png?604800) no-repeat;
+    background: url(../images/arrow-4.webp?604800) no-repeat;
     left: -8px;
     top: 77px;
     width: 51px;
@@ -740,7 +740,7 @@ input.phone{
 .how-we-work-five:before{
     position: absolute;
     content: '';
-    background: url(../images/arrow-5.png?604800) no-repeat;
+    background: url(../images/arrow-5.webp?604800) no-repeat;
     left: 1px;
     top: -28px;
     width: 18px;
@@ -810,7 +810,7 @@ input.phone{
     position: absolute;
     font-size: 0;
     border: none;
-    background: url(../images/small-arrow-left.png?604800) no-repeat;
+    background: url(../images/small-arrow-left.webp?604800) no-repeat;
     width: 27px;
     height: 27px;
     left: -22px;
@@ -824,7 +824,7 @@ input.phone{
     transform: translate(0,-50%);
     font-size: 0;
     border: none;
-    background: url(../images/small-arrow-right.png?604800) no-repeat ;
+    background: url(../images/small-arrow-right.webp?604800) no-repeat ;
     width: 27px;
     height: 27px;
 }
@@ -863,7 +863,7 @@ input.phone{
 .insta-link a:before{
     position: absolute;
     content: '';
-    background: url(../images/insta-logo.png?604800) no-repeat;
+    background: url(../images/insta-logo.webp?604800) no-repeat;
     width: 34px;
     height: 34px;
     left: -50px;
@@ -871,7 +871,7 @@ input.phone{
     transform: translate(0,-50%);
 }
 footer{
-    background: url(../images/footer-fone.png?604800) no-repeat;
+    background: url(../images/footer-fone.webp?604800) no-repeat;
     background-size: 100% 100%;
     min-height: 441px;
     overflow: hidden;
@@ -1020,7 +1020,7 @@ a.hello:hover{
 /*.bottom-brand a:after{
     position: absolute;
     content: '';
-    background: url(../images/brand.png?604800) no-repeat;
+    background: url(../images/brand.webp?604800) no-repeat;
     right: -20px;
     top: 50%;
     transform: translate(0,-50%);
@@ -1210,7 +1210,7 @@ button{
 	margin: 0;
 }
 .banner{
-	background: url(../images/banner.png?604800) center center no-repeat;
+	background: url(../images/banner.webp?604800) center center no-repeat;
 	background-size: cover;
 	border-top: 20px solid #f4f4f4;
 	border-bottom: 10px solid #f4f4f4;
@@ -1448,7 +1448,7 @@ select{
     padding: 15.5px 0 15.5px 10px;
     box-sizing: border-box;
     position: relative;
-    background: #fff url(../images/select.png?604800) right 29px center no-repeat;
+    background: #fff url(../images/select.webp?604800) right 29px center no-repeat;
 	cursor: pointer;
 }
 .bottom-price{
@@ -1648,7 +1648,7 @@ select{
 }
 .checkbox input:checked + label:before{
 	border: 1px solid #613d27;
-	background: url(../images/checkbox.png?604800) center center no-repeat;
+	background: url(../images/checkbox.webp?604800) center center no-repeat;
 }
 .filter{
 	border-bottom: 1px solid #fff;
@@ -1797,7 +1797,7 @@ select.gray{
 	top: 50%;
 	right: 9px;
 	margin: -4.5px 0 0 0;
-	background: url(../images/tag-close.png?604800) no-repeat;
+	background: url(../images/tag-close.webp?604800) no-repeat;
 	display: block;
 }
 .inside .products{

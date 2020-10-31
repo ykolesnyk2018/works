@@ -75,7 +75,7 @@ header .container{
 	color: #ba9675;
 }
 .main-banner{
-	background: url(../images/main-banner.png) center top no-repeat;
+	background: url(../images/main-banner.webp) center top no-repeat;
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -115,7 +115,7 @@ header .container{
 	position: absolute;
 	width: 18px;
 	height: 32px;
-	background: url(../images/icons/mouse.png) no-repeat;
+	background: url(../images/icons/mouse.webp) no-repeat;
 	bottom: 24px;
 	left: 50%;
 	margin: 0 0 0 -9px;

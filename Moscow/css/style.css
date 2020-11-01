@@ -881,7 +881,7 @@ footer{
 button,
 input,
 select{
-  -webkit-appearance: none;
+  -webkit-appearance: none; 
 }
 @media (max-width: 1140px){
 	.container{

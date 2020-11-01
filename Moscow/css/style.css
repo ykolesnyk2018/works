@@ -878,6 +878,11 @@ footer{
 .main-menu-btn{
 	display: none;
 }
+button,
+input,
+select{
+  -webkit-appearance: none;
+}
 @media (max-width: 1140px){
 	.container{
 		width: 940px;

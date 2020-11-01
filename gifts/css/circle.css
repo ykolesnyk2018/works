@@ -56,7 +56,7 @@
   padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
 }
 
-.circle b:nth-of-type(-n+33) {
+.circle b:nth-last-of-type(-n+34) {
   top: 50%;
   transform-origin: 50% 0;
   padding-top: 70px;

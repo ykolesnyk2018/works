@@ -5,7 +5,10 @@
     font-size: 18px;
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
     margin: 0 60px 0 0;
+=======
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 }
 .circle:last-child{
     margin: 0;
@@ -57,11 +60,16 @@
   padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
 }
 
+<<<<<<< HEAD
 .circle b:nth-last-of-type(-n+24) {
+=======
+.circle b:nth-of-type(-n+33) {
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
   top: 50%;
   transform-origin: 50% 0;
   padding-top: 70px;
 }
+<<<<<<< HEAD
 .circle b:nth-last-of-type(1) {transform: rotate(310deg);}
 .circle b:nth-last-of-type(2) {transform: rotate(317deg);}
 .circle b:nth-last-of-type(3) {transform: rotate(324deg);}
@@ -86,6 +94,41 @@
 .circle b:nth-last-of-type(22) {transform: rotate(97deg);}
 .circle b:nth-last-of-type(23) {transform: rotate(104deg);}
 .circle b:nth-last-of-type(24) {transform: rotate(111deg);}
+=======
+.circle b:nth-of-type(1) {transform: rotate(150deg);}
+.circle b:nth-of-type(2) {transform: rotate(140deg);}
+.circle b:nth-of-type(3) {transform: rotate(130deg);}
+.circle b:nth-of-type(4) {transform: rotate(120deg);}
+.circle b:nth-of-type(5) {transform: rotate(110deg);}
+.circle b:nth-of-type(6) {transform: rotate(100deg);}
+.circle b:nth-of-type(7) {transform: rotate(90deg);}
+.circle b:nth-of-type(8) {transform: rotate(80deg);}
+.circle b:nth-of-type(9) {transform: rotate(70deg);}
+.circle b:nth-of-type(10) {transform: rotate(60deg);}
+.circle b:nth-of-type(11) {transform: rotate(50deg);}
+.circle b:nth-of-type(12) {transform: rotate(40deg);}
+.circle b:nth-of-type(13) {transform: rotate(30deg);}
+.circle b:nth-of-type(14) {transform: rotate(20deg);}
+.circle b:nth-of-type(15) {transform: rotate(10deg);}
+.circle b:nth-of-type(16) {transform: rotate(0deg);}
+.circle b:nth-of-type(17) {transform: rotate(-10deg);}
+.circle b:nth-of-type(18) {transform: rotate(-20deg);}
+.circle b:nth-of-type(19) {transform: rotate(-30deg);}
+.circle b:nth-of-type(20) {transform: rotate(-40deg);}
+.circle b:nth-of-type(21) {transform: rotate(-50deg);}
+.circle b:nth-of-type(22) {transform: rotate(-60deg);}
+.circle b:nth-of-type(23) {transform: rotate(-70deg);}
+.circle b:nth-of-type(24) {transform: rotate(-80deg);}
+.circle b:nth-of-type(25) {transform: rotate(-90deg);}
+.circle b:nth-of-type(26) {transform: rotate(-100deg);}
+.circle b:nth-of-type(27) {transform: rotate(-110deg);}
+.circle b:nth-of-type(28) {transform: rotate(-120deg);}
+.circle b:nth-of-type(29) {transform: rotate(-130deg);}
+.circle b:nth-of-type(30) {transform: rotate(-140deg);}
+.circle b:nth-of-type(31) {transform: rotate(-150deg);}
+.circle b:nth-of-type(32) {transform: rotate(-160deg);}
+.circle b:nth-of-type(33) {transform: rotate(-170deg);}
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 .circle-img{
     width: 116px;
     height: 116px;
@@ -123,6 +166,10 @@
     justify-content: space-between;
     padding: 9px 12px 11px 56px;
     margin: 30px 0;
+<<<<<<< HEAD
+=======
+	height: 171px;
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 }
 .circles-slider button{
     font-size: 0;
@@ -146,6 +193,134 @@
     top: 49%;
     transform: translate(0,-50%);
 }
+<<<<<<< HEAD
+=======
+.wrapper{
+	overflow: hidden;
+}
+.sidebar-top{
+    padding: 6px 0 0 44px;
+}
+.circles-slider .slick-slide{
+    margin: 0 60px 0 0;
+}
+.circle2 {
+    position: relative;
+    width: 102px; 
+    padding-top: 102px; 
+    border-radius: 50%;  
+    /* сделать "резиновый" круг */
+    font-family: 'Sanford';
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+}
+.circle2:last-child{
+    margin: 0;
+}
+.circle2:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: 2px solid #141517;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+.circle-img2{
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    background: #613d27;
+    z-index: 2;
+}
+.circle-img2 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.circle:before{
+    display: none;
+    content: "";
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.circle b {
+    position: absolute; left: 50%;  /* все буквы собрать в одну точкпо середине */
+    width: 0;  /* убрать отступ */
+    background: #fff;
+    z-index: 1;
+}
+.circle b:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 17px;
+    height: 20px;
+    transform: rotate(10deg);
+    z-index: -1;
+    margin: 0 0 0 0;
+}
+.circle b.none:before{
+    background: transparent;
+}
+/* верхние 17 букв «Шпаргалка блоггера» */
+.circle2 b:nth-of-type(-n+32) {
+  bottom: 50%;
+    max-height: 20px;
+    top: auto;
+    margin: 0 0 -6px 0;
+  transform-origin: 0% 94%;
+    position: absolute;
+  padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
+}
+.circle2 b:nth-of-type(1) {transform: rotate(211deg);}
+.circle2 b:nth-of-type(2) {transform: rotate(224deg);}
+.circle2 b:nth-of-type(3) {transform: rotate(237deg);}
+.circle2 b:nth-of-type(4) {transform: rotate(250deg);}
+.circle2 b:nth-of-type(5) {transform: rotate(263deg);}
+.circle2 b:nth-of-type(6) {transform: rotate(276deg);}
+.circle2 b:nth-of-type(7) {transform: rotate(289deg);}
+.circle2 b:nth-of-type(8) {transform: rotate(302deg);}
+.circle2 b:nth-of-type(9) {transform: rotate(315deg);}
+.circle2 b:nth-of-type(10) {transform: rotate(328deg);}
+.circle2 b:nth-of-type(11) {transform: rotate(341deg);}
+.circle2 b:nth-of-type(12) {transform: rotate(354deg);}
+.circle2 b:nth-of-type(13) {transform: rotate(7deg);}
+.circle2 b:nth-of-type(14) {transform: rotate(20deg);}
+.circle2 b:nth-of-type(15) {transform: rotate(33deg);}
+.circle2 b:nth-of-type(16) {transform: rotate(46deg);}
+.circle2 b:nth-of-type(17) {transform: rotate(59deg);}
+.circle2 b:nth-of-type(18) {transform: rotate(72deg);}
+.circle2 b:nth-of-type(19) {transform: rotate(85deg);}
+.circle2 b:nth-of-type(20) {transform: rotate(98deg);}
+.circle2 b:nth-of-type(21) {transform: rotate(111deg);}
+.circle2 b:nth-of-type(22) {transform: rotate(124deg);}
+.circle2 b:nth-of-type(23) {transform: rotate(137deg);}
+.circle2 b:nth-of-type(24) {transform: rotate(150deg);}
+.circle2 b:nth-of-type(25) {transform: rotate(163deg);}
+.circle2 b:nth-of-type(26) {transform: rotate(176deg);}
+.circle2 b:nth-of-type(27) {transform: rotate(110deg);}
+.circle2 b:nth-of-type(28) {transform: rotate(120deg);}
+.circle2 b:nth-of-type(29) {transform: rotate(130deg);}
+.circle2 b:nth-of-type(30) {transform: rotate(140deg);}
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 @media (max-width: 1159px){
     .circles-slider .slick-next{
         right: 0;

@@ -5,6 +5,10 @@
     font-size: 18px;
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
+    margin: 0 60px 0 0;
+=======
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 }
 .circle:last-child{
     margin: 0;
@@ -56,11 +60,45 @@
   padding-bottom: 50%;  /* от значения свойства зависит приближение текста к центру круга */
 }
 
+<<<<<<< HEAD
 .circle b:nth-last-of-type(-n+34) {
+=======
+<<<<<<< HEAD
+.circle b:nth-last-of-type(-n+24) {
+=======
+.circle b:nth-of-type(-n+33) {
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
+>>>>>>> ef1df69460edb6ec6bebca8c8d3bda93be836836
   top: 50%;
   transform-origin: 50% 0;
   padding-top: 70px;
 }
+<<<<<<< HEAD
+.circle b:nth-last-of-type(1) {transform: rotate(310deg);}
+.circle b:nth-last-of-type(2) {transform: rotate(317deg);}
+.circle b:nth-last-of-type(3) {transform: rotate(324deg);}
+.circle b:nth-last-of-type(4) {transform: rotate(331deg);}
+.circle b:nth-last-of-type(5) {transform: rotate(338deg);}
+.circle b:nth-last-of-type(6) {transform: rotate(345deg);}
+.circle b:nth-last-of-type(7) {transform: rotate(352deg);}
+.circle b:nth-last-of-type(8) {transform: rotate(359deg);}
+.circle b:nth-last-of-type(9) {transform: rotate(6deg);}
+.circle b:nth-last-of-type(10) {transform: rotate(13deg);}
+.circle b:nth-last-of-type(11) {transform: rotate(20deg);}
+.circle b:nth-last-of-type(12) {transform: rotate(27deg);}
+.circle b:nth-last-of-type(13) {transform: rotate(34deg);}
+.circle b:nth-last-of-type(14) {transform: rotate(41deg);}
+.circle b:nth-last-of-type(15) {transform: rotate(48deg);}
+.circle b:nth-last-of-type(16) {transform: rotate(55deg);}
+.circle b:nth-last-of-type(17) {transform: rotate(62deg);}
+.circle b:nth-last-of-type(18) {transform: rotate(69deg);}
+.circle b:nth-last-of-type(19) {transform: rotate(76deg);}
+.circle b:nth-last-of-type(20) {transform: rotate(83deg);}
+.circle b:nth-last-of-type(21) {transform: rotate(90deg);}
+.circle b:nth-last-of-type(22) {transform: rotate(97deg);}
+.circle b:nth-last-of-type(23) {transform: rotate(104deg);}
+.circle b:nth-last-of-type(24) {transform: rotate(111deg);}
+=======
 .circle b:nth-of-type(1) {transform: rotate(150deg);}
 .circle b:nth-of-type(2) {transform: rotate(140deg);}
 .circle b:nth-of-type(3) {transform: rotate(130deg);}
@@ -94,6 +132,7 @@
 .circle b:nth-of-type(31) {transform: rotate(-150deg);}
 .circle b:nth-of-type(32) {transform: rotate(-160deg);}
 .circle b:nth-of-type(33) {transform: rotate(-170deg);}
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 .circle-img{
     width: 116px;
     height: 116px;
@@ -131,7 +170,10 @@
     justify-content: space-between;
     padding: 9px 12px 11px 56px;
     margin: 30px 0;
+<<<<<<< HEAD
+=======
 	height: 171px;
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 }
 .circles-slider button{
     font-size: 0;
@@ -155,6 +197,8 @@
     top: 49%;
     transform: translate(0,-50%);
 }
+<<<<<<< HEAD
+=======
 .wrapper{
 	overflow: hidden;
 }
@@ -280,6 +324,7 @@
 .circle2 b:nth-of-type(28) {transform: rotate(120deg);}
 .circle2 b:nth-of-type(29) {transform: rotate(130deg);}
 .circle2 b:nth-of-type(30) {transform: rotate(140deg);}
+>>>>>>> 46f43f61b133288c052a91551c7ab3093a57795f
 @media (max-width: 1159px){
     .circles-slider .slick-next{
         right: 0;

@@ -1378,4 +1378,8 @@ select{
 	.jq-selectbox .jq-selectbox__select{
 		display: none;
 	}
+	.about_img1, 
+	.about_img2{
+		display: none;
+	}
 }

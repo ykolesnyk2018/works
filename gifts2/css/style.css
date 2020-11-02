@@ -84,7 +84,7 @@ img{
     margin: 0 14px 0 0;
 }
 .top-icons a:hover{
-    background: #a6e7e8;
+    background: orange;
     transition: .3s;
 }
 .top-icons a:last-child{
@@ -811,6 +811,7 @@ input.phone{
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
+	margin: 0 40px 0 0;
 }
 .small-slider-bg{
     margin: 64px 0 0 0;
@@ -2541,6 +2542,88 @@ img.mfp-img{
 		width: 100%;
 		padding: 11px 0;
 	}
+	.inside .products{
+		align-items: stretch;
+	}
+	.main-slider .slide{
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+	}
+	.main-slider .slide .container{
+		min-height: 200px;
+	}
+	.slide-title{
+		font-size: 26px;
+	}
+	.catalog-right{
+		display: flex;
+	}
+	.catalog-right li{
+		flex-grow: 1;
+		margin: 0;
+		text-align: center;
+	}
+	.catalog-right li a{
+		display: inline-block;
+		margin: 0;
+	}
+	.product, 
+	.product:nth-of-type(4n){
+		width: calc(50% - 5px);
+		margin: 0 0 10px 0;
+		overflow: hidden;
+	}
+	.products.on-main .product:nth-of-type(2n){
+		margin-right: 0;
+	}
+	.products.on-main{
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.product-name{
+		display: none;
+	}
+	.product-price{
+		padding: 5px 0 5px 0;
+		margin: 0 0 7px 0;
+	}
+	.product-type{
+		font-size: 18px;
+	}
+	.product-btn{
+		margin: 2px 0 0 0;
+	}
+	.poduct-description{
+		padding: 0 0 18px 0;
+	}
+	.product-image>a{
+		height: 200px;
+	}
+	.product-btn a:before{
+		bottom: -10px;
+	}
+	.banner{
+		background-size: auto 100%;
+		padding: 0 0 15px 0;
+	}
+	.banner-top-title{
+		font-size: 18px;
+		margin: 0 0 10px 0;
+		display: none;
+	}
+	.banner-title{
+		font-size: 26px;
+	}
+	.banner-title br{
+		display: none;
+	}
+	.banner-sub-title{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.banner-sub-title span{
+		line-height: 14px;
+	}
 }
 @media (max-width: 540px){
 	.inside .products{
@@ -2548,9 +2631,6 @@ img.mfp-img{
 	}
 	.free-delivery{
 		min-height: 360px;
-	}
-	.product-image>a{
-		height: 240px;
 	}
 }
 @media (max-width: 413px){
@@ -2560,6 +2640,19 @@ img.mfp-img{
 	}
 	.inside .products{
 		justify-content: space-between;
+	}
+	.main-slider .slide .container{
+		min-height: 150px;
+	}
+	.product, 
+	.product:nth-of-type(4n){
+		width: 100%;
+	}
+	.product-image>a{
+		height: 315px;
+	}
+	.product-name{
+		display: block;
 	}
 }
 

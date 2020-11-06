@@ -56,6 +56,21 @@ $(document).ready(function(){
 		}
 	  ]
 	});
+	$('.partners').slick({
+	  arrows: false,
+	  dots: true,
+	  speed: 300,
+	  slidesToShow: 5,
+  	  slidesToScroll: 1,
+	  responsive: [
+		{
+		  breakpoint: 767,
+		  settings: {
+  	  		slidesToScroll: 1
+		  }
+		}
+	  ]
+	});
 	$('.gallery-slider').slick({
 	  infinite: true,
 	  arrows: false,

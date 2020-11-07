@@ -114,4 +114,20 @@ $(document).ready(function(){
         }
 	    return false;
     });
+    $('.instagramm').slick({ // настройка навигации
+		arrows: true,
+        slidesToShow: 3, 
+	    variableWidth: true,
+		infinite: true,
+		  responsive: [
+			{
+			  breakpoint: 767,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+	    		variableWidth: false
+			  }
+			}
+		  ]
+    });
 });

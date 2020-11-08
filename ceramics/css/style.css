@@ -102,7 +102,8 @@ header.motion .main-menu ul li a{
 	color: #181818;
 }
 .main-menu ul li a:hover,
-header.motion .main-menu ul li a:hover{
+header.motion .main-menu ul li a:hover,
+.header_black .main-menu ul li a:hover{
 	color: #C20E1A;
 }
 .header-btns{
@@ -126,7 +127,8 @@ header.motion .header-btns a svg{
 	fill: #181818;
 }
 .header-btns a:hover svg,
-header.motion .header-btns a:hover svg{
+header.motion .header-btns a:hover svg,
+.header_black .header-btns a:hover svg{
 	fill: #C20E1A;
 }
 .header-btns a svg:nth-child(2){
@@ -234,7 +236,8 @@ header.motion .main-menu-btn span{
 	background: #181818;
 }
 .main-menu-btn:hover span,
-header.motion .main-menu-btn:hover span{
+header.motion .main-menu-btn:hover span,
+.header_black .main-menu-btn:hover span{
 	background: #C20E1A;
 }
 .main-menu-btn span:nth-child(1){
@@ -1507,6 +1510,9 @@ iframe{
 .soc a:hover svg{
 	fill: #C20E1A;
 }
+.soc a:last-child{
+	margin: 0;
+}
 .checkbox.big{
 	margin: -4px 0 24px 0;
 }
@@ -1514,6 +1520,7 @@ iframe{
 	font-size: 16px;
 	font-family: 'RobotoLight';
 	padding: 0 0 0 40px;
+	display: block;
 }
 .checkbox.big label:before{
 	width: 24px;
@@ -1522,6 +1529,220 @@ iframe{
 }
 .map-title{
 	margin: 5px 0 26px 0;
+}
+.description-of-page{
+	font-family: 'RobotoLight';
+	font-size: 16px;
+	line-height: 150%;
+	margin: 30px 0;
+}
+.show_popup{
+	cursor: pointer;
+}
+.overlay_popup{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.4);
+	z-index: 97;
+	display: none;
+}
+.popup{
+	padding: 30px 30px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 98;
+	background: #fff;
+	max-height: 95vh;
+	overflow: auto;
+	display: none;
+}
+body.hidden{
+	overflow: hidden;
+}
+.flat{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flat-left{
+	width: 760px;
+}
+.flat-right{
+	width: 450px;
+}
+.flat-title{
+	font-size: 30px;
+	font-family: 'RobotoMedium';
+}
+.flat-location{
+	color: #868686;
+	font-size: 16px;
+	font-family: 'RobotoLight';
+	margin: 15px 0;
+}
+.flat-description{
+	font-size: 18px;
+	font-family: 'RobotoMedium';
+}
+.flat-description p{
+	margin: 0 0 17px 0;
+}
+.flat-description p:last-child{
+	margin: 0;
+}
+.flat-description p span{
+	font-family: 'RobotoLight';
+}
+.close{
+	position: absolute;
+	top: 36px;
+	right: 36px;
+	cursor: pointer;
+}
+.close svg{
+	fill: #181818;
+}
+.close:hover svg{
+	fill: #C20E1A;
+}
+.partnership{
+	display: flex;
+	flex-wrap: wrap;
+}
+.partnership div.partnership-title{
+	max-width: 100%;
+	width: 100%;
+	font-family: 'RobotoLight';
+	font-size: 30px;
+	line-height: 150%;
+	text-align: center;
+	margin: 30px 0 30px 0;
+	float: none;
+}
+.partnership div.partnership-sub-title{
+	max-width: 100%;
+	width: 100%;
+	font-size: 30px;
+	line-height: 150%;
+	font-family: 'RobotoRegular';
+	float: none;
+}
+.partnership .block{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+.partnership .block>div{
+	max-width: 645px;
+	font-size: 16px;
+	line-height: 150%;
+	font-family: 'RobotoLight';
+	margin: 0 0 30px 0;
+	order: 1;
+}
+.partnership .block>div.right{
+	order: 2;
+}
+.partnership>div:last-child{
+	margin: 0;
+}
+.partnership>div img{
+	display: block;
+}
+.partnership>div p{
+	margin: 10px 0 0 0;
+}
+.partnership>div b{
+	font-size: 24px;
+	line-height: 150%;
+	font-family: 'RobotoRegular';
+	font-weight: normal;
+}
+.contact-form-bg{
+	background: url(../images/contact-form-bg.jpg) top center no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+    margin: 61px 0 100px 0;
+    padding: 59px 0 64px 0;
+}
+.contact-form-bg:before{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.4);
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.contact-form{
+	max-width: 645px;
+	margin: 0 auto;
+}
+.contact-form-title{
+	font-size: 30px;
+	line-height: 150%;
+	color: #fff;
+	font-family: 'RobotoMedium';
+	text-align: center;
+	max-width: 395px;
+	margin: 0 auto 31px auto;
+}
+.contact-form form input{
+	width: 100%;
+	border: 0;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-family: 'RobotoRegular';
+	font-size: 16px;
+	padding: 13.6px 20px;
+	margin: 0 0 20px 0;
+	box-sizing: border-box;
+}
+.contact-form form input::placeholder{
+	color: #CFCFCF;
+}
+.checkbox.white label{
+	color: #fff;
+	font-size: 16px;
+	font-family: 'RobotoLight';
+	display: block;
+}
+.checkbox.white label:before{
+	border: 1px solid #fff;
+}
+.checkbox.white input[type="checkbox"]:checked + label:before{
+	background: #fff url(../images/icons/checkbox-white.svg) center center no-repeat;
+	background-size: 9px;
+}
+.contact-form button{
+	width: 100%;
+	display: block;
+	border: 0;
+	background: #fff;
+	font-size: 16px;
+	color: #181818;
+	text-align: center;
+	border: 1px solid #181818;
+	font-family: 'RobotoRegular';
+	padding: 12.6px 0;
+	transition: 0.2s;
+}
+.contact-form button:hover{
+	background: #181818;
+	color: #fff;
+	border: 1px solid #fff;
+}
+.contact-form .checkbox{
+	margin: 0 0 20px 0;
 }
 @media (max-width: 1320px){
 	.container{
@@ -1856,8 +2077,67 @@ iframe{
 	.about-us>div{
 		margin: 0;
 	}
-	{
+	.contact-top{
 		margin: 20px 20% 0 20%;
+	}
+	.contacts-left{
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+		margin: 24px 0 0 0;
+	}
+	.soc{
+		justify-content: center;
+	}
+	.contacts-right{
+		max-width: 100%;
+		width: 100%;
+		margin: 6px 0 0 0;
+	}
+	.contacts-title{
+		text-align: center;
+	}
+	.map-title{
+		margin: 25px 0 26px 0;
+	}
+	.description-of-page{
+		margin: 20px 0 0 0;
+	}
+	.flat-left{
+		width: 360px;
+	}
+	.flat-for{
+		height: 265px;
+	}
+	.flat-right{
+		width: 290px;
+	}
+	.partnership .block>div{
+		max-width: 100%;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.partnership>div img{
+		width: 100%;
+	}
+	.partnership .block>div.right{
+		order: 0;
+	}
+	.partnership div.partnership-title{
+		margin: 11px 0 20px 0;
+	}
+	.partnership div.partnership-sub-title{
+		margin: 0 0 20px 0;
+	}
+	.contact-form-bg{
+		margin: 30px 0 50px 0;
+		padding: 30px 0 33px 0;
+	}
+	.contact-form-title{
+		max-width: 100%;
+	}
+	.contact-form{
+		max-width: 100%;
 	}
 }
 @media (max-width: 767px){
@@ -2323,5 +2603,119 @@ iframe{
 	.about-us{
 		font-size: 13px;
 		margin: 20px 0 20px 0;
+	}
+	.contact-top{
+		font-size: 18px;
+		line-height: 21px;
+		margin: 21px 0 0 0;
+	}
+	.contacts-left{
+		margin: 18px 0 0 0;
+	}
+	.contacts-title{
+		font-size: 18px;
+		margin: 0 0 14px 0;
+	}
+	.contacts-right input, 
+	.contacts-right textarea{
+		font-size: 13px;
+		padding: 15.6px 10px;
+	}
+	.contacts-right form{
+		margin: 19px 0 0 0;
+	}
+	.checkbox.big{
+		margin: -11px 0 12px 0;
+	}
+	.checkbox.big label{
+		font-size: 13px;
+		line-height: 150%;
+		padding: 0 0 0 34px;
+	}
+	.checkbox.big label:before{
+		top: 7px;
+	}
+	.contacts-right button.btn{
+		font-size: 18px;
+	}
+	.map-title{
+		font-size: 18px;
+		line-height: 21px;
+		margin: 18px 0 23px 0;
+	}
+	iframe{
+		height: 200px;
+	}
+	.flat{
+		flex-wrap: wrap;
+	}
+	.flat-left{
+		width: 100%;
+		order: 2;
+		margin: 20px 0 0 0;
+	}
+	.flat-for{
+		width: calc(100vw - 72px);
+		height: 250px;
+		margin: 0;
+	}
+	.flat-nav{
+		display: none;
+	}
+	.flat-right{
+		width: 100%;
+		order: 1;
+	}
+	.popup{
+		width: calc(100vw - 32px);
+		padding: 20px 20px;
+		margin: 0;
+	}
+	.flat-for .slick-slide,
+	.flat-for .slick-track,
+	.flat-for .slick-list{
+		height: 100%;
+	}
+	.flat-for .slick-slide img{
+		max-width: 200%;
+	}
+	.flat-title{
+		font-size: 18px;
+		padding: 20px 0 0 0;
+	}
+	.flat-location,
+	.flat-description{
+		font-size: 13px;
+	}
+	.close{
+		top: 16px;
+		right: 16px;
+	}
+	.partnership div.partnership-title{
+		font-size: 18px;
+		margin: 22px 0 21px 0;
+	}
+	.partnership div.partnership-sub-title{
+		font-size: 18px;
+	}
+	.partnership .block>div{
+		margin: 0 0 20px 0;
+		font-size: 13px;
+		line-height: 155%;
+	}
+	.partnership>div b{
+		font-size: 14px;
+	}
+	.contact-form-title{
+		font-size: 18px;
+		margin: 0 auto 22px auto;
+	}
+	.contact-form-bg {
+		margin: 0 0 0 0;
+		padding: 19px 0 25px 0;
+	}
+	.contact-form form input{
+		font-size: 13px;
+		padding: 15.6px 10px;
 	}
 }

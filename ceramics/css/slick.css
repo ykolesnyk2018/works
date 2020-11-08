@@ -116,7 +116,8 @@
 	min-height: 100%;
 	max-width: none;
 }
-.slider-for .slick-arrow{
+.slider-for .slick-arrow,
+.flat-for .slick-arrow{
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -127,13 +128,16 @@
 	margin: -15px 0 0 0;
 	z-index: 5;
 }
-.slider-for .slick-arrow:hover{
+.slider-for .slick-arrow:hover,
+.flat-for .slick-arrow:hover{
 	background: #181818 url(../images/icons/arrow-white.svg) center center no-repeat;
 }
-.slider-for .slick-next.slick-arrow{
+.slider-for .slick-next.slick-arrow,
+.flat-for .slick-next.slick-arrow{
 	right: 20px;
 }
-.slider-for .slick-prev.slick-arrow{
+.slider-for .slick-prev.slick-arrow,
+.flat-for .slick-prev.slick-arrow{
 	left: 20px;
 	transform: rotate(180deg);
 }
@@ -212,4 +216,25 @@
 .instagramm .slick-prev.slick-arrow{
 	left: 20px;
 	transform: rotate(180deg);
+}
+.flat-for{
+	height: 570px;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	position: relative;
+}
+.flat-for img{
+	display: block;
+	min-height: 100%;
+	min-width: 100%;
+}
+.flat-nav .slick-slide{
+	width: 60px;
+	height: 60px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 10px 0 0;
+}
+.flat-nav .slick-slide img{
+	display: block;
 }

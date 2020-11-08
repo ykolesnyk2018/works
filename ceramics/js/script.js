@@ -7,9 +7,11 @@ $(document).ready(function(){
 		var popup_id = $('#' + $(this).attr("rel"));
 		$(popup_id).show();
 		$('.overlay_popup').show();
+		$('body').addClass("hidden");
 	}); 
-	$('.overlay_popup').click(function() {
+	$('.overlay_popup, .close').click(function() {
 		$('.overlay_popup, .popup').hide();
+		$('body').removeClass("hidden");
 	});
 	/* popUp */
     $('.toggle').click(function() {
@@ -130,4 +132,20 @@ $(document).ready(function(){
 			}
 		  ]
     });
+	
+	$('.flat-for').slick({
+	  arrows: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  asNavFor: '.flat-nav'
+	});
+	$('.flat-nav').slick({
+	  arrows: false,
+	  slidesToShow: 11,
+	  slidesToScroll: 1,
+	  asNavFor: '.flat-for',
+	  dots: false,
+	  focusOnSelect: true,
+  	  variableWidth: true
+	});
 });

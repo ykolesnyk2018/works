@@ -630,6 +630,9 @@ footer .container{
 .f-social{
 	margin: 25px 0 0 0;
 }
+.f-social a{
+	text-decoration: none;
+}
 .f-social a:hover svg{
 	fill: #fff;
 }

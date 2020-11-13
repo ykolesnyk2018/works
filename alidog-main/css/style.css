@@ -1339,7 +1339,10 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    background: #FBF8FF;
+    border-radius: 12px;
+    overflow: hidden; }
     .products .product:after {
       content: "";
       top: 20px;
@@ -1358,8 +1361,7 @@ h2 {
       height: 176px;
       position: relative;
       overflow: hidden;
-      background: #F0F0F0;
-      border-radius: 12px 12px 0px 0px; }
+      background: #fff; }
       .products .product .product-img a {
         display: block;
         width: 100%;
@@ -1379,10 +1381,8 @@ h2 {
       flex-wrap: wrap;
       flex-direction: column;
       flex-grow: 1;
-      background: #FBF8FF;
       position: relative;
       z-index: 1;
-      border-radius: 0px 0px 12px 12px;
       overflow: hidden; }
       .products .product .product-description .product-price {
         font-size: 20px;

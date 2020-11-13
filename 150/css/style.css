@@ -1339,7 +1339,7 @@ footer .container{
 		font-size: 16px;
 	}
 	.main-menu-mob ul li a:before{
-		top: 5px;
+		top: 5px; 
 	}
 	.menu_social{
 		margin: auto 0 25px 35px;

@@ -1549,8 +1549,12 @@ iframe{
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0,0,0,0.4);
+	z-index: -97;
+	opacity: 0;
+}
+.overlay_popup.active{
 	z-index: 97;
-	display: none;
+	opacity: 1;
 }
 .popup{
 	padding: 30px 30px;
@@ -1559,11 +1563,15 @@ iframe{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	z-index: 98;
+	z-index: -98;
 	background: #fff;
 	max-height: 95vh;
 	overflow: auto;
-	display: none;
+	opacity: 0;
+}
+.popup.active{
+	opacity: 1;
+	z-index: 98;
 }
 body.hidden{
 	overflow: hidden;

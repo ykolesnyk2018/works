@@ -1549,12 +1549,8 @@ iframe{
 	width: 100vw;
 	height: 100vh;
 	background: rgba(0,0,0,0.4);
-	z-index: -97;
-	opacity: 0;
-}
-.overlay_popup.active{
 	z-index: 97;
-	opacity: 1;
+	display: none;
 }
 .popup{
 	padding: 30px 30px;
@@ -1563,15 +1559,11 @@ iframe{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	z-index: -98;
+	z-index: 98;
 	background: #fff;
 	max-height: 95vh;
 	overflow: auto;
-	opacity: 0;
-}
-.popup.active{
-	opacity: 1;
-	z-index: 98;
+	display: none;
 }
 body.hidden{
 	overflow: hidden;
@@ -2116,6 +2108,8 @@ body.hidden{
 	}
 	.flat-left{
 		width: 360px;
+		padding: 0 25px 0 0;
+		box-sizing: border-box;
 	}
 	.flat-for{
 		height: 265px;

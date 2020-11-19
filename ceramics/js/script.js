@@ -2,26 +2,17 @@ $(document).ready(function(){
 	$(function() {
 		$('select.styler').styler();
   	});
-	/*
+	/* popUp */
     $('.show_popup').click(function() {
 		var popup_id = $('#' + $(this).attr("rel"));
 		$(popup_id).show();
 		$('.overlay_popup').show();
 		$('body').addClass("hidden");
+		$('.flat-for').slick('setPosition');
+		$('.flat-nav').slick('setPosition');
 	}); 
 	$('.overlay_popup, .close').click(function() {
 		$('.overlay_popup, .popup').hide();
-		$('body').removeClass("hidden");
-	});
-	popUp */
-    $('.show_popup').click(function() {
-		var popup_id = $('#' + $(this).attr("rel"));
-		$(popup_id).addClass("active");
-		$('.overlay_popup').addClass("active");
-		$('body').addClass("hidden");
-	}); 
-	$('.overlay_popup, .close').click(function() {
-		$('.overlay_popup, .popup').removeClass("active");
 		$('body').removeClass("hidden");
 	});
 	/* popUp */

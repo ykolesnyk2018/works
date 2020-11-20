@@ -3395,6 +3395,9 @@ h1 {
 body.fix {
   overflow: hidden; }
 
+.filter-overlay {
+  display: none; }
+
 .slick-slider {
   position: relative;
   z-index: 3; }

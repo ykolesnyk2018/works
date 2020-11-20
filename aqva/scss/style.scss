@@ -3532,5 +3532,8 @@ h1{
 body.fix{
 	overflow: hidden;
 }
+.filter-overlay{
+	display: none;
+}
 @import "slick.scss";
 @import "media.scss";

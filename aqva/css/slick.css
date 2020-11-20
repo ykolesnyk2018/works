@@ -192,3 +192,75 @@
       border-color: #5974B7; }
     .default-slider .slick-dots li.slick-active button {
       background: #5974B7; }
+
+.slider-for {
+  width: 445px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  order: 2; }
+  .slider-for .slick-slide {
+    height: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px; }
+    .slider-for .slick-slide .slider-for-icons {
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      z-index: 1; }
+      .slider-for .slick-slide .slider-for-icons a {
+        width: 33px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border: 1px solid #000;
+        border-radius: 50%;
+        margin: 0 0 10px 0;
+        background: #fff; }
+        .slider-for .slick-slide .slider-for-icons a svg {
+          display: block;
+          fill: #000; }
+        .slider-for .slick-slide .slider-for-icons a:hover {
+          border: 1px solid #5974B7; }
+          .slider-for .slick-slide .slider-for-icons a:hover svg {
+            fill: #5974B7; }
+    .slider-for .slick-slide .slider-for-discount {
+      position: absolute;
+      display: flex;
+      width: 66px;
+      height: 34px;
+      align-items: center;
+      justify-content: center;
+      background: #5974B7;
+      border-radius: 10px 0 10px 0;
+      top: -1px;
+      left: -1px;
+      color: #fff;
+      font-size: 14px; }
+
+.slider-nav {
+  width: 85px;
+  height: 465px;
+  overflow: hidden;
+  order: 1; }
+  .slider-nav .slick-track {
+    flex-wrap: wrap; }
+    .slider-nav .slick-track .slick-slide {
+      width: 85px;
+      height: 85px;
+      border: 1px solid #E1E1E1;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 7px 0;
+      cursor: pointer; }
+      .slider-nav .slick-track .slick-slide img {
+        max-width: 80%;
+        max-height: 80%; }

@@ -113,7 +113,31 @@ $(document).ready(function(){
 		$('.personal-data-form').toggleClass("active");
 		$('.personal-data-btn').toggleClass("active");
 	});
-	
+	$('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  focusOnSelect: true,
+	  vertical: true,
+	  arrows: false,
+	  responsive: [
+		{
+		  breakpoint: 767,
+		  settings: {
+			arrows: true,
+	  		vertical: false,
+  			variableWidth: true
+		  }
+		}
+	  ]
+	});
 	
 	
 	
@@ -164,8 +188,8 @@ $(document).ready(function(){
 	      // step: 15,
 	      range: true,
 	      min: 0,
-	      max: 35340,
-	      values: [ 0, 4000 ],
+	      max: 125344,
+	      values: [ 12344, 125344 ],
 	      slide: function( event, ui ) {
 	        $( "#amount" ).val( ui.values[ 0 ] );
 	        $( "#amount_1" ).val( ui.values[ 1 ] );
@@ -383,5 +407,25 @@ $(document).ready(function(){
 	$('.selection a').click(function() {
 		$('.selection a').removeClass("active");
 		$(this).addClass("active");
+	}); 
+	$('#row').click(function() {
+		$(this).addClass("active");
+		$(".category-filter-left a#column").removeClass("active");
+		$("#category").addClass("products-row");
+	}); 
+	$('#column').click(function() {
+		$(this).addClass("active");
+		$(".category-filter-left a#row").removeClass("active");
+		$("#category").removeClass("products-row");
+	}); 
+	$('.filter-btn').click(function() {
+		$('.category .category-left').addClass("active");
+		$('.filter-overlay').addClass("active");
+		$('body').addClass("fix");
+	}); 
+	$('.filter-overlay').click(function() {
+		$('.category .category-left').removeClass("active");
+		$('.filter-overlay').removeClass("active");
+		$('body').removeClass("fix");
 	}); 
 });

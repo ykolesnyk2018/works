@@ -1542,7 +1542,7 @@ footer {
       align-items: center;
       justify-content: center; }
       .footer-form form button:hover {
-        background: #E08F4D; }
+        background: #000; }
 
 .footer-bottom {
   display: flex;
@@ -2924,7 +2924,8 @@ h1 {
 
 .orders {
   border: 1px solid #E5E5E5;
-  border-radius: 20px; }
+  border-radius: 20px;
+  overflow: hidden; }
   .orders .orders-title {
     font-size: 18px;
     line-height: 24px;

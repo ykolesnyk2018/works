@@ -1565,6 +1565,78 @@ iframe{
 	overflow: auto;
 	display: none;
 }
+.popup#popup_buy{
+	width: 288px;
+	padding: 20px 20px;
+}
+.popup#popup_buy .close{
+	top: 25px;
+	right: 25px;
+}
+.popup#popup_buy form{
+	width: 100%;
+}
+.popup#popup_buy form input,
+.popup#popup_buy form textarea{
+	display: flex;
+	height: 48px;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 16px;
+	font-family: 'RobotoRegular';
+	border: 0;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	margin: 0 0 20px 0;
+}
+.popup#popup_buy form textarea{
+	padding: 16px 16px;
+	height: 126px;
+}
+.popup#popup_buy form input::placeholder,
+.popup#popup_buy form textarea::placeholder{
+	color: #CFCFCF;
+}
+.popup#popup_buy .checkbox input{
+	display: none;
+}
+.popup#popup_buy .checkbox label{
+	padding: 0 0 0 34px;
+	display: block;
+	font-family: "RobotoLight";
+	position: relative;
+}
+.popup#popup_buy .checkbox label:before{
+	width: 24px;
+	height: 24px;
+	top: 50%;
+	margin: -12px 0 0 0;
+	background-size: 14px 14px;
+}
+.popup#popup_buy form button{
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	height: 48px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #181818;
+	margin: 20px 0 0 0;
+	background: none;
+	font-size: 18px;
+	font-family: "RobotoMedium";
+	transition: 0.4s;
+}
+.popup#popup_buy form button:hover{
+	background: #000;
+	color: #fff;
+}
+.popup_buy-title{
+	text-align: center;
+	font-size: 18px;
+	line-height: 21px;
+	margin: 40px 0 20px 0;
+}
 body.hidden{
 	overflow: hidden;
 }

@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Nunito'; }
+  font-family: 'Nunito';
+  color: #656362; }
 
 ul,
 ol {
@@ -10,6 +11,170 @@ ol {
   padding: 0;
   list-style: none; }
 
+*:focus {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
 .container {
   width: 1110px;
   margin: 0 auto; }
+
+header .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.logo {
+  font-size: 45px; }
+  .logo a {
+    color: #C57B48;
+    text-decoration: none; }
+    .logo a b {
+      font-weight: 700; }
+  .logo p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; }
+    .logo p a {
+      color: rgba(0, 0, 0, 0.3);
+      font-weight: 700; }
+
+.phones {
+  text-align: right;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 34px 0 30px;
+  position: relative;
+  border-right: 1px solid #C4C4C4; }
+  .phones:before {
+    content: "";
+    width: 18px;
+    height: 19px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: url(../images/icons/phones.svg) left center no-repeat; }
+  .phones p {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.5); }
+    .phones p a {
+      color: #656362;
+      text-decoration: none;
+      font-weight: 700; }
+
+.main-menu {
+  font-size: 14px; }
+  .main-menu ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .main-menu ul li {
+      margin: 0 25px 0 0; }
+      .main-menu ul li:last-child {
+        margin-right: 0; }
+      .main-menu ul li a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5); }
+        .main-menu ul li a svg {
+          fill: rgba(0, 0, 0, 0.5);
+          margin: 0 6px 0 0; }
+      .main-menu ul li:hover a, .main-menu ul li.active a {
+        color: #C57B48; }
+        .main-menu ul li:hover a svg, .main-menu ul li.active a svg {
+          fill: #C57B48; }
+
+.bottom-menu {
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative; }
+  .bottom-menu:after {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    margin: 0 0 0 -50vw;
+    background: #818181;
+    opacity: 0.1; }
+  .bottom-menu ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .bottom-menu ul li a {
+      display: block;
+      color: #656362;
+      text-decoration: none;
+      position: relative; }
+    .bottom-menu ul li:hover a, .bottom-menu ul li.active a {
+      color: #C57B48; }
+      .bottom-menu ul li:hover a:after, .bottom-menu ul li.active a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: #C57B48; }
+
+.header-banner {
+  background: #C57B48;
+  padding: 14px 0; }
+  .header-banner .container {
+    display: flex;
+    align-items: stretch; }
+
+.search-form {
+  width: calc(50% - 15px); }
+  .search-form form {
+    display: block;
+    position: relative; }
+    .search-form form input {
+      display: flex;
+      align-items: center;
+      padding: 0 30px 0 20px;
+      width: 100%;
+      height: 50px;
+      box-sizing: border-box;
+      border: 0;
+      font-family: 'Nunito';
+      font-size: 18px; }
+      .search-form form input::placeholder {
+        color: #818181; }
+    .search-form form button {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translate(0, -50%);
+      background: none;
+      border: 0; }
+      .search-form form button:hover svg {
+        fill: #C57B48; }
+      .search-form form button svg {
+        display: block;
+        fill: #818181; }
+
+.discount-banner {
+  display: flex;
+  align-items: center;
+  width: calc(50% - 15px);
+  margin: 0 0 0 auto;
+  background: url(../images/discount-banner.png) bottom right no-repeat;
+  color: #C57B48;
+  box-sizing: border-box;
+  padding: 0 0 0 50px;
+  background-size: cover; }
+  .discount-banner span {
+    font-size: 30px;
+    font-weight: 900;
+    display: inline-block;
+    margin: 0 20px 0 0; }

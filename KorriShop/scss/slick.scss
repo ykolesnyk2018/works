@@ -1,0 +1,142 @@
+$color: #656362;
+$colorHover: #C57B48;
+$border: #818181;
+.slick-slider{
+	position: relative;
+}
+.slick-track{
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.slick-list{
+	overflow: hidden;
+	position: relative;
+}
+.banner-slider{
+	grid-row: span 2;
+	overflow: hidden;
+	.slick-slide{
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		min-height: 704px;
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: rgba(255, 255, 255, 0.5);
+			height: 125px;
+			width: 100%;
+			z-index: 0;
+		}
+		a{
+			text-decoration: none;
+			img{
+				position: absolute;
+				display: block;
+				min-width: 100%;
+				min-height: 100%;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				z-index: -1;
+				max-width: 150%;
+			}
+		}
+		.banner-slider-title{
+			position: absolute;
+			top: 0;
+			right: 0;
+			text-align: right;
+			width: 100%;
+			font-weight: 700;
+			font-size: 45px;
+			text-transform: uppercase;
+			padding: 20px 25px 0 0;
+			a{
+				color: $color;
+				text-decoration: none;
+				span{
+					font-size: 55px;
+					color: $colorHover;
+					display: block;
+					margin: -10px 0 0 0;
+				}
+			}
+		}
+		.banner-slider-bottom{
+			position: absolute;
+			bottom: 10px;
+			right: 25px;
+			z-index: 2;
+			font-size: 60px;
+			font-weight: 700;
+			text-transform: uppercase;
+			a{
+				color: rgba(0,0,0,0.5);
+				text-decoration: none;
+				&:hover{
+					color: #000;
+				}
+			}
+		}
+	}
+}
+.slick-dots{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	bottom: 32px;
+	left: 24px;
+	z-index: 1;
+	li{
+		margin: 0 12px 0 0;
+		&:last-child{
+			margin-right: 0;
+		}
+		button{
+			display: block;
+			border: 1px solid $colorHover;
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			box-sizing: border-box;
+			font-size: 0;
+			padding: 0;
+		}
+		&.slick-active{
+			button{
+				background: $colorHover;
+			}
+		}
+	}
+}
+.slick-arrow{
+	width: 43px;
+	height: 52px;
+	background: #fff url(../images/icons/arrow.svg) center center no-repeat;
+	border: 0;
+	font-size: 0;
+	position: absolute;
+	top: 50%;
+	margin: -26px 0 0 0;
+	z-index: 1;
+	&.slick-prev{
+		transform: rotate(180deg);
+	}
+}
+.products-slider{
+	.slick-arrow{
+		&.slick-next{
+			right: 50px;
+		}
+		&.slick-prev{
+			left: 50px;
+		}
+		&.slick-disabled{
+			opacity: 0;
+		}
+	}
+}

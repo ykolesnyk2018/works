@@ -1,14 +1,90 @@
 $(document).ready(function(){
-	$(function() {
-		$('select').styler();
-  	});
+	$('.banner-slider').slick({
+		arrows: false,
+		dots: true,
+	    infinite: true,
+	    slidesToShow: 1,
+	    slidesToScroll: 1
+	});
 	/* toggle */
     $('.toggle').click(function() {
 		var toggle_id = $('#' + $(this).attr("data-target"));
 		$(this).toggleClass("active");
 		$(toggle_id).toggleClass("active");
+		$('.slick-slider').slick('setPosition');
 	}); 
 	/* toggle */
+	$('.popular-slider').slick({
+		arrows: true,
+		dots: false,
+	    infinite: false,
+	    slidesToShow: 4,
+	    slidesToScroll: 1,
+  		speed: 600,
+  		variableWidth: true,
+		  responsive: [
+			{
+			  breakpoint: 1130,
+			  settings: {
+			  }
+			}
+		  ]
+	});
+	$('.product_popup-slider').slick({
+		arrows: true,
+		dots: true,
+	    infinite: false,
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+  		speed: 600
+	});
+	$('.up').click( function(){
+		var scroll_el = $(this).attr('href'); 
+        if ($(scroll_el).length != 0) { 
+	    	$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); 
+        }
+	    return false;
+    });
+	
+    if(window.innerWidth > 1139){
+		$(window).scroll(function () {
+			if ($(document).scrollTop() > 100) {
+				$('.wrapper').addClass('fix');
+			}
+			else { 
+				$('.wrapper').removeClass('fix');
+			}
+		}); 
+		$('.products-slider').slick({
+			arrows: true,
+			dots: false,
+			infinite: false,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			speed: 600,
+			variableWidth: true
+		});
+    };
+	$('.product').each(function(){
+		$(this).find('.product-img-for').slick({
+		  infinite: false,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: true,
+		  asNavFor: $(this).find('.product-img-nav'),
+		  dots: false
+		});
+		$(this).find('.product-img-nav').slick({
+		  infinite: false,
+		  slidesToShow: 5,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  asNavFor: $(this).find('.product-img-for'),
+		  dots: false,
+		  variableWidth: true,
+		  focusOnSelect: true,
+		});
+	});
 	/* popUp */
     $('.show_popup').click(function() {
 		var popup_id = $('#' + $(this).attr("data-target"));
@@ -19,16 +95,36 @@ $(document).ready(function(){
 		$('.overlay, .popup').hide();
 	});
 	/* popUp */
+	$('.main-menu-btn p').click(function() {
+		$('body').addClass("hidden");
+	});
+	$('.main-menu-btn div').click(function() {
+		$('body').removeClass("hidden");
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$(function() {
+		$('select').styler();
+  	});
 	$('.veryHighFrequencyBlockTitle').click(function(){
 		$('.veryHighFrequencyBlockTitle').removeClass("active");
 		$(this).addClass("active");
-	});
-	$('.main-slider').slick({
-		arrows: false,
-		dots: true,
-	    infinite: true,
-	    slidesToShow: 1,
-	    slidesToScroll: 1
 	});
 	$('.news-slider').slick({
 		arrows: true,
@@ -101,42 +197,10 @@ $(document).ready(function(){
   		speed: 600,
   		variableWidth: true
 	});
-	$('.up').click( function(){
-		var scroll_el = $(this).attr('href'); 
-        if ($(scroll_el).length != 0) { 
-	    	$('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); 
-        }
-	    return false;
-    });
     var spinner = $(".spinner").spinner();
 	$('.personal-data-btn, .personal-data-btn2').click(function() {
 		$('.personal-data-form').toggleClass("active");
 		$('.personal-data-btn').toggleClass("active");
-	});
-	$('.slider-for').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  asNavFor: '.slider-nav'
-	});
-	$('.slider-nav').slick({
-	  slidesToShow: 5,
-	  slidesToScroll: 1,
-	  asNavFor: '.slider-for',
-	  dots: false,
-	  focusOnSelect: true,
-	  vertical: true,
-	  arrows: false,
-	  responsive: [
-		{
-		  breakpoint: 767,
-		  settings: {
-			arrows: true,
-	  		vertical: false,
-  			variableWidth: true
-		  }
-		}
-	  ]
 	});
 	
 	
@@ -172,14 +236,6 @@ $(document).ready(function(){
 		  }
 		}
 	  ]
-	});
-	$(window).scroll(function () {
-		if ($(document).scrollTop() > 1) {
-			$('header').addClass('shadow');
-		}
-		else { 
-			$('.shadow').removeClass('shadow');
-		}
 	});
 	
 	

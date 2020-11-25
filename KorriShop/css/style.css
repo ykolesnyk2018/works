@@ -133,7 +133,9 @@ ol {
   outline: 0; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  border: 0;
+  font-family: 'Nunito'; }
 
 .container {
   width: 1110px;
@@ -152,7 +154,7 @@ header {
     position: relative; }
 
 .fix {
-  padding: 74px 0 0 0; }
+  padding: 144px 0 0 0; }
   .fix header {
     position: fixed;
     top: 0;
@@ -441,7 +443,7 @@ header {
   background: url(../images/discount-banner.png) bottom right no-repeat;
   color: #C57B48;
   box-sizing: border-box;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 26px;
   background-size: cover; }
   .discount-banner span {
     font-size: 30px;
@@ -498,7 +500,7 @@ header {
     left: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 0 13px 41px;
+    padding: 20px 20px 13px 41px;
     font-weight: 700; }
     .banner .banner-bottom .banner-title {
       font-size: 40px;
@@ -665,8 +667,18 @@ header {
   background: #C57B48;
   font-size: 18px;
   font-weight: 700; }
+  .btn.wh-bg {
+    background: none;
+    border: 0.5px solid #E1E1E1;
+    color: #656362; }
+    .btn.wh-bg:hover {
+      color: #fff;
+      background: #C57B48;
+      border-color: #C57B48; }
   .btn:hover {
-    color: #000; }
+    color: #656362;
+    border: 1px solid #E1E1E1;
+    background: none; }
 
 .wrapper {
   position: relative;
@@ -1224,6 +1236,292 @@ body.hidden {
       color: #E50E00;
       margin: 0 0 0 25px; }
 
+.breadcrumbs {
+  display: flex;
+  font-size: 14px;
+  margin: 33px 0 36px 0;
+  letter-spacing: -0.03em;
+  flex-wrap: wrap; }
+  .breadcrumbs a {
+    display: block;
+    color: #656362;
+    text-decoration: none;
+    margin: 0 15px 0 0;
+    position: relative;
+    white-space: nowrap; }
+    .breadcrumbs a:hover {
+      color: #C57B48; }
+    .breadcrumbs a:last-child {
+      margin-right: 0; }
+      .breadcrumbs a:last-child:after {
+        display: none; }
+    .breadcrumbs a:after {
+      content: "-";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translate(0, -50%);
+      margin: 0 0 0 5px; }
+
+.personal-cabinet {
+  display: flex;
+  flex-wrap: wrap; }
+  .personal-cabinet h1 {
+    width: 100%;
+    margin: 0 0 26px 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 30px; }
+
+.personal-cabinet-left {
+  width: 294px;
+  margin: 0 auto 0 0; }
+  .personal-cabinet-left ul {
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .personal-cabinet-left ul li a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #656362;
+      height: 54px;
+      box-sizing: border-box;
+      padding: 0 0 0 21px;
+      border-bottom: 1px solid #E1E1E1; }
+      .personal-cabinet-left ul li a span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33px;
+        height: 33px;
+        box-sizing: border-box;
+        border: 1px solid #E1E1E1;
+        border-radius: 50%;
+        margin: 0 17px 0 0; }
+        .personal-cabinet-left ul li a span svg {
+          display: block;
+          fill: #656362; }
+    .personal-cabinet-left ul li:last-child a {
+      border: 0; }
+    .personal-cabinet-left ul li.active a, .personal-cabinet-left ul li:hover a {
+      background: #C57B48;
+      color: #fff; }
+      .personal-cabinet-left ul li.active a svg, .personal-cabinet-left ul li:hover a svg {
+        fill: #fff; }
+
+.personal-cabinet-right {
+  width: 787px;
+  margin: 0 0 0 auto; }
+  .personal-cabinet-right h2 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: -3px 0 18px 0;
+    padding: 0; }
+    .personal-cabinet-right h2 a {
+      color: #C57B48;
+      font-size: 16px;
+      text-decoration: none;
+      margin: 0 0 0 auto;
+      font-weight: 700;
+      text-transform: initial; }
+  .personal-cabinet-right input {
+    margin: 0 0 16px 0; }
+  .personal-cabinet-right button {
+    margin: 15px 0 0 0; }
+  .personal-cabinet-right form {
+    margin: 0 0 48px 0; }
+    .personal-cabinet-right form:last-child {
+      margin: 0; }
+
+input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  height: 55px;
+  padding: 0 20px 0 22px;
+  border: 1px solid #E1E1E1;
+  color: #656362;
+  font-size: 18px;
+  font-family: 'Nunito'; }
+  input:focus {
+    border-color: #C57B48; }
+
+.myProfile {
+  max-width: 553px; }
+  .myProfile label {
+    display: block;
+    font-size: 16px;
+    color: #B2B1B1;
+    margin: 0 0 3px 0; }
+
+.for-xs {
+  display: none; }
+
+.MySubscribes {
+  border: 1px solid #EFEBEC;
+  margin: 22px 0 0 0; }
+  .MySubscribes .MySubscribes-title {
+    background: #EFEBEC;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 23px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 700; }
+  .MySubscribes .MySubscribes-content .radio {
+    box-sizing: border-box;
+    border-bottom: 1px solid #E1E1E1; }
+    .MySubscribes .MySubscribes-content .radio label {
+      display: flex;
+      align-items: center;
+      height: 53px;
+      padding: 0 0 0 68px; }
+      .MySubscribes .MySubscribes-content .radio label .triger {
+        left: 24px; }
+    .MySubscribes .MySubscribes-content .radio:last-child {
+      border: 0; }
+
+.radio input[type="radio"] {
+  display: none; }
+  .radio input[type="radio"]:checked + label .triger:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #C57B48;
+    position: absolute; }
+
+.radio label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 0 0 40px;
+  cursor: pointer; }
+  .radio label .triger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E1E1E1;
+    border-radius: 50%;
+    box-sizing: border-box; }
+
+.MySubscribesBtns {
+  margin: 50px 0 0 0; }
+  .MySubscribesBtns a {
+    margin: 0 26px 0 0; }
+    .MySubscribesBtns a:last-child {
+      margin: 0; }
+
+.sales {
+  border: 1px solid #E1E1E1;
+  margin: 0 0 53px 0; }
+  .sales .sales-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 67px;
+    padding: 10px 16px 10px 16px;
+    box-sizing: border-box;
+    background: #EFEBEC;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600; }
+    .sales .sales-top span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 33px;
+      height: 33px;
+      box-sizing: border-box;
+      background: #C57B48;
+      font-size: 16px;
+      color: #fff;
+      border-radius: 50%; }
+  .sales .sales-content > div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 67px;
+    padding: 22px 19px 22px 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px solid #E1E1E1; }
+    .sales .sales-content > div:last-child {
+      border: 0; }
+    .sales .sales-content > div span {
+      color: #C57B48;
+      font-size: 15px;
+      margin: 0 0 0 auto;
+      font-weight: 700; }
+
+.salesProgress .salesProgressLine {
+  background: rgba(197, 123, 72, 0.3);
+  height: 7px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .salesProgress .salesProgressLine .Progress {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: #C57B48;
+    left: 0;
+    border-radius: 5px; }
+  .salesProgress .salesProgressLine .procent {
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 0 0;
+    margin: 0 0 -2.5px 0;
+    z-index: 1; }
+    .salesProgress .salesProgressLine .procent span {
+      display: block;
+      margin: 0 0 5px 0; }
+    .salesProgress .salesProgressLine .procent:after {
+      content: "";
+      display: block;
+      width: 7px;
+      height: 12px;
+      box-sizing: border-box;
+      border: 1px solid #E1E1E1;
+      border-radius: 3px;
+      background: #fff;
+      z-index: 1;
+      margin: 0 auto; }
+    .salesProgress .salesProgressLine .procent:first-child:after {
+      margin: 0; }
+    .salesProgress .salesProgressLine .procent:last-child:after {
+      margin: 0 0 0 auto; }
+
+.salesProgressDescription {
+  font-size: 16px;
+  margin: 33px 0 0 0; }
+  .salesProgressDescription p {
+    margin: 0 0 11px 0; }
+    .salesProgressDescription p span {
+      color: #C57B48; }
+
 @media (max-width: 1139px) {
   .container {
     width: 690px; }
@@ -1740,7 +2038,44 @@ body.hidden {
     .mobil-phones div:last-child {
       margin: 0 0 0 50px; }
   .cart-preview {
-    right: calc(50vw - 360px); } }
+    right: calc(50vw - 360px); }
+  .breadcrumbs {
+    margin: 26px 0 27px 0;
+    letter-spacing: 0.06em; }
+  .personal-cabinet h1 {
+    font-size: 25px;
+    margin: 0 0 19px 0; }
+  .personal-cabinet-left {
+    width: 210px; }
+    .personal-cabinet-left ul li a {
+      padding: 0 0 0 11px; }
+      .personal-cabinet-left ul li a span {
+        margin: 0 15px 0 0; }
+  .personal-cabinet-right {
+    width: 450px; }
+    .personal-cabinet-right button {
+      min-width: 336px; }
+  .MySubscribesBtns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 34px 0 0 0; }
+    .MySubscribesBtns a {
+      min-width: 210px;
+      margin: 0; }
+  .sales {
+    margin: 22px 0 73px 0; }
+  .salesProgress .salesProgressLine {
+    height: 10px; }
+    .salesProgress .salesProgressLine .procent {
+      margin: 0 0 -1px 0; }
+      .salesProgress .salesProgressLine .procent span {
+        padding: 0 0 15px 0; }
+  .salesProgressDescription {
+    margin: 30px 0 0 0; }
+    .salesProgressDescription p {
+      margin: 0 0 17px 0; } }
 
 @media (max-width: 767px) {
   .container {
@@ -1940,4 +2275,76 @@ body.hidden {
     height: calc(100vh - 68px);
     overflow: auto;
     top: 100%;
-    right: 0; } }
+    right: 0; }
+  .for-xs {
+    display: block; }
+  .personal-cabinet-btn {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #E1E1E1;
+    background: #C57B48;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    position: relative;
+    margin: 0 0 0 0; }
+    .personal-cabinet-btn:after {
+      content: "";
+      background: url(../images/icons/pcbtn.svg) no-repeat;
+      width: 12px;
+      height: 7px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 14px; }
+    .personal-cabinet-btn.active:after {
+      transform: rotate(180deg); }
+    .personal-cabinet-btn span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin: 0 18px 0 0; }
+      .personal-cabinet-btn span svg {
+        display: block;
+        fill: #fff; }
+  .personal-cabinet-left {
+    width: 100%;
+    position: relative;
+    margin: 0; }
+    .personal-cabinet-left ul {
+      display: none;
+      background: #fff;
+      z-index: 9; }
+      .personal-cabinet-left ul.active {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block; }
+      .personal-cabinet-left ul li a {
+        padding-left: 21px; }
+      .personal-cabinet-left ul li.active {
+        display: none; }
+  .personal-cabinet-right {
+    width: 100%;
+    margin: 25px 0 0 0; }
+    .personal-cabinet-right button {
+      min-width: 100%; }
+  .breadcrumbs {
+    letter-spacing: -0.03em; }
+  .MySubscribesBtns {
+    margin: 20px 0 0 0; }
+    .MySubscribesBtns a {
+      min-width: 100%;
+      margin: 0 0 10px 0; } }

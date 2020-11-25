@@ -514,7 +514,44 @@
     .mobil-phones div:last-child {
       margin: 0 0 0 50px; }
   .cart-preview {
-    right: calc(50vw - 360px); } }
+    right: calc(50vw - 360px); }
+  .breadcrumbs {
+    margin: 26px 0 27px 0;
+    letter-spacing: 0.06em; }
+  .personal-cabinet h1 {
+    font-size: 25px;
+    margin: 0 0 19px 0; }
+  .personal-cabinet-left {
+    width: 210px; }
+    .personal-cabinet-left ul li a {
+      padding: 0 0 0 11px; }
+      .personal-cabinet-left ul li a span {
+        margin: 0 15px 0 0; }
+  .personal-cabinet-right {
+    width: 450px; }
+    .personal-cabinet-right button {
+      min-width: 336px; }
+  .MySubscribesBtns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 34px 0 0 0; }
+    .MySubscribesBtns a {
+      min-width: 210px;
+      margin: 0; }
+  .sales {
+    margin: 22px 0 73px 0; }
+  .salesProgress .salesProgressLine {
+    height: 10px; }
+    .salesProgress .salesProgressLine .procent {
+      margin: 0 0 -1px 0; }
+      .salesProgress .salesProgressLine .procent span {
+        padding: 0 0 15px 0; }
+  .salesProgressDescription {
+    margin: 30px 0 0 0; }
+    .salesProgressDescription p {
+      margin: 0 0 17px 0; } }
 
 @media (max-width: 767px) {
   .container {
@@ -714,4 +751,76 @@
     height: calc(100vh - 68px);
     overflow: auto;
     top: 100%;
-    right: 0; } }
+    right: 0; }
+  .for-xs {
+    display: block; }
+  .personal-cabinet-btn {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #E1E1E1;
+    background: #C57B48;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0 0 20px;
+    position: relative;
+    margin: 0 0 0 0; }
+    .personal-cabinet-btn:after {
+      content: "";
+      background: url(../images/icons/pcbtn.svg) no-repeat;
+      width: 12px;
+      height: 7px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 14px; }
+    .personal-cabinet-btn.active:after {
+      transform: rotate(180deg); }
+    .personal-cabinet-btn span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin: 0 18px 0 0; }
+      .personal-cabinet-btn span svg {
+        display: block;
+        fill: #fff; }
+  .personal-cabinet-left {
+    width: 100%;
+    position: relative;
+    margin: 0; }
+    .personal-cabinet-left ul {
+      display: none;
+      background: #fff;
+      z-index: 9; }
+      .personal-cabinet-left ul.active {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block; }
+      .personal-cabinet-left ul li a {
+        padding-left: 21px; }
+      .personal-cabinet-left ul li.active {
+        display: none; }
+  .personal-cabinet-right {
+    width: 100%;
+    margin: 25px 0 0 0; }
+    .personal-cabinet-right button {
+      min-width: 100%; }
+  .breadcrumbs {
+    letter-spacing: -0.03em; }
+  .MySubscribesBtns {
+    margin: 20px 0 0 0; }
+    .MySubscribesBtns a {
+      min-width: 100%;
+      margin: 0 0 10px 0; } }

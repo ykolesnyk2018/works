@@ -107,6 +107,14 @@
   .slick-arrow.slick-prev {
     transform: rotate(180deg); }
 
+.products-slider > .slick-list {
+  overflow: inherit; }
+  .products-slider > .slick-list > .slick-track > .slick-slide {
+    opacity: 0;
+    transition: 0.4s; }
+    .products-slider > .slick-list > .slick-track > .slick-slide.slick-active {
+      opacity: 1; }
+
 .products-slider .slick-arrow.slick-next {
   right: 50px; }
 

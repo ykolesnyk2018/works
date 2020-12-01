@@ -85,6 +85,20 @@ $(document).ready(function(){
 		  focusOnSelect: true,
 		});
 	});
+	$('.big-select').each(function(){
+		$(this).find('.big-select-container.work').click(function() {
+			$(this).toggleClass("active");
+		}); 
+		$(this).find('.big-select-dropdown .big-select-container').click(function() {
+			$('.big-select-dropdown .big-select-container').removeClass("selected");
+			$(this).addClass("selected");
+			var inside = $(this).html();
+			$('.big-select').each(function(){
+				$(this).find('.big-select-container.work').html(inside);
+				$(this).find('.big-select-container.work').removeClass("active");
+			});
+		});
+	});
 	/* popUp */
     $('.show_popup').click(function() {
 		var popup_id = $('#' + $(this).attr("data-target"));
@@ -101,27 +115,57 @@ $(document).ready(function(){
 	$('.main-menu-btn div').click(function() {
 		$('body').removeClass("hidden");
 	});
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	$(function() {
 		$('select').styler();
   	});
+    var spinner = $(".spinner").spinner(); 
+	$('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  asNavFor: '.slider-nav'
+	});
+	$('.slider-nav').slick({
+	  slidesToShow: 7,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  focusOnSelect: true,
+	  vertical: true,
+	  verticalSwiping: true
+	});
+	$(function(){
+		$(".tabs").tabs();
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	$('.veryHighFrequencyBlockTitle').click(function(){
 		$('.veryHighFrequencyBlockTitle').removeClass("active");
 		$(this).addClass("active");
@@ -197,7 +241,6 @@ $(document).ready(function(){
   		speed: 600,
   		variableWidth: true
 	});
-    var spinner = $(".spinner").spinner();
 	$('.personal-data-btn, .personal-data-btn2').click(function() {
 		$('.personal-data-form').toggleClass("active");
 		$('.personal-data-btn').toggleClass("active");
@@ -213,10 +256,6 @@ $(document).ready(function(){
 	
 	
 	
-	
-	$(function(){
-		$(".tabs").tabs();
-	});
 	
 	
 	
@@ -291,49 +330,6 @@ $(document).ready(function(){
 		if(!/\d/.test(keyChar))	return false;
 
 	});
-	
-	
-	 $('.slider-for').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  fade: true,
-	  asNavFor: '.slider-nav'
-	});
-	$('.slider-nav').slick({
-	  slidesToShow: 5,
-	  slidesToScroll: 1,
-	  asNavFor: '.slider-for',
-	  dots: false,
-	  arrows: false,
-	  focusOnSelect: true,
-	  variableWidth: true
-	});
-	 $('.slider-for2').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  dots: true,
-	  fade: true,
-	  asNavFor: '.slider-nav2'
-	});
-	$('.slider-nav2').slick({
-	  slidesToShow: 5,
-	  slidesToScroll: 1,
-	  asNavFor: '.slider-for2',
-	  dots: false,
-	  arrows: false,
-	  focusOnSelect: true,
-	  variableWidth: true
-	});
-    $('.slider-nav2').click(function() {
-		$('.slider-for2').addClass("active");
-		$('.slider-for').removeClass("active");
-	}); 
-    $('.slider-nav').click(function() {
-		$('.slider-for').addClass("active");
-		$('.slider-for2').removeClass("active");
-	}); 
 	$(document).mouseup(function (e){ // событие клика по веб-документу
 		var div = $(".currency-lan-block"); // тут указываем ID элемента
 		if (!div.is(e.target) // если клик был не по нашему блоку

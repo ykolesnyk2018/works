@@ -128,6 +128,18 @@ $border: #818181;
 	}
 }
 .products-slider{
+	>.slick-list{
+		overflow: inherit;
+		>.slick-track{
+			>.slick-slide{
+				opacity: 0;
+				transition: 0.4s;
+				&.slick-active{
+					opacity: 1;
+				}
+			}
+		}
+	}
 	.slick-arrow{
 		&.slick-next{
 			right: 50px;

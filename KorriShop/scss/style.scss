@@ -1296,9 +1296,25 @@ body{
 .product_popup-in{
 	display: flex;
 	padding: 35px 27px 48px 35px;
-	.product_popup-slider{
+	.big-select{
+		.big-select-container{
+			&.work{
+				.presence{
+					opacity: 0;
+					span.green{}
+				}
+			}
+		}
+	}
+	.product_popup-left{
 		width: 578px;
+	}
+	.product_popup-slider{
 		padding: 0 0 90px 0;
+		display: none;
+		&.active{
+			display: block;
+		}
 		.slick-slide{
 			display: flex;
 			flex-wrap: wrap;
@@ -3052,7 +3068,7 @@ input{
 	top: 11px;
 	right: 20px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 4;
 	svg{
 		fill: rgba(0,0,0,0.4);
 	}
@@ -3135,6 +3151,16 @@ input{
 	&.active{
 		display: none;
 		& + #regist{
+			display: block;
+		}
+	}
+}
+#enter_thanks{
+	#thanks{
+		display: none;
+	}
+	&.active{
+		& + #thanks{
 			display: block;
 		}
 	}
@@ -3449,6 +3475,8 @@ input{
 			font-weight: 600;
 			margin: 5px 0 24px 0;
 		}
+	}
+}
 		.characteristics{
 			font-size: 16px;
 			p{
@@ -3486,8 +3514,6 @@ input{
 				text-decoration: line-through;
 			}
 		}
-	}
-}
 .big-select-pre-title{
 	font-size: 16px;
 	font-weight: 700;
@@ -3498,7 +3524,8 @@ input{
 	font-weight: 700;
 	margin: 17px 0 14px 0;
 }
-.card-un-nav{
+.card-un-nav,
+.card-un-nav2{
 	display: flex;
 	li{
 		margin: 0 3px 0 0;
@@ -4165,6 +4192,88 @@ input{
 				}
 			}
 		}
+	}
+}
+.popup#fav{
+	width: 980px;
+}
+.fav{
+	display: flex;
+	.fav-left{
+		width: 440px;
+		min-width: 440px;
+		box-sizing: border-box;
+		border: 17px solid #fff;
+		background: #EFEBEC url(../images/fav-img.png) center bottom no-repeat;
+		position: relative;
+		&:after{
+			content: "";
+			display: block;
+			width: 344px;
+			height: 262px;
+			background: url(../images/fav.svg) no-repeat;
+			position: absolute;
+			right: 0;
+			top: 73px;
+			z-index: 1;
+		}
+	}
+	.fav-right{
+		padding: 40px 35px 40px 25px;
+		.fav-right-title{
+			font-size: 24px;
+			line-height: 30px;
+			text-align: center;
+			padding: 0 0;
+			margin: 0 0 0 0;
+		}
+		form{
+			margin: 85px 0;
+			.fav-form-title{
+				text-align: center;
+				font-size: 32px;
+				font-weight: 700;
+				text-transform: uppercase;
+				margin: 0 0 25px 0;
+			}
+			input{
+				margin: 0 0 20px 0;
+			}
+			button{
+				margin: 30px auto 0 auto;
+			}
+		}
+		.fav-bottom{
+			display: flex;
+			font-size: 18px;
+			justify-content: space-between;
+			.fav-bottom-left{
+				font-weight: 700;
+				position: relative;
+				a{
+					color: $colorHover;
+					text-decoration: none;
+				}
+			}
+			.fav-bottom-right{
+				a{
+					color: $color;
+					&:hover{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.fav-right{
+		flex-grow: 1;
+	}
+}
+.thanks{
+	font-size: 22px;
+	text-align: center;
+	.btn{
+		margin: 30px auto 40px auto;
 	}
 }
 @import "media.scss";

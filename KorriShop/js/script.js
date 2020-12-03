@@ -12,6 +12,12 @@ $(document).ready(function(){
 		$(cardUnNav_id).addClass("active");
 		$('.slick-slider').slick('setPosition');
 	}); 
+    $('.card-un-nav2 li a').click(function() {
+		$('.product_popup-slider').removeClass("active");
+		var cardUnNav_id = $('#' + $(this).attr("data-target"));
+		$(cardUnNav_id).addClass("active");
+		$('.slick-slider').slick('setPosition');
+	}); 
 	/* toggle */
     $('.toggle').click(function() {
 		var toggle_id = $('#' + $(this).attr("data-target"));
@@ -137,9 +143,11 @@ $(document).ready(function(){
 		$(popup_id).show();
 		$('.overlay').show();
 		$('.slick-slider').slick('setPosition');
+		$('body').addClass("hidden");
 	}); 
 	$('.overlay, .popup-close').click(function() {
 		$('.overlay, .popup').hide();
+		$('body').removeClass("hidden");
 	});
 	/* popUp */
 	$('.main-menu-btn p').click(function() {

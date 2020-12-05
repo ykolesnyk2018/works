@@ -3,15 +3,6 @@ $(document).ready(function(){
 		$('select.styler').styler();
   	});
 	/* popUp */
-    $('.show_popup').click(function() {
-		var popup_id = $('#' + $(this).attr("rel"));
-		$(popup_id).show();
-		$('.overlay_popup').show();
-	}); 
-	$('.overlay_popup').click(function() {
-		$('.overlay_popup, .popup').hide();
-	});
-	/* popUp */
     $('.toggle').click(function() {
 		var toggle_id = $('#' + $(this).attr("data-target"));
 		$(toggle_id).toggleClass("active");
@@ -21,6 +12,15 @@ $(document).ready(function(){
 		var toggle_id = $('#' + $(this).attr("data-target"));
 		$(toggle_id).removeClass("active");
 	}); 
+    $('.show_popup').click(function() {
+		var popup_id = $('#' + $(this).attr("rel"));
+		$(popup_id).show();
+		$('.overlay_popup').show();
+	}); 
+	$('.overlay_popup').click(function() {
+		$('.overlay_popup, .popup').hide();
+	});
+	/* popUp */
     $(function() {
         $(".class-name").click(function(){
             $(this).toggleClass("active");
@@ -82,7 +82,7 @@ $(document).ready(function(){
 		}
 	});
 	$(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".header-bottom-menu"); // тут указываем ID элемента
+		var div = $(".header-bottom-menu, .top-menu-btn"); // тут указываем ID элемента
 		if (!div.is(e.target) // если клик был не по нашему блоку
 		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
 			div.removeClass("active"); // скрываем его

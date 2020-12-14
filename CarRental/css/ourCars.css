@@ -1,0 +1,127 @@
+.ourCars {
+  position: relative;
+  padding: 0 0 105px 0; }
+  .ourCars.ourCars2 .ourCars-title {
+    margin: 84px 0 72px 0; }
+  .ourCars.wh-bg {
+    padding: 0 0 98px 0; }
+    .ourCars.wh-bg:after {
+      display: none; }
+  .ourCars .ourCars-title {
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+    margin: 85px 0 21px 0;
+    text-transform: uppercase; }
+    .ourCars .ourCars-title.ourCars-title2 {
+      margin: 103px 0 20px 0; }
+  .ourCars .ourCars-subTitle {
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 73px 0; }
+  .ourCars:after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 645px;
+    background: #F6FAFF;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 0 -50vw;
+    z-index: -1; }
+
+.car {
+  width: 224px;
+  box-shadow: 19px 15px 23px 2px rgba(51, 84, 140, 0.25);
+  margin: 0 15px 0 0;
+  position: relative;
+  background: #fff; }
+  .car .car-img {
+    height: 185px;
+    box-sizing: border-box; }
+    .car .car-img a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+      border: 12px solid #fff; }
+      .car .car-img a img {
+        display: block;
+        position: absolute;
+        left: -50%;
+        top: -50%;
+        bottom: -50%;
+        right: -50%;
+        margin: auto;
+        max-width: none;
+        transition: 0.5s; }
+  .car:hover .car-img a img {
+    transform: scale(1.1); }
+  .car .car-title {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0 21px 0; }
+    .car .car-title a {
+      text-decoration: none;
+      color: #333; }
+      .car .car-title a:hover {
+        color: #30A8C4; }
+
+.friends .car {
+  width: 145px; }
+  .friends .car .car-img {
+    height: 145px; }
+    .friends .car .car-img a {
+      background: #F6FAFF;
+      border: 22px solid #fff; }
+  .friends .car .car-title {
+    padding: 0 0 22px 0; }
+    .friends .car .car-title a {
+      opacity: 0.5;
+      color: #333; }
+      .friends .car .car-title a:hover {
+        opacity: 1; }
+
+@media (max-width: 939px) {
+  .car {
+    width: 237px; }
+  .friends .car {
+    width: 175px; } }
+
+@media (max-width: 767px) {
+  .ourCars {
+    padding: 0 0 95px 0; }
+    .ourCars.ourCars2 .ourCars-title {
+      margin: 66px 0 55px 0; }
+    .ourCars .ourCars-title {
+      margin: 76px 0 20px 0; }
+      .ourCars .ourCars-title.ourCars-title2 {
+        margin: 92px 0 20px 0; }
+    .ourCars .ourCars-subTitle {
+      margin: 0 0 43px 0; }
+    .ourCars.wh-bg {
+      padding: 0 0 82px 0; }
+      .ourCars.wh-bg .ourCars-title {
+        margin: 61px 0 20px 0; }
+  .car {
+    width: calc(50vw - 24px);
+    margin: 0 8px 0 0; }
+    .car .car-img {
+      height: 128px; }
+      .car .car-img a {
+        border: 8px solid #fff; }
+    .car .car-title {
+      padding: 10px 0 7px 0; }
+  .friends .car {
+    width: calc(33.33vw - 20px); }
+    .friends .car .car-img {
+      height: 100px; }
+      .friends .car .car-img a {
+        border: 14px solid #fff; }
+    .friends .car .car-title {
+      font-size: 12px;
+      padding-bottom: 14px; } }

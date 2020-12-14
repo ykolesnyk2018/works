@@ -1,0 +1,166 @@
+.FPmodal {
+  background: #fff;
+  margin: 60px auto;
+  box-shadow: 19px 15px 23px rgba(51, 84, 140, 0.25);
+  padding: 83px 81px 80px 79px;
+  max-width: 865px;
+  box-sizing: border-box; }
+  .FPmodal .FPmodal-title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 0 51px 0; }
+
+.FPmodal-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .FPmodal-row.space-between {
+    justify-content: space-between; }
+  .FPmodal-row.center {
+    justify-content: center;
+    margin: 0 0 50px 0; }
+    .FPmodal-row.center:last-child {
+      margin-bottom: 0; }
+  .FPmodal-row.double {
+    max-width: 580px;
+    justify-content: center;
+    margin: 0 auto; }
+    .FPmodal-row.double .FPmodal-cell {
+      width: 223px;
+      margin: 0 18px 20px 0; }
+      .FPmodal-row.double .FPmodal-cell:nth-child(2n) {
+        margin-right: 0; }
+  .FPmodal-row.margin {
+    margin-bottom: 52px; }
+
+.FPmodal-cell {
+  width: calc(33.33% - 9px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative; }
+  .FPmodal-cell .hint {
+    width: 240px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 10px;
+    margin: 10px 0 0 0; }
+  .FPmodal-cell .FPmodal-cell-title {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 11px 0; }
+    .FPmodal-cell .FPmodal-cell-title img {
+      margin: 0 14px 0 0; }
+    .FPmodal-cell .FPmodal-cell-title a {
+      margin: 0 0 0 auto;
+      text-align: right; }
+  .FPmodal-cell button {
+    width: 100%;
+    height: 60px; }
+  .FPmodal-cell .ref {
+    width: 100%;
+    height: 100%; }
+
+.FPmodal-row-title {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 31px 0 25px 0; }
+
+.FPmodal-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 0 0 0; }
+  .FPmodal-bottom .FPmodal-bottom-left {
+    font-size: 20px;
+    font-weight: 300; }
+  .FPmodal-bottom .FPmodal-bottom-btn .button {
+    min-width: 145px;
+    height: 40px;
+    box-sizing: border-box; }
+  .FPmodal-bottom .FPmodal-bottom-right {
+    max-width: 280px;
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 300; }
+    .FPmodal-bottom .FPmodal-bottom-right a {
+      font-weight: 500; }
+  .FPmodal-bottom.double {
+    max-width: 580px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center; }
+    .FPmodal-bottom.double .FPmodal-bottom-left {
+      width: 223px;
+      margin: 30px 18px 50px 0; }
+    .FPmodal-bottom.double .FPmodal-bottom-btn {
+      width: 223px;
+      margin: 30px 0 50px 0; }
+    .FPmodal-bottom.double .FPmodal-bottom-right {
+      max-width: 464px;
+      width: 100%;
+      margin: 0 0 0 0; }
+
+@media (max-width: 939px) {
+  .FPmodal-bottom .FPmodal-bottom-right {
+    max-width: 182px; } }
+
+@media (max-width: 767px) {
+  .FPmodal {
+    padding: 58px 0 40px 0;
+    margin: 60px auto -29px auto; }
+    .FPmodal .FPmodal-title {
+      margin: 0 0 41px 0; }
+  .FPmodal-content {
+    margin: 0 48px; }
+  .FPmodal-cell {
+    width: 100%;
+    margin: 0 0 20px 0; }
+    .FPmodal-cell.margin {
+      margin: 0 0 53px 0; }
+    .FPmodal-cell .hint {
+      width: 100%; }
+  .FPmodal-bottom {
+    margin: 31px 0 0 0;
+    flex-wrap: wrap;
+    text-align: center; }
+    .FPmodal-bottom .FPmodal-bottom-left {
+      width: 100%; }
+    .FPmodal-bottom .FPmodal-bottom-btn {
+      width: 100%;
+      margin: 15px 0 20px 0; }
+      .FPmodal-bottom .FPmodal-bottom-btn .button {
+        width: 100%; }
+    .FPmodal-bottom .FPmodal-bottom-right {
+      width: 100%;
+      max-width: 100%; }
+    .FPmodal-bottom.double .FPmodal-bottom-left {
+      margin-bottom: 0; }
+    .FPmodal-bottom.double .FPmodal-bottom-btn {
+      margin: 20px auto 20px auto; }
+    .FPmodal-bottom.double .FPmodal-bottom-right {
+      max-width: 198px;
+      margin: 0 auto; }
+      .FPmodal-bottom.double .FPmodal-bottom-right br {
+        display: none; }
+  .FPmodal-row-title {
+    margin: 12px 0 25px 0; }
+  .FPmodal-row.center {
+    margin: 0 0 20px 0; }
+    .FPmodal-row.center .FPmodal-cell {
+      margin: 0; }
+  .FPmodal-row.double .FPmodal-cell {
+    margin: 0 auto 20px auto; }
+    .FPmodal-row.double .FPmodal-cell:nth-child(2n) {
+      margin: 0 auto 20px auto; }
+  .FPmodal-row.double .FPmodal-bottom-left {
+    margin-bottom: 0; }
+  .FPmodal-row.margin {
+    margin: 0; } }

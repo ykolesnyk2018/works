@@ -1,0 +1,192 @@
+.page {
+  display: flex;
+  padding: 62px 0 0 0; }
+  .page .page-left {
+    width: 624px; }
+  .page .page-right {
+    width: 305px;
+    margin: 0 0 0 auto; }
+    .page .page-right .page-right-title {
+      font-size: 34px;
+      font-weight: 500; }
+
+.page-title {
+  font-weight: 500;
+  margin: 0 0 23px 0;
+  font-size: 34px;
+  text-transform: uppercase; }
+
+.page-year {
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: 1px solid #E0EEFF;
+  padding: 0 0 27px 0; }
+
+.page-desc {
+  padding: 20px 0 17px 0; }
+
+.page-rating {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 0 0; }
+  .page-rating b {
+    font-weight: 500;
+    font-size: 20px;
+    display: block;
+    margin: 0 11px 0 0; }
+  .page-rating img {
+    width: 19px;
+    margin: 0 2px 0 0; }
+  .page-rating span {
+    font-size: 16px;
+    opacity: 0.5;
+    display: block;
+    margin: 0 0 0 11px; }
+
+.page-description {
+  display: flex;
+  padding: 34px 0 0 0;
+  margin: 14px 0 18px 0; }
+  .page-description div {
+    border-right: 1px solid #E0EEFF;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 0 0 7px; }
+    .page-description div img {
+      max-width: 30px;
+      width: 100%;
+      height: 100%;
+      max-height: 30px;
+      margin: 0 0 2px 0; }
+    .page-description div p {
+      margin: 14px 0 0 0;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 500; }
+    .page-description div:first-child {
+      padding: 0 20px 0 0; }
+    .page-description div:last-child {
+      border: 0;
+      margin: 0; }
+
+.page-text {
+  border-top: 1px solid #E0EEFF;
+  padding: 33px 0 31px 0; }
+  .page-text .page-text-title {
+    font-size: 20px;
+    font-weight: 300; }
+  .page-text p {
+    font-size: 16px;
+    line-height: 29px;
+    margin: 14px 0 0 0; }
+
+.PF-review {
+  border-top: 1px solid #E0EEFF;
+  padding: 41px 0 0 0;
+  margin: 9px 0 0 0; }
+  .PF-review .PF-review-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 0 -3px 0; }
+  .PF-review .reviews-content {
+    justify-content: space-between;
+    padding: 90px 0 0 0; }
+    .PF-review .reviews-content .review {
+      margin: 0 0 95px 0; }
+
+#PF-review .review:nth-child(8) ~ .review {
+  display: none; }
+
+#PF-review .see-more {
+  margin: -31px 0 0 0; }
+  #PF-review .see-more .button {
+    font-size: 14px; }
+
+#PF-review.active .review:nth-child(8) ~ .review {
+  display: block; }
+
+#PF-review.active .see-more {
+  display: none; }
+
+.page-form {
+  box-shadow: 19px 15px 23px 2px rgba(51, 84, 140, 0.25);
+  padding: 31px 40px 27px 37px;
+  margin: 20px 0 0 0; }
+  .page-form .page-form-error {
+    font-size: 12px;
+    line-height: 131%;
+    color: #FF792E;
+    margin: 31px 0 0 0; }
+    .page-form .page-form-error p {
+      margin: 0; }
+  .page-form .selectBlock {
+    margin: 0 0 20px 0; }
+  .page-form .page-form-bottom {
+    margin: 27px 0 0 0;
+    border-top: 1px solid #E0EEFF;
+    padding: 30px 0 0 0; }
+    .page-form .page-form-bottom .page-form-bottom-title {
+      padding: 0 0 0 0;
+      margin: 0 0 20px 0;
+      font-size: 14px;
+      font-weight: 300; }
+  .page-form .page-form-bottom-desc {
+    display: block; }
+    .page-form .page-form-bottom-desc p {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      font-size: 14px; }
+  .page-form button {
+    width: 100%;
+    height: 60px;
+    margin: 8px 0 0 0; }
+
+.map {
+  margin: 80px 0 40px 0; }
+  .map iframe {
+    width: 100%;
+    height: 565px;
+    box-sizing: border-box;
+    border: 0;
+    display: block; }
+
+@media (max-width: 939px) {
+  .page .page-left {
+    width: 415px; }
+  .PF-review .reviews-content .review {
+    width: 100%; } }
+
+@media (max-width: 767px) {
+  .main-slider .slick-list .slick-track .slick-slide {
+    height: 310px; }
+  .page {
+    flex-wrap: wrap; }
+    .page .page-left {
+      width: 100%; }
+    .page .page-right {
+      width: 100%;
+      margin: 62px 0 42px 0; }
+  #PF-review .review:nth-child(2) ~ .review {
+    display: none; }
+  #PF-review.active .review:nth-child(2) ~ .review {
+    display: block; }
+  #PF-review.active .see-more {
+    display: none; }
+  .page-form {
+    padding: 43px 47px 27px 47px; }
+    .page-form button {
+      margin: 2px 0 0 0; }
+  .page-description {
+    flex-wrap: wrap;
+    margin: 18px 0 -7px 0; }
+    .page-description > div {
+      width: 33.33%;
+      margin: 0 0 40px 0;
+      padding-left: 15px; }
+      .page-description > div:nth-child(4n) {
+        padding-left: 0; }
+  .PF-review .reviews-content {
+    padding: 92px 7px 0 8px; } }

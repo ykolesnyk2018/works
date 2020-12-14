@@ -1,0 +1,182 @@
+@import 'colors.scss';
+.ourCars{
+	position: relative;
+	padding: 0 0 105px 0;
+	&.ourCars2{
+		.ourCars-title{
+			margin: 84px 0 72px 0;
+		}
+	}
+	&.wh-bg{
+		padding: 0 0 98px 0;
+		&:after{
+			display: none;
+		}
+	}
+	.ourCars-title{
+		font-size: 34px;
+		font-weight: 500;
+		text-align: center;
+		margin: 85px 0 21px 0;
+		text-transform: uppercase;
+		&.ourCars-title2{
+			margin: 103px 0 20px 0;
+		}
+	}
+	.ourCars-subTitle{
+		font-size: 20px;
+		line-height: 29px;
+		font-weight: 300;
+		text-align: center;
+		margin: 0 0 73px 0;
+	}
+	&:after{
+		content: "";
+		position: absolute;
+		width: 100vw;
+		height: 645px;
+		background: $bg6;
+		left: 50%;
+		bottom: 0;
+		margin: 0 0 0 -50vw;
+		z-index: -1;
+	}
+}
+.car{
+	width: 224px;
+	box-shadow: 19px 15px 23px 2px rgba(51, 84, 140, 0.25);
+	margin: 0 15px 0 0;
+	position: relative;
+	background: #fff;
+	.car-img{
+		height: 185px;
+		box-sizing: border-box;
+		a{
+			display: block;
+			position: relative;
+			overflow: hidden;
+			height: 100%;
+			width: 100%;
+			box-sizing: border-box;
+			border: 12px solid #fff;
+			img{
+				display: block;
+				position: absolute;
+			    left: -50%;
+			    top: -50%;
+			    bottom: -50%;
+			    right: -50%;
+			    margin: auto;
+				max-width: none;
+				transition: 0.5s;
+			}
+		}
+	}
+	&:hover{
+		.car-img{
+			a{
+				img{
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+	.car-title{
+		text-align: center;
+		font-size: 14px;
+		padding: 10px 0 21px 0;
+		a{
+			text-decoration: none;
+			color: #333;
+			&:hover{
+				color: $bg2;
+			}
+		}
+	}
+}
+.friends{
+	.car{
+		width: 145px;
+		.car-img{
+			height: 145px;
+			a{
+				background: $bg6;
+				border: 22px solid #fff;
+			}
+		}
+		.car-title{
+			padding: 0 0 22px 0;
+			a{
+				opacity: 0.5;
+				color: #333;
+				&:hover{
+					opacity: 1;
+				}
+			}	
+		}
+	}
+}
+@media (max-width: 939px){
+	.car{
+		width: 237px;
+	}
+	.friends{
+		.car{
+			width: 175px;
+		}
+	}
+}
+@media (max-width: 767px){
+	.ourCars{
+		padding: 0 0 95px 0;
+		&.ourCars2{
+			.ourCars-title{
+				margin: 66px 0 55px 0;
+			}
+		}
+		.ourCars-title{
+			margin: 76px 0 20px 0;
+			&.ourCars-title2{
+				margin: 92px 0 20px 0;
+			}
+		}
+		.ourCars-subTitle{
+			margin: 0 0 43px 0;
+		}
+		
+		&.wh-bg{
+			padding: 0 0 82px 0;
+			.ourCars-title{
+				margin: 61px 0 20px 0;
+			}
+		}
+	}
+	.car{
+		width: calc(50vw - 24px);
+		margin: 0 8px 0 0;
+		.car-img{
+			height: 128px;
+			a{
+				border: 8px solid #fff;
+			}
+		}
+		.car-title{
+			padding: 10px 0 7px 0;
+		}
+	}
+	.friends{
+		.car{
+			width: calc(33.33vw - 20px);
+			.car-img{
+				height: 100px;
+				a{
+					border: 14px solid #fff;
+				}
+			}
+			.car-title{
+				font-size: 12px;
+				padding-bottom: 14px;
+			}
+		}
+	}
+}

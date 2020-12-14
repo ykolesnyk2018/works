@@ -1,0 +1,91 @@
+header {
+  background: #33548C;
+  height: 60px; }
+  header .container {
+    display: flex;
+    align-items: center; }
+
+.main-menu {
+  margin: 0 0 0 auto;
+  font-size: 14px; }
+  .main-menu ul {
+    display: flex; }
+    .main-menu ul li {
+      padding: 0 33px;
+      display: block;
+      border-right: 1px solid #30A8C4; }
+      .main-menu ul li:last-child {
+        padding-right: 0;
+        border: 0; }
+      .main-menu ul li a {
+        display: block;
+        color: #fff;
+        text-decoration: none; }
+        .main-menu ul li a:hover {
+          color: #2EFFFF; }
+        .main-menu ul li a:focus {
+          color: #30A8C4; }
+
+.main-menu-btn {
+  display: none; }
+
+@media (max-width: 767px) {
+  .main-menu-btn {
+    display: block;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    margin: 0 0 0 auto; }
+    .main-menu-btn span {
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background: #fff;
+      left: 0;
+      transition: 0.5s; }
+      .main-menu-btn span:nth-child(1) {
+        top: 0; }
+      .main-menu-btn span:nth-child(2) {
+        top: 16.5px; }
+      .main-menu-btn span:nth-child(3) {
+        bottom: 0; }
+    .main-menu-btn.active span:nth-child(1) {
+      transform: rotate(45deg);
+      top: 16.5px; }
+    .main-menu-btn.active span:nth-child(2) {
+      display: none; }
+    .main-menu-btn.active span:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 16.5px;
+      bottom: auto; }
+  header .container {
+    position: relative; }
+  .logo a {
+    display: block; }
+    .logo a img {
+      display: block;
+      max-height: 60px; }
+  .main-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #33548C;
+    border-top: 0;
+    display: none; }
+    .main-menu.active {
+      display: block; }
+    .main-menu ul {
+      flex-wrap: wrap; }
+      .main-menu ul li {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0;
+        border: 0;
+        border-bottom: 1px solid #33548C; }
+        .main-menu ul li a {
+          color: #333;
+          padding: 10px 0 10px 10px;
+          font-weight: 700;
+          text-transform: uppercase; } }

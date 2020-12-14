@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import 'colors.scss';
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400; 
+	color: #333;
+}
+.wrraper{
+	overflow: hidden;
+}
+ul,
+ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img{
+	max-width: 100%;
+}
+.container{
+	width: 945px;
+	margin: 0 auto;
+}
+*:focus{
+	outline: 0;
+}
+button{
+	cursor: pointer;
+}
+.toggle{
+	cursor: pointer;
+}
+.btn{
+	min-width: 145px;
+	display: flex;
+	height: 50px;
+	box-sizing: border-box;
+	align-items: center;
+	border: 1px solid $bg;
+	background: #fff;
+	color: #333;
+	text-decoration: none;
+	padding: 0 15px 0 20px;
+	font-size: 14px;
+	svg{
+		fill: $bg;
+		font-size: 14px;
+		margin: 0 20px 0 0;
+	}
+}
+.jq-selectbox{
+	position: relative;
+	select{
+		display: none;
+	}
+	.jq-selectbox__select{
+		display: block;
+		border: 1px solid $bg6;
+		border-left: 1px solid $bg;
+		font-size: 14px;
+		color: #333;
+		background: $bg6;
+		position: relative;
+		cursor: pointer;
+		.jq-selectbox__select-text{
+			opacity: 0.5;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			padding: 10px 36px 10px 30px;
+			box-sizing: border-box;
+			overflow: hidden;
+			line-height: 1.4;
+		}
+		.jq-selectbox__trigger{
+			position: absolute;
+			width: 12px;
+			height: 8px;
+			background: url(../images/icons/select.svg) no-repeat;
+			top: 50%;
+			margin: -4px 0 0 0;
+			right: 20px;
+		}
+	}
+	&.opened{
+		.jq-selectbox__select{
+			border: 1px solid $bg;
+		}
+	}
+	.jq-selectbox__dropdown{
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: #fff;
+		z-index: 96;
+		box-shadow: 7px 13px 21px -2px rgba(0, 0, 0, 0.21);
+		background: #fff;
+		ul{
+			li{
+				cursor: pointer;
+				display: block;
+				width: 100%;
+				color: $bg;
+				font-size: 14px;
+				padding: 12px 10px 12px 30px;
+				box-sizing: border-box;
+				border-bottom: 1px solid $bg6;
+				&:hover{
+					background: $bg6;
+					color: #000;
+				}
+				&.disabled{
+					display: none;
+				}
+				&:last-child{
+					border: 0;
+				}
+			}
+		}
+	}
+	&.dropup{
+		.jq-selectbox__dropdown{
+			box-shadow: 0 -5px 8px rgba(0, 0, 0, 0.21);
+		}
+	}
+	&.changed{
+		.jq-selectbox__select{
+			.jq-selectbox__select-text{
+				opacity: 1;
+			}
+		}
+	}
+}
+.button{
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 0;
+	height: 50px;
+	background: $bg;
+	text-decoration: none;
+	color: #fff;
+	border: 0;
+	padding: 0 20px;
+	cursor: pointer;
+	justify-content: center;
+	&:hover{
+		color: $bg3;
+	}
+	&:focus{
+		background: $bg2;
+		color: #fff;
+	}
+}
+.for-mobil{
+	display: none;
+}
+input{
+	width: 100%;
+	height: 60px;
+	border: 0;
+	border-left: 1px solid $bg;
+	background: $bg6;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	padding: 0 10px 0 29px;
+	color: #333;
+	&::placeholder{
+		color: rgba(51,51,51,0.5);
+	}
+	&:focus{
+		border: 1px solid $bg;
+	}
+}
+.link{
+	display: inline-block;
+	font-size: 10px;
+	color: $bg2;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+	&:focus{
+		color: $bg;
+	}
+}
+.ref{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $bg;
+	min-height: 50px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+	color: #333;
+	text-decoration: none;
+	font-size: 14px;
+	img{
+		margin: 0 20px 0 0;
+	}
+}
+.dissabled{
+	opacity: 0.5;
+}
+.checkbox{
+	input{
+		display: none;
+		&:checked + label{
+			&:before{
+				background: $bg url(../images/icons/checkbox.svg) center center no-repeat;
+				background-size: 14px 10px;
+			}
+			&:hover{
+				&:before{
+					border: 1px solid $bg;
+				}
+			}
+		}
+	}
+	label{
+		display: block;
+		position: relative;
+		padding: 0 0 0 30px;
+		font-size: 12px;
+		line-height: 19px;
+		cursor: pointer;
+		a{
+			font-weight: 500;
+			color: $bg2;
+			text-decoration: none;
+			&:hover{
+				text-decoration: underline;
+			}
+			&:focus{
+				color: $bg;
+			}
+		}
+		&:before{
+			content: "";
+			width: 20px;
+			height: 20px;
+			box-sizing: border-box;
+			border: 1px solid $bg;
+			background: $bg6;
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+		}
+		&:hover{
+			&:before{
+				border: 2px solid $bg;
+			}
+		}
+	}
+}
+@import 'header.scss';
+@import 'main-banner.scss';
+@import 'localHost.scss';
+@import 'ourCars.scss';
+@import 'slick.scss';
+@import 'feedback.scss';
+@import 'discover.scss';
+@import 'products.scss';
+@import 'footer.scss';
+@import 'popup.scss';
+@import 'howItWork.scss';
+@import 'endlessOptions.scss';
+@import 'whyFP.scss';
+@import 'covered.scss';
+@import 'faq.scss';
+@import 'reviews.scss';
+@import 'hit.scss';
+@import 'main-slider.scss';
+@import 'page.scss';
+@import 'products-slider.scss'; 
+@import 'FPmodal.scss';
+@media (max-width: 939px){
+	.container{
+		width: 740px;
+	}
+}
+@media (max-width: 767px){
+	.container{
+		width: auto;
+		margin: 0 20px;
+	}
+	.jq-selectbox{
+		select{
+			width: 100%;
+			box-sizing: border-box;
+			background: $bg6 url(../images/icons/select.svg) right 20px center no-repeat;
+ 			appearance: none;
+			display: flex;
+			padding: 10px 36px 10px 30px;
+			height: 60px;
+			box-sizing: border-box;
+			border: 0;
+			border-left: 1px solid $bg;
+			&:focus{
+				border: 1px solid $bg;
+			}
+		}
+		.jq-selectbox__select{
+			display: none;
+		}
+	}
+	.button{
+		height: 52px;
+	}
+	.no-for-mobil{
+		display: none;
+	}
+	.for-mobil{
+		display: block;
+	}
+}

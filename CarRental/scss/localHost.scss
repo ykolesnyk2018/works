@@ -1,0 +1,66 @@
+@import 'colors.scss';
+.localHost{
+	display: flex;
+	align-items: center;
+	padding: 85px 0 0 0;
+	.localHost-left{
+		width: 315px;
+		position: relative;
+		z-index: 1;
+		&:before{
+			content: "";
+			width: 50vw;
+			height: 332px;
+			background: $bg6;
+			position: absolute;
+			top: 50%;
+			transform: translate(0,-50%);
+			right: 0;
+			z-index: -1;
+		}
+	}
+	.localHost-right{
+		width: 545px;
+		margin: 0 0 0 auto;
+		.localHost-title{
+			font-weight: 500;
+			font-size: 34px;
+			line-height: 130.69%;
+			text-transform: uppercase;
+			margin: 0 0 20px 0;
+		}
+		.localHost-text{
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 29px;
+			p{
+				margin: 0 0 13px 0;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	.localHost{
+		display: flex;
+		flex-wrap: wrap;
+		.localHost-left{
+			order: 2;
+			&:before{
+				width: calc(100vw - 75px);
+				right: 55px;
+				height: 221px;
+			}
+			img{
+				width: 200px;
+				display: block;
+				margin: 17px auto 0 auto;
+			}
+		}
+		.localHost-right{
+			order: 1;
+			.localHost-title{
+				margin-bottom: 16px;
+			}
+		}
+	}
+}

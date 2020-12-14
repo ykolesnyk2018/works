@@ -1,0 +1,77 @@
+.discover .discover-title {
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 83px 0 16px 0; }
+
+.discover .discover-sub-title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 300;
+  text-align: center; }
+
+.discover .discover-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 84px 80px 32px 79px; }
+  .discover .discover-content .discover-block {
+    max-width: 33.33%;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; }
+    .discover .discover-content .discover-block:before {
+      content: "";
+      background: #30A8C4 url(../images/icons/checkbox.svg) center center no-repeat;
+      width: 80px;
+      min-width: 80px;
+      height: 80px;
+      display: block;
+      margin: 0 20px 0 0; }
+    .discover .discover-content .discover-block .discover-block-description {
+      font-size: 14px;
+      font-weight: 300; }
+      .discover .discover-content .discover-block .discover-block-description span {
+        display: block;
+        font-size: 20px;
+        font-weight: 700; }
+    .discover .discover-content .discover-block.dark:before {
+      background-color: #33548C; }
+
+.discover .discover-img {
+  display: block;
+  text-align: center; }
+  .discover .discover-img img {
+    display: inline-block; }
+
+@media (max-width: 767px) {
+  .discover {
+    position: relative; }
+    .discover .discover-title {
+      margin: 80px 0 15px 0; }
+      .discover .discover-title br {
+        display: none; }
+    .discover .discover-content {
+      margin: 28px 0 0 2px; }
+      .discover .discover-content .discover-block {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 10px 0;
+        align-items: flex-end; }
+        .discover .discover-content .discover-block:before {
+          width: 54px;
+          min-width: 54px;
+          height: 54px;
+          margin: 0 13px 0 0; }
+    .discover .discover-img {
+      position: absolute;
+      bottom: 0;
+      left: 165px; }
+      .discover .discover-img img {
+        max-width: none;
+        height: 125px; } }

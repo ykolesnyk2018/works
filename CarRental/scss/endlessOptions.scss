@@ -1,0 +1,66 @@
+@import 'colors.scss';
+.endlessOptions{
+	background: $bg6;
+	margin: 102px 0 0 0;
+	position: relative;
+	.endlessOptions-content{
+		max-width: 464px;
+		margin: 0 0 0 80px;
+		padding: 43px 0 36px 0;
+	}
+	.endlessOptions-title{
+		font-size: 34px;
+		text-transform: uppercase;
+		font-weight: 500;
+		margin: 0 0 19px 0;
+	}
+	.endlessOptions-text{
+		font-size: 20px;
+		line-height: 29px;
+		font-weight: 300;
+		margin: 0 0 44px 0;
+		p{
+			margin: 0 0 13px 0;
+		}
+		b{
+			font-weight: 500;
+		}
+	}
+	.endlessOptions-img{
+		position: absolute;
+		right: 22px;
+		bottom: 0;
+		img{
+			display: block;
+		}
+	}
+}
+@media (max-width: 939px){
+	.endlessOptions{
+		.endlessOptions-img{
+			right: 0;
+		}
+		.endlessOptions-content{
+			max-width: 365px;
+			margin: 0 0 0 20px;
+			padding: 20px 0;
+		}
+	}
+}
+@media (max-width: 767px){
+	.endlessOptions{
+		margin: 62px 0 0 0;
+		.endlessOptions-content{
+			padding: 63px 20px 0 22px;
+			margin: 0;
+		}
+		.endlessOptions-img{
+			position: static;
+			img{
+				display: block;
+				margin: 48px auto 0 auto;
+				max-width: 94%;
+			}
+		}
+	}
+}

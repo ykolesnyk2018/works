@@ -1,0 +1,155 @@
+@import 'colors.scss';
+footer{
+	background: $bg4;
+	margin: 61px 0 0 0;
+	padding: 35px 0 25px 0;
+	.container{
+		display: grid;
+		grid-template-areas: 
+			"footer-logo footer-nav footer-right"
+			"footer-logo footer-social footer-right"
+		;
+		.footer-logo{
+			grid-area: footer-logo;
+			a{
+				text-decoration: none;
+				display: block;
+			}
+		}
+		.footer-nav{
+			grid-area: footer-nav;
+			font-size: 14px;
+			ul{
+				display: flex;
+				li{
+					margin: 0 30px 0 0;
+					&:last-child{
+						margin: 0;
+					}
+					a{
+						display: block;
+						color: #fff;
+						text-decoration: none;
+						&:hover{
+							color: $bg3;
+						}
+						&:focus{
+							color: $bg2;
+						}
+					}
+				}
+			}
+		}
+		.footer-social{
+			grid-area: footer-social;
+			a{
+				text-decoration: none;
+				margin: 0 17px 0 0;
+				&:last-child{
+					margin: 0;
+				}
+				svg{
+					fill: #fff;
+				}
+				&:hover{
+					svg{
+						fill: $bg3;
+					}
+				}
+				&:focus{
+					svg{
+						fill: $bg2;
+					}
+				}
+			}
+		}
+		.footer-right{
+			display: flex;
+			justify-content: flex-end;
+			grid-area: footer-right;
+			flex-wrap: wrap;
+			a{
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0 0 0 16px;
+				img{
+					display: block;
+				}
+			}
+			p{
+				width: 100%;
+				margin: 22px 0 0 0;
+				padding: 0;
+				justify-content: flex-end;
+				color: #fff;
+				opacity: 0.6;
+				font-size: 12px;
+				display: flex;
+				align-items: center;
+				img{
+					margin: 0 0 0 13px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 939px){
+	footer{
+		.container{
+			.footer-logo{
+				padding: 0 25px 0 0;
+			}
+		}
+	}
+}
+@media (max-width: 767px){
+	footer{
+		margin: 92px 0 0 0;
+		padding: 62px 0 25px 0;
+		.container{
+			grid-template-columns: 50% 50%;
+			grid-template-areas:
+				"footer-logo footer-nav"
+				"footer-social footer-nav"
+				"footer-right footer-right"
+			;
+			.footer-logo{
+				a{
+					img{
+						height: 49px;
+					}
+				}
+			}
+			.footer-right{
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding: 47px 0 36px 0;
+				a{
+					width: calc(50% - 5px);
+					margin: 0;
+				}
+				p{
+					display: none;
+				}
+			}
+			.footer-nav{
+				position: relative;
+				padding: 0 0 0 5px;
+				ul{
+					flex-wrap: wrap;
+					li{
+						width: 100%;
+						margin: 0 0 15px 0;
+					}
+				}
+			}
+			.footer-social{
+				margin: 13px 0 0 0;
+				a{
+					margin: 0 26px 0 0;
+				}
+			}
+		}
+	}
+}

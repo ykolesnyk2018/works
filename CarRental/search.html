@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="wrraper">
+		<header>
+			<div class="container">
+				<div class="logo">
+					<a href="index.html">
+						<img src="images/logo.png" alt="">
+					</a>
+				</div>
+				<div class="main-menu-btn toggle" data-target="main-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="main-menu" id="main-menu">
+					<ul>
+						<li><a href="#">how it works</a></li>
+						<li><a href="#">singn in</a></li>
+						<li><a href="#">EN</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<div class="main-banner search-banner">
+				<div class="main-banner-bottom">
+					<div class="selectBlock">
+						<div class="selectBlock-label">
+						<img src="images/icons/where.svg" alt="">
+							Where
+						</div>
+						<select>
+							<option value disabled selected>Choose a location</option>
+							<option>Los Angeles, CA</option>
+							<option>Los Angeles, CA2</option>
+							<option>Los Angeles, CA3</option>
+							<option>Los Angeles, CA4</option>
+						</select>
+					</div>
+					<div class="selectBlock">
+						<div class="selectBlock-label">
+						<img src="images/icons/calendar.svg" alt="">
+							From
+						</div>
+						<select>
+							<option value disabled selected>Pick-up date</option>
+							<option>Los Angeles, CA</option>
+							<option>Los Angeles, CA2</option>
+							<option>Los Angeles, CA3</option>
+							<option>Los Angeles, CA4</option>
+						</select>
+					</div>
+					<div class="selectBlock">
+						<div class="selectBlock-label">
+						<img src="images/icons/calendar2.svg" alt="">
+							From
+						</div>
+						<select>
+							<option value disabled selected>Return date</option>
+							<option>Los Angeles, CA</option>
+							<option>Los Angeles, CA2</option>
+							<option>Los Angeles, CA3</option>
+							<option>Los Angeles, CA4</option>
+						</select>
+					</div>
+					<button>Search</button>
+				</div>
+				<a href="#" class="btn">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.1381 2.86194L10.4714 0.195249C10.4713 0.195124 10.4712 0.195061 10.4711 0.194936C10.4557 0.17953 10.4395 0.164936 10.4226 0.151093C10.4149 0.144749 10.4068 0.139249 10.3988 0.133311C10.3893 0.126218 10.3801 0.118874 10.3702 0.11228C10.3607 0.105936 10.3508 0.100436 10.3411 0.0946239C10.3322 0.0892802 10.3234 0.0836864 10.3143 0.0787489C10.3043 0.0734364 10.2941 0.0689364 10.284 0.0641552C10.2744 0.0596239 10.2649 0.0548427 10.2551 0.0507489C10.2453 0.0466864 10.2352 0.0433739 10.2252 0.0398114C10.2147 0.0360302 10.2043 0.0319989 10.1936 0.0287489C10.1836 0.0257177 10.1734 0.0234989 10.1633 0.0209677C10.1523 0.0181864 10.1415 0.0151239 10.1303 0.0129052C10.1186 0.0105927 10.1068 0.0091864 10.095 0.0074989C10.0853 0.0061239 10.0757 0.0042489 10.0658 0.00328015C10.0221 -0.00103235 9.97801 -0.00103235 9.93426 0.00328015C9.92441 0.0042489 9.91485 0.00609265 9.9051 0.0074989C9.89332 0.0091864 9.88147 0.0105614 9.86979 0.0129052C9.8586 0.0151239 9.84779 0.0181864 9.83682 0.0209677C9.82669 0.0234989 9.81654 0.0257177 9.80654 0.0287489C9.79579 0.0319989 9.78538 0.0360302 9.77488 0.0398114C9.76488 0.0434052 9.75482 0.0466864 9.74498 0.0507489C9.73513 0.0548114 9.72573 0.0596239 9.71613 0.0641552C9.70601 0.0689364 9.69579 0.0734364 9.68585 0.0787489C9.67666 0.0836864 9.66794 0.0892802 9.65901 0.0946239C9.64926 0.100436 9.63941 0.105936 9.62991 0.11228C9.62004 0.118874 9.61079 0.126218 9.60129 0.133311C9.59335 0.139249 9.58523 0.144749 9.57751 0.151093C9.56063 0.164936 9.54441 0.17953 9.52901 0.194936C9.52888 0.195061 9.52876 0.195124 9.52866 0.195249L6.86201 2.86191C6.60166 3.12225 6.60166 3.54437 6.86201 3.80472C7.12235 4.06506 7.54447 4.06506 7.80482 3.80472L9.33341 2.27612V10C9.33341 10.3682 9.63188 10.6667 10.0001 10.6667C10.3683 10.6667 10.6667 10.3682 10.6667 10V2.27615L12.1953 3.80475C12.4557 4.06509 12.8778 4.06509 13.1381 3.80475C13.3984 3.54437 13.3984 3.12228 13.1381 2.86194Z"/>
+						<path d="M8.19527 12.1953L6.66667 13.7239V6C6.66667 5.63181 6.3682 5.33334 6.00002 5.33334C5.63183 5.33334 5.33336 5.63181 5.33336 6V13.7239L3.80476 12.1953C3.54442 11.9349 3.12229 11.9349 2.86195 12.1953C2.6016 12.4556 2.6016 12.8777 2.86195 13.1381L5.52861 15.8047C5.52873 15.8049 5.52886 15.805 5.52898 15.8051C5.54439 15.8205 5.56061 15.835 5.57745 15.8489C5.58517 15.8552 5.59333 15.8607 5.60126 15.8667C5.61073 15.8738 5.62001 15.8811 5.62986 15.8877C5.63936 15.8941 5.6492 15.8996 5.65895 15.9054C5.66789 15.9107 5.67661 15.9163 5.6858 15.9212C5.69573 15.9265 5.70595 15.931 5.71611 15.9358C5.72567 15.9404 5.73511 15.9451 5.74492 15.9492C5.75476 15.9533 5.76483 15.9566 5.77483 15.9601C5.78536 15.9639 5.79573 15.968 5.80648 15.9712C5.81648 15.9742 5.82664 15.9765 5.83676 15.979C5.84773 15.9818 5.85858 15.9848 5.86976 15.987C5.88148 15.9894 5.8933 15.9907 5.90508 15.9924C5.9148 15.9938 5.92439 15.9957 5.93423 15.9966C5.97798 16.001 6.02208 16.001 6.06583 15.9966C6.07567 15.9957 6.08523 15.9938 6.09498 15.9924C6.10677 15.9907 6.11861 15.9894 6.1303 15.987C6.14148 15.9848 6.1523 15.9817 6.16327 15.979C6.17339 15.9764 6.18355 15.9742 6.19355 15.9712C6.2043 15.9679 6.2147 15.9639 6.2252 15.9601C6.2352 15.9565 6.24527 15.9532 6.25511 15.9492C6.26492 15.9451 6.27433 15.9403 6.28389 15.9358C6.29405 15.931 6.3043 15.9265 6.31423 15.9212C6.32339 15.9163 6.33211 15.9107 6.34102 15.9054C6.35077 15.8995 6.36064 15.894 6.37014 15.8877C6.37998 15.8811 6.38923 15.8738 6.39867 15.8667C6.40664 15.8607 6.4148 15.8552 6.42255 15.8489C6.43927 15.8351 6.45536 15.8206 6.47067 15.8054C6.47092 15.8051 6.47117 15.8049 6.47139 15.8047L9.13805 13.138C9.3984 12.8777 9.3984 12.4556 9.13805 12.1952C8.87771 11.9349 8.45564 11.9349 8.19527 12.1953Z"/>
+					</svg>
+					Sorting
+				</a>
+				<a href="#" class="btn">
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M15.3333 12.6667H13.558C13.2693 11.706 12.3867 11 11.3333 11C10.28 11 9.398 11.706 9.10869 12.6667H0.666656C0.298656 12.6667 0 12.9653 0 13.3333C0 13.7013 0.298656 14 0.666656 14H9.10866C9.39731 14.9607 10.28 15.6667 11.3333 15.6667C12.3866 15.6667 13.2687 14.9607 13.558 14H15.3333C15.702 14 16 13.7013 16 13.3333C16 12.9653 15.702 12.6667 15.3333 12.6667ZM11.3333 14.3333C10.782 14.3333 10.3333 13.8847 10.3333 13.3333C10.3333 12.782 10.782 12.3333 11.3333 12.3333C11.8847 12.3333 12.3333 12.782 12.3333 13.3333C12.3333 13.8847 11.8847 14.3333 11.3333 14.3333Z"/>
+						<path d="M15.3333 2H13.558C13.2687 1.03934 12.3867 0.333344 11.3333 0.333344C10.28 0.333344 9.398 1.03934 9.10866 2H0.666656C0.298656 2 0 2.29866 0 2.66666C0 3.03466 0.298656 3.33331 0.666656 3.33331H9.10866C9.398 4.294 10.28 5 11.3333 5C12.3867 5 13.2687 4.294 13.558 3.33334H15.3333C15.702 3.33334 16 3.03469 16 2.66669C16 2.29869 15.702 2 15.3333 2ZM11.3333 3.66666C10.782 3.66666 10.3333 3.218 10.3333 2.66666C10.3333 2.11531 10.782 1.66666 11.3333 1.66666C11.8847 1.66666 12.3333 2.11531 12.3333 2.66666C12.3333 3.218 11.8847 3.66666 11.3333 3.66666Z"/>
+						<path d="M15.3333 7.33334H6.89134C6.602 6.37269 5.72 5.66669 4.66669 5.66669C3.61337 5.66669 2.73134 6.37269 2.44203 7.33334H0.666656C0.298656 7.33334 0 7.632 0 8C0 8.368 0.298656 8.66666 0.666656 8.66666H2.442C2.73134 9.62731 3.61334 10.3333 4.66666 10.3333C5.71997 10.3333 6.602 9.62731 6.89131 8.66666H15.3333C15.702 8.66666 16 8.368 16 8C16 7.632 15.702 7.33334 15.3333 7.33334ZM4.66666 9C4.11531 9 3.66666 8.55134 3.66666 8C3.66666 7.44866 4.11531 7 4.66666 7C5.218 7 5.66666 7.44866 5.66666 8C5.66666 8.55134 5.218 9 4.66666 9Z"/>
+					</svg>
+					Filter
+				</a>
+			</div>
+			<div class="searchResults">
+				<div class="searchResults-title">Search results...</div>
+				<div class="products">
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p1.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Mercedes-Benz CLA</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p2.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+								<span>$107</span>
+							</div>
+							<div class="product-like active toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">BMW X1</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p3.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Audi A3</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p1.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Mercedes-Benz CLA</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p2.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+								<span>$107</span>
+							</div>
+							<div class="product-like active toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">BMW X1</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p3.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Audi A3</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p1.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Mercedes-Benz CLA</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p2.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+								<span>$107</span>
+							</div>
+							<div class="product-like active toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">BMW X1</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p3.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Audi A3</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p1.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Mercedes-Benz CLA</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p2.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+								<span>$107</span>
+							</div>
+							<div class="product-like active toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">BMW X1</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p3.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Audi A3</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p1.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Mercedes-Benz CLA</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p2.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+								<span>$107</span>
+							</div>
+							<div class="product-like active toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">BMW X1</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-img">
+							<a href="#">
+								<img src="images/p3.png" alt="">
+							</a>
+							<div class="product-price">
+								$84/day
+							</div>
+							<div class="product-like toggle"></div>
+						</div>
+						<div class="product-year">
+							<span>2018</span>
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+							<img src="images/icons/star.svg" alt="">
+						</div>
+						<div class="product-title">
+							<a href="#">Audi A3</a>
+						</div>
+						<div class="product-description">
+							<div>
+								<img src="images/icons/propeller.svg" alt="">
+								<p>Climate control</p>
+							</div>
+							<div>
+								<img src="images/icons/manual-transmission.svg" alt="">
+								<p>Auto</p>
+							</div>
+							<div>
+								<img src="images/icons/gas-station.svg" alt="">
+								<p>Diesel</p>
+							</div>
+							<div>
+								<img src="images/icons/door.svg" alt="">
+								<p>4</p>
+							</div>
+							<div>
+								<img src="images/icons/seat-belt.svg" alt="">
+								<p>5</p>
+							</div>
+						</div>
+						<div class="product-btns">
+							<a href="#" class="button">To order</a>
+							<a href="#" class="button">I want cheaper</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html">
+						<img src="images/footer-logo.png" alt="">
+					</a>
+				</div>
+				<div class="footer-nav">
+					<ul>
+						<li><a href="#">how it works</a></li>
+						<li><a href="#">singn in</a></li>
+						<li><a href="#">EN</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<a href="#">
+						<svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15 1.84906C14.4422 2.09375 13.8478 2.25594 13.2281 2.33469C13.8656 1.95406 14.3522 1.35594 14.5809 0.635C13.9866 0.989375 13.3303 1.23969 12.6309 1.37938C12.0666 0.778438 11.2622 0.40625 10.3847 0.40625C8.68219 0.40625 7.31156 1.78813 7.31156 3.48219C7.31156 3.72594 7.33219 3.96031 7.38281 4.18344C4.82625 4.05875 2.56406 2.83344 1.04437 0.966875C0.779062 1.42719 0.623438 1.95406 0.623438 2.52125C0.623438 3.58625 1.17188 4.53031 1.98937 5.07687C1.49531 5.0675 1.01063 4.92406 0.6 4.69812C0.6 4.7075 0.6 4.71969 0.6 4.73187C0.6 6.22625 1.66594 7.4675 3.06375 7.75344C2.81344 7.82188 2.54063 7.85469 2.2575 7.85469C2.06063 7.85469 1.86187 7.84344 1.67531 7.80219C2.07375 9.02 3.20438 9.91531 4.54875 9.94438C3.5025 10.7628 2.17406 11.2559 0.735938 11.2559C0.48375 11.2559 0.241875 11.2447 0 11.2137C1.36219 12.0922 2.97656 12.5938 4.7175 12.5938C10.3763 12.5938 13.47 7.90625 13.47 3.84312C13.47 3.70719 13.4653 3.57594 13.4587 3.44563C14.0691 3.0125 14.5819 2.47156 15 1.84906Z"/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10.8604 0H4.13934C1.85691 0 0 1.857 0 4.13943V10.8605C0 13.143 1.85691 14.9999 4.13934 14.9999H10.8604C13.143 14.9999 14.9999 13.1429 14.9999 10.8605V4.13943C15 1.857 13.143 0 10.8604 0ZM13.6691 10.8605C13.6691 12.4092 12.4092 13.669 10.8605 13.669H4.13934C2.59075 13.6691 1.33086 12.4092 1.33086 10.8605V4.13943C1.33086 2.59084 2.59075 1.33086 4.13934 1.33086H10.8604C12.4091 1.33086 13.669 2.59084 13.669 4.13943V10.8605H13.6691Z"/>
+							<path d="M7.49995 3.63501C5.36871 3.63501 3.63486 5.36886 3.63486 7.50011C3.63486 9.63126 5.36871 11.365 7.49995 11.365C9.6312 11.365 11.3651 9.63126 11.3651 7.50011C11.3651 5.36886 9.6312 3.63501 7.49995 3.63501ZM7.49995 10.0341C6.10264 10.0341 4.96572 8.89734 4.96572 7.50002C4.96572 6.10261 6.10255 4.96579 7.49995 4.96579C8.89736 4.96579 10.0342 6.10261 10.0342 7.50002C10.0342 8.89734 8.89727 10.0341 7.49995 10.0341Z"/>
+							<path d="M11.5271 2.50659C11.2707 2.50659 11.0188 2.6104 10.8378 2.79228C10.6558 2.97328 10.5512 3.22526 10.5512 3.48256C10.5512 3.73906 10.6559 3.99095 10.8378 4.17283C11.0188 4.35383 11.2707 4.45853 11.5271 4.45853C11.7844 4.45853 12.0355 4.35383 12.2174 4.17283C12.3993 3.99095 12.5031 3.73897 12.5031 3.48256C12.5031 3.22526 12.3993 2.97328 12.2174 2.79228C12.0364 2.6104 11.7844 2.50659 11.5271 2.50659Z"/>
+						</svg>
+					</a>
+					<a href="#">
+						<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.99813 2.49062H8.36751V0.105625C8.13126 0.073125 7.31876 0 6.37251 0C4.39813 0 3.04563 1.24187 3.04563 3.52437V5.625H0.866882V8.29125H3.04563V15H5.71688V8.29187H7.80751L8.13938 5.62563H5.71626V3.78875C5.71688 3.01812 5.92438 2.49062 6.99813 2.49062Z"/>
+						</svg>
+					</a>
+				</div>
+				<div class="footer-right">
+					<a href="#">
+						<img src="images/app1.png" alt="">
+					</a>
+					<a href="#">
+						<img src="images/app2.png" alt="">
+					</a>
+					<p>
+						Разработано:
+						<img src="images/icons/disigned.svg" alt="">
+					</p>
+				</div>
+			</div>
+		</footer>
+		<div class="overlay active"></div>
+		<div class="popup active">
+			<div class="result">
+				<div class="result-img">
+					<img src="images/icons/car.svg" alt="">
+				</div>
+				<div class="result-content">
+					<div class="result-num">117</div>
+					<div class="result-text">found options for your request</div>
+				</div>
+				<div class="result-btn">
+					<a class="button popup-close">See the result</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.localHost {
+  display: flex;
+  align-items: center;
+  padding: 85px 0 0 0; }
+  .localHost .localHost-left {
+    width: 315px;
+    position: relative;
+    z-index: 1; }
+    .localHost .localHost-left:before {
+      content: "";
+      width: 50vw;
+      height: 332px;
+      background: #F6FAFF;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 0;
+      z-index: -1; }
+  .localHost .localHost-right {
+    width: 545px;
+    margin: 0 0 0 auto; }
+    .localHost .localHost-right .localHost-title {
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 130.69%;
+      text-transform: uppercase;
+      margin: 0 0 20px 0; }
+    .localHost .localHost-right .localHost-text {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 29px; }
+      .localHost .localHost-right .localHost-text p {
+        margin: 0 0 13px 0; }
+
+@media (max-width: 767px) {
+  .localHost {
+    display: flex;
+    flex-wrap: wrap; }
+    .localHost .localHost-left {
+      order: 2; }
+      .localHost .localHost-left:before {
+        width: calc(100vw - 75px);
+        right: 55px;
+        height: 221px; }
+      .localHost .localHost-left img {
+        width: 200px;
+        display: block;
+        margin: 17px auto 0 auto; }
+    .localHost .localHost-right {
+      order: 1; }
+      .localHost .localHost-right .localHost-title {
+        margin-bottom: 16px; } }

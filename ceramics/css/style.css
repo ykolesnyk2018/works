@@ -144,27 +144,39 @@ header.motion .header-btns a:hover svg,
 	cursor: pointer;
 }
 .dropdown-menu{
-	width: 50vw;
+	width: 290px;
 	position: absolute;
 	top: 0;
 	left: 100vw;
-	margin: 0 0 0 444px;
+	margin: 0 0 0 0;
 	background: #fff;
-	max-height: 100vh;
+	height: 100vh;
 	overflow: auto;
 	padding: 84px 0 0 0;
 	box-sizing: border-box;
 	z-index: 10;
 	transition: 0.5s;
 	box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-wrap: wrap;
+}
+.dropdown-menu_social{
+	margin: auto 0 0 0;
 }
 .dropdown-menu.active{
-	left: 50vw;
+	right: 0;
+	left: auto;
+	margin: 0 auto;
 }
 .dropdown-menu ul{
 	font-size: 16px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
-.dropdown-menu ul li{}
+.dropdown-menu ul li{
+	width: 100%;
+}
 .dropdown-menu ul li a{
 	display: block;
 	color: #181818;
@@ -182,13 +194,10 @@ header.motion .header-btns a:hover svg,
 	position: absolute;
 	left: 0;
 	bottom: 0;
-	background: url(../images/icons/dropdown-line.svg) left center no-repeat;
-}
-.dropdown-menu ul li:last-child a:after{
-	display: none;
+	background: linear-gradient(to right, rgba(24,24,24,0),rgba(24,24,24,1),rgba(24,24,24,0));
 }
 .dropdown-menu_social{
-	padding: 54px 0 35px 151px;
+	padding: 30px 0 35px 20px;
 }
 .dropdown-menu_social a{
 	text-decoration: none;
@@ -207,7 +216,7 @@ header.motion .header-btns a:hover svg,
 	width: 12px;
 	height: 12px;
 	position: absolute;
-	left: 222px;
+	right: 40px;
 	top: 36px;
 	cursor: pointer;
 }
@@ -383,9 +392,19 @@ h1{
 }
 .product-on-main{
 	display: flex;
-	padding: 29px 0 71px 0;
+	padding: 40px 0 71px 0;
 	flex-wrap: wrap;
 	position: relative;
+	margin: 30px 0 0 0;
+}
+.product-on-main:after{
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,1),rgba(255,255,255,0));
 }
 .product-on-main-left{
 	width: 675px;
@@ -395,6 +414,14 @@ h1{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
+}
+.product-on-main-left h1{
+	padding: 0 0 40px 0;
+	font-size: 30px;
+	text-align: left;
+}
+.product-on-main-left h1:after{
+	display: none;
 }
 .product-on-main-left p{
 	margin: 0 0 23px 0;
@@ -887,7 +914,8 @@ footer .container{
 	flex-wrap: wrap;
 }
 .tab-block-drop{
-	width: 100%;
+	min-width: 100%;
+	width: 600px;
 	min-width: 162px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
@@ -900,10 +928,16 @@ footer .container{
 	display: none;
 	margin: 6px 0 0 0;
 }
+.tab-content-right .tab-block-drop{
+	left: auto;
+	right: 0;
+}
 .tab-block-drop.active{
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
 }
 .tab-block-drop .checkbox{
+	width: 33.33%;
 	margin: 20px 0;
 	position: relative;
 }
@@ -1279,6 +1313,24 @@ footer .container{
 .action-inside .btn{
 	width: 100%;
 }
+.action-inside ul,
+.about-us ul,
+.action-inside ul,
+.news-inseide ul,
+.partnership ul{
+	width: 100%;
+	list-style: disc;
+	margin: 1em 0 1em 1em;
+}
+.action-inside ol,
+.about-us ol,
+.action-inside ol,
+.news-inseide ol,
+.partnership ol{
+	width: 100%;
+	list-style: decimal;
+	margin: 1em 0 1em 1em;
+}
 .justify-content-space-between img{
 	max-width: calc(33.33% - 40px);
 }
@@ -1490,8 +1542,16 @@ footer .container{
 }
 .map-title{
 	font-family: 'RobotoLight';
-	text-align: center;
 	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+.map-title img{
+	width: 40px;
+	display: block;
+	margin: 0 20px 0 0;
 }
 iframe{
 	width: 100%;
@@ -1819,12 +1879,43 @@ body.hidden{
 .contact-form .checkbox{
 	margin: 0 0 20px 0;
 }
+.main-menu ul{
+	position: relative;
+}
+@media (min-width: 1321px){
+	.main-banner{
+		height: 100vh;
+	}
+	.images{
+		min-height: 100vh;
+	}
+	.images .slick-slide{
+		min-height: 100vh;
+	}
+	.logo{
+		padding-top: 9px;
+	}
+	.logo img{
+		margin: 0 0 0 0;
+		height: 72px;
+	}
+	.dropdown-menu{
+		width: 30vw;
+	}
+}
 @media (max-width: 1320px){
 	.container{
 		width: 708px;
 	}
 	.main-menu{
-		display: none;
+		margin: 0 39px 0 50px;
+	}
+	.header-right{
+		align-items: center;
+	}
+	.header-btns{
+		display: flex;
+		align-items: center;
 	}
 	.logo{
 		padding: 0;
@@ -2221,6 +2312,11 @@ body.hidden{
 	.container{
 		width: auto;
 		margin: 0 16px;
+	}
+	.dropdown-menu.active{
+		height: 100vh;
+		max-height: 100vh;
+		top: 0;
 	}
 	.tab-nav{
 		font-size: 13px;
@@ -2794,5 +2890,8 @@ body.hidden{
 	.contact-form form input{
 		font-size: 13px;
 		padding: 15.6px 10px;
+	}
+	.main-menu{
+		display: none;
 	}
 }

@@ -1452,6 +1452,9 @@ footer .container{
 	font-size: 16px;
 	line-height: 150%;
 }
+.about-us p{
+	width: 100%;
+}
 .about-us img{
 	display: block;
 }

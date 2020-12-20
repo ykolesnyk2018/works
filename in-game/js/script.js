@@ -24,6 +24,13 @@ $(document).ready(function(){
 		$('.overlay_popup, .popup').hide();
 	});
 	/* popUp */
+	/* toggle */
+    $('.toggle').click(function() {
+		$(this).toggleClass("active");
+		var toggle_id = $('#' + $(this).attr("data-target"));
+		$(toggle_id).toggleClass("active");
+	}); 
+	/* toggle */
     $(function() {
         $(".class-name").click(function(){
             $(this).toggleClass("active");
@@ -53,7 +60,12 @@ $(document).ready(function(){
 		  },
 		  breakpoint: 940,
 		  settings: {
-		  slidesToShow: 4
+		  	slidesToShow: 4
+		  },
+		  breakpoint: 767,
+		  settings: {
+		  	slidesToShow: 1,
+	  		variableWidth: false
 		  }
 		}
 	  ]

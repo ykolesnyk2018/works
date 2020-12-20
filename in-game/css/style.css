@@ -672,6 +672,7 @@ body *::-webkit-resizer { background-color: #666;}
 	background: #10141f;
 	padding: 14px 5px 14px 21px;
 	margin: 18px 0 18px 0;
+	box-sizing: border-box;
 }
 .hint a{
 	color: #e6f557;
@@ -756,7 +757,7 @@ body *::-webkit-resizer { background-color: #666;}
 .slick-list .slick-track{
 	display: flex;
 }
-.slick-list .slick-track .slick-slide{
+.liveTrade-slider .slick-track .slick-slide{
 	opacity: 0;
 	transition: 0.6s;
 	pointer-events: none;
@@ -764,7 +765,7 @@ body *::-webkit-resizer { background-color: #666;}
 	z-index: -1;
 	margin: 0 12px 0 0;
 }
-.slick-list .slick-track .slick-slide.slick-active{
+.liveTrade-slider .slick-track .slick-slide.slick-active{
 	opacity: 1;
 	pointer-events: auto;
 }
@@ -932,6 +933,21 @@ footer .container ul li a:hover{
 }
 .social a:last-child{
 }
+.social a.vk:hover svg{
+	fill: #597da3;
+}
+.social a.tl:hover svg{
+	fill: #2ba0d9;
+}
+.social a.steam:hover svg{
+	fill: #9cbbc7;
+}
+.social a.what:hover svg{
+	fill: #38d754;
+}
+.main-menu-btn{
+	display: none;
+}
 @media (max-width: 1223px){
 	.container{
 		width: 940px;
@@ -949,7 +965,7 @@ footer .container ul li a:hover{
 	.product:nth-child(3n){
 		margin-right: 0;
 	}
-	.slick-list .slick-track .slick-slide{
+	.liveTrade-slider .slick-track .slick-slide{
 		margin: 0 23px 0 0;
 	}
 	.spec-slide{
@@ -1013,10 +1029,165 @@ footer .container ul li a:hover{
 	footer .container ul{
 		margin-right: 10px;
 	}
+	.main-menu-btn{
+		width: 32px;
+		height: 26px;
+		position: relative;
+		display: block;
+		cursor: pointer;
+	}
+	.main-menu-btn span{
+		display: block;
+		width: 100%;
+		height: 3px;
+		background: #fff;
+		position: absolute;
+		left: 0;
+		transition: 0.5s;
+	}
+	.main-menu-btn span:nth-child(2){
+		top: 11.5px;
+	}
+	.main-menu-btn span:nth-child(3){
+		bottom: 0;
+	}
+	.main-menu-btn.active span:nth-child(1){
+		transform: rotate(-45deg);
+		top: 11.5px;
+	}
+	.main-menu-btn.active span:nth-child(2){
+		display: none;
+	}
+	.main-menu-btn.active span:nth-child(3){
+		transform: rotate(45deg);
+		top: 11.5px;
+	}
+	header .container{
+		position: relative;
+	}
+	.header-right{
+		margin: 0 30px 0 auto;
+	}
+	.main-menu.active{
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background: #10141f;
+		border: 1px solid #323c5a;
+		box-sizing: border-box;
+		padding: 10px 15px 10px 15px;
+	}
+	.main-menu.active ul{
+		flex-wrap: wrap;
+	}
+	.main-menu.active ul li{
+		display: block;
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	.main-menu.active ul li:last-child{
+		margin: 0;
+	}
+	.main-menu.active ul li a{}
+	.howItWork-ex-button{
+		margin: 50px 0 30px 0;
+	}
 }
 @media (max-width: 767px){
 	.container{
 		width: auto;
 		margin: 0 10px;
+	}
+	.half > div{
+		width: 100%;
+	}
+	header .container{
+		flex-wrap: wrap;
+	}
+	.header-right{
+		order: 1;
+		margin: 10px auto 0 0;
+	}
+	.main-menu.active{
+		top: 40px;
+		z-index: 1;
+	}
+	.chooseGame-top{
+		padding: 24px 10px 23px 10px;
+	}
+	.chooseGame-top-left{
+		width: 100%;
+		text-align: center;
+	}
+	.tab-nav{
+		width: 100%;
+		margin: 0;
+		justify-content: space-between;
+	}
+	.tab-nav>div{
+		width: calc(50% - 5px);
+		height: 22vw;
+		padding: 0;
+		margin: 15px 0 0 0;
+	}
+	.product,
+	.product:nth-child(3n),
+	.product:nth-child(4n){
+		width: calc(50% - 10px);
+		margin: 0 0 10px 0;
+	}
+	.tab-content{
+		padding: 0 10px;
+	}
+	.payment{
+		padding: 24px 10px 0 10px;
+	}
+	.kindOfpayment{
+		justify-content: space-between;
+	}
+	.kindOfpayment > div,
+	.kindOfpayment > div:nth-child(3n),
+	.kindOfpayment > div:nth-child(4n){
+		width: calc(50% - 5px);
+		margin: 0 0 10px 0;
+	}
+	.liveTrade-title p{
+		margin: 10px 0 0 0;
+	}
+	.slick-next{
+		right: -35px;
+	}
+	.liveTrade-slider .slick-track .slick-slide{
+		margin: 0 0 0 0;
+	}
+	.liveTrade{
+		margin: 30px 0;
+	}
+	.howItWork-exImg{
+		height: auto;
+	}
+	.howItWork-ex{
+		width: 100%;
+		margin: 0 0 30px 0;
+	}
+	.howItWork-ex-button{
+		margin: 30px 0;
+	}
+	.howItWork-ex-button a{
+		width: 100%;
+	}
+	footer .container{
+		flex-wrap: wrap;
+	}
+	footer .container ul{
+		margin: 0;
+		width: 100%;
+	}
+	.footer-right{
+		padding: 0;
+		border: 0;
+		margin: 15px 0 0 0;
 	}
 }

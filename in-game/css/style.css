@@ -454,7 +454,7 @@ body *::-webkit-resizer { background-color: #666;}
 }
 .checkbox input:checked + label:before{
 	border-color: #559500;
-	background: url(../images/icon/check.svg) bottom 5px center no-repeat;
+	background: url(../images/icon/check.svg) 3px 2px no-repeat;
 }
 .spec-slide{
 	width: 295px;
@@ -948,8 +948,98 @@ footer .container ul li a:hover{
 .main-menu-btn{
 	display: none;
 }
+.status{
+	width: 300px;
+	position: fixed;
+	top: 50px;
+	left: calc(50% - 935px);
+	box-sizing: border-box;
+	background: #181d2c;
+	padding: 0 20px 0 20px;
+}
+.status-title{
+	width: 100%;
+	font-size: 15px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 20px 20px 15px 0;
+	cursor: pointer;
+}
+.status-title:after{
+	content: "";
+	width: 12px;
+	height: 8px;
+	background: url(../images/icon/status-arrow.svg) no-repeat;
+	position: absolute;
+	top: -50%;
+	bottom: -50%;
+	right: 0;
+	margin:  auto 0;
+	transform: rotate(180deg);
+}
+.status-title:hover:after{
+	background: url(../images/icon/status-arrow-hover.svg) no-repeat;
+}
+.status-title.active:after{
+	transform: rotate(0);
+}
+.status-content{
+	display: none;
+}
+.status-title.active + .status-content{
+	display: block;
+}
+.status-content a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	height: 45px;
+	background: #116ca5;
+}
+.status-content.orange a{
+	background: #d87000;
+}
+.status-content.green a{
+	background: #559500;
+}
+.ilegal{
+	display: block;
+}
+.ilegal a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	text-decoration: none;
+	color: #fff;
+	border: 1px solid #679ae2;
+	height: 44px;
+	width: 218px;
+}
+.ilegal a:hover{
+	background: #679ae2;
+}
+@media (max-width: 1920px){
+	.status{
+		width: 1228px;
+		position: relative;
+		left: auto;
+		margin: 0 auto 20px auto;
+		top: auto;
+	}
+	.status-content{
+		padding-bottom: 20px;
+	}
+}
 @media (max-width: 1223px){
 	.container{
+		width: 940px;
+	}
+	.status{
 		width: 940px;
 	}
 	.main-menu ul li{
@@ -975,6 +1065,9 @@ footer .container ul li a:hover{
 }
 @media (max-width: 940px){
 	.container{
+		width: 740px;
+	}
+	.status{
 		width: 740px;
 	}
 	.main-menu{
@@ -1100,6 +1193,10 @@ footer .container ul li a:hover{
 		width: auto;
 		margin: 0 10px;
 	}
+	.status{
+		width: auto;
+		margin: 0 10px 20px 10px;
+	}
 	.half > div{
 		width: 100%;
 	}
@@ -1189,5 +1286,18 @@ footer .container ul li a:hover{
 		padding: 0;
 		border: 0;
 		margin: 15px 0 0 0;
+	}
+	.fastSearch-bottom{
+		flex-wrap: wrap;
+	}
+	.fastSearch-bottom .checkbox{
+		width: 100%;
+	}
+	.spec-slide{
+		width: 100%;
+		margin: 40px 0 15px 0;
+	}
+	.spec-slide input{
+		bottom: 68px;
 	}
 }

@@ -70,4 +70,48 @@ $(document).ready(function(){
 			$(this).unmask();
 		});
 	});
+	
+	$("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+            
+            document.getElementById('form').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+			
+            $("#form").trigger("reset");
+		});
+		return false;
+	});
+	$("#form2").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail2.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+            
+            document.getElementById('form2').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+			
+            $("#form2").trigger("reset");
+		});
+		return false;
+	});
+	
+    $('footer ul li a').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); 
+        if ($(scroll_el).length != 0) {
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); 
+        }
+	    return false;
+    });
+    $('.go-to').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); 
+        if ($(scroll_el).length != 0) {
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top - 50 }, 1000); 
+        }
+	    return false;
+    }); 
 });

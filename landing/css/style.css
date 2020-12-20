@@ -774,6 +774,7 @@ button:hover{
 	background: none;
 	font-family: 'CenturyGothic';
 	font-size: 18px;
+	color: #fff;
 }
 .tarifs-form textarea::placeholder,
 .tarifs-form input::placeholder{
@@ -1012,6 +1013,11 @@ footer ul li a:hover{
 	font-size: 14px;
 	color: #fff;
 	margin: 32px 0 0 0;
+}
+.all-ok{
+    text-align: center;
+    width: 100%;
+    color: lawngreen;
 }
 @media (max-width: 959px){
 	.container{
@@ -1625,5 +1631,23 @@ footer ul li a:hover{
 		font-size: 14px;
 		margin: 25px 0 0 0;
 		text-align: left;
+	}
+	.howItWorkFig1{
+		left: -20px;
+	}
+	.howItWorkFig2 {
+		top: 330px;
+		right: 15px;
+	}
+	.howItWorkFig3{
+		top: 650px;
+		left: 20px;
+	}
+	.howItWorkFig4{
+		right: 10px;
+	}
+	.howItWorkFig5 {
+		left: 10px;
+		bottom: 520px;
 	}
 }

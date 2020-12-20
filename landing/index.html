@@ -33,7 +33,7 @@
 					<a href="tel:88001009537">8 800 100 95 37</a>
 				</div>
 				<div class="make-order-btn">
-					<a href="#">Оставить заявку</a>
+					<a href="#tarifs" class="go-to">Оставить заявку</a>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,7 @@
 		<div class="container">
 			<div class="main-banner-title">Вы успешно реализуете ИТ-бизнес по подписке (SaaS), создаёте<br> онлайн-платформы, продаёте разработанные приложения, софт и другие<br> ИТ-решения клиентам в России? В то же время наступил момент, когда вы задумались о возможности выхода на зарубежный рынок со своим продуктом? </div>
 			<div class="main-banner-text">Воспользуйтесь нашими компаниями с подключенными платёжными сервисами для тестирования продаж вашего ИТ-бизнеса в Европе, Азии и США.</div>
-			<form class="main-form form">
+			<form class="main-form form" id="form">
 				<div class="choose-country">
 					<div class="choose-country-cont">
 						<img src="images/icons/ru.svg" alt="">
@@ -59,12 +59,12 @@
 						</div>
 					</div>
 				</div>
-				<input type="text" name="phone" placeholder="+ 7 926 700 10 27" class="ru">
+				<input type="text" name="phone" placeholder="+ 7 926 700 10 27" class="ru" required>
 				<button>Узнать подробнее</button>
 			</form>
 		</div>
 	</div>
-	<div class="benefit">
+	<div class="benefit" id="benefit">
 		<div class="container">
 			<div class="benefit-title">Чем полезен сервис?</div>
 			<div class="benefit-content">
@@ -95,13 +95,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="useful">
+	<div class="useful" id="useful">
 		<div class="container">
 			<div class="useful-title">Кому пригодиться?</div>
 			<div class="useful-text">ИТ-компаниям России (разработчики приложений, софтов, онлайн-сервисов, SaaS и т.п.), желающие вывести свой продукт на международный рынок и получать заказы от физических и юридических лиц-нерезидентов России </div>
 		</div>
 	</div>
-	<div class="howItWork">
+	<div class="howItWork" id="howItWork">
 		<div class="container">
 			<div class="howItWork-title">Как это работает?</div>
 			<div class="howItWork-content">
@@ -148,7 +148,7 @@
 		<div class="howItWorkFig howItWorkFig4"></div>
 		<div class="howItWorkFig howItWorkFig5"></div>
 	</div>
-	<div class="aboutService">
+	<div class="aboutService" id="aboutService">
 		<div class="container">
 			<div class="aboutService-title">О сервисе</div>
 			<div class="aboutService-top">
@@ -198,7 +198,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="feedbacks">
+			<div class="feedbacks" id="feedbacks">
 				<div class="feedbacks-title">Отзывы</div>
 				<div class="feedback">
 					<div class="feedback-text">Я Василий Андреев, руководитель компании ООО Старллинк. Мы занимаемся разработкой софта для логистической отрасли. К ребятам пришли, желая попробовать продать наш софт в Европе. К сожалению продажи в нужном объёме не пошли, но мы собрали необходимый фидбэк для адаптации продукта к рынку Европы. К самому сервису претензий нет. Запуститься смогли в течении месяца, получили необходимую обратную связь, поняли что ещё надо доработать. Постпупления от разовых продаж были своевременно перечислены нам на счёт. Подозреваю, что, разбираясь во всём собственными силами, ушло бы гораздо больше времени и средств. Обязательно вернёмся к сотрудничеству, когда завершим необходимые доработки продукта.</div>
@@ -225,7 +225,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="ourClients">
+			<div class="ourClients" id="ourClients">
 				<div class="ourClients-title">Наши клиенты</div>
 				<div class="ourClients-content">
 					<div>
@@ -248,7 +248,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tarifs">
+			<div class="tarifs" id="tarifs">
 				<div class="tarifs-title">Тарифы и цены на использование нашей бизнес-структуры</div>
 				<div class="tarifs-description">
 					<p>
@@ -265,9 +265,9 @@
 					</p>
 				</div>
 				<div class="tarifs-form">
-					<form class="form">
-						<input type="text" placeholder="Имя">
-						<input type="email" placeholder="Почта">
+					<form class="form" id="form2">
+						<input type="text" placeholder="Имя" required name="name">
+						<input type="email" placeholder="Почта" required name="email">
 						<div class="relative">
 							<div class="choose-country">
 								<div class="choose-country-cont">
@@ -285,14 +285,14 @@
 									</div>
 								</div>
 							</div>
-							<input type="text" name="phone" placeholder="+ 7 926 700 10 27" class="ru">
+							<input type="text" name="phone" placeholder="+ 7 926 700 10 27" required class="ru">
 						</div>
-						<textarea name="text" placeholder="Вопрос"></textarea>
+						<textarea name="text" placeholder="Вопрос" required></textarea>
 						<button>Отправить заявку</button>
 					</form>
 				</div>
 			</div>
-			<div class="contacts">
+			<div class="contacts" id="contacts">
 				<div class="contacts-title">Контакты</div>
 				<div class="contacts-content">
 					<div class="contacts-left">
@@ -383,18 +383,18 @@
 		<div class="container">
 			<div class="footer-left">
 				<ul>
-					<li><a href="#">Чем полезен?</a></li>
-					<li><a href="#">Кому пригодится?</a></li>
-					<li><a href="#">Как это работает?</a></li>
-					<li><a href="#">О сервисе</a></li>
+					<li><a href="#benefit">Чем полезен?</a></li>
+					<li><a href="#useful">Кому пригодится?</a></li>
+					<li><a href="#howItWork">Как это работает?</a></li>
+					<li><a href="#aboutService">О сервисе</a></li>
 				</ul>
 			</div>
 			<div class="footer-menu">
 				<ul>
-					<li><a href="#">Наши клиенты</a></li>
-					<li><a href="#">Отзывы</a></li>
-					<li><a href="#">Тарифы</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="#ourClients">Наши клиенты</a></li>
+					<li><a href="#feedbacks">Отзывы</a></li>
+					<li><a href="#tarifs">Тарифы</a></li>
+					<li><a href="#contacts">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="footer-right">

@@ -1301,11 +1301,16 @@ footer ul li a:hover{
 		padding: 12px 0 34px 0;
 	}
 	.header-right{
+		display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-end;
 	}
 	.header-right .phone{
 		order: 1;
+		width: 100%;
+		text-align: right;
+	}
+	.make-order-btn{
+		margin: 0 0 0 auto;
 	}
 	header .container{
 		align-items: flex-start;
@@ -1376,8 +1381,7 @@ footer ul li a:hover{
 		line-height: 140%;
 		padding: 0 15px;
 	}
-	.benefit-block, 
-	.benefit-block:nth-child(3n){
+	.benefit-block{
 		margin: 0 0 106px 0;
 	}
 	.useful{
@@ -1410,7 +1414,8 @@ footer ul li a:hover{
 		margin: 0 0 56px 0;
 	}
 	.howItWork-content{
-		padding: 0 25px 42px 36px;
+		padding: 0 0 42px 0;
+		justify-content: center;
 	}
 	.howItWork-text{
 		font-size: 12px;
@@ -1534,6 +1539,9 @@ footer ul li a:hover{
 		font-size: 12px;
 		padding: 0 15px 0 13px;
 	}
+	.tarifs-form .relative input{
+		padding-left: 80px;
+	}
 	.tarifs-form textarea{
 		font-size: 12px;
 		padding: 15px 15px 0 14px;
@@ -1649,5 +1657,20 @@ footer ul li a:hover{
 	.howItWorkFig5 {
 		left: 10px;
 		bottom: 520px;
+	}
+	.advantages-title{
+		text-align: center;
+		padding: 0;
+	}
+}
+@media (max-width: 600px){
+	.advantages{
+		justify-content: center;
+	}
+}
+@media (max-width: 420px){
+	.advantages-title{
+		text-align: left;
+		padding: 0;
 	}
 }

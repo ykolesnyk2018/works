@@ -70,6 +70,22 @@ $(document).ready(function(){
 		}
 	  ]
 	});
+	$('.favorites-slider').slick({
+	  dots: true,
+	  arrows: false,
+	  infinite: true,
+	  speed: 300,
+  	  slidesToShow: 2,
+	  variableWidth: true,
+	  responsive: [
+		{
+		  breakpoint: 1223,
+		  settings: {
+			slidesToShow: 2
+		  }
+		}
+	  ]
+	});
 	$(function(){
 		$("#slider-range-max").slider({
 		  range: "max",

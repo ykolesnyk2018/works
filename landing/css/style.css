@@ -1667,6 +1667,10 @@ footer ul li a:hover{
 	.advantages{
 		justify-content: center;
 	}
+	.benefit-content{
+		justify-content: center;
+		padding: 0;
+	}
 }
 @media (max-width: 420px){
 	.advantages-title{

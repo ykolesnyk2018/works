@@ -14,12 +14,12 @@ $(document).ready(function(){
 	/* popUp */
     $('.show_popup').click(function() {
 		var popup_id = $('#' + $(this).attr("data-target"));
-		$(popup_id).show();
-		$('.overlay').show();
+		$(popup_id).addClass("active");
+		$('.overlay').addClass("active");
 		$('body').addClass("hidden");
 	}); 
 	$('.overlay, .popup-close').click(function() {
-		$('.overlay, .popup').hide();
+		$('.overlay, .popup').removeClass("active");
 		$('body').removeClass("hidden");
 	});
 	/* popUp */
@@ -30,6 +30,67 @@ $(document).ready(function(){
 		$(toggle_id).toggleClass("active");
 	}); 
 	/* toggle */
+	// обработчик нажатия на кнопку плей
+	$('.player button').click(function () {
+		var parent = $(this).parent();
+
+		var button = $(this);
+		var audio = $('audio', parent)[0];
+		var duration = $('.player-example-duration', parent);
+
+		// переключение состояния плеера и смена картинки на кнопке - плей или пауза
+		if (audio.paused == false) {
+			audio.pause();
+			button.css('background', 'url(/images/play.png)');
+		} else {
+			audio.play();
+			button.css('background', 'url(/images/pause.png)');
+		}
+
+		// по окончанию трека на кнопку устанавливается картинка плей
+		$(audio).on('ended', function() {
+			button.css('background', 'url(/images/play.png)');
+		});
+
+		// обновление текущей позиции воспроизведения
+		$(audio).on('timeupdate', function() {
+			var date = new Date(audio.currentTime * 1000);
+			duration.html(date.getMinutes()+':'+date.getSeconds());
+		});
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     $(function() {
         $(".class-name").click(function(){
             $(this).toggleClass("active");

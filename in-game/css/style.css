@@ -1099,6 +1099,7 @@ footer .container ul li a:hover{
     justify-content: center;
     align-items: center;
 	padding: 0 41.25px;
+	border: 0;
 }
 .ilegal-banner-btn{
 	text-align: center;
@@ -1322,7 +1323,7 @@ h1>span b{
 	background: none;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    padding: 20px 10px 0 15px;
+    padding: 20px 10px 10px 15px;
     width: 100%;
     height: 127px;
     background: none;
@@ -1582,6 +1583,9 @@ span.contact{
 	background: rgba(0,0,0,0.7);
 	display: none;
 }
+.overlay.active{
+	display: block;
+}
 .popup{
 	position: fixed;
 	top: 50%;
@@ -1594,6 +1598,9 @@ span.contact{
 	overflow: auto;
 	display: none;
 	transform: translate(-50%,-50%);
+}
+.popup.active{
+	display: block;
 }
 .blogArticle-popup{
 	width: 777px;
@@ -2523,6 +2530,198 @@ h1.att-title{
 .last-price span{
 	color: #556292;
 }
+.popupTrade{
+	width: 793px;
+	box-sizing: border-box;
+	padding: 45px 45px 40px 45px;
+}
+.popupTrade-progress{
+	margin: 0 0 40px 0;
+}
+.popupTrade-progress-content{
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: #556292;
+	margin: 0 0 -8px 0;
+}
+.popupTrade-progress-content .active{
+	color: #559500;
+}
+.popupTrade-progress-content div{
+	position: relative;
+}
+.popupTrade-progress-content div:after{
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	display: block;
+	margin: 15px auto 0 auto;
+	background: #1c2235;
+	position: relative;
+	z-index: 1;
+}
+.popupTrade-progress-content div.active:after{
+	background: #559500;
+}
+.popupTrade-progress-line{
+	height: 3px;
+	margin: 0 71px 0 82px;
+	background: #1c2235;
+	position: relative;
+}
+.popupTrade-progress-line div{
+	background: #559500;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+}
+.popupTrade-progress-line div.mob{
+	display: none;
+	background: #559500;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.popupTrade-start{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+}
+.popupTrade-start .left,
+.popupTrade-start .right{
+	width: calc(50% - 26px);
+}
+.popupTrade-start p{
+	width: 100%;
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	line-height: 24px;
+}
+.popupTrade-start b{
+	font-weight: 400;
+	color: #679ae2;
+}
+.popupTrade-title{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 600;
+	margin: 0 0 15px 0;
+}
+.uniqueCode{
+	width: 100%;
+	height: 49px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #1c2235;
+	font-size: 14px;
+	margin: 0 0 30px 0;
+}
+.uniqueCode span{
+	color: #e6f557;
+	font-weight: 600;
+}
+.popupTrade .button{
+	height: 55px;
+}
+.button.green{
+	background: #559500;
+}
+.purses{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 20px 0 0 0;
+}
+.purse{
+	width: 293px;
+	font-size: 14px;
+	background: #121621;
+	margin: 0 20px 20px 0;
+}
+.purse>div{
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 18px;
+}
+.purse>div:nth-child(odd){
+	background: #141824;
+}
+.purse>div span:first-child{
+	color: #556292;
+}
+.purse>div span:last-child{
+	font-weight: 600;
+}
+.popupTrade .inputBox{
+	max-width: 478px;
+	width: 100%;
+}
+.popupTrade .inputBox-title{
+	font-size: 12px;
+	top: -8px;
+}
+.popupTrade .inputBox textarea{
+	font-size: 12px;
+	padding: 12px 10px 10px 22px;
+}
+.popupTrade form{
+	width: 100%;
+}
+.popupTrade .red{
+	color: #e23000;
+}
+.player{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+.player-button{
+	width: 11px;
+	height: 12px;
+	background: url(../images/icon/play.svg) no-repeat;
+	background-size: contain;
+}
+.player-button.active{
+	background: url(../images/icon/pause.svg) no-repeat;
+}
+.player-slider{
+	width: 260px;
+	height: 2px;
+	background: #333b56;
+	position: relative;
+	margin: 0 10px;
+}
+.player-slider div{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #7ab3fd;
+	height: 100%;
+}
+.player-slider div:after{
+	content: "";
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #7ab3fd;
+	position: absolute;
+	right: -4px;
+	top: -3px;
+}
+.player-time{
+	font-size: 14px;
+	color: #7380ac;
+}
 @media (max-width: 1800px){
 	.status{
 		width: 1228px;
@@ -2617,6 +2816,9 @@ h1.att-title{
 		width: 740px;
 	}
 	.status{
+		width: 740px;
+	}
+	.popupTrade{
 		width: 740px;
 	}
 	.main-menu{
@@ -3087,5 +3289,58 @@ h1.att-title{
 	.prices-table{
 		min-height: 0;
 		padding: 0 0 30px 0;
+	}
+	.popupTrade{
+		width: calc(100vw - 20px);
+		padding: 15px 15px;
+	}
+	.popupTrade-start .left, 
+	.popupTrade-start .right{
+		width: 100%;
+	}
+	.popupTrade-start .right{
+		margin: 30px 0 0 0;
+	}
+	.popupTrade-progress-content{
+		display: block;
+		text-align: right;
+	}
+	.popupTrade-progress{
+		position: relative;
+	}
+	.popupTrade-progress-line{
+		width: 3px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0;
+	}
+	.popupTrade-progress-line div{
+		display: none;
+	}
+	.popupTrade-progress-line div.mob{
+		display: block;
+	}
+	.popupTrade-progress-content div{
+		position: relative;
+		padding: 0 0 15px 0;
+	}
+	.popupTrade-progress-content div:last-child{
+		padding: 0;
+	}
+	.popupTrade-progress-content div:after{
+		position: absolute;
+		left: -5.5px;
+		top: 0;
+		margin: 0;
+	}
+	.popupTrade-progress-content div:last-child:after{
+		bottom: 0;
+		top: auto;
+	}
+	.purse{
+		width: 100%;
+		margin: 0 0 20px 0;
 	}
 }

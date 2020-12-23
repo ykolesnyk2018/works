@@ -730,6 +730,11 @@ button:hover{
 	padding: 40px 60px 59px 60px;
 	margin: 66px 0 0 7px;
 	position: relative;
+	min-height: 440px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .tarifs-form:before{
 	content: "";
@@ -1661,6 +1666,9 @@ footer ul li a:hover{
 	.advantages-title{
 		text-align: center;
 		padding: 0;
+	}
+	.tarifs-form{
+		min-height: 0;
 	}
 }
 @media (max-width: 600px){

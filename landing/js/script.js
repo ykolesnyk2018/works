@@ -1,40 +1,4 @@
 $(document).ready(function(){
-	$(function() {
-		$('select.styler').styler();
-  	});
-	/* popUp */
-    $('.show_popup').click(function() {
-		var popup_id = $('#' + $(this).attr("rel"));
-		$(popup_id).show();
-		$('.overlay_popup').show();
-	}); 
-	$('.overlay_popup').click(function() {
-		$('.overlay_popup, .popup').hide();
-	});
-	/* popUp */
-    $(function() {
-        $(".class-name").click(function(){
-            $(this).toggleClass("active");
-        }); 
-    });
-    $(function(){
-        $(".tabs").tabs();
-    });
-	$('.one-time').slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 1,
-	  adaptiveHeight: true
-	});
-	
-	
-	
-	
-	
-	
-	
-	
     $('.choose-country-cont').click(function() {
     	$('.choose-country').toggleClass("active");
     });
@@ -69,35 +33,6 @@ $(document).ready(function(){
 		}).dblclick(function() {
 			$(this).unmask();
 		});
-	});
-	
-	$("#form").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-            
-            document.getElementById('form').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
-			
-            $("#form").trigger("reset");
-		});
-		return false;
-	});
-	$("#form2").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail2.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-            
-            document.getElementById('form2').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
-			
-            $("#form2").trigger("reset");
-		});
-		return false;
 	});
 	
     $('footer ul li a').click( function(){ // ловим клик по ссылке с классом go_to

@@ -10,18 +10,17 @@ $(document).ready(function(){
 		var tabs_id = $('#' + $(this).attr("data-target"));
 		$(tabs_id).addClass("active");
 	}); 
-	$('.overlay_popup').click(function() {
-		$('.overlay_popup, .popup').hide();
-	});
 	/* Tab */
 	/* popUp */
     $('.show_popup').click(function() {
-		var popup_id = $('#' + $(this).attr("rel"));
+		var popup_id = $('#' + $(this).attr("data-target"));
 		$(popup_id).show();
-		$('.overlay_popup').show();
+		$('.overlay').show();
+		$('body').addClass("hidden");
 	}); 
-	$('.overlay_popup').click(function() {
-		$('.overlay_popup, .popup').hide();
+	$('.overlay, .popup-close').click(function() {
+		$('.overlay, .popup').hide();
+		$('body').removeClass("hidden");
 	});
 	/* popUp */
 	/* toggle */

@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "ykolesnyk2018@gmail.com";
+$recepient = "george@arktika24.ru,ershik57@gmail.com";
 $sitename = "Название сайта";
 
 $name = trim($_POST["name"]);
@@ -10,4 +10,4 @@ $text = trim($_POST["text"]);
 $message = "Имя: $name \nE-mail: $email \nТелефон: $phone \nТекст: $text";
 
 $pagetitle = "Новая заявка с сайта \"$sitename\"";
-mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
+mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient"); 

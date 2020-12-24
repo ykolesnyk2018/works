@@ -91,21 +91,15 @@ $(document).ready(function(){
 	
 	
 	
-    $(function() {
-        $(".class-name").click(function(){
-            $(this).toggleClass("active");
-        }); 
-    });
+	$('.specSlider').slick({
+	  dots: false,
+	  infinite: true,
+	  speed: 300,
+	  slidesToShow: 1
+	});
     $(function(){
         $(".tabs").tabs();
     });
-	$('.one-time').slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 1,
-	  adaptiveHeight: true
-	});
 	$('.liveTrade-slider').slick({
 	  dots: false,
 	  infinite: true,

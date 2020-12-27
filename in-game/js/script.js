@@ -150,38 +150,46 @@ $(document).ready(function(){
 		var objectsNav = $(this).attr("data-target");
 		$(".objects, .keysBottom").addClass(objectsNav);
 	}); 
-	
-	
-	
-	
-	
-	/*
-    $('.player-button').click(function() {
-		sound = document.getElementById($(this).attr("data-target"));
-		var sound = "." + $(this).attr('class') + " audio";
-		alert(sound);
-		sound.play();
-		$(this).parent().removeClass('pause').addClass("play");
-	}); 
-    $('.pause-button').click(function() {
-		var sound = document.getElementById("track");
-		sound.pause();
-		$(this).parent().removeClass('play').addClass("pause");
-	}); 
-		var audio = document.getElementById('track');
-		audio.addEventListener('timeupdate', function () {
-		  var timeSet = 1.705179;
-		  var _currentTime = parseFloat(audio.currentTime);
-		  var audioTime = parseFloat(audio.duration);
+	$(function() {
+	  var $aud = $("#audio"),
+		  $pp  = $('#playpause'),
+		  $vol = $('#volume'),
+		  $bar = $("#progressbar"),
+		  AUDIO= $aud[0];
 
-		  $('.currentTime').val(Math.round(_currentTime));
-		  $('.timeset').text(Math.round(_currentTime));
-		  $('.time').text(Math.floor(audioTime / 60) + '.' + Math.floor((audioTime / 60 - Math.floor(audioTime / 60)) * 60));
+	  AUDIO.volume = 0.75;
+	  AUDIO.addEventListener("timeupdate", progress, false);
 
-		  if (_currentTime === timeSet) {
-			$(".message").text('Equal time!');
-		  }
+	  function getTime(t) {
+		var m=~~(t/60), s=~~(t % 60);
+		return (m<10?"0"+m:m)+':'+(s<10?"0"+s:s);
+	  }
+	  function progress() {
+		$bar.slider('value', ~~(100/AUDIO.duration*AUDIO.currentTime));
+		//$pp.text(getTime(AUDIO.currentTime));
+		$(".player-time").text(getTime(AUDIO.currentTime));
+	  }
 
-		}, false);
-		*/
+	  $vol.slider( {
+		value : AUDIO.volume*100,
+		slide : function(ev, ui) {
+		  $vol.css({background:"hsla(180,"+ui.value+"%,50%,1)"});
+		  AUDIO.volume = ui.value/100; 
+		} 
+	  });
+
+	  $bar.slider( {
+		  orientation: "horizontal",
+		  range: "min",
+		  animate: true,
+		value : AUDIO.currentTime,
+		slide : function(ev, ui) {
+		  AUDIO.currentTime = AUDIO.duration/100*ui.value;
+		}
+	  });
+	  $pp.click(function() {
+		return AUDIO[AUDIO.paused?'play':'pause']();
+	  });
+
+	});
 });

@@ -1506,11 +1506,10 @@
 				<input type="checkbox" id="bx1" checked>
 				<label for="bx1">Больше не воспроизводить</label>
 			</div>
-			<div class="player">
-				<div class="player-button toggle"></div>
-				<div class="player-slider">
-					<div style="width: 30%;"></div>
-				</div>
+			<div class="player" id="player">
+				<audio id="audio" src="images/audio.mp3" autoplay loop></audio> 
+				<div class="player-button toggle" id="playpause"></div>
+				<div id="progressbar"></div>
 				<div class="player-time">
 			  		<div class="timeset">0</div>
 			  		:

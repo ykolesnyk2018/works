@@ -2770,6 +2770,7 @@ h1.att-title{
 }
 .player-button.active{
 	background: url(../images/icon/pause.svg) no-repeat;
+	background-size: contain;
 }
 .player-slider{
 	width: 260px;
@@ -4027,6 +4028,39 @@ h1.att-title{
 	width: 14px;
 	height: 14px;
 }
+.player .ui-slider{
+	width: 260px;
+	height: 2px;
+	background: #333b56;
+	margin: 0 10px;
+}
+.player .ui-slider .ui-slider-range{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #7ab3fd;
+	height: 100%;
+}
+.player .ui-slider-handle{
+	position: absolute;
+	border: 0;
+	padding: 0;
+	height: 1px;
+	width: 1px;
+	background: none;
+	margin: 0;
+}
+.player .ui-slider-handle:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #7ab3fd;
+    position: absolute;
+    top: -3px;
+	left: -4px;
+	border: 0;
+}
 @media (max-width: 1800px){
 	.status{
 		width: 1228px;
@@ -4983,5 +5017,9 @@ h1.att-title{
 	.object{
 		width: 220px;
 		margin: 0 auto 15px auto;
+	}
+	.player .ui-slider{
+		width: auto;
+		flex-grow: 1;
 	}
 }

@@ -30,64 +30,21 @@ $(document).ready(function(){
 		$(toggle_id).toggleClass("active");
 	}); 
 	/* toggle */
-	// обработчик нажатия на кнопку плей
-	$('.player button').click(function () {
-		var parent = $(this).parent();
-
-		var button = $(this);
-		var audio = $('audio', parent)[0];
-		var duration = $('.player-example-duration', parent);
-
-		// переключение состояния плеера и смена картинки на кнопке - плей или пауза
-		if (audio.paused == false) {
-			audio.pause();
-			button.css('background', 'url(/images/play.png)');
-		} else {
-			audio.play();
-			button.css('background', 'url(/images/pause.png)');
-		}
-
-		// по окончанию трека на кнопку устанавливается картинка плей
-		$(audio).on('ended', function() {
-			button.css('background', 'url(/images/play.png)');
-		});
-
-		// обновление текущей позиции воспроизведения
-		$(audio).on('timeupdate', function() {
-			var date = new Date(audio.currentTime * 1000);
-			duration.html(date.getMinutes()+':'+date.getSeconds());
-		});
+    $('.howItWork-ex-button a').click(function() {
+		$(".howItWork").removeClass().addClass('howItWork');
+		$('.howItWork-ex-button a').removeClass("active");
+		$(this).addClass("active");
+		var sa_id = $(this).attr("data-target");
+		$('.howItWork').addClass(sa_id);
+	}); 
+	$('.autoplay-slider').slick({
+		arrows: false,
+		dots: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 5000,
 	});
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -130,6 +87,8 @@ $(document).ready(function(){
 	  infinite: true,
 	  speed: 300,
   	  slidesToShow: 2,
+	  autoplay: true,
+	  autoplaySpeed: 10000,
       slidesToScroll: 2,
 	  variableWidth: true,
 	  responsive: [
@@ -160,4 +119,69 @@ $(document).ready(function(){
 		});
     	$("#amount").val($("#slider-range-max").slider("value"));
   	});
+	$(function(){
+		$("#slider-range-max2").slider({
+		  range: "max",
+		  min: 1,
+		  max: 700,
+		  value: 360,
+		  slide: function( event, ui ) {
+			$("#amount2").val(ui.value);
+		  }
+		});
+    	$("#amount2").val($("#slider-range-max2").slider("value"));
+  	});
+	/* toggle */
+    $('.copy').click(function() {
+		var copyText = $('#' + $(this).attr("data-target"));
+	  copyText.select();
+	  document.execCommand("copy");
+	});
+    $('.object').click(function() {
+		$(".object").removeClass('active');
+		$(this).addClass('active');
+	});
+	/* toggle */
+    $('.objectsNav a').click(function() {
+		$(".objects").removeClass().addClass('objects');
+		$(".keysBottom").removeClass().addClass('keysBottom');
+		$(".objectsNav a").removeClass();
+		$(this).toggleClass("active");
+		var objectsNav = $(this).attr("data-target");
+		$(".objects, .keysBottom").addClass(objectsNav);
+	}); 
+	
+	
+	
+	
+	
+	/*
+    $('.player-button').click(function() {
+		sound = document.getElementById($(this).attr("data-target"));
+		var sound = "." + $(this).attr('class') + " audio";
+		alert(sound);
+		sound.play();
+		$(this).parent().removeClass('pause').addClass("play");
+	}); 
+    $('.pause-button').click(function() {
+		var sound = document.getElementById("track");
+		sound.pause();
+		$(this).parent().removeClass('play').addClass("pause");
+	}); 
+		var audio = document.getElementById('track');
+		audio.addEventListener('timeupdate', function () {
+		  var timeSet = 1.705179;
+		  var _currentTime = parseFloat(audio.currentTime);
+		  var audioTime = parseFloat(audio.duration);
+
+		  $('.currentTime').val(Math.round(_currentTime));
+		  $('.timeset').text(Math.round(_currentTime));
+		  $('.time').text(Math.floor(audioTime / 60) + '.' + Math.floor((audioTime / 60 - Math.floor(audioTime / 60)) * 60));
+
+		  if (_currentTime === timeSet) {
+			$(".message").text('Equal time!');
+		  }
+
+		}, false);
+		*/
 });

@@ -1000,13 +1000,13 @@ footer .container ul li a:hover{
 	display: none;
 }
 .status{
-	width: 300px;
+	width: 280px;
 	position: fixed;
 	bottom: 50px;
 	left: calc(50% - 935px);
 	box-sizing: border-box;
 	background: #181d2c;
-	padding: 0 20px 0 20px;
+	padding: 0 20px 20px 20px;
 }
 .status-title{
 	width: 100%;
@@ -4083,6 +4083,7 @@ h1.att-title{
 	}
 	.status{
 		bottom: auto;
+		padding: 0 20px 0 20px;
 	}
 }
 @media (max-width: 1223px){

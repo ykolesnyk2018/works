@@ -375,6 +375,7 @@ header{
 }
 .about-us{
     background: url(../images/about-us.png) top left no-repeat;
+	background-size: cover;
 }
 .about-us-inside{
     display: -webkit-flex;
@@ -416,6 +417,7 @@ header{
     width: 100%;
     margin: 86px 0 0 0;
     padding: 124px 0 0 0;
+	background-size: cover;
 }
 .more-blocks{
     display: -webkit-flex;

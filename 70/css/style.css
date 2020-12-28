@@ -1214,6 +1214,9 @@ footer{
 .product-download a img{
     margin-left: 31px;
 }
+.toggle{
+	cursor: pointer;
+}
 @media(max-width: 1170px){
     
 }
@@ -1379,6 +1382,17 @@ footer{
     }
 	.main-menu ul li:hover ul{
 		display: none;
+	}
+	.main-menu ul li:hover a.active + ul,
+	.main-menu ul li a.active + ul{
+		display: block;
+		position: static;
+	}
+	.main-menu>ul>li ul li a{
+		padding: 14px 40px 14px 30px;
+	}
+	.main-menu>ul>li ul li a:after{
+		left: 10px;
 	}
     .main-menu-btn{
         display: block;

@@ -304,6 +304,10 @@ header{
     background: url(../images/contacts-bg.png) no-repeat;
     width: 100%;
     margin-top: 45px;
+    background-size: 100%;
+}
+.contact-form.cat{
+    background: url(../images/contacts-bg-catalog.png) no-repeat;
 }
 .form-title{
     font-weight: 700;
@@ -497,7 +501,7 @@ header{
 .our-works{
     background: #f4f4f4;
     border-top: 1px solid #c8c8c8;
-    padding: 0 0 100px 0;
+    padding: 0 0 201px 0;
     margin-top: 82px;
 }
 .our-works-slider .slick-next{
@@ -514,7 +518,7 @@ header{
     transform: translate(0,-50%);
 }
 .our-works-slider.slick-slider{
-    margin: -20px 0 0 0;
+    margin: -120px 0 0 0;
 }
 .our-works-slide{
     width: 360px;
@@ -529,12 +533,15 @@ header{
     position: relative;
     font-weight: 700;
     margin-top: 27px;
-    padding-bottom: 30px;
+    padding-bottom: 41px;
+}
+.our-works-slide:hover .slide-descr:before{
+    width: 120px;
 }
 .slide-descr:before{
     content: '';
     position: absolute;
-    width: 120px;
+    width: 31px;
     height: 4px;
     background: #c1272d;
     bottom: 0;
@@ -566,6 +573,7 @@ footer{
     background: url(../images/footer-bg.png) no-repeat;
     min-height: 417px;
     width: 100%;
+    background-size: 100%;
 }
 .footer-content{
     padding-top: 82px;
@@ -799,6 +807,7 @@ footer{
     background: url(../images/bread.png) no-repeat;
     width: 100%;
     min-height: 392px;
+    background-size: 100%;
 }
 .bread-crumbs a{
     font-size: 12px;
@@ -834,7 +843,7 @@ footer{
     justify-content: space-between;
     margin-top: 62px;
 }
-.about-us-text{
+.about-us-text-2{
     font-size: 14px;
     line-height: 24px;
     color: #282828;
@@ -871,7 +880,7 @@ footer{
     bottom: -61px;
     left: 0;
 }
-.about-us-text span{
+.about-us-text-2 span{
     font-size: 14px;
     line-height: 24px;
     color: #282828;
@@ -1337,9 +1346,12 @@ footer{
         position: absolute;
         width: 100%;
         height: 4px;
-        background: #fff;
+        background: #333;
         left: 0;
         transition: 0.5s;
+    }
+    .main .main-menu-btn span{
+        background: #fff;
     }
     .main-menu-btn span:nth-child(1){
         top: 0;
@@ -1648,7 +1660,7 @@ footer{
     .about-us-slider .slick-prev{
         left: 0;
     }
-    .about-us-text{
+    .about-us-text-2{
         width: 100%;
         margin-bottom: 40px;
     }
@@ -1715,6 +1727,15 @@ footer{
     .bread-crumbs{
         display: flex;
         flex-wrap: wrap;
+    }
+    .main-menu ul{
+        top: 100%;
+    }
+    .main .main-menu ul li a{
+        color: #333;
+    }
+    header>.container{
+        margin-bottom: 20px;
     }
 }
 

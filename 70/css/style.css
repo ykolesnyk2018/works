@@ -1797,6 +1797,12 @@ footer{
     header>.container{
         margin-bottom: 20px;
     }
+	.main-menu>ul{
+		padding: 15px 10px 0 10px;
+	}
+	.main-menu>ul>li>a{
+		padding: 15px 0 15px 0;
+	}
 }
 
 

@@ -348,6 +348,7 @@ header{
 }
 .contact-form.cat{
     background: url(../images/contacts-bg-catalog.png) no-repeat;
+	background-size: cover;
 }
 .form-title{
     font-weight: 700;

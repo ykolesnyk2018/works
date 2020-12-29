@@ -364,7 +364,8 @@ button{
 	background: #121622;
 	margin: 0 10px 10px 0;
 }
-.product:hover{
+.product:hover,
+.product.active{
 	border: 1px solid #728de4;
 	background: #191f32;
 }
@@ -1101,7 +1102,7 @@ footer .container ul li a:hover{
 	font-weight: 600;
 	padding: 281px 0 0 0;
 }
-.ilegal-banner-title b{
+.ilegal-banner-title a{
 	color: #6ca1ed;
 }
 .button{
@@ -1151,7 +1152,7 @@ footer .container ul li a:hover{
 .appeal{
 	width: 290px;
 	display: block;
-	margin: 270px auto 0 auto;
+	margin: 170px auto 0 auto;
 	text-align: center;
 	z-index: 2;
 }
@@ -1170,7 +1171,7 @@ footer .container ul li a:hover{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: rgba(0,0,0,0.65);
+	background: rgba(11,14,25,0.65);
 	z-index: 1;
 }
 .breadcrumbs{
@@ -2634,7 +2635,7 @@ h1.att-title{
 }
 .popupTrade-progress-line{
 	height: 3px;
-	margin: 0 71px 0 82px;
+	margin: 0 71px 0 70px;
 	background: #1c2235;
 	position: relative;
 }
@@ -2697,6 +2698,7 @@ h1.att-title{
 .uniqueCode span{
 	color: #e6f557;
 	font-weight: 600;
+	margin: 0 0 0 6px;
 }
 .popupTrade .button{
 	height: 55px;
@@ -3585,9 +3587,13 @@ h1.att-title{
 	background: #0b0e19;
 	height: 56px;
 	font-size: 16px;
+	transition: 0.6s;
 }
 .keys .tradeLink input::placeholder{
 	color: #1f263a;
+}
+.keys .tradeLink input:focus{
+	height: 70px;
 }
 .keys .tradeLink p:after{
 	background: #0b0e19;
@@ -3762,7 +3768,7 @@ h1.att-title{
 }
 .buyPopup{}
 .buyPopup-title{
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	text-align: center;
 	margin: 0 0 20px 0;
@@ -4061,19 +4067,36 @@ h1.att-title{
 	left: -4px;
 	border: 0;
 }
+.popup.end{
+	width: 600px;
+	padding: 0 35px;
+}
+.end .inputBox{
+	max-width: 100%;
+}
+.end .inputBox .inputBox-title{
+	color: #414f76;
+}
+.end form .button{
+	margin: 0 auto 0 0;
+	display: flex;
+	background: #1f263a;
+}
+.checkOffer .checkbox label:before{
+	border-color: #ff7200;
+	position: static;
+	flex: 0 0 17px;
+	margin: 0 8px 0 0;
+}
+.checkOffer .checkbox label{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+}
 @media (max-width: 1800px){
-	.status{
-		width: 1228px;
-		position: relative;
-		left: auto;
-		margin: 0 auto 20px auto;
-		top: auto;
-	}
 	.status-content{
 		padding-bottom: 20px;
-	}
-	.news-left_bar{
-		width: 580px;
 	}
 	.news-right_bar{
 		width: 320px;
@@ -4082,19 +4105,54 @@ h1.att-title{
 		display: none;
 	}
 	.status{
-		bottom: auto;
-		padding: 0 20px 0 20px;
+		width: 87px;
+		left: calc(50vw - 725px);
+		padding: 0;
+	}
+	.status-title{
+		height: 50px;
+		padding: 0;
+		font-size: 0;
+		background: #181d2c;
+	}
+	.status-title:after{
+		left: -50%;
+		right: -50%;
+		margin: auto auto;
+		transform: rotate(-45deg);
+	}
+	.status-title.active:after{
+		transform: rotate(90deg);
+	}
+	.status-content a{
+		width: 45px;
+		height: 45px;
+		font-size: 0;
+		margin: 0 auto 0 auto;
+		background-image: url(../images/icon/rupor.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.status-content.orange a{
+		background-image: url(../images/icon/whiteAlarm.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	.status-content.green a{
+		background-image: url(../images/icon/ok.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 }
 @media (max-width: 1223px){
 	.container{
 		width: 940px;
 	}
-	.status{
-		width: 940px;
-	}
 	.main-menu ul li{
 		margin: 0 10px 0 0;
+	}
+	.news-left_bar{
+		width: 580px;
 	}
 	.kindOfpayment > div{
 		width: 93px;
@@ -4225,13 +4283,16 @@ h1.att-title{
 	.autoplay-slider{
 		width: 455px;
 	}
+	.status{
+		left: calc(50vw - 575px);
+	}
 }
 @media (max-width: 940px){
 	.container{
 		width: 740px;
 	}
 	.status{
-		width: 740px;
+		display: none;
 	}
 	.popupTrade{
 		width: 740px;
@@ -4516,10 +4577,6 @@ h1.att-title{
 	}
 	.ilegal-banner-bottom div{
 		width: 100%;
-	}
-	.status{
-		width: auto;
-		margin: 0 10px 20px 10px;
 	}
 	.half > div{
 		width: 100%;
@@ -5009,6 +5066,10 @@ h1.att-title{
 	}
 	.autoplay-slider{
 		width: 100%;
+	}
+	.popup.end{
+		width: calc(100vw - 20px);
+		padding: 0 10px;
 	}
 }
 @media (max-width: 350px){

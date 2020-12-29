@@ -30,6 +30,9 @@ $(document).ready(function(){
 		$(toggle_id).toggleClass("active");
 	}); 
 	/* toggle */
+    $('.fastSearch-content .product').click(function() {
+		$(this).toggleClass("active");
+	}); 
     $('.howItWork-ex-button a').click(function() {
 		$(".howItWork").removeClass().addClass('howItWork');
 		$('.howItWork-ex-button a').removeClass("active");

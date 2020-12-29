@@ -126,4 +126,26 @@ $(document).ready(function(){
             },
         ]
 	});
+	
+    $('.anchor').click( function(){ // ловим клик по ссылке с классом go_to
+	var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 1000); // анимируем скроолинг к элементу scroll_el
+        }
+	    return false; // выключаем стандартное действие
+    });
+	$("#form").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+            
+            document.getElementById('form').innerHTML='<div class="all-ok">Спасибо за сообщение мы свяжемся с вами в течении 5 минут!</div>'; // Див сам создай с таким же id
+			
+            $("#form").trigger("reset");
+		});
+		return false;
+	});
 });

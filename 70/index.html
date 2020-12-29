@@ -75,7 +75,7 @@
                 </div>
                 <div class="mainSlider-btns">
                     <a href="#" class="btn">Подробне</a>
-                    <a href="#" class="btn active">Оставить заявку</a>
+                    <a href="#form-content" class="btn active anchor">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="mainSlider-btns">
                     <a href="#" class="btn">Подробне</a>
-                    <a href="#" class="btn active">Оставить заявку</a>
+                    <a href="#form-content" class="btn active anchor">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
                 </div>
                 <div class="mainSlider-btns">
                     <a href="#" class="btn">Подробне</a>
-                    <a href="#" class="btn active">Оставить заявку</a>
+                    <a href="#form-content" class="btn active anchor">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -143,14 +143,14 @@
             </div>
         </div>
     </div>
-    <div class="contact-form">
+    <div class="contact-form" id="form-content">
         <div class="container">
-            <form class="con">
+            <form class="con" id="form">
                 <div class="form-title">
                     Желаете получить консультацию?
                 </div>
-                <input type="text" placeholder="Ваши ФИО">
-                <input type="text" placeholder="Ваш телефон">
+                <input type="text" placeholder="Ваши ФИО" name="name" required>
+                <input type="text" placeholder="Ваш телефон" name="phone" required>
                 <button>Отправить</button>
                 <div class="form-descr">Наш менеджер свяжется с Вами с течении <span>10 мин.</span> и проконсультирует Вас.</div>
             </form>  
@@ -399,6 +399,6 @@
         </div>
     </footer>
 	<script src="js/jquery-3.2.1.min.js?1273455236"></script>
-	<script src="js/script-min.js?1273455236"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -72,6 +72,9 @@ header .container{
 	text-decoration: none;
 	position: relative;
 }
+.main-menu ul li a.yellow{
+	color: #e7f655;
+}
 .main-menu ul li.active a:before,
 .main-menu ul li:hover a:before{
 	content: "";
@@ -1927,12 +1930,15 @@ span.contact{
 	width: 61px;
 	height: 61px;
 	display: flex;
-	align-items: flex-end;
+	align-items: flex-start;
 	justify-content: center;
 	border-radius: 50%;
 	overflow: hidden;
 	background: #21273a;
 	margin: 0 auto;
+}
+.bonus-block-icon img{
+	margin: 10px 0 0 0;
 }
 .bonus-block-title{
 	width: 100%;

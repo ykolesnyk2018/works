@@ -24,16 +24,59 @@ $(document).ready(function(){
             $(this).toggleClass("active");
         }); 
     });
-    $(function(){
-        $(".tabs").tabs();
+    $(function() {
+        $(".accordion-top").click(function(){
+            $(this).toggleClass("active");
+        }); 
     });
-	$('.one-time').slick({
-	  dots: true,
-	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 1,
-	  adaptiveHeight: true
+	$(function(){
+		$(".tabs").tabs();
 	});
+	
+	
+	$('.cardSlider-for').slick({
+  	  infinite: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  asNavFor: '.cardSlider-nav',
+	  arrows: false
+	});
+	$('.cardSlider-nav').slick({
+  	  infinite: false,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  rows: 2,
+  	  variableWidth: true,
+	  asNavFor: '.cardSlider-for',
+	  dots: false,
+	  focusOnSelect: true,
+	  arrows: false,
+	  responsive: [
+		{
+		  breakpoint: 940,
+		  settings: {
+			slidesToShow: 5
+		  }
+		},
+		{
+		  breakpoint: 767,
+		  settings: {
+			slidesToShow: 4
+		  }
+		},
+		{
+		  breakpoint: 413,
+		  settings: {
+			slidesToShow: 3
+		  }
+		}
+	  ]
+	});
+	
+	
+	
 	
 	
 	$(".spinner").spinner();

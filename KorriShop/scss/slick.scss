@@ -20,14 +20,15 @@ $border: #818181;
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
-		min-height: 704px;
+		min-height: 465px;
+		background: #F1ECED; 
 		&:after{
 			content: "";
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			background: rgba(255, 255, 255, 0.5);
-			height: 125px;
+			height: 80px;
 			width: 100%;
 			z-index: 0;
 		}
@@ -54,24 +55,24 @@ $border: #818181;
 			font-weight: 700;
 			font-size: 45px;
 			text-transform: uppercase;
-			padding: 20px 25px 0 0;
+			padding: 6px 21px 0 0;
 			a{
 				color: $color;
 				text-decoration: none;
 				span{
-					font-size: 55px;
+					font-size: 35px;
 					color: $colorHover;
 					display: block;
-					margin: -10px 0 0 0;
+					margin: -6px 0 0 0;
 				}
 			}
 		}
 		.banner-slider-bottom{
 			position: absolute;
-			bottom: 10px;
+			bottom: 0;
 			right: 25px;
 			z-index: 2;
-			font-size: 60px;
+			font-size: 53px;
 			font-weight: 700;
 			text-transform: uppercase;
 			a{
@@ -80,6 +81,15 @@ $border: #818181;
 				&:hover{
 					color: #000;
 				}
+			}
+		}
+	}
+	.slick-dots{
+		bottom: 23px;
+		li{
+			button{
+				width: 12px;
+				height: 12px;
 			}
 		}
 	}
@@ -134,8 +144,28 @@ $border: #818181;
 			>.slick-slide{
 				opacity: 0;
 				transition: 0.4s;
+				width: 292.5px;
 				&.slick-active{
 					opacity: 1;
+				}
+				.product-title{
+					span{
+						font-size: 13px;
+					}
+					a{
+						margin: 0;
+						font-size: 17px;
+						line-height: 19px;
+					}
+				}
+				.product-img{
+					.product-img-for{
+						margin: 0 0 6px 0;
+						.like{
+							width: 25px;
+							height: 22px;
+						}
+					}
 				}
 			}
 		}

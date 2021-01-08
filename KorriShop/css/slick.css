@@ -17,14 +17,15 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    min-height: 704px; }
+    min-height: 465px;
+    background: #F1ECED; }
     .banner-slider .slick-slide:after {
       content: "";
       position: absolute;
       bottom: 0;
       left: 0;
       background: rgba(255, 255, 255, 0.5);
-      height: 125px;
+      height: 80px;
       width: 100%;
       z-index: 0; }
     .banner-slider .slick-slide a {
@@ -48,21 +49,21 @@
       font-weight: 700;
       font-size: 45px;
       text-transform: uppercase;
-      padding: 20px 25px 0 0; }
+      padding: 6px 21px 0 0; }
       .banner-slider .slick-slide .banner-slider-title a {
         color: #656362;
         text-decoration: none; }
         .banner-slider .slick-slide .banner-slider-title a span {
-          font-size: 55px;
+          font-size: 35px;
           color: #C57B48;
           display: block;
-          margin: -10px 0 0 0; }
+          margin: -6px 0 0 0; }
     .banner-slider .slick-slide .banner-slider-bottom {
       position: absolute;
-      bottom: 10px;
+      bottom: 0;
       right: 25px;
       z-index: 2;
-      font-size: 60px;
+      font-size: 53px;
       font-weight: 700;
       text-transform: uppercase; }
       .banner-slider .slick-slide .banner-slider-bottom a {
@@ -70,6 +71,11 @@
         text-decoration: none; }
         .banner-slider .slick-slide .banner-slider-bottom a:hover {
           color: #000; }
+  .banner-slider .slick-dots {
+    bottom: 23px; }
+    .banner-slider .slick-dots li button {
+      width: 12px;
+      height: 12px; }
 
 .slick-dots {
   position: absolute;
@@ -111,9 +117,21 @@
   overflow: inherit; }
   .products-slider > .slick-list > .slick-track > .slick-slide {
     opacity: 0;
-    transition: 0.4s; }
+    transition: 0.4s;
+    width: 292.5px; }
     .products-slider > .slick-list > .slick-track > .slick-slide.slick-active {
       opacity: 1; }
+    .products-slider > .slick-list > .slick-track > .slick-slide .product-title span {
+      font-size: 13px; }
+    .products-slider > .slick-list > .slick-track > .slick-slide .product-title a {
+      margin: 0;
+      font-size: 17px;
+      line-height: 19px; }
+    .products-slider > .slick-list > .slick-track > .slick-slide .product-img .product-img-for {
+      margin: 0 0 6px 0; }
+      .products-slider > .slick-list > .slick-track > .slick-slide .product-img .product-img-for .like {
+        width: 25px;
+        height: 22px; }
 
 .products-slider .slick-arrow.slick-next {
   right: 50px; }

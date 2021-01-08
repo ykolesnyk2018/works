@@ -311,9 +311,7 @@
       .banner .banner-title-small a br {
         display: none; }
   .banner a img {
-    height: 100%;
-    transform: translate(0, -50%);
-    left: 0; }
+    height: 100%; }
   .banner .banner-bottom {
     width: 100%;
     padding: 0 0 0 0;
@@ -691,13 +689,20 @@
     font-size: 25px;
     margin: 4px 0 17px 0; }
   .delivery .delivery-block {
-    padding: 10px 15px 15px 0; }
+    padding: 10px 9px 15px 0;
+    max-width: 320px;
+    margin: 0 0 30px 0; }
     .delivery .delivery-block > img {
       top: 15px; }
     .delivery .delivery-block .delivery-block-title {
-      padding: 0 0 0 67px; }
+      padding: 0 0 0 67px;
+      align-items: flex-start; }
     .delivery .delivery-block .delivery-block-text {
-      margin: -1px 0 0 14px; }
+      margin: 0 0 0 0;
+      padding: 0 0 0 18px; }
+      .delivery .delivery-block .delivery-block-text p {
+        padding: 0;
+        margin: 0; }
   .delivery h2 {
     font-size: 25px;
     margin: 20px 0 13px 0; }
@@ -1089,7 +1094,58 @@
     .attention .attention-img:after {
       top: -155px; }
     .attention .attention-img img {
-      max-height: 100%; } }
+      max-height: 100%; }
+  .yk_aboutUs {
+    padding: 35px 0 0 0; }
+    .yk_aboutUs .yk_aboutUs-block {
+      max-width: 330px; }
+      .yk_aboutUs .yk_aboutUs-block .yk_aboutUs-block-title {
+        font-size: 25px; }
+      .yk_aboutUs .yk_aboutUs-block .yk_aboutUs-content {
+        text-align: center;
+        padding: 20px 20px 20px 20px; }
+        .yk_aboutUs .yk_aboutUs-block .yk_aboutUs-content > img {
+          margin: 0 20px 0 0; }
+  .yk_aboutUs-icons {
+    flex-wrap: wrap;
+    margin: 0 0 -15px 0; }
+    .yk_aboutUs-icons .yk_aboutUs-icon-block {
+      width: 28%;
+      margin: 0 0 15px 0;
+      line-height: 17px; }
+  .yk_delivery {
+    margin: 35px 0 0 0; }
+    .yk_delivery .yk_delivery-block {
+      max-width: 330px;
+      margin: 0 0 30px 0; }
+      .yk_delivery .yk_delivery-block .yk_delivery-block-title {
+        font-size: 25px;
+        margin: 0 0 15px 0; }
+      .yk_delivery .yk_delivery-block .yk_delivery-content {
+        padding-bottom: 15px; }
+        .yk_delivery .yk_delivery-block .yk_delivery-content .yk_delivery-content-title {
+          padding: 0 15px 0 69px; }
+        .yk_delivery .yk_delivery-block .yk_delivery-content .yk_delivery-content-text {
+          padding-left: 9px; }
+          .yk_delivery .yk_delivery-block .yk_delivery-content .yk_delivery-content-text p br {
+            display: none; }
+          .yk_delivery .yk_delivery-block .yk_delivery-content .yk_delivery-content-text .center {
+            padding: 20px 0 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .yk_delivery .yk_delivery-block .yk_delivery-content .yk_delivery-content-text .center br {
+              display: none; }
+            .yk_delivery .yk_delivery-block .yk_delivery-content .yk_delivery-content-text .center img {
+              margin: 0 4px; }
+  .yk_delivery .yk_delivery-block .yk_delivery-title {
+    font-size: 25px;
+    min-height: 25px;
+    margin: 0 0 15px 0; }
+  .products-slider {
+    padding: 0; }
+  .product .product-img .product-img-for img {
+    max-height: 95%; } }
 
 @media (max-width: 767px) {
   .container {
@@ -1519,7 +1575,11 @@
       font-weight: 400;
       width: 100%; }
   .delivery .delivery-block {
-    width: 100%; }
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0; }
+    .delivery .delivery-block .delivery-block-title {
+      align-items: center; }
   .about-us h1 {
     margin: -12px 0 12px 0; }
   .about-us .about-us-title {
@@ -1938,4 +1998,22 @@
       .attention .attention-left form {
         margin: 0 0 20px 0; }
     .attention .attention-img {
-      display: none; } }
+      display: none; }
+  .yk_aboutUs .yk_aboutUs-block {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 20px 0; }
+    .yk_aboutUs .yk_aboutUs-block .yk_aboutUs-content {
+      justify-content: space-between; }
+      .yk_aboutUs .yk_aboutUs-block .yk_aboutUs-content > img {
+        margin: 0; }
+  .yk_aboutUs-icons {
+    padding: 0; }
+    .yk_aboutUs-icons .yk_aboutUs-icon-block {
+      width: 50%; }
+  .yk_delivery .yk_delivery-block {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 0 20px 0; }
+    .yk_delivery .yk_delivery-block .yk_delivery-title {
+      min-height: 0; } }

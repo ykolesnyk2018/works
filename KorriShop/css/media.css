@@ -1145,7 +1145,9 @@
   .products-slider {
     padding: 0; }
   .product .product-img .product-img-for img {
-    max-height: 95%; } }
+    max-height: 95%; }
+  .main-menu ul li.for-fix {
+    display: block; } }
 
 @media (max-width: 767px) {
   .container {
@@ -2016,4 +2018,6 @@
     width: 100%;
     margin: 0 0 20px 0; }
     .yk_delivery .yk_delivery-block .yk_delivery-title {
-      min-height: 0; } }
+      min-height: 0; }
+  .main-menu ul {
+    padding: 0; } }

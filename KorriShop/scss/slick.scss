@@ -137,7 +137,12 @@ $border: #818181;
 		transform: rotate(180deg);
 	}
 }
+.products.products-slider{
+	padding: 0;
+}
 .products-slider{
+	padding: 0;
+	margin: 0 0 0 0;
 	>.slick-list{
 		overflow: inherit;
 		>.slick-track{
@@ -145,6 +150,9 @@ $border: #818181;
 				opacity: 0;
 				transition: 0.4s;
 				width: 292.5px;
+				&.product{
+					margin: 0;
+				}
 				&.slick-active{
 					opacity: 1;
 				}
@@ -172,10 +180,10 @@ $border: #818181;
 	}
 	.slick-arrow{
 		&.slick-next{
-			right: 50px;
+			right: 20px;
 		}
 		&.slick-prev{
-			left: 50px;
+			left: 20px;
 		}
 		&.slick-disabled{
 			opacity: 0;

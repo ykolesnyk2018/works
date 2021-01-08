@@ -1678,6 +1678,15 @@ $border: #818181;
 	.product .product-img .product-img-for img{
 		max-height: 95%;
 	}
+	.main-menu{
+		ul{
+			li{
+				&.for-fix{
+					display: block;
+				}
+			}
+		}
+	}
 }
 @media (max-width: 767px){
 	.container{
@@ -2984,5 +2993,8 @@ $border: #818181;
 				min-height: 0;
 			}
 		}
+	}	
+	.main-menu ul{
+		padding: 0;
 	}
 }

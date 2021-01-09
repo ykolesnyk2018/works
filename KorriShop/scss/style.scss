@@ -552,6 +552,7 @@ header{
 				bottom: 0;
 				left: 50%;
 				transform: translate(-50%,0);
+				max-height: 90%;
 			}
 			.like{
 				position: absolute;
@@ -674,6 +675,42 @@ header{
 	&:hover{
 		.product-btn{
 			opacity: 1;
+		}
+	}
+}
+
+.container.products{
+	.product{
+		width: 277px;
+		margin: 0 19px 20px 0;
+		padding: 12px 12px;
+		&:nth-child(4n){
+			margin-right: 0;
+		}
+		.product-title{
+			a{
+				font-size: 17px;
+				line-height: 19px;
+				margin: 0;
+			}
+			span{
+				font-size: 13px;
+			}
+		}
+		.product-price{
+			font-size: 17px;
+			span{
+				font-size: 11px;
+			}
+		}
+		.product-img{
+			.product-img-for{
+				margin: 0 0 7px 0;
+				.like{
+					width: 25px;
+					height: 22px;
+				}
+			}
 		}
 	}
 }

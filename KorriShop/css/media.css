@@ -1147,7 +1147,10 @@
   .product .product-img .product-img-for img {
     max-height: 95%; }
   .main-menu ul li.for-fix {
-    display: block; } }
+    display: block; }
+  .container.products .product {
+    width: 47%;
+    margin: 0 0 20px 0; } }
 
 @media (max-width: 767px) {
   .container {
@@ -1690,7 +1693,7 @@
       .catalog-btns .jq-selectbox select {
         display: flex;
         align-items: center;
-        height: 55px;
+        height: 35px;
         width: 100%;
         font-size: 16px;
         color: #C57B48;

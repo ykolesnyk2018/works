@@ -11,6 +11,8 @@ body{
 .container{
     width: 1140px;
     margin: 0 auto;
+	flex-wrap: wrap;
+	display: flex;
 }
 header .container{
     display: flex;
@@ -56,11 +58,6 @@ header .container{
 .contacts a{
     display: inline-block;
     vertical-align: middle;
-}
-.projects{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .project{
     flex-basis: 48%;

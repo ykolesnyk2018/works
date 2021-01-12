@@ -81,4 +81,35 @@ header .container{
 	.container{
 		width: 740px;
 	}
+	.project{
+		flex-basis: 100%;
+		text-align: center;
+	}
+	header .container{
+		justify-content: space-around;
+	}
+}
+@media (max-width: 767px){
+	.container{
+		width: auto;
+		margin: 0 10px;
+	}
+	.project a{
+		text-overflow: ellipsis;
+		white-space: nowrap; 
+    	overflow: hidden; 
+	}
+	.contacts p{
+		margin: 10px auto;
+	}
+	header .container{
+		padding: 25px 0 0 0;
+	}
+	.contacts {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.contacts p{
+		width: 100%;
+	}
 }

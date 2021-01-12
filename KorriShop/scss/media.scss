@@ -3,18 +3,16 @@ $colorHover: #C57B48;
 $border: #818181;
 @media (max-width: 1919px){
 	.card{
-		width: 1110px;
-		margin: 0 auto;
+		width: 1170px;
+		margin: -12px auto 0 auto;
 		padding: 0;
 		.slider-for{
-			width: 534px;
 			.slick-slide{
-				height: 700px;
 			}
 		}
 		.card-right{
 			h1{
-				font-size: 26px;
+				font-size: 24px;
 			}
 		}
 	}
@@ -25,22 +23,31 @@ $border: #818181;
 				min-width: 63px;
 			}
 			.presence{
-				margin: -10px 0 8px 14px;
+				width: 110px;
+				margin: 0 15px 0 auto;
+				min-width: 0;
+				justify-content: flex-end;
+				text-align: right;
+				b{
+					width: 100%;
+					margin: 5px 0 0 0;
+				}
 			}
 		}
 		.big-select-dropdown{
 			.big-select-container{
 				.presence{
-					margin: -10px 0 8px 14px;
+					width: 110px;
+					margin: 0 15px 0 auto;
 				}
 			}
 		}
 	}
 	.no-for-small-pc{
-		display: none;
+		display: block;
 	}
 	.for-small-pc{
-		display: block;
+		display: none;
 		.card-social{
 			margin: 20px 0 0 0;
 		}

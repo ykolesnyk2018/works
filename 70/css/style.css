@@ -249,27 +249,71 @@ header{
 .main-menu ul{
     display: flex;
 }
-.main-menu ul li{
+.main-menu>ul>li{
     margin-right: 56px;
+	position: relative;
 }
 .main-menu ul li:last-child{
     margin-right: 0;
 }
 .main-menu ul li a{
+	cursor: pointer;
+}
+.main-menu>ul>li>a{
     display: block;
     padding: 31px 0 31px 0px;
     font-weight: 700;
     font-size: 14px;
     color: #000;
 }
-.main .main-menu ul li a{
+.main .main-menu>ul>li>a{
     color: #fff;
 }
-.main-menu ul li:hover a,
-.main-menu ul li.active a{
+.main-menu ul li>ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: -30px;
+	background: #fff;
+}
+.main-menu ul li:hover>ul{
+	display: block;
+}
+.main-menu>ul>li:hover>a,
+.main-menu>ul>li.active>a{
     color: #c1272d;
     border-bottom: 4px solid #c1272d;
     padding-bottom: 27px;
+}
+.main-menu ul li ul li{
+	display: block;
+}
+.main-menu ul li ul li a{
+	display: block;
+	font-size: 14px;
+	color: #000;
+	font-weight: 700;
+	padding: 15px 15px 15px 55px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	white-space: nowrap;
+	position: relative
+}
+.main-menu ul li ul li a:before {
+    content: "";
+    width: 9px;
+    height: 12px;
+    background: url(../images/icons/service-arrow.png) no-repeat;
+    position: absolute;
+    left: 30px;
+    top: -50%;
+	bottom: -50%;
+	margin: auto 0;
+}
+.main-menu ul li ul li a:hover{
+	color: #c1272d;
+}
+.main-menu ul li ul li:last-child a{
+	border: 0;
 }
 .services{
     background: #f4f4f4;
@@ -421,6 +465,7 @@ header{
     width: 100%;
     margin: 86px 0 0 0;
     padding: 124px 0 0 0;
+	background-size: cover;
 }
 .more-blocks{
     display: -webkit-flex;
@@ -807,6 +852,9 @@ footer{
 }
 .header-bottom.about{
     background: #f4f4f4;
+}
+.header-bottom .container{
+	position: relative;
 }
 .bread-crumbs-bg{
     background: url(../images/bread.png) no-repeat;
@@ -1458,6 +1506,33 @@ footer{
     .product{
         margin-right: 20px;
     }
+	.main-menu ul li>ul{
+		position: static;
+		width: 100%;
+		padding: 0 0 0 0;
+		left: 0;
+	}
+	.main-menu ul li:hover>ul{
+		display: none;
+	}
+	.main-menu ul li> a.active + ul,
+	.main-menu ul li:hover> a.active + ul{
+		display: block;
+	}
+	.main .main-menu ul li a{
+		color: #000;
+		cursor: pointer;
+	}
+	.main-menu>ul{
+		padding: 15px 15px;
+	}
+	.main-menu>ul>li>a{
+		padding: 15px 0;
+	}
+	.main-menu>ul>li:hover>a, 
+	.main-menu>ul>li.active>a{
+		padding-bottom: 11px;
+	}
 }
 @media(max-width: 767px){
     .container{

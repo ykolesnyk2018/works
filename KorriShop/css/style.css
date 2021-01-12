@@ -290,7 +290,7 @@ header {
   .main-menu ul {
     display: flex;
     flex-wrap: wrap;
-    padding: 18px 13px 0 0; }
+    padding: 5px 0 0 0; }
     .main-menu ul li {
       margin: 0 32px 0 0; }
       .main-menu ul li:last-child {
@@ -1713,7 +1713,8 @@ input {
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      bottom: 0; }
+      bottom: 0;
+      max-height: 90%; }
   .CartTableProduct .CartTableProductDesc {
     flex: 0 0 calc(42% - 76px);
     padding: 0 0 0 22px;
@@ -1729,8 +1730,8 @@ input {
         .CartTableProduct .CartTableProductDesc .CartTableProductTop .CartTableProductDiscounts div {
           display: flex;
           align-items: center;
-          font-size: 7px;
-          line-height: 7px;
+          font-size: 10px;
+          line-height: 10px;
           font-weight: 600;
           color: #C57B48;
           margin: 0 0 10px 0; }
@@ -1738,14 +1739,15 @@ input {
             margin-right: 0; }
           .CartTableProduct .CartTableProductDesc .CartTableProductTop .CartTableProductDiscounts div span {
             width: 32px;
-            height: 14px;
+            height: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 8px;
+            font-size: 10px;
             line-height: normal;
             color: #fff;
-            margin: 0 8px 0 0; }
+            margin: 0 8px 0 0;
+            padding: 0 3px; }
             .CartTableProduct .CartTableProductDesc .CartTableProductTop .CartTableProductDiscounts div span.big {
               background: #E60E00; }
             .CartTableProduct .CartTableProductDesc .CartTableProductTop .CartTableProductDiscounts div span.small {
@@ -1755,6 +1757,10 @@ input {
         font-size: 14px;
         font-weight: 700;
         margin: 5px 0 5px 0; }
+        .CartTableProduct .CartTableProductDesc .CartTableProductTop .CartTableProductTitle span {
+          font-size: 12px;
+          color: #000;
+          display: block; }
         .CartTableProduct .CartTableProductDesc .CartTableProductTop .CartTableProductTitle a {
           text-decoration: none;
           color: #656362; }
@@ -2943,9 +2949,10 @@ input {
 .card {
   display: flex;
   padding: 7px 0 0 50px;
-  margin: 0 0 92px 0; }
+  margin: -12px auto 92px auto;
+  width: 1170px; }
   .card .card-left {
-    width: 1008px; }
+    width: 695px; }
     .card .card-left .sliders {
       display: none;
       flex-wrap: wrap;
@@ -2953,7 +2960,7 @@ input {
       .card .card-left .sliders.active {
         display: flex; }
   .card .slider-for {
-    width: 889px;
+    width: 610px;
     order: 2;
     margin: 0 0 0 auto;
     position: relative;
@@ -2963,20 +2970,20 @@ input {
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      height: 1124px; }
+      height: 800px; }
       .card .slider-for .slick-slide img {
         display: block;
         max-height: 100%; }
   .card .slider-nav {
-    width: 113px;
+    width: 80px;
     order: 1;
     position: relative;
     z-index: 1; }
     .card .slider-nav .slick-track {
       display: block; }
       .card .slider-nav .slick-track .slick-slide {
-        height: 147px;
-        margin: 0 0 7px 0;
+        height: 101px;
+        margin: 0 0 4px 0;
         background: #EFEBEC;
         overflow: hidden;
         box-sizing: border-box;
@@ -2991,12 +2998,12 @@ input {
           border: 1px solid #C57B48;
           box-sizing: border-box; }
   .card .card-right {
-    width: 659px;
-    margin: 0 0 0 30px; }
+    width: 455px;
+    margin: 0 0 0 20px; }
     .card .card-right h1 {
-      font-size: 35px;
+      font-size: 24px;
       font-weight: 600;
-      margin: 5px 0 24px 0; }
+      margin: 2px 0 -1px 0; }
 
 .characteristics {
   font-size: 16px; }
@@ -3004,7 +3011,7 @@ input {
     margin: 0 0 2px 0; }
     .characteristics p span {
       display: inline-block;
-      min-width: 135px;
+      min-width: 90px;
       padding: 0 10px 0 0;
       box-sizing: border-box;
       color: #B2B1B1; }
@@ -3016,29 +3023,29 @@ input {
   border-bottom: 1px solid rgba(196, 196, 196, 0.5);
   font-weight: 600;
   font-size: 28px;
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   color: #656362;
-  padding: 10px 0;
-  margin: 17px 0 0 0; }
+  padding: 6px 0 0 0;
+  margin: 7px 0 0 0; }
   .card-price .red {
     color: #E50E00; }
   .card-price b {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     color: #B2B1B1;
-    margin: 0 20px 0 0;
+    margin: 0 36px 0 0;
     text-decoration: line-through; }
 
 .big-select-pre-title {
   font-size: 16px;
   font-weight: 700;
-  margin: 21px 0 11px 0; }
+  margin: 14px 0 0 0; }
 
 .card-un-nav-title {
   font-size: 16px;
   font-weight: 700;
-  margin: 17px 0 14px 0; }
+  margin: 4px 0 4px 0; }
 
 .card-un-nav,
 .card-un-nav2 {
@@ -3048,8 +3055,8 @@ input {
     margin: 0 3px 0 0; }
     .card-un-nav li a,
     .card-un-nav2 li a {
-      width: 20px;
-      height: 20px;
+      width: 14px;
+      height: 14px;
       box-sizing: border-box;
       display: block; }
 
@@ -3071,6 +3078,8 @@ input {
       top: 50%;
       right: 20px;
       margin: -6px 0 0 0; }
+    .big-select .big-select-container.work .presence {
+      display: none; }
     .big-select .big-select-container.active:after {
       transform: rotate(180deg);
       background: url(../images/icons/big-select-hover.svg) no-repeat; }
@@ -3087,7 +3096,7 @@ input {
     .big-select .big-select-container .big-select-container-right {
       display: flex;
       flex-wrap: wrap;
-      align-items: stretch;
+      align-items: center;
       flex-grow: 1; }
       .big-select .big-select-container .big-select-container-right .inform-btn {
         display: flex;
@@ -3110,9 +3119,9 @@ input {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      width: 250px;
+      width: 180px;
       margin: 0 auto 0 13px;
-      padding: 11.5px 0; }
+      padding: 1.5px 0; }
       .big-select .big-select-container .big-select-container-text > div {
         width: 100%;
         display: flex;
@@ -3123,6 +3132,7 @@ input {
           margin: 0 0 0 auto; }
     .big-select .big-select-container .presence {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       font-size: 12px;
       margin: 0 67px 0 0;
@@ -3141,6 +3151,7 @@ input {
         .big-select .big-select-container .presence span.red {
           background: #F30000; }
       .big-select .big-select-container .presence b {
+        width: 100%;
         display: block;
         width: 90px;
         margin: 0 0 0 auto;
@@ -3210,19 +3221,20 @@ input {
   font-size: 16px;
   font-weight: 700;
   color: #C57B48;
-  margin: 10px 0 22px 0; }
+  margin: 10px 0 3px 0; }
   .sizes-btn img {
     display: block;
-    margin: 0 7px 0 0; }
+    margin: 0 4px 0 0;
+    max-width: 15px; }
 
 .card-description .card-description-title {
   font-size: 16px;
   font-weight: 700;
-  margin: 0 0 4px 0; }
+  margin: 0 0 1px 0; }
 
 .card-description .card-description-text {
   font-size: 14px;
-  line-height: 23px; }
+  line-height: 17px; }
   .card-description .card-description-text .card-description-hidden {
     display: none; }
 
@@ -3235,7 +3247,7 @@ input {
   color: #C57B48;
   font-size: 14px;
   font-weight: 700;
-  margin: 7px 0 0 0; }
+  margin: 9px 0 0 0; }
   .card-description .more-details svg {
     fill: #C57B48;
     margin: 0 0 0 10px; }
@@ -3248,26 +3260,26 @@ input {
 
 .card-quantity {
   border-top: 1px solid rgba(196, 196, 196, 0.5);
-  margin: 19px 0 0 0; }
+  margin: 3px 0 0 0; }
   .card-quantity .card-quantity-title {
     font-size: 16px;
     font-weight: 700;
-    margin: 18px 0 12px 0; }
+    margin: 3px 0 6px 0; }
   .card-quantity .ui-spinner {
-    width: 279px;
-    height: 69px; }
+    width: 185px;
+    height: 45px; }
     .card-quantity .ui-spinner input {
       height: 100%;
       font-weight: 700; }
     .card-quantity .ui-spinner .ui-spinner-button {
-      width: 65px;
+      width: 42px;
       font-weight: 700; }
 
 .card-btns {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  margin: 20px 0 23px 0; }
+  margin: 8px 0 25px 0; }
   .card-btns .card-btns-first {
     flex-grow: 1;
     margin: 0 23px 0 0;
@@ -3277,7 +3289,7 @@ input {
     width: 100%;
     height: 48px;
     font-size: 24px;
-    margin: 20px 0 0 0; }
+    margin: 14px 0 0 0; }
   .card-btns .card-btns-like {
     width: 65px;
     height: 48px;
@@ -3301,11 +3313,11 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 45px;
+    width: 29px;
+    height: 31px;
     box-sizing: border-box;
     border: 1px solid #E1E1E1;
-    margin: 0 10px 10px 0; }
+    margin: 0 6px 10px 0; }
     .card-social a svg {
       fill: #656362; }
     .card-social a:hover {
@@ -3317,16 +3329,18 @@ input {
 .card-partners {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px 20px;
-  margin: 34px 0 0 0; }
+  grid-gap: 10px 20px;
+  margin: 15px 0 0 0; }
   .card-partners a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
+    height: 48px;
     border: 1px solid #E1E1E1;
     box-sizing: border-box;
     text-decoration: none; }
+    .card-partners a img {
+      max-height: 90%; }
 
 .annex {
   margin: 0 0 70px 0; }
@@ -3823,29 +3837,36 @@ input {
     max-width: 28px;
     max-height: 20px; }
 
+.card-rating img {
+  width: 14px; }
+
 @media (max-width: 1919px) {
   .card {
-    width: 1110px;
-    margin: 0 auto;
+    width: 1170px;
+    margin: -12px auto 0 auto;
     padding: 0; }
-    .card .slider-for {
-      width: 534px; }
-      .card .slider-for .slick-slide {
-        height: 700px; }
     .card .card-right h1 {
-      font-size: 26px; }
+      font-size: 24px; }
   .big-select .big-select-container {
     flex-wrap: nowrap; }
     .big-select .big-select-container .big-select-container-left {
       min-width: 63px; }
     .big-select .big-select-container .presence {
-      margin: -10px 0 8px 14px; }
+      width: 110px;
+      margin: 0 15px 0 auto;
+      min-width: 0;
+      justify-content: flex-end;
+      text-align: right; }
+      .big-select .big-select-container .presence b {
+        width: 100%;
+        margin: 5px 0 0 0; }
   .big-select .big-select-dropdown .big-select-container .presence {
-    margin: -10px 0 8px 14px; }
+    width: 110px;
+    margin: 0 15px 0 auto; }
   .no-for-small-pc {
-    display: none; }
-  .for-small-pc {
     display: block; }
+  .for-small-pc {
+    display: none; }
     .for-small-pc .card-social {
       margin: 20px 0 0 0; }
     .for-small-pc .card-partners {

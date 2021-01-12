@@ -18,7 +18,8 @@
     
     <link rel="shortcut icon" href="favicon.ico">
     <title>Name of project</title>
-    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+    <link href='css/style.css' rel='stylesheet' type='text/css'>  
+      
 </head>
 <body>
     <header>
@@ -56,7 +57,13 @@
                     </div>
                     <ul id="main-menu second">
                         <li><a href="#">Главная</a></li>
-                        <li class="active"><a href="#">О компании</a></li>
+                        <li>
+                        	<a class="toggle">О компании</a>
+                        	<ul>
+                        		<li><a href="#">Новости</a></li>
+                        		<li><a href="#">Сертификаты</a></li>
+                        	</ul>
+						</li>
                         <li><a href="#">Продукция</a></li>              
                         <li><a href="#">Отзывы о нас</a></li>  
                         <li><a href="#">Контакты</a></li>
@@ -97,36 +104,56 @@
         </div>
         <div class="about-us-slider-bg">
             <div class="container">
-                <div class="about-us-slider flex">
+                <div class="about-us-slider popup-gallery flex">
                     <div class="about-us-slide">
-                        <img src="images/a-slide1.png?1273455236" alt="">
+						<a href="images/a-slide1.png">
+                   			<img src="images/a-slide1.png?1273455236" alt="">
+                   		</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide2.png?1273455236" alt="">
+						<a href="images/a-slide2.png">
+                        	<img src="images/a-slide2.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide3.png?1273455236" alt="">
+						<a href="images/a-slide3.png">
+                        	<img src="images/a-slide3.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide4.png?1273455236" alt="">
+						<a href="images/a-slide4.png">
+                        	<img src="images/a-slide4.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide5.png?1273455236" alt="">
+						<a href="images/a-slide5.png">
+                       		<img src="images/a-slide5.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide1.png?1273455236" alt="">
+						<a href="images/a-slide1.png">
+                   			<img src="images/a-slide1.png?1273455236" alt="">
+                   		</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide2.png?1273455236" alt="">
+						<a href="images/a-slide2.png">
+                        	<img src="images/a-slide2.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide3.png?1273455236" alt="">
+						<a href="images/a-slide3.png">
+                        	<img src="images/a-slide3.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide4.png?1273455236" alt="">
+						<a href="images/a-slide4.png">
+                        	<img src="images/a-slide4.png?1273455236" alt="">
+						</a>
                     </div>
                     <div class="about-us-slide">
-                        <img src="images/a-slide5.png?1273455236" alt="">
+						<a href="images/a-slide5.png">
+                       		<img src="images/a-slide5.png?1273455236" alt="">
+						</a>
                     </div>
                 </div>
             </div>
@@ -216,5 +243,29 @@
     </footer>
 	<script src="js/jquery-3.2.1.min.js?1273455236"></script>
 	<script src="js/script.js"></script>
+	<script src="js/mag.js"></script>
+    <link href='css/mag.css' rel='stylesheet' type='text/css'>  
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.popup-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+              return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            }
+          }
+        });
+      });
+    </script>
 </body>
 </html>

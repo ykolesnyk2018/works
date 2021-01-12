@@ -174,7 +174,7 @@ header{
 	ul{
 		display: flex;
 		flex-wrap: wrap;
-		padding: 18px 13px 0 0;
+		padding: 5px 0 0 0;
 		li{
 			margin: 0 32px 0 0;
 			&:last-child{
@@ -1930,6 +1930,7 @@ input{
 				left: 50%;
 				transform: translate(-50%,0);
 				bottom: 0;
+				max-height: 90%;
 			}
 		}
 	}
@@ -1948,8 +1949,8 @@ input{
 				div{
 					display: flex;
 					align-items: center;
-					font-size: 7px;
-					line-height: 7px;
+					font-size: 10px;
+					line-height: 10px;
 					font-weight: 600;
 					color: $colorHover;
 					margin: 0 0 10px 0;
@@ -1958,14 +1959,15 @@ input{
 					}
 					span{
 						width: 32px;
-						height: 14px;
+						height: 16px;
 						display: flex;
 						align-items: center;
 						justify-content: center;
-						font-size: 8px;
+						font-size: 10px;
 						line-height: normal;
 						color: #fff;
 						margin: 0 8px 0 0;
+						padding: 0 3px;
 						&.big{
 							background: #E60E00;
 						}
@@ -1980,6 +1982,11 @@ input{
 				font-size: 14px;
 				font-weight: 700;
 				margin: 5px 0 5px 0;
+				span{
+					font-size: 12px;
+					color: #000;
+					display: block;
+				}
 				a{
 					text-decoration: none;
 					color: $color;
@@ -3475,9 +3482,10 @@ input{
 .card{
 	display: flex;
 	padding: 7px 0 0 50px;
-	margin: 0 0 92px 0;
+	margin: -12px auto 92px auto;
+	width: 1170px;
 	.card-left{
-		width: 1008px;
+		width: 695px;
 		.sliders{
 			display: none;
 			flex-wrap: wrap;
@@ -3489,7 +3497,7 @@ input{
 		
 	}
 	.slider-for{
-		width: 889px;
+		width: 610px;
 		order: 2;
 		margin: 0 0 0 auto;
 		position: relative;
@@ -3499,7 +3507,7 @@ input{
 			display: flex;
 			align-items: flex-end;
 			justify-content: center;
-			height: 1124px;
+			height: 800px;
 			img{
 				display: block;
 				max-height: 100%;
@@ -3507,15 +3515,15 @@ input{
 		}
 	}
 	.slider-nav{
-		width: 113px;
+		width: 80px;
 		order: 1;
 		position: relative;
 		z-index: 1;
 		.slick-track{
 			display: block;
 			.slick-slide{
-				height: 147px;
-				margin: 0 0 7px 0;
+				height: 101px;
+				margin: 0 0 4px 0;
 				background: #EFEBEC;
 				overflow: hidden;
 				box-sizing: border-box;
@@ -3536,12 +3544,12 @@ input{
 		}
 	}
 	.card-right{
-		width: 659px;
-		margin: 0 0 0 30px;
+		width: 455px;
+		margin: 0 0 0 20px;
 		h1{
-			font-size: 35px;
+			font-size: 24px;
 			font-weight: 600;
-			margin: 5px 0 24px 0;
+			margin: 2px 0 -1px 0;
 		}
 	}
 }
@@ -3551,7 +3559,7 @@ input{
 				margin: 0 0 2px 0;
 				span{
 					display: inline-block;
-					min-width: 135px;
+					min-width: 90px;
 					padding: 0 10px 0 0;
 					box-sizing: border-box;
 					color: #B2B1B1;
@@ -3566,31 +3574,31 @@ input{
 			border-bottom: 1px solid rgba(196, 196, 196, 0.5);
 			font-weight: 600;
 			font-size: 28px;
-			align-items: flex-end;
+			align-items: center;
 			display: flex;
 			color: $color;
-			padding: 10px 0;
-			margin: 17px 0 0 0;
+			padding: 6px 0 0 0;
+			margin: 7px 0 0 0;
 			.red{
 				color: #E50E00;
 			}
 			b{
-				font-size: 22px;
+				font-size: 18px;
 				font-weight: 400;
 				color: #B2B1B1;
-				margin: 0 20px 0 0;
+				margin: 0 36px 0 0;
 				text-decoration: line-through;
 			}
 		}
 .big-select-pre-title{
 	font-size: 16px;
 	font-weight: 700;
-	margin: 21px 0 11px 0;
+	margin: 14px 0 0 0;
 }
 .card-un-nav-title{
 	font-size: 16px;
 	font-weight: 700;
-	margin: 17px 0 14px 0;
+	margin: 4px 0 4px 0;
 }
 .card-un-nav,
 .card-un-nav2{
@@ -3598,8 +3606,8 @@ input{
 	li{
 		margin: 0 3px 0 0;
 		a{
-			width: 20px;
-			height: 20px;
+			width: 14px;
+			height: 14px;
 			box-sizing: border-box;
 			display: block;
 		}
@@ -3625,6 +3633,9 @@ input{
 				right: 20px;
 				margin: -6px 0 0 0; 
 			}
+			.presence{
+				display: none;
+			}
 		}
 		&.active{
 			&:after{
@@ -3647,7 +3658,7 @@ input{
 		.big-select-container-right{
 			display: flex;
 			flex-wrap: wrap;
-			align-items: stretch;
+			align-items: center;
 			flex-grow: 1;
 			.inform-btn{
 				display: flex;
@@ -3673,9 +3684,9 @@ input{
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
-			width: 250px;
+			width: 180px;
 			margin: 0 auto 0 13px;
-			padding: 11.5px 0;
+			padding: 1.5px 0;
 			>div{
 				width: 100%;
 				display: flex;
@@ -3691,6 +3702,7 @@ input{
 		}
 		.presence{
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			font-size: 12px;
 			margin: 0 67px 0 0;
@@ -3714,6 +3726,7 @@ input{
 				}
 			}
 			b{
+				width: 100%;
 				display: block;
 				width: 90px;
 				margin: 0 0 0 auto;
@@ -3793,21 +3806,22 @@ input{
 	font-size: 16px;
 	font-weight: 700;
 	color: $colorHover;
-	margin: 10px 0 22px 0;
+	margin: 10px 0 3px 0;
 	img{
 		display: block;
-		margin: 0 7px 0 0;
+		margin: 0 4px 0 0;
+		max-width: 15px;
 	}
 }
 .card-description{
 	.card-description-title{
 		font-size: 16px;
 		font-weight: 700;
-		margin: 0 0 4px 0;
+		margin: 0 0 1px 0;
 	}
 	.card-description-text{
 		font-size: 14px;
-		line-height: 23px;
+		line-height: 17px;
 		.card-description-hidden{
 			display: none;
 		}
@@ -3825,7 +3839,7 @@ input{
 		color: $colorHover;
 		font-size: 14px;
 		font-weight: 700;
-		margin: 7px 0 0 0;
+		margin: 9px 0 0 0;
 		svg{
 			fill: $colorHover;
 			margin: 0 0 0 10px;
@@ -3845,21 +3859,21 @@ input{
 }
 .card-quantity{
 	border-top: 1px solid rgba(196, 196, 196, 0.5);
-	margin: 19px 0 0 0;
+	margin: 3px 0 0 0;
 	.card-quantity-title{
 		font-size: 16px;
 		font-weight: 700;
-		margin: 18px 0 12px 0;
+		margin: 3px 0 6px 0;
 	}
 	.ui-spinner{
-		width: 279px;
-		height: 69px;
+		width: 185px;
+		height: 45px;
 		input{
 			height: 100%;
 			font-weight: 700;
 		}
 		.ui-spinner-button{
-			width: 65px;
+			width: 42px;
 			font-weight: 700;
 		}
 	}
@@ -3868,7 +3882,7 @@ input{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: stretch;
-	margin: 20px 0 23px 0;
+	margin: 8px 0 25px 0;
 	.card-btns-first{
 		flex-grow: 1;
 		margin: 0 23px 0 0;
@@ -3879,7 +3893,7 @@ input{
 		width: 100%;
 		height: 48px;
 		font-size: 24px;
-		margin: 20px 0 0 0;
+		margin: 14px 0 0 0;
 	}
 	.card-btns-like{
 		width: 65px;
@@ -3909,11 +3923,11 @@ input{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 42px;
-		height: 45px;
+		width: 29px;
+		height: 31px;
 		box-sizing: border-box;
 		border: 1px solid #E1E1E1;
-		margin: 0 10px 10px 0;
+		margin: 0 6px 10px 0;
 		svg{
 			fill: $color;
 		}
@@ -3929,16 +3943,19 @@ input{
 .card-partners{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px 20px;
-	margin: 34px 0 0 0;
+	grid-gap: 10px 20px;
+	margin: 15px 0 0 0;
 	a{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 70px;
+		height: 48px;
 		border: 1px solid #E1E1E1;
 		box-sizing: border-box;
 		text-decoration: none;
+		img{
+			max-height: 90%;
+		}
 	}
 }
 .annex{
@@ -4566,5 +4583,8 @@ input{
 			}
 		}
 	}
+}
+.card-rating img{
+	width: 14px;
 }
 @import "media.scss";

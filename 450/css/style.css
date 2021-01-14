@@ -1221,4 +1221,6 @@ h1 {
   .projectService-btns {
     margin: 30px 0 30px 0; }
   .projectServices {
-    margin: 20px 0 0 0; } }
+    margin: 20px 0 0 0; }
+  .reg .jq-selectbox select {
+    width: calc(100% - 15px); } }

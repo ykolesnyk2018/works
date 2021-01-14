@@ -1223,4 +1223,6 @@ h1 {
   .projectServices {
     margin: 20px 0 0 0; }
   .reg .jq-selectbox select {
-    width: calc(100% - 15px); } }
+    width: calc(100% - 15px); }
+  .jq-select-multiple select {
+    display: none; } }

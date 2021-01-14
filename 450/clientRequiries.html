@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+ 		
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.svg" alt="">
+				</a>
+				<span>ПРОЕКТНЫЙ СЕРВИС</span>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Строка для поиска....">
+					<button>
+						<img src="images/icons/search.svg" alt="">
+					</button>
+				</form>
+			</div>
+			<div class="header-right">
+				<a href="#" class="notification">
+					<span>1</span>
+				</a>
+				<div class="name">
+					Сотрудник (МПО): <a href="#">Иван Иванов</a>
+				</div>
+				<a href="#" class="log-out">
+					<img src="images/icons/log-out.svg" alt="">
+					Выйти
+				</a>
+			</div>
+		</header>
+		<div class="content">
+			<div class="left-bar" id="left-bar">
+				<div class="toggle main-menu-btn" data-target="left-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li>
+							<a href="#" class="active">
+								<img src="images/icons/clipboard.svg" alt="">
+								Запрос на техническое решение
+							</a>
+							<ul>
+								<li><a href="#">Мои запросы</a></li>
+								<li><a href="#">Запросы клиентов</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calculator.svg" alt="">
+								Онлайн расчеты продукции
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/folder.svg" alt="">
+								Информация о продукции
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/diagram.svg" alt="">
+								Статистика
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calendar.svg" alt="">
+								Отчеты инженеров
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/admin.svg" alt="">
+								Администрирование
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/feedback.svg" alt="">
+								Обратная связь
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright">
+					© 2020 <a href="https://project.standartpark.ru/" target="_blank">project.standartpark.ru.</a>
+				</div>
+			</div>
+			<div class="right-bar">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<a href="#">Запрос на техническое решение</a>
+					<a href="#">Мои запросы</a>
+				</div>
+				<div class="tabs">
+					<div class="top">
+						<h1>Запросы клиентов</h1>
+						<div class="tabs-navigation">
+							<ul>
+								<li><a data-target="tabs1">Список запросов</a></li>
+								<li class="active"><a data-target="tabs2">Фильтры</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tabs-con"id="tabs1">
+						<div class="tableAdaptive overfloww-auto">
+							<table>
+								<tr class="gray">
+									<th width="118px">Карточка клиента</th>
+									<th>Клиент</th>
+									<th>Ответственный менеджер</th>
+									<th>ИПС</th>
+									<th>Регион объекта</th>
+									<th>Название объекта</th>
+									<th>Дата установки статуса</th>
+									<th>Плановая дата выдачи материала</th>
+									<th>Статус</th>
+								</tr>
+								<tr class="green">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="red">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="lightGreen">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент"></td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="orange">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Московская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="green">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент"></td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="red">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="orange">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="orange">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент"></td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="lightGreen">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент"></td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="orange">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Московская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="green">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент"></td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="red">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="orange">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент">
+										Евдокимов Павел
+									</td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+								<tr class="orange">
+									<td data-label="Карточка клиента">
+										<div class="tableGreen">РМ0002516</div>
+									</td>
+									<td data-label="Клиент"></td>
+									<td data-label="Ответственный менеджер">
+										Костырский Антон
+									</td>
+									<td data-label="ИПС">
+										Кургенова Дарья
+									</td>
+									<td data-label="Регион объекта">
+										Калининградская  область
+									</td>
+									<td data-label="Название объекта">
+										Плоскостная парковка, ул. Декабристов 15 (уч. 1 и уч.2)
+									</td>
+									<td data-label="Дата установки статуса">
+										16.12.2020<br>
+										15:10
+									</td>
+									<td data-label="Плановая дата выдачи материала">
+										16.12.2020
+									</td>
+									<td data-label="Статус">
+										Запрос выполнен
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="tabs-con active" id="tabs2">
+						<div class="projectServices">
+							<div class="projectService">
+								<div class="projectService-label">Карточка объекта: </div>
+								<div class="projectService-content">
+									<input type="text" class="short">
+								</div>
+							</div>
+							<div class="projectService">
+								<div class="projectService-label">Ответсвенный менеджер:</div>
+								<div class="projectService-content">
+									<select>
+										<option></option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label">Ответсвенный инженер:</div>
+							<div class="projectService-content">
+								<div class="row">
+									<div class="checkbox medium">
+										<input type="checkbox" id="ch1">
+										<label for="ch1">Выбрать всех</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="ch21">
+										<label for="ch21">Иван Иванов</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch31">
+										<label for="ch31">Сергей Васильев</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch41">
+										<label for="ch41">Никита Новиков</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch51">
+										<label for="ch51">Евгений Дмитриев</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="ch22">
+										<label for="ch22">Иван Иванов</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch32">
+										<label for="ch32">Сергей Васильев</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch42">
+										<label for="ch42">Никита Новиков</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch52">
+										<label for="ch52">Евгений Дмитриев</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="ch22">
+										<label for="ch23">Иван Иванов</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch32">
+										<label for="ch33">Сергей Васильев</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch42">
+										<label for="ch43">Никита Новиков</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch52">
+										<label for="ch53">Евгений Дмитриев</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="ch22">
+										<label for="ch24">Иван Иванов</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch32">
+										<label for="ch34">Сергей Васильев</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch42">
+										<label for="ch44">Никита Новиков</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch52">
+										<label for="ch54">Евгений Дмитриев</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label">Регион объекта:</div>
+							<div class="projectService-content">
+								<select>
+									<option></option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+								</select>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label">Название объекта:</div>
+							<div class="projectService-content">
+								<input type="text">
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label">Типология обекта:</div>
+							<div class="projectService-content">
+								<select multiple="multiple">
+									<option>[Не выбрано]</option>
+									<option>Автодороги</option>
+									<option>АЗС</option>
+									<option>Аэрозольный комплекс</option>
+									<option>Аэродромы ИВПП</option>
+									<option>Военная инфраструктура</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+								</select>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label">Статус:</div>
+							<div class="projectService-content">
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="2ch11">
+										<label for="2ch11">Новый запрос</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch12">
+										<label for="2ch12">Запрос принят в работу</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch13">
+										<label for="2ch13">Необходима корректировка</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="2ch21">
+										<label for="2ch21">Запросы передан инженеру</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch22">
+										<label for="2ch22">Запрос выполнен</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch23">
+										<label for="2ch23">Дополнительные исходные данные к запросу</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="2ch31">
+										<label for="2ch31">Требуются дополнительные исходные данные</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch32">
+										<label for="2ch32">ТР на согласовании у клиента</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch33">
+										<label for="2ch33">Евгений Дмитриев</label>
+									</div>
+								</div>
+								<div class="column">
+									<div class="checkbox">
+										<input type="checkbox" id="2ch41">
+										<label for="2ch41">ТР согласовано с клиентом</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="2ch42">
+										<label for="2ch42"> Обратная связь</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Задания инженеру:
+							</div>
+							<div class="projectService-content">
+								<select class="short">
+									<option>[Не выбрано]</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+								</select>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Плановая дата выдачи материала:
+							</div>
+							<div class="projectService-content">
+								<div class="form-to">
+									<div>
+										От
+										<input type="text">
+									</div>
+									<div>
+										До
+										<input type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Дата установки статуса:
+							</div>
+							<div class="projectService-content">
+								<div class="form-to">
+									<div>
+										От
+										<input type="text">
+									</div>
+									<div>
+										До
+										<input type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="projectService-btns">
+							<button>Поиск</button>
+							<button>Очистить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

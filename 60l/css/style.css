@@ -687,13 +687,17 @@ footer>.container{
     flex-wrap: wrap;
     max-width: 454px;
     width: 100%;
+    padding: 0 0 0 74px;
 }
 .contact-clients{
     display: flex;
     justify-content: space-between;
+    margin-top: 83px;
+    margin-bottom: 38px;
 }
 .contact-clients-img{
     flex-basis: 48%;
+    margin-top: 53px;
 }
 .clients-bottom-form{
     display: flex;
@@ -722,7 +726,7 @@ footer>.container{
 }
 .contact-right input{
     width: 100%;
-    margin-bottom: 23px;
+    margin-top: 24px;
     font-size: 16px;
     line-height: 130%;
     border: none;
@@ -752,6 +756,7 @@ footer>.container{
     box-sizing: border-box;
     border: 1px solid #7202BB;
     font-family: "Roboto_Slab";
+    margin-top: 30px;
 }
 .contact-right>form>button:hover{
     transition: .3s;
@@ -763,7 +768,8 @@ footer>.container{
     text-align: center;
     font-size: 16px;
     color: #000;
-    line-height: 130%;    
+    line-height: 130%; 
+    margin-top: 14px;
 }
 .contact-right-information p{
     color: #7202BB;
@@ -1395,6 +1401,7 @@ footer>.container{
     .contact-left{
         width: 333px;
         align-items: flex-start;
+        padding: 0;
     }
     .contact-right{
         width: 401px;
@@ -1940,20 +1947,36 @@ footer>.container{
         display: flex;
         justify-content: center;
     }
+    .clients-slider .slick-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 14px 0 0 0;
+    }
+    .clients-slider .slick-dots li{
+        margin: 0 20.5px 0 0;
+    }
+    .clients-slider .slick-dots li:last-child{
+        margin: 0;
+    }
+    .clients-slider .slick-dots li button{
+        padding: 0;
+        border: 0;
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        display: block;
+        background: #7202BB;
+        opacity: 0.5;
+        border-radius: 50%;
+    }
+    .clients-slider .slick-dots li.slick-active button{
+        opacity: 1;
+    }
+    .contact-clients{
+        margin: 40px 0 40px 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

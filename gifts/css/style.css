@@ -673,7 +673,7 @@ footer>.container{
     top: -50%;
     bottom: -50%;
     margin: auto 0;
-    left: calc(50vw + 547.5px + 139px);
+    right: 40px;
 }
 .clients-slider .slick-next:hover{
     opacity: .6;

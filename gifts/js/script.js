@@ -12,74 +12,73 @@ $(document).ready(function(){
 		$('.overlay_popup, .popup').hide();
 	});
 	/* popUp */
-    $('.toggle').click(function() {
-		var toggle_id = $('#' + $(this).attr("data-target"));
-		$(toggle_id).toggleClass('active');
-		$(this).toggleClass('active');
-	}); 
     $(function() {
-        $(".main-menu-btn").click(function(){
-            $('.main-menu').toggleClass("active");
+        $(".class-name").click(function(){
+            $(this).toggleClass("active");
         }); 
     });
-    $('.main-slider').slick({
-      dots: true,
+    $(function(){
+        $(".tabs").tabs();
+    });
+        $('.clients-slider').slick({
+      dots: false,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: true,
-      arrows: false
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
     });
-    $('.small-slider').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      adaptiveHeight: false,
-      variableWidth: true,
-	  responsive: [
-		{
-		  breakpoint: 767,
-		  settings: {
-      		slidesToShow: 1,
-      		variableWidth: false
-		  }
-		}
-	  ]
-    });
-    $('.circles-slider').slick({
-      infinite: true,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-		centerMode: false,
-      variableWidth: true,
-	  responsive: [
-		{
-		  breakpoint: 767,
-		  settings: {
-      		slidesToShow: 1,
-      		variableWidth: false
-		  }
-		}
-	  ]
-    });	
-	$(function(){
-    	$(".tabs").tabs();
- 	});
-    
-    $('.product-slide-big').slick({
+    $('.slider-for').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      fade: true,
-      asNavFor: '.products-slides-small'
+      asNavFor: '.slider-nav',
+	  speed: 0,
+	  fade: true
     });
-    $('.products-slides-small').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: '.product-slide-big',
-      dots: false,
+    $('.slider-nav').slick({
       arrows: false,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
       focusOnSelect: true,
-        variableWidth: true
+      variableWidth: true
     });
+	$('.main-banner-to__right').slick({
+	  arrows: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+		soeed: 700,
+	  autoplaySpeed: 3000,
+	});
+    /* toggle */
+    $('.toggle').click(function() {
+        var toggle_id = $('#' + $(this).attr("data-target"));
+        $(this).toggleClass("active");
+        $(toggle_id).toggleClass("active");
+      }); 
+      /* toggle */
+	  $(function(){
+		  $("#typed").typed({
+            strings: ["WILDBERRIES <span>aaaaaaaaa</span>", "OZON <span>aaaaaaaaaaaaaaaa</span>", "Яндек Маркет  <span>aaaaaaaa</span>", "lamoda <span>aaaaaaaaaaaaa</span>", "Aliexpress <span>aaaaaaaaa</span>", "Goods.ru <span>aaaaaaaaaaaa</span>"], // строки выводимые в печать
+            typeSpeed: 75, // скорость набора
+            backSpeed: 0, // скорость удаления текста
+            backDelay: 0, // пауза перед удалением текста
+            loop: true, // повтор (true или false)
+            loopCount: false, // число повторов, false = бесконечно
+            showCursor: true
+        });
+	  });
+	
+     new WOW().init();
 });

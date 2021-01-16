@@ -1716,9 +1716,9 @@ footer>.container{
     }
     .figures:before{
         width: calc(50vw + 50px);
-        height: 100%;
         left: auto;
         right: 0;
+        height: calc(100% - 180px);
         background: url(../images/mobil-main-banner.png) left center no-repeat;
         background-size: cover;
     }

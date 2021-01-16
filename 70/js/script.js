@@ -30,44 +30,47 @@ $(document).ready(function(){
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 1,
-        autoplay: true,
-    autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 2000,
+	  speed: 500,
+	  fade: true,
+	  cssEase: 'linear'
 	});
-    $('.our-par-slider').slick({
+		$('.our-par-slider').slick({
+		  dots: false,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 5,
+		  variableWidth: true,
+		  autoplay: true,
+		  autoplaySpeed: 2000,
+		  responsive: [
+				{
+				  breakpoint: 940,
+				  settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					variableWidth: false
+				  }
+				},
+				{
+				  breakpoint: 767,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					variableWidth: false
+				  }
+				},
+			]
+		});
+	$('.about-us-slider').slick({
 	  dots: false,
 	  infinite: true,
 	  speed: 300,
 	  slidesToShow: 5,
       variableWidth: true,
-        autoplay: true,
-    autoplaySpeed: 2000,
-      responsive: [
-            {
-              breakpoint: 940,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                variableWidth: false
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                variableWidth: false
-              }
-            },
-        ]
-	});
-    $('.about-us-slider').slick({
-	  dots: false,
-	  infinite: true,
-	  speed: 300,
-	  slidesToShow: 5,
-      variableWidth: true,
-        autoplay: true,
-    autoplaySpeed: 2000,
+      autoplay: true,
+      autoplaySpeed: 2000,
         responsive: [
             {
               breakpoint: 1170,

@@ -40,8 +40,9 @@ $(document).ready(function(){
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
+      asNavFor: '.slider-nav',
+	  speed: 0,
+	  fade: true
     });
     $('.slider-nav').slick({
       arrows: false,
@@ -52,7 +53,14 @@ $(document).ready(function(){
       focusOnSelect: true,
       variableWidth: true
     });
-
+	$('.main-banner-to__right').slick({
+	  arrows: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+		soeed: 700,
+	  autoplaySpeed: 3000,
+	});
     /* toggle */
     $('.toggle').click(function() {
         var toggle_id = $('#' + $(this).attr("data-target"));
@@ -60,4 +68,17 @@ $(document).ready(function(){
         $(toggle_id).toggleClass("active");
       }); 
       /* toggle */
+	  $(function(){
+		  $("#typed").typed({
+            strings: ["WILDBERRIES <span>aaaaaaaaa</span>", "OZON <span>aaaaaaaaaaaaaaaa</span>", "Яндек Маркет  <span>aaaaaaaa</span>", "lamoda <span>aaaaaaaaaaaaa</span>", "Aliexpress <span>aaaaaaaaa</span>", "Goods.ru <span>aaaaaaaaaaaa</span>"], // строки выводимые в печать
+            typeSpeed: 75, // скорость набора
+            backSpeed: 0, // скорость удаления текста
+            backDelay: 0, // пауза перед удалением текста
+            loop: true, // повтор (true или false)
+            loopCount: false, // число повторов, false = бесконечно
+            showCursor: true
+        });
+	  });
+	
+     new WOW().init();
 });

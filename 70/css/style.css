@@ -116,6 +116,8 @@ header{
 }
 .slick-list .slick-track{
     display: flex;
+	overflow: hidden;
+	position: relative;
 }
 
 .mainSlider .slick-slide{
@@ -186,6 +188,7 @@ header{
 .slick-slider{
     position: relative;
     margin: -105px 0 0 0;
+	overflow: hidden;
 }
 .slick-dots{
     position: absolute;
@@ -623,7 +626,7 @@ footer{
     background: url(../images/footer-bg.png) no-repeat;
     min-height: 417px;
     width: 100%;
-    background-size: 100%;
+    background-size: cover;
 }
 .footer-content{
     padding-top: 82px;
@@ -686,7 +689,7 @@ footer{
 .footer-block-right ul li a{
     font-size: 14px;
     line-height: 24px;
-    color: #c1272d;
+    color: #c1280d;
 }
 .footer-contact{
     max-width: 292px;

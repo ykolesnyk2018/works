@@ -282,12 +282,13 @@ header>.container{
     border-radius: 9px;
     opacity: 1;
     display: inline-block;
-    padding: 20px 18px 20px 18px;
+    padding: 19px 17px 19px 17px;
+	border: 1px solid #7202BB;
 }
-.success-right-btn a:hover{
-    background: #fff;
-    color: #7202BB;
+.success-right-btn a:hover:hover{
     transition: .3s;
+    background: #F2F2F2;
+    color: #7202BB;
 }
 .services{
     margin-top: 139px;
@@ -771,10 +772,14 @@ footer>.container{
     line-height: 130%; 
     margin-top: 14px;
 }
-.contact-right-information p{
+.contact-right-information a{
+	display: block;
     color: #7202BB;
     text-decoration: underline;
     margin: 0;
+}
+.contact-right-information a:hover{
+	text-decoration: none;
 }
 .figures{
     display: block;
@@ -785,13 +790,13 @@ footer>.container{
     background-position: left center;
     background: #7202BB;
     z-index: 1;
-    margin: 117px 0 0 0;
+    margin: 0 0 0 0;
 }
 .figures:before{
     content: "";
     width: calc(50vw + 128px);
     height: 100%;
-    background: url(../images/figures.png) left center no-repeat;
+    background: url(../images/figures.png) right center no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -907,6 +912,16 @@ footer>.container{
 }
 .main-banner-title span{
     color: #7202BB;
+	white-space: nowrap;
+	max-height: 50px;
+	overflow: hidden;
+	display: inline-flex;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+}
+.main-banner-title span span{
+	font-size: 0;
+	color: rgba(255,255,255,0)
 }
 .main-banner-text{
     font-family: "Roboto_Slab";
@@ -928,6 +943,13 @@ footer>.container{
     color: #fff;
     text-decoration: none;
     padding: 0 33px 0 32px;
+	box-sizing: border-box;
+    border: 1px solid #7202BB;
+}
+.main-banner-btn a:hover{
+    transition: .3s;
+    background: #fff;
+    color: #7202BB;
 }
 .main-banner-to__right{
     width: 568px;
@@ -1008,10 +1030,7 @@ footer>.container{
 }
 .slider-nav{
     border-bottom: 2px solid #7202BB;
-    position: absolute;
-    top: 551px;
-    left: -50%;
-    right: -50%;
+	margin-bottom: 10px;
     z-index: 1;
 }
 .slider-nav .slick-list{
@@ -1023,6 +1042,7 @@ footer>.container{
     align-items: center;
     position: relative;
     margin: 0 45px 0 0;
+	cursor: pointer;
 }
 .slider-nav .slick-slide.slick-current:after{
     content: "";
@@ -1474,6 +1494,7 @@ footer>.container{
     .slider-nav{
         top: 433px;
         padding: 0 0 7px 0;
+		margin: 30px auto 20px auto;
         border-bottom: 1px solid #7202BB;
     }
     .slider-nav .slick-list{
@@ -1489,7 +1510,7 @@ footer>.container{
         margin: 0 30px 0 0;
     }
     .figures{
-        margin: 96px 0 0 0;
+        margin: 0 0 0 0;
         height: auto;
         padding: 0 0 7px 0;
     }
@@ -1648,7 +1669,7 @@ footer>.container{
         left: -50%;
         right: -50%;
         z-index: -1;
-        opacity: 0.6;
+        opacity: 0.3;
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -1695,7 +1716,7 @@ footer>.container{
     }
     .figures:before{
         width: calc(50vw + 50px);
-        height: 285px;
+        height: 100%;
         left: auto;
         right: 0;
         background: url(../images/mobil-main-banner.png) left center no-repeat;
@@ -1976,6 +1997,10 @@ footer>.container{
     .contact-clients{
         margin: 40px 0 40px 0;
     }
+	.slider-nav{
+		margin: 0 0 0 -150px;
+		position: absolute;
+	}
 }
 
 

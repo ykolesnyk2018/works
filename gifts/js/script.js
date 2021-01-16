@@ -70,7 +70,7 @@ $(document).ready(function(){
       /* toggle */
 	  $(function(){
 		  $("#typed").typed({
-            strings: ["WILDBERRIES <span>aaaaaaaaa</span>", "OZON <span>aaaaaaaaaaaaaaaa</span>", "Яндек Маркет  <span>aaaaaaaa</span>", "lamoda <span>aaaaaaaaaaaaa</span>", "Aliexpress <span>aaaaaaaaa</span>", "Goods.ru <span>aaaaaaaaaaaa</span>"], // строки выводимые в печать
+            strings: ["WILDBERRIES <span>aaaaaaaaa</span>", "OZON <span>aaaaaaaaaaaaaaaa</span>", "Яндек Маркет  <span>aaaaaaaa</span>", "lamoda <span>aaaaaaaaaaaaa</span>", "Aliexpress <span>aaaaaaaaa</span>", "Goods <span>aaaaaaaaaaaaaaa</span>"], // строки выводимые в печать
             typeSpeed: 75, // скорость набора
             backSpeed: 0, // скорость удаления текста
             backDelay: 0, // пауза перед удалением текста

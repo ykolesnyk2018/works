@@ -54,7 +54,7 @@ $(document).ready(function(){
     $('.tabs-navigation li a').click(function() {
 		var tabs_id = $('#' + $(this).attr("data-target"));
 		$(this).closest("ul").find("li").removeClass("active");
-		$(this).closest(".tabs").find(".tabs-con").removeClass("active");
+		$(this).closest(".tabs").find(">.tabs-con").removeClass("active");
 		$(this).parent().addClass("active");
 		$(tabs_id).addClass("active");
 	}); 

@@ -1234,6 +1234,10 @@ footer{
 .product-download a img{
     margin-left: 31px;
 }
+.wrraper{
+	overflow: hidden;
+	position: relative;
+}
 @media(max-width: 1170px){
     
 }

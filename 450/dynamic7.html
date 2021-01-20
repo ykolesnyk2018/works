@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">   
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+ 		
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.svg" alt="">
+				</a>
+				<span>ПРОЕКТНЫЙ СЕРВИС</span>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Строка для поиска....">
+					<button>
+						<img src="images/icons/search.svg" alt="">
+					</button>
+				</form>
+			</div>
+			<div class="header-right">
+				<a href="#" class="notification">
+					<span>1</span>
+				</a>
+				<div class="name">
+					Сотрудник (МПО): <a href="#">Иван Иванов</a>
+				</div>
+				<a href="#" class="log-out">
+					<img src="images/icons/log-out.svg" alt="">
+					Выйти
+				</a>
+			</div>
+		</header>
+		<div class="content">
+			<div class="left-bar" id="left-bar">
+				<div class="toggle main-menu-btn" data-target="left-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/icons/clipboard.svg" alt="">
+								Запрос на техническое решение
+							</a>
+							<ul>
+								<li><a href="#">Мои запросы</a></li>
+								<li><a href="#">Запросы клиентов</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calculator.svg" alt="">
+								Онлайн расчеты продукции
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/folder.svg" alt="">
+								Информация о продукции
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">
+								<img src="images/icons/diagram.svg" alt="">
+								Статистика
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calendar.svg" alt="">
+								Отчеты инженеров
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/admin.svg" alt="">
+								Администрирование
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/feedback.svg" alt="">
+								Обратная связь
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright">
+					© 2020 <a href="https://project.standartpark.ru/" target="_blank">project.standartpark.ru.</a>
+				</div>
+			</div>
+			<div class="right-bar">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<a href="#">Статистика</a>
+					<a href="#">2020</a>
+					<a href="#">Динамика запросов в разрезе типологии объектов применения</a>
+				</div>
+				<div class="tabs">
+					<div class="top">
+						<h1>ДИНАМИКА ЗАПРОСОВ В РАЗРЕЗЕ ТИПОЛОГИИ ОБЪЕКТОВ ПРИМЕНЕНИЯ</h1>
+					</div>
+					<div class="lineElements">
+						<div class="tableAdaptive overfloww-auto">
+							<table>
+								<tr class="gray center top-text">
+									<th width="133px">Год клиента</th>
+									<th>Автодороги</th>
+									<th>АЗС</th>
+									<th>Аэровокзальный<br> комплекс</th>
+									<th>Аэродромы<br> ИВПП</th>
+									<th>Железная<br>  дорога</th>
+									<th>Мост</th>
+									<th>Объекты <br>придорожного <br> сервиса</th>
+									<th>Порты</th>
+									<th>Путепровод</th>
+									<th>ТПУ</th>
+									<th>Транспортная<br> развязка</th>
+									<th>Итого</th>
+								</tr>
+								<tr class="orange-dark light center">
+									<td data-label="Год клиента">2019</td>
+									<td data-label="Автодороги">
+										<span class="green">236</span>
+									</td>
+									<td data-label="АЗС">
+										<span class="green">16</span>
+									</td>
+									<td data-label="Аэровокзальный  комплекс">
+										<span class="green">18</span>
+									</td>
+									<td data-label="Аэродромы  ИВПП">
+										<span class="green">13</span>
+									</td>
+									<td data-label="Железная  дорога">
+										<span class="green">32</span>
+									</td>
+									<td data-label="Мост">
+										<span class="green">5</span>
+									</td>
+									<td data-label="Объекты придорожного сервиса">
+										<span class="green">38</span>
+									</td>
+									<td data-label="Порты">
+										<span class="green">59</span>
+									</td>
+									<td data-label="Путепровод">
+										<span class="green">23</span>
+									</td>
+									<td data-label="ТПУ">
+										<span class="green">18</span>
+									</td>
+									<td data-label="Транспортная  развязка">
+										<span class="green">5</span>
+									</td>
+									<td data-label="Итого">
+										464
+									</td>
+								</tr>
+								<tr class="green-dark light center">
+									<td data-label="Год клиента">2020</td>
+									<td data-label="Автодороги">
+										<span class="green">256</span>
+									</td>
+									<td data-label="АЗС">
+										<span class="green">34</span>
+									</td>
+									<td data-label="Аэровокзальный  комплекс">
+										<span class="green">17</span>
+									</td>
+									<td data-label="Аэродромы  ИВПП">
+										<span class="green">8</span>
+									</td>
+									<td data-label="Железная  дорога">
+										<span class="green">13</span>
+									</td>
+									<td data-label="Мост">
+										<span class="green">2</span>
+									</td>
+									<td data-label="Объекты придорожного сервиса">
+										<span class="green">88</span>
+									</td>
+									<td data-label="Порты">
+										<span class="green">48</span>
+									</td>
+									<td data-label="Путепровод">
+										<span class="green">30</span>
+									</td>
+									<td data-label="ТПУ">
+										<span class="green">18</span>
+									</td>
+									<td data-label="Транспортная  развязка">
+										<span class="green">3</span>
+									</td>
+									<td data-label="Итого">
+										514
+									</td>
+								</tr>
+								<tr class="green light center">
+									<td data-label="Год клиента">Сравнение с пред.<br> годом %</td>
+									<td data-label="Автодороги">106%</td>
+									<td data-label="АЗС"><b>213%</b></td>
+									<td data-label="Аэровокзальный  комплекс">
+										<span class="red">94%</span>
+									</td>
+									<td data-label="Аэродромы  ИВПП">
+										<span class="red">62%</span>
+									</td>
+									<td data-label="Железная  дорога">
+										<span class="red">41%</span>
+									</td>
+									<td data-label="Мост">
+										<span class="red">40%</span>
+									</td>
+									<td data-label="Объекты придорожного сервиса"><b>238%</b></td>
+									<td data-label="Порты">
+										<span class="red">81%</span>
+									</td>
+									<td data-label="Путепровод">132%</td>
+									<td data-label="ТПУ"><b>300%</b></td>
+									<td data-label="Транспортная  развязка">
+										<span class="red">60%</span>
+									</td>
+									<td data-label="Итого">111%</td>
+								</tr>
+							</table>
+							<div class="diagramm">
+								<img src="images/dynamic7.svg" alt="">
+							</div>
+						</div>
+						<div class="diagramm-filter">
+							<div class="diagramm-filter-btns">
+								<a href="#" class="btn">Печать</a>
+								<a href="#" class="btn">Экспорт в Excel</a>
+							</div>
+							<div class="diagramm-filter-content">
+								<div class="diagramm-filter_block">
+									<div class="diagramm-filter_block__title">Регион</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch11">
+										<label for="ch11">Москва</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch12">
+										<label for="ch12">Северо-Запад</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch13">
+										<label for="ch13">Сибирь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch14">
+										<label for="ch14">Дальний восток</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch15">
+										<label for="ch15">Урал</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch16">
+										<label for="ch16">Юг</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch17">
+										<label for="ch17">Центр</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch18">
+										<label for="ch18">Татарстан</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch19">
+										<label for="ch19">ТСК "Велес"</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch110">
+										<label for="ch110">УТСР</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch111">
+										<label for="ch111">Узбекистан</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch112">
+										<label for="ch112">Беларусь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch113">
+										<label for="ch113">Казахстан</label>
+									</div>
+								</div>
+								<div class="diagramm-filter_block">
+									<div class="diagramm-filter_block__title">Месяц</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch1">
+										<label for="ch1">Январь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch2">
+										<label for="ch2">Ферваль</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch3">
+										<label for="ch3">Март</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch4">
+										<label for="ch4">Апрель</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch5">
+										<label for="ch5">Май</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch6">
+										<label for="ch6">Июнь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch7">
+										<label for="ch7">Июль</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch8">
+										<label for="ch8">Август</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch9">
+										<label for="ch9">Сентябрь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch10">
+										<label for="ch10">Октябрь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch11">
+										<label for="ch11">Ноябрь</label>
+									</div>
+									<div class="checkbox">
+										<input type="checkbox" id="ch12">
+										<label for="ch12">Декабрь</label>
+									</div>
+								</div>
+							</div>
+							<div class="diagramm-filter-btns">
+								<a href="#" class="btn">Поиск</a>
+								<a href="#" class="btn">Очистить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

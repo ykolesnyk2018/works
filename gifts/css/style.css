@@ -112,11 +112,12 @@ header>.container{
 .header-right{
     display: flex;
     justify-content: space-between;
-    padding: 0 0 0 10px
+    padding: 0 0 0 0;
 }
 .header-right nav{
     display: flex;
     align-items: center;
+	margin: 0 auto;
 }
 .header-right nav ul{
     display: flex;
@@ -128,7 +129,7 @@ header>.container{
     margin-right: 0;
 }
 .header-right nav ul li a{
-    font-size: 15px;
+    font-size: 17px;
     line-height: 20px;
     color: #fff;
 }
@@ -457,10 +458,10 @@ header>.container{
     text-align: center;
     margin-top: 6px;
     opacity: .75;
-    font-size: 9px;
-    line-height: 11.7px;
+    font-size: 12px;
     color: #000;
     margin-top: 24px;
+	transition: 0.6s;
 }
 footer{
     background: #000;
@@ -953,6 +954,8 @@ footer>.container{
 }
 .main-banner-to__right{
     width: 568px;
+	position: relative;
+	z-index: 0;
 }
 .main-banner-to__right img{
     display: block;
@@ -1020,13 +1023,18 @@ footer>.container{
 }
 .figures-right-block span{
     font-family: "Roboto-Slab-Black";
-    display: block;
+    display: flex;
+	align-items: center;
     color: #fff;
     font-size: 52px;
     line-height: 71px;
+	white-space: nowrap;
 }
 .figures-right-block:nth-child(2n){
     text-align: right;
+}
+.figures-right-block:nth-child(2n) span{
+	justify-content: flex-end;
 }
 .slider-nav{
     border-bottom: 2px solid #7202BB;
@@ -1044,7 +1052,7 @@ footer>.container{
     margin: 0 45px 0 0;
 	cursor: pointer;
 }
-.slider-nav .slick-slide.slick-current:after{
+.slider-nav .slick-slide:after{
     content: "";
     width: 100%;
     height: 5px;
@@ -1053,6 +1061,11 @@ footer>.container{
     position: absolute;
     bottom: -15.5px;
     left: 0;
+	opacity: 0;
+	transition: 0.6s;
+}
+.slider-nav .slick-slide.slick-current:after{
+	opacity: 1;
 }
 .slider-nav .slick-slide img{
     display: block;
@@ -1306,8 +1319,7 @@ footer>.container{
     }
     .add-block-decription{
         margin: 16px 0 0 0;
-        font-size: 6px;
-        line-height: 7px;
+        font-size: 8px;
     }
     .howWeWork{
         padding: 53px 0 0 0;
@@ -1858,7 +1870,6 @@ footer>.container{
         margin: 0 0 33px 0;
     }
     .add-block-decription{
-        line-height: 8p;
     }
     .howWeWork{
         padding: 0;

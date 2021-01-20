@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+ 		
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.svg" alt="">
+				</a>
+				<span>ПРОЕКТНЫЙ СЕРВИС</span>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Строка для поиска....">
+					<button>
+						<img src="images/icons/search.svg" alt="">
+					</button>
+				</form>
+			</div>
+			<div class="header-right">
+				<a href="#" class="notification">
+					<span>1</span>
+				</a>
+				<div class="name">
+					Сотрудник (МПО): <a href="#">Иван Иванов</a>
+				</div>
+				<a href="#" class="log-out">
+					<img src="images/icons/log-out.svg" alt="">
+					Выйти
+				</a>
+			</div>
+		</header>
+		<div class="content">
+			<div class="left-bar" id="left-bar">
+				<div class="toggle main-menu-btn" data-target="left-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/icons/clipboard.svg" alt="">
+								Запрос на техническое решение
+							</a>
+							<ul>
+								<li><a href="#">Мои запросы</a></li>
+								<li><a href="#">Запросы клиентов</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calculator.svg" alt="">
+								Онлайн расчеты продукции
+							</a>
+							<ul>
+								<li><a href="#">Мои расчеты</a></li>
+								<li><a href="#">Расчеты клиентов</a></li>
+								<li><a href="#">Онлайн расчеты</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/folder.svg" alt="">
+								Информация о продукции
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/diagram.svg" alt="">
+								Статистика
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calendar.svg" alt="">
+								Отчеты инженеров
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">
+								<img src="images/icons/admin.svg" alt="">
+								Администрирование
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/feedback.svg" alt="">
+								Обратная связь
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright">
+					© 2020 <a href="https://project.standartpark.ru/" target="_blank">project.standartpark.ru.</a>
+				</div>
+			</div>
+			<div class="right-bar">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<a href="#">Администрирование</a>
+					<a href="#">Перечень изделий ПВ</a>
+					<a href="#">Редактировать</a>
+				</div>
+				<div class="tabs">
+					<div class="top">
+						<h1>РЕДАКТИРОВАТЬ</h1>
+					</div>
+					<div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Тип зделия:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<select>
+										<option>Основной лоток</option>
+										<option>[Не выбрано]</option>
+										<option>[Не выбрано]</option>
+										<option>[Не выбрано]</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Гидравлическое сечение, мм:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" class="longest" value="Лоток водоотводный S'park ЛВ-07.09.09-ПП пластиковый">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Артикул:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" class="shortest" value="70">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Гидравлическое сечение, мм:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" class="shortest" value="70">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Гидравлическая высота, мм:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" class="shortest" value="70">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Полная ширина, мм:
+							</div>
+							<div class="projectService-content">
+								<input type="text" class="shortest" value="70">
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Полная высота, мм:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" class="shortest" value="70">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Длина, мм:
+							</div>
+							<div class="projectService-content">
+								<input type="text" class="shortest" value="70">
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Радиус, мм:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" class="shortest" value="70">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Максимальная степень наполнения:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<input type="text" value="70">
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Тип материала:
+							</div>
+							<div class="projectService-content">
+								<div class="requiered ok">
+									<select>
+										<option>Основной лоток</option>
+										<option>[Не выбрано]</option>
+										<option>[Не выбрано]</option>
+										<option>[Не выбрано]</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Группа лотков:
+							</div>
+							<div class="projectService-content">
+									<input type="text" class="long" value="2020-12-14">
+							</div>
+						</div>
+						
+						
+						
+						<div class="projectService">
+							<div class="projectService-label long">
+								Расход герметика на продольный шов, мл:
+							</div>
+							<div class="projectService-content">
+									<input type="text" value="0.7">
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Расход герметика на торцевой шов, мл:
+							</div>
+							<div class="projectService-content">
+									<input type="text" value="0.7">
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Расход шнура, м:
+							</div>
+							<div class="projectService-content">
+									<input type="text" value="0.7">
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Бетонная обойма под примыкающее покрытие:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj" >
+									<label for="fdj"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">
+								Бетонная обойма до верха:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj2" >
+									<label for="fdj2"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Бетонная обойма до верха:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj3" >
+									<label for="fdj3"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Установка в кювете:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj4" >
+									<label for="fdj4"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Установка в межэтажное перекрытие:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj5" >
+									<label for="fdj5"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Установка в кровельное покрытие:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj6" >
+									<label for="fdj6"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Класс нагрузки A15:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj7" >
+									<label for="fdj7"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Класс нагрузки B125:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj8" >
+									<label for="fdj8"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Класс нагрузки C250:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj9" >
+									<label for="fdj9"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Класс нагрузки D400:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj9" >
+									<label for="fdj9"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Класс нагрузки E600:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj9" >
+									<label for="fdj9"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Класс нагрузки F900:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj9" >
+									<label for="fdj9"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Открытый лоток:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj9" >
+									<label for="fdj9"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Активен:
+							</div>
+							<div class="projectService-content">
+								<div class="checkbox">
+									<input type="checkbox" id="fdj9" >
+									<label for="fdj9"></label>
+								</div>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Активен:</div>
+							<div class="projectService-content">
+								<select>
+									<option>Основной лоток</option>
+									<option>Основной лоток2</option>
+									<option>Основной лоток3</option>
+								</select>
+							</div>
+						</div>
+						<div class="projectService">
+							<div class="projectService-label long">Загрузить новый рисунок:</div>
+							<div class="projectService-content">
+								<div class="downloadLabel">
+									<input type="file" id="dsa">
+									<label>Выберите файл</label>
+									<span>Файл не выбран</span>
+								</div>
+							</div>
+						</div>
+						<img src="images/dsdsa.png" alt="">
+						<br>
+						<br>
+						<br>
+						<div class="group-btns">
+							<a href="#" class="btn">Сохранить</a>
+							<a href="#" class="btn">Очистить</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

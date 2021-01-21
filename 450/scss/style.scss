@@ -251,6 +251,7 @@ button,
 		color: #fff;
 	}
 	&.main-btn{
+		display: flex;
 		margin: 34px auto 0 auto;
 	}
 }
@@ -1104,6 +1105,7 @@ h1{
 		flex-wrap: wrap;
 		max-width: calc(100% - 183px);
 		font-size: 12px;
+			line-height: 1.4;
 		input.long{
 			width: 275px;
 		}
@@ -1196,6 +1198,10 @@ h1{
 				width: 498px;
 				max-width: 100%;
 			}
+		}
+		&.max-width{
+			max-width: 687px;
+			font-size: 15px;
 		}
 	}
 }

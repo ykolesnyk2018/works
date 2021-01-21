@@ -215,6 +215,7 @@ button,
     color: #fff; }
   button.main-btn,
   .btn.main-btn {
+    display: flex;
     margin: 34px auto 0 auto; }
 
 .link {
@@ -896,7 +897,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     max-width: calc(100% - 183px);
-    font-size: 12px; }
+    font-size: 12px;
+    line-height: 1.4; }
     .projectService .projectService-content input.long {
       width: 275px; }
     .projectService .projectService-content input.longest {
@@ -963,6 +965,9 @@ h1 {
       .projectService .projectService-content textarea.longest {
         width: 498px;
         max-width: 100%; }
+    .projectService .projectService-content.max-width {
+      max-width: 687px;
+      font-size: 15px; }
 
 .downloadLabel input[type="file"] {
   display: none; }

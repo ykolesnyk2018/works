@@ -2058,7 +2058,7 @@ img{
 	flex-wrap: wrap;
 	.calendar-cell{
 		width: calc(14.6% - 29px);
-		height: 77px;
+		height: 100px;
 		box-sizing: border-box;
 		display: flex;
 		align-items: center;
@@ -2076,12 +2076,60 @@ img{
 		&.weekend{
 			background: rgba(205, 52, 42, 0.2);
 		}
-		span{
+		>span{
 			position: absolute;
 			bottom: 8px;
 			left: 7px;
 			font-weight: 300;
 			font-size: 9px;
+		}
+		&.no-empty{
+			align-items: flex-start;
+			justify-content: flex-end;
+			padding: 0;
+		}
+		.calendar-cell-descr{
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			right: 10px;
+			font-size: 10px;
+			font-weight: 400;
+			line-height: normal;
+			p{
+				display: flex;
+				justify-content: space-between;
+				margin: 0;
+				align-items: center;
+				span{
+					min-width: 20px;
+					&:nth-child(2n){
+						text-align: right;
+					}
+				}
+			}
+		}
+		.calendar-cell-btns{
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			a{
+				display: block;
+				margin: 0 0 10px 0;
+				&:last-child{
+					margin: 0;
+				}
+				img{
+					display: block;
+					max-width: 13px;
+				}
+			}
+		}
+		.jq-selectbox{
+			position: absolute;
+			bottom: 5px;
+			left: 10px;
+			right: 10px;
 		}
 	}
 }
@@ -2265,7 +2313,7 @@ img{
 		.calendar-cell{
 			font-size: 34px;
 			padding: 0 15px 0 0;
-			height: 65px;
+			height: 112px;
 		}
 	}
 }
@@ -2894,6 +2942,15 @@ img{
 				bottom: 3px;
 				text-overflow: ellipsis;
 				overflow: hidden;
+			}
+			.calendar-cell-btns{
+				display: none;
+			}
+			.calendar-cell-descr{
+				display: none;
+			}
+			.jq-selectbox{
+				display: none;
 			}
 		}
 	}

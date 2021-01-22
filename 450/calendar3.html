@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">        
+    <meta name="author" content="CHANGE-ME">
+    <meta name="description" content="CHANGE-ME">
+    <!-- Mobile Stuff -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes"> 
+    <meta name="application-name" content="CHANGE-ME"> 
+    <!-- Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="CHANGE-ME"> 
+    
+ 		
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <title>Name of project</title>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>    
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.svg" alt="">
+				</a>
+				<span>ПРОЕКТНЫЙ СЕРВИС</span>
+			</div>
+			<div class="search">
+				<form>
+					<input type="text" placeholder="Строка для поиска....">
+					<button>
+						<img src="images/icons/search.svg" alt="">
+					</button>
+				</form>
+			</div>
+			<div class="header-right">
+				<a href="#" class="notification">
+					<span>1</span>
+				</a>
+				<div class="name">
+					Сотрудник (МПО): <a href="#">Иван Иванов</a>
+				</div>
+				<a href="#" class="log-out">
+					<img src="images/icons/log-out.svg" alt="">
+					Выйти
+				</a>
+			</div>
+		</header>
+		<div class="content">
+			<div class="left-bar" id="left-bar">
+				<div class="toggle main-menu-btn" data-target="left-bar">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="main-menu">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/icons/clipboard.svg" alt="">
+								Запрос на техническое решение
+							</a>
+							<ul>
+								<li><a href="#">Мои запросы</a></li>
+								<li><a href="#">Запросы клиентов</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/calculator.svg" alt="">
+								Онлайн расчеты продукции
+							</a>
+							<ul>
+								<li><a href="#">Мои расчеты</a></li>
+								<li><a href="#">Расчеты клиентов</a></li>
+								<li><a href="#">Онлайн расчеты</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/folder.svg" alt="">
+								Информация о продукции
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/diagram.svg" alt="">
+								Статистика
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">
+								<img src="images/icons/calendar.svg" alt="">
+								Отчеты инженеров
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/admin.svg" alt="">
+								Администрирование
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/icons/feedback.svg" alt="">
+								Обратная связь
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="copyright">
+					© 2020 <a href="https://project.standartpark.ru/" target="_blank">project.standartpark.ru.</a>
+				</div>
+			</div>
+			<div class="right-bar">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<a href="#">Отчеты инженеров</a>
+				</div>
+				<div class="top">
+					<h1>ОТЧЕТЫ ИНЖЕНЕРОВ</h1>
+				</div>
+				<div class="calendar">
+					<div class="calendar-top">
+						<div class="left">
+							Инженер
+							<select>
+								<option></option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+							</select>
+						</div>
+						<div class="right">
+							<div class="prev"></div>
+							<select>
+								<option>Декабрь 2020</option>
+								<option>Декабрь 2020</option>
+								<option>Декабрь 2020</option>
+								<option>Декабрь 2020</option>
+								<option>Декабрь 2020</option>
+							</select>
+							<div class="next"></div>
+						</div>
+					</div>
+					<div class="calendar-content">
+						<div class="calendar-ths">
+							<div class="calendar-th">Пн</div>
+							<div class="calendar-th">Вт</div>
+							<div class="calendar-th">Ср</div>
+							<div class="calendar-th">Чт</div>
+							<div class="calendar-th">Пт</div>
+							<div class="calendar-th">Сб</div>
+							<div class="calendar-th">Вс</div>
+						</div>
+						<div class="calendar-cells">
+							<div class="calendar-cell"></div>
+							<div class="calendar-cell">
+								1
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell ">
+								2
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								3
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								4
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell weekend">
+								5
+								
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell weekend">
+								6
+								
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								7
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								8
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								9
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								10
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								11
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell weekend">
+								12
+								
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell weekend">
+								13
+								
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								14
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								15
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								16
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								17
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								18
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell weekend">
+								19
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+								
+							</div>
+							<div class="calendar-cell weekend">
+								20
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+								
+							</div>
+							<div class="calendar-cell">
+								21
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								22
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								23
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								24
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								25
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell weekend">
+								26
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+								
+							</div>
+							<div class="calendar-cell weekend">
+								27
+								<select>
+									<option>Рабочий</option>
+									<option selected>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+								
+							</div>
+							<div class="calendar-cell">
+								28
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								29
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								30
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+							<div class="calendar-cell">
+								31
+								<select>
+									<option>Рабочий</option>
+									<option>Нерабочий</option>
+									<option>Отпуск</option>
+									<option>Больничный</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

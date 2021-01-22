@@ -1665,7 +1665,7 @@ img {
   flex-wrap: wrap; }
   .calendar-cells .calendar-cell {
     width: calc(14.6% - 29px);
-    height: 77px;
+    height: 100px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -1681,12 +1681,50 @@ img {
       margin-right: 0; }
     .calendar-cells .calendar-cell.weekend {
       background: rgba(205, 52, 42, 0.2); }
-    .calendar-cells .calendar-cell span {
+    .calendar-cells .calendar-cell > span {
       position: absolute;
       bottom: 8px;
       left: 7px;
       font-weight: 300;
       font-size: 9px; }
+    .calendar-cells .calendar-cell.no-empty {
+      align-items: flex-start;
+      justify-content: flex-end;
+      padding: 0; }
+    .calendar-cells .calendar-cell .calendar-cell-descr {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: normal; }
+      .calendar-cells .calendar-cell .calendar-cell-descr p {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        align-items: center; }
+        .calendar-cells .calendar-cell .calendar-cell-descr p span {
+          min-width: 20px; }
+          .calendar-cells .calendar-cell .calendar-cell-descr p span:nth-child(2n) {
+            text-align: right; }
+    .calendar-cells .calendar-cell .calendar-cell-btns {
+      position: absolute;
+      left: 10px;
+      top: 10px; }
+      .calendar-cells .calendar-cell .calendar-cell-btns a {
+        display: block;
+        margin: 0 0 10px 0; }
+        .calendar-cells .calendar-cell .calendar-cell-btns a:last-child {
+          margin: 0; }
+        .calendar-cells .calendar-cell .calendar-cell-btns a img {
+          display: block;
+          max-width: 13px; }
+    .calendar-cells .calendar-cell .jq-selectbox {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      right: 10px; }
 
 .calendar-ths {
   display: flex;
@@ -1812,7 +1850,7 @@ img {
   .calendar-cells .calendar-cell {
     font-size: 34px;
     padding: 0 15px 0 0;
-    height: 65px; } }
+    height: 112px; } }
 
 @media (max-width: 1023px) {
   .projectService .projectService-label.longest {
@@ -2220,6 +2258,12 @@ img {
       bottom: 3px;
       text-overflow: ellipsis;
       overflow: hidden; }
+    .calendar-cells .calendar-cell .calendar-cell-btns {
+      display: none; }
+    .calendar-cells .calendar-cell .calendar-cell-descr {
+      display: none; }
+    .calendar-cells .calendar-cell .jq-selectbox {
+      display: none; }
   .statistica .statistic {
     width: 100%;
     margin: 0 0 20px 0; } }
